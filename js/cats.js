@@ -1,7 +1,8 @@
 /* Hand-drawn cats and pawprints. Original artwork — same sticker style as the
    reference, but nothing traced or copied. Injected once, placed by CSS. */
 (() => {
-  const O = '#4A3B2E', G = '#F0A05A', D = '#E08849', C = '#FDF1DF', P = '#EFAFA4';
+  const O = 'var(--fur-line)', G = 'var(--fur)', D = 'var(--fur-dark)',
+        C = 'var(--fur-cream)', P = 'var(--fur-ear)';
 
   const sprite = `
 <svg id="cat-sprite" aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden">
@@ -58,6 +59,20 @@
     </g>
   </symbol>
 
+  <symbol id="cat-face" viewBox="0 0 72 68">
+    <g fill="none" stroke="${O}" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M14 24l-1-16 16 9z" fill="${G}"/>
+      <path d="M58 24l1-16-16 9z" fill="${G}"/>
+      <circle cx="36" cy="38" r="24" fill="${G}"/>
+      <path d="M17 21l-1-9 9 5z" fill="${P}" stroke-width="2"/>
+      <path d="M55 21l1-9-9 5z" fill="${P}" stroke-width="2"/>
+      <path d="M25 36q4 5 8 0M39 36q4 5 8 0" stroke-width="3.2"/>
+      <ellipse cx="36" cy="47" rx="8.5" ry="6" fill="${C}"/>
+      <path d="M32 45q4 3 8 0" stroke-width="2.6"/>
+      <path d="M4 40h12M5 47h12M56 40h12M55 47h12" stroke-width="2.4"/>
+    </g>
+  </symbol>
+
   <symbol id="paw" viewBox="0 0 26 26">
     <g fill="currentColor">
       <ellipse cx="13" cy="18" rx="7" ry="5.6"/>
@@ -79,15 +94,21 @@
   /* One cat peeking over the masthead, one asleep on the footer. */
   document.querySelector('.masthead')
     ?.insertAdjacentHTML('beforeend', cat('cat-peek', 'cat-peek'));
-  document.querySelector('footer')
-    ?.insertAdjacentHTML('afterbegin', cat('cat-flop', 'cat-flop'));
+  document.querySelector('footer')?.insertAdjacentHTML('afterbegin',
+    `<div class="catpair">${cat('cat-loaf', 'cat-loaf grey')}${cat('cat-flop', 'cat-flop')}</div>`);
 
   /* A loaf naps on the last leg divider; pawprints wander between the others. */
+  const POSES = [
+    ['cat-loaf', 'cat-loaf'],
+    ['cat-flop', 'cat-flop grey'],
+    ['cat-loaf', 'cat-loaf grey'],
+    ['cat-flop', 'cat-flop']
+  ];
   const decorate = () => {
     document.querySelectorAll('.leg:not([data-cat])').forEach((leg, i) => {
       leg.dataset.cat = '1';
-      leg.insertAdjacentHTML('beforeend',
-        i % 2 ? paws(3) : cat('cat-loaf', 'cat-loaf'));
+      const [id, cls] = POSES[i % POSES.length];
+      leg.insertAdjacentHTML('beforeend', cat(id, cls) + paws(3));
     });
   };
   decorate();
