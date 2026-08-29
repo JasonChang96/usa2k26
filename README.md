@@ -33,8 +33,12 @@ node scripts/build.mjs     # regenerate js/data.js
 - **Photo upload** — a Google Apps Script web app receives the files and writes them
   into the shared Drive folder. See `docs/drive-setup.md`.
 - **Park alerts** — live from the National Park Service API for Grand Teton, Yellowstone,
-  Glacier, Mount Rainier and North Cascades. Closures and warnings appear both in the
-  header panel and on the day pages for the parks that day touches. It uses NPS's shared
+  Glacier and Mount Rainier. Closures and warnings appear both in the header panel and on
+  the day pages for the parks that day touches. Each alert is scored for relevance:
+  anything about roads and access, anything about weather or fire, and anything naming a
+  stop that is actually in `data/*.json` is surfaced; campgrounds, permits, fishing and
+  wildlife notices are folded into a collapsed "other notices" list. Tune the weights in
+  `score()` in `js/alerts.js`. It uses NPS's shared
   `DEMO_KEY`, cached three hours per browser. If that ever rate-limits, get a free key at
   <https://www.nps.gov/subjects/developer/get-started.htm> and run this in the console:
   `localStorage.setItem('usa2k26.npskey','YOUR_KEY')`
