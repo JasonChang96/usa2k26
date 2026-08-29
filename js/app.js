@@ -205,11 +205,16 @@ function renderSection(id) {
     </h2>
     ${s.blurb ? `<p class="lede">${s.blurb}</p>` : ''}
     <div class="gallery">
-      ${(s.stops || []).map(st => `
-        <figure class="pola">
-          <div class="frame"><img data-q="${st.q}" alt=""></div>
+      ${(() => {
+        const seen = {};
+        return (s.stops || []).map(st => {
+          const nth = seen[st.q] = (seen[st.q] ?? -1) + 1;
+          return `<figure class="pola">
+          <div class="frame"><img data-q="${st.q}" data-nth="${nth}" alt=""></div>
           <figcaption>${st.name}</figcaption>
-        </figure>`).join('')}
+        </figure>`;
+        }).join('');
+      })()}
     </div>
     <p class="credit">Photos from Wikimedia Commons — indicative, not ours.</p>
     <div class="h-sec">How close it all is</div>

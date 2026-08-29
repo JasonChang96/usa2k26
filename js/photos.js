@@ -58,7 +58,11 @@ const Photos = (() => {
   }
 
   async function fill(el) {
-    const [p] = await search(el.dataset.q, 1);
+    /* Two stops in a section can share a search phrase; nth walks further down
+       the results so they do not end up showing the same picture. */
+    const nth = +(el.dataset.nth || 0);
+    const results = await search(el.dataset.q, nth + 1);
+    const p = results[nth] || results[0];
     if (!p) return;
     if (el.tagName === 'IMG') { el.src = p.src; el.alt = el.dataset.q; }
     else el.style.backgroundImage = `url("${p.src}")`;
