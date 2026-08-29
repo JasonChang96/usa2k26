@@ -10,7 +10,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Karla:wght@400;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
-<link rel="stylesheet" href="css/app.css?v=mtee6r98">
+<link rel="stylesheet" href="css/app.css?v=mtej3vjp">
 </head>
 <body>
 
@@ -29,6 +29,11 @@
       <summary>Weather — next 7 days</summary>
       <div class="wx" id="wx"><p class="wx-fail">Loading…</p></div>
       <p class="wx-note">Live forecast from today, not the trip dates.</p>
+    </details>
+    <details class="wx-wrap" id="alerts-wrap">
+      <summary>Park alerts &amp; road closures <b id="alertcount"></b></summary>
+      <div class="alerts" id="alerts"><p class="anone">Loading…</p></div>
+      <p class="wx-note">Live from the National Park Service.</p>
     </details>
   </section>
 
@@ -69,13 +74,14 @@
 </div>
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-<script src="js/data.js?v=mtee6r98"></script>
-<script src="js/photos.js?v=mtee6r98"></script>
-<script src="js/drive.js?v=mtee6r98"></script>
-<script src="js/now.js?v=mtee6r98"></script>
-<script src="js/leaves.js?v=mtee6r98"></script>
-<script src="js/cats.js?v=mtee6r98"></script>
-<script src="js/app.js?v=mtee6r98"></script>
-<script src="js/nav.js?v=mtee6r98"></script>
+<script src="js/data.js?v=mtej3vjp"></script>
+<script src="js/photos.js?v=mtej3vjp"></script>
+<script src="js/drive.js?v=mtej3vjp"></script>
+<script src="js/now.js?v=mtej3vjp"></script>
+<script src="js/alerts.js?v=mtej3vjp"></script>
+<script src="js/leaves.js?v=mtej3vjp"></script>
+<script src="js/cats.js?v=mtej3vjp"></script>
+<script src="js/app.js?v=mtej3vjp"></script>
+<script src="js/nav.js?v=mtej3vjp"></script>
 </body>
 </html>

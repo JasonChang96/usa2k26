@@ -30,5 +30,11 @@ node scripts/build.mjs     # regenerate js/data.js
   Nothing is stored in this repo. They are indicative reference shots, not ours.
 - **Maps** — Leaflet with CARTO basemap tiles. Coordinates come from OpenStreetMap's
   Nominatim geocoder at build time.
-- **Google Drive upload** — see `docs/drive-setup.md`. The OAuth client ID lives in
-  the browser's localStorage, never in this repo.
+- **Photo upload** — a Google Apps Script web app receives the files and writes them
+  into the shared Drive folder. See `docs/drive-setup.md`.
+- **Park alerts** — live from the National Park Service API for Grand Teton, Yellowstone,
+  Glacier, Mount Rainier and North Cascades. Closures and warnings appear both in the
+  header panel and on the day pages for the parks that day touches. It uses NPS's shared
+  `DEMO_KEY`, cached three hours per browser. If that ever rate-limits, get a free key at
+  <https://www.nps.gov/subjects/developer/get-started.htm> and run this in the console:
+  `localStorage.setItem('usa2k26.npskey','YOUR_KEY')`

@@ -129,6 +129,9 @@ function renderDay(n) {
         ? `<a href="${d.stay.link}" target="_blank" rel="noopener">${d.stay.name} ↗</a>`
         : d.stay.name}${d.stay.meta ? `<small>${d.stay.meta}</small>` : ''}</dd></dl>` : ''}
     </div>
+    ${Alerts.parksForDay(d.n) ? `
+      <div class="h-sec">Park alerts today</div>
+      <div class="alerts" id="dayalerts"><p class="anone">Checking the park service…</p></div>` : ''}
     <div class="h-sec">The day on a map</div>
     <div class="mapbox" id="daymap"></div>
     <div class="h-sec">Sections</div>
@@ -149,6 +152,8 @@ function renderDay(n) {
         </div>
       </button>`));
   });
+  const parks = Alerts.parksForDay(d.n);
+  if (parks) Alerts.mount(document.getElementById('dayalerts'), parks);
   mountMap('daymap',
     d.segments.flatMap((sg, i) => segPoints(sg).map(p => ({ ...p, label: i + 1 }))),
     { line: true });
