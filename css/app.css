@@ -271,3 +271,78 @@ footer{text-align:center;font-size:10px;letter-spacing:.18em;text-transform:uppe
 .wx-note,.wx-fail{text-align:center;font-size:10px;color:var(--ink-faint);margin:8px 0 0}
 @media(min-width:620px){.wx{grid-template-columns:1fr 1fr}}
 @media(max-width:400px){.clock .tm{font-size:29px}}
+
+/* ---------- scrapbook: paper, tape, stitching ---------- */
+body{
+  background-image:
+    radial-gradient(circle at 18% 12%,rgba(255,255,255,.55),transparent 45%),
+    radial-gradient(circle at 82% 78%,rgba(214,200,175,.35),transparent 50%),
+    radial-gradient(rgba(160,142,110,.13) 1px,transparent 1px);
+  background-size:auto,auto,22px 22px;
+}
+/* washi tape, reusable */
+.tape{
+  position:absolute;width:74px;height:22px;background:var(--tape);
+  border-radius:2px;box-shadow:0 1px 2px rgba(60,48,30,.12);
+  mask-image:linear-gradient(90deg,transparent 0,#000 5px,#000 calc(100% - 5px),transparent 100%);
+}
+.day,.seg,.fact,.wcard,.clock{position:relative}
+.day{transform:rotate(-.25deg)}
+.day:nth-child(even){transform:rotate(.3deg)}
+.seg:nth-child(odd){transform:rotate(-.3deg)}
+.seg:nth-child(even){transform:rotate(.25deg)}
+.seg:hover{transform:translateY(-2px) rotate(0deg)}
+/* stitched inner border on the cards */
+.seg:before,.wcard:before,.clock:before{
+  content:"";position:absolute;inset:5px;border-radius:9px;
+  border:1px dashed rgba(160,142,110,.42);pointer-events:none;
+}
+.day .thumb{border:3px solid #fff;box-shadow:0 2px 3px rgba(60,48,30,.13),0 10px 20px -14px rgba(60,48,30,.5)}
+.hero{border:5px solid #fff}
+.leg:before,.leg:after{border-top:1px dashed var(--line);background:none;height:0}
+
+/* ---------- cats + pawprints ---------- */
+.cat{display:block;pointer-events:none}
+.cat use{transform-origin:center}
+.cat-peek{
+  position:absolute;left:50%;bottom:-16px;transform:translateX(-50%);
+  width:96px;height:61px;z-index:2;
+}
+.masthead{position:relative;padding-bottom:34px}
+.masthead .rule{margin-bottom:2px}
+.cat-loaf{width:88px;height:52px;flex:0 0 auto;margin-left:6px}
+.cat-flop{width:112px;height:51px;margin:0 auto 10px}
+footer{position:relative}
+
+.pawtrail{display:flex;align-items:center;gap:7px;flex:0 0 auto;margin-left:8px}
+.paw{
+  width:13px;height:13px;color:var(--ink-faint);opacity:.5;
+  transform:rotate(calc(18deg - var(--i) * 16deg)) translateY(calc(var(--i) * -3px));
+}
+.leg{gap:10px}
+@media(max-width:520px){
+  .cat-loaf{width:64px;height:38px}
+  .cat-peek{width:78px;height:50px;bottom:-13px}
+  .paw{width:11px;height:11px}
+}
+
+/* tape holding the day photos down */
+.day .thumb:after{
+  content:"";position:absolute;top:-7px;left:-14px;width:52px;height:17px;
+  background:var(--tape);transform:rotate(-38deg);border-radius:1px;
+  box-shadow:0 1px 2px rgba(60,48,30,.12);
+  mask-image:linear-gradient(90deg,transparent 0,#000 4px,#000 calc(100% - 4px),transparent 100%);
+}
+.day .num{z-index:2}
+/* photo corners on the hero */
+.hero:before,.hero:after{
+  content:"";position:absolute;width:26px;height:26px;z-index:2;
+  border:0 solid rgba(74,59,46,.28);
+}
+.hero:before{top:6px;left:6px;border-top-width:2px;border-left-width:2px}
+.hero:after{top:6px;right:6px;border-top-width:2px;border-right-width:2px}
+/* a torn top edge on the section cards */
+.seg{
+  background-image:linear-gradient(var(--card),var(--card));
+  border-top:2px solid rgba(255,255,255,.9);
+}
