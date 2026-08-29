@@ -5,20 +5,34 @@
 
    Execute as:      Me
    Who has access:  Anyone
+
+   The upload link is published in the site's source, so this script is the only
+   thing standing between that link and the folder. It can ONLY create files —
+   never read, never delete — and it refuses anything that is not an image or a
+   video, anything oversized, and anything past a daily ceiling.
 */
 
-var FOLDER_ID = '1G9g5oNrdhP0jK8dQS-z9Xugcw5ypgU1q';   // "Photo Dump"
+var FOLDER_ID  = '1G9g5oNrdhP0jK8dQS-z9Xugcw5ypgU1q';   // "Photo Dump"
+var MAX_BYTES  = 25 * 1024 * 1024;
+var MAX_PER_DAY = 400;
 
 function doPost(e) {
   try {
     var p = JSON.parse(e.postData.contents);
     if (!p.data) return reply({ ok: false, error: 'no file data' });
 
-    var blob = Utilities.newBlob(
-      Utilities.base64Decode(p.data),
-      p.type || 'application/octet-stream',
-      sanitise(p.name)
-    );
+    var type = String(p.type || '');
+    if (!/^(image|video)\//.test(type))
+      return reply({ ok: false, error: 'only photos and videos' });
+
+    var bytes = Utilities.base64Decode(p.data);
+    if (bytes.length > MAX_BYTES)
+      return reply({ ok: false, error: 'file too big (max 25MB)' });
+
+    if (!underDailyCap())
+      return reply({ ok: false, error: 'daily upload limit reached — tell Jason' });
+
+    var blob = Utilities.newBlob(bytes, type, sanitise(p.name));
     var file = DriveApp.getFolderById(FOLDER_ID).createFile(blob);
     return reply({ ok: true, id: file.getId(), name: file.getName() });
   } catch (err) {
@@ -28,8 +42,17 @@ function doPost(e) {
 
 /* Lets the app check the endpoint is alive before anyone uploads. */
 function doGet() {
-  var folder = DriveApp.getFolderById(FOLDER_ID);
-  return reply({ ok: true, folder: folder.getName() });
+  return reply({ ok: true, folder: DriveApp.getFolderById(FOLDER_ID).getName() });
+}
+
+/* A runaway script or a found link cannot quietly fill the Drive overnight. */
+function underDailyCap() {
+  var props = PropertiesService.getScriptProperties();
+  var today = Utilities.formatDate(new Date(), 'UTC', 'yyyyMMdd');
+  var count = props.getProperty('day') === today ? Number(props.getProperty('n')) : 0;
+  if (count >= MAX_PER_DAY) return false;
+  props.setProperties({ day: today, n: String(count + 1) });
+  return true;
 }
 
 /* Keep the uploader's name but stamp it, so two phones cannot collide. */

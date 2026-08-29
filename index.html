@@ -10,7 +10,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Karla:wght@400;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
-<link rel="stylesheet" href="css/app.css?v=mte9v42q">
+<link rel="stylesheet" href="css/app.css?v=mteabasj">
 </head>
 <body>
 
@@ -38,15 +38,17 @@
         <div class="dropzone" id="dz">
           <div class="mark">🖼</div>
           <h3>Trip photos</h3>
-          <p>Straight into the shared Google Drive folder.</p>
+          <p>Straight into the shared Google Drive folder. No sign-in needed.</p>
           <button class="btn" id="pick">Upload photos</button>
           <input type="file" id="file" accept="image/*,video/*" multiple hidden>
           <div class="queue" id="queue"></div>
         </div>
         <details class="setup" id="setup">
-          <summary>Set up uploads</summary>
-          <p>Paste the upload link Jason set up. One time per phone — no Google account needed.</p>
-          <input id="cfg-endpoint" placeholder="https://script.google.com/macros/s/…/exec" autocomplete="off">
+          <summary>Uploading somewhere else?</summary>
+          <p>Photos already go to the trip folder — you do not need to touch this.
+             Paste a different upload link only if Jason has given you one. Leave it
+             empty and save to go back to the default.</p>
+          <input id="cfg-endpoint" placeholder="Leave empty to use the trip folder" autocomplete="off">
           <button class="btn ghost" id="save-cfg">Save</button>
           <p id="cfg-note"></p>
         </details>
@@ -58,9 +60,9 @@
 </div>
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-<script src="js/data.js?v=mte9v42q"></script>
-<script src="js/photos.js?v=mte9v42q"></script>
-<script src="js/drive.js?v=mte9v42q"></script>
-<script src="js/app.js?v=mte9v42q"></script>
+<script src="js/data.js?v=mteabasj"></script>
+<script src="js/photos.js?v=mteabasj"></script>
+<script src="js/drive.js?v=mteabasj"></script>
+<script src="js/app.js?v=mteabasj"></script>
 </body>
 </html>

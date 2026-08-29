@@ -2,9 +2,19 @@
    Jason and writes into the shared folder, so nobody uploading needs a Google
    account of their own. The endpoint URL lives in localStorage, not the repo. */
 (() => {
+  /* Baked in so nobody has to configure anything. It is a write-only drop box:
+     the script behind it can only create files, never read or delete. A value in
+     localStorage overrides it, so the endpoint can be swapped without a redeploy. */
+  const DEFAULT_ENDPOINT =
+    'https://script.google.com/macros/s/AKfycbxl8c2DnVLfAWnYixyKt2TBtt0geeOQP5ks--eKhxpeJw31KNJc4wiQZHHsJ4xGhDytOA/exec';
+
   const CFG = {
-    get url() { return localStorage.getItem('usa2k26.endpoint') || ''; },
-    set(u) { localStorage.setItem('usa2k26.endpoint', u.trim()); }
+    get url() { return localStorage.getItem('usa2k26.endpoint') || DEFAULT_ENDPOINT; },
+    set(u) {
+      const v = u.trim();
+      v ? localStorage.setItem('usa2k26.endpoint', v)
+        : localStorage.removeItem('usa2k26.endpoint');
+    }
   };
   const MAX = 25 * 1024 * 1024;   // Apps Script chokes well before this
 
@@ -87,7 +97,7 @@
   dz.addEventListener('drop', e => send([...e.dataTransfer.files]));
 
   const field = document.getElementById('cfg-endpoint');
-  field.value = CFG.url;
+  field.value = localStorage.getItem('usa2k26.endpoint') || '';
   document.getElementById('save-cfg').onclick = async () => {
     CFG.set(field.value);
     reflect();
