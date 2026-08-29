@@ -417,7 +417,9 @@ footer{position:relative}
 
 /* ---------- falling leaves ---------- */
 .leaves{position:fixed;inset:0;z-index:0;pointer-events:none;overflow:hidden}
-.wrap,.jumptab,.drawer,.totop,.scrim{position:relative;z-index:1}
+/* Only the page column needs lifting above the leaves — the fixed
+   navigation already carries its own higher z-index. */
+.wrap{position:relative;z-index:1}
 .leaf{
   position:absolute;top:-8vh;width:var(--sz);height:var(--sz);color:var(--col);
   opacity:var(--op);animation:fall var(--dur) linear var(--delay) infinite;
@@ -429,7 +431,9 @@ footer{position:relative}
   100% {transform:translate3d(0,115vh,0) rotate(360deg)}
 }
 /* pressed leaves tucked into the corners, like a scrapbook */
-.leaf.pressed{animation:none;opacity:.3;top:auto}
+.leaf.pressed{animation:none;opacity:.8;top:auto}
+/* No animation: scatter them down the page instead of parking them off-screen. */
 @media(prefers-reduced-motion:reduce){
-  .leaf{animation:none;opacity:.18}
+  .leaf{animation:none;top:var(--top,20vh);opacity:.72}
+  .leaf.pressed{top:auto}
 }
