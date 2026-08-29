@@ -1,121 +1,106 @@
-/* Google Drive upload. OAuth client id lives in localStorage — no secrets in this repo. */
+/* Photo upload. Files are POSTed to a Google Apps Script web app that runs as
+   Jason and writes into the shared folder, so nobody uploading needs a Google
+   account of their own. The endpoint URL lives in localStorage, not the repo. */
 (() => {
   const CFG = {
-    get client() { return localStorage.getItem('usa2k26.client') || ''; },
-    get folder() { return localStorage.getItem('usa2k26.folder') || ''; },
-    set(c, f) {
-      localStorage.setItem('usa2k26.client', c.trim());
-      localStorage.setItem('usa2k26.folder', f.trim());
-    }
+    get url() { return localStorage.getItem('usa2k26.endpoint') || ''; },
+    set(u) { localStorage.setItem('usa2k26.endpoint', u.trim()); }
   };
-  const SCOPE = 'https://www.googleapis.com/auth/drive.file';
-  let token = null;
+  const MAX = 25 * 1024 * 1024;   // Apps Script chokes well before this
 
-  const dz = document.getElementById('dz');
-  const input = document.getElementById('file');
-  const queue = document.getElementById('queue');
-  const note = document.getElementById('cfg-note');
+  const dz     = document.getElementById('dz');
+  const input  = document.getElementById('file');
+  const queue  = document.getElementById('queue');
+  const note   = document.getElementById('cfg-note');
+  const pick   = document.getElementById('pick');
 
-  function line(name) {
+  const line = name => {
     const row = document.createElement('div');
     row.innerHTML = `<span>${name}</span><span class="state">…</span>`;
     queue.prepend(row);
     return row.querySelector('.state');
-  }
+  };
 
-  function auth() {
-    return new Promise((resolve, reject) => {
-      if (token && token.exp > Date.now() + 60000) return resolve(token.value);
-      if (!CFG.client) return reject(new Error('no-client'));
-      if (!window.google?.accounts?.oauth2) return reject(new Error('Google sign-in did not load.'));
-      const tc = google.accounts.oauth2.initTokenClient({
-        client_id: CFG.client,
-        scope: SCOPE,
-        callback: r => {
-          if (r.error) return reject(new Error(r.error));
-          token = { value: r.access_token, exp: Date.now() + (r.expires_in - 60) * 1000 };
-          resolve(token.value);
-        }
-      });
-      tc.requestAccessToken({ prompt: token ? '' : 'consent' });
+  const toBase64 = file => new Promise((res, rej) => {
+    const r = new FileReader();
+    r.onload = () => res(r.result.split(',')[1]);
+    r.onerror = () => rej(new Error('could not read file'));
+    r.readAsDataURL(file);
+  });
+
+  async function upload(file) {
+    const body = JSON.stringify({
+      name: file.name,
+      type: file.type || 'application/octet-stream',
+      data: await toBase64(file)
     });
-  }
-
-  async function upload(file, access) {
-    const meta = { name: file.name, mimeType: file.type || 'application/octet-stream' };
-    if (CFG.folder) meta.parents = [CFG.folder];
-    const body = new FormData();
-    body.append('metadata', new Blob([JSON.stringify(meta)], { type: 'application/json' }));
-    body.append('file', file);
-    const r = await fetch(
-      'https://www.googleapis.com/upload/drive/v3/files?uploadType=multipart&supportsAllDrives=true',
-      { method: 'POST', headers: { Authorization: 'Bearer ' + access }, body });
-    if (!r.ok) throw new Error((await r.json())?.error?.message || r.statusText);
-    return r.json();
+    /* text/plain keeps this a "simple" request — Apps Script cannot answer a
+       CORS preflight, so anything that triggers one fails outright. */
+    const r = await fetch(CFG.url, {
+      method: 'POST', body, headers: { 'Content-Type': 'text/plain;charset=utf-8' }
+    });
+    const out = await r.json();
+    if (!out.ok) throw new Error(out.error || 'rejected');
+    return out;
   }
 
   async function send(files) {
     if (!files.length) return;
-    let access;
-    try {
-      access = await auth();
-    } catch (e) {
-      document.getElementById('setup').open = true;
-      note.textContent = e.message === 'no-client'
-        ? 'Add an OAuth client ID below before uploading.'
-        : 'Sign-in failed: ' + e.message;
-      note.className = 'err';
-      return;
-    }
+    if (!CFG.url) return prompt();
     for (const f of files) {
       const state = line(f.name);
-      try {
-        await upload(f, access);
-        state.textContent = CFG.folder ? 'in the folder' : 'in My Drive';
-        state.className = 'state ok';
+      if (f.size > MAX) {
+        state.textContent = 'too big (max 25MB)';
+        state.className = 'state err';
+        continue;
       }
-      catch (e) { state.textContent = e.message.slice(0, 40); state.className = 'state err'; }
+      try {
+        await upload(f);
+        state.textContent = 'uploaded';
+        state.className = 'state ok';
+      } catch (e) {
+        state.textContent = e.message.slice(0, 48);
+        state.className = 'state err';
+      }
     }
   }
 
-  const pickBtn = document.getElementById('pick');
+  function prompt() {
+    document.getElementById('setup').open = true;
+    note.textContent = 'Not connected yet — paste the upload link below.';
+    note.className = 'err';
+    document.getElementById('cfg-endpoint').focus();
+  }
 
   function reflect() {
-    const ready = !!CFG.client;
-    pickBtn.textContent = ready ? 'Upload photos' : 'Connect Google Drive first';
-    dz.classList.toggle('unset', !ready);
+    pick.textContent = CFG.url ? 'Upload photos' : 'Connect uploads first';
+    dz.classList.toggle('unset', !CFG.url);
   }
 
-  pickBtn.onclick = () => {
-    if (!CFG.client) {
-      document.getElementById('setup').open = true;
-      note.textContent = 'Not connected yet. Paste an OAuth client ID below, then upload.';
-      note.className = 'err';
-      document.getElementById('cfg-client').focus();
-      return;
-    }
-    input.click();
-  };
+  pick.onclick = () => CFG.url ? input.click() : prompt();
   input.onchange = () => { send([...input.files]); input.value = ''; };
 
   ['dragenter', 'dragover'].forEach(ev =>
     dz.addEventListener(ev, e => { e.preventDefault(); dz.classList.add('hot'); }));
   ['dragleave', 'drop'].forEach(ev =>
     dz.addEventListener(ev, e => { e.preventDefault(); dz.classList.remove('hot'); }));
-  dz.addEventListener('drop', e => {
-    if (!CFG.client) return pickBtn.onclick();
-    send([...e.dataTransfer.files]);
-  });
+  dz.addEventListener('drop', e => send([...e.dataTransfer.files]));
 
-  const ci = document.getElementById('cfg-client');
-  const fi = document.getElementById('cfg-folder');
-  ci.value = CFG.client; fi.value = CFG.folder;
-  document.getElementById('save-cfg').onclick = () => {
-    CFG.set(ci.value, fi.value);
-    token = null;
-    note.textContent = 'Saved on this device.';
-    note.className = 'ok';
+  const field = document.getElementById('cfg-endpoint');
+  field.value = CFG.url;
+  document.getElementById('save-cfg').onclick = async () => {
+    CFG.set(field.value);
     reflect();
+    note.textContent = 'Checking…';
+    note.className = '';
+    try {
+      const out = await (await fetch(CFG.url)).json();
+      note.textContent = out.ok ? `Connected to "${out.folder}".` : 'Endpoint replied with an error.';
+      note.className = out.ok ? 'ok' : 'err';
+    } catch {
+      note.textContent = 'Saved, but could not reach that link. Check it ends in /exec.';
+      note.className = 'err';
+    }
   };
 
   reflect();

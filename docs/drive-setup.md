@@ -1,39 +1,40 @@
-# Photo upload → Google Drive
+# Photo upload — setup
 
-The Photos tab uploads straight into a Drive folder. It needs a one-time OAuth client,
-because Google will not let a web page touch Drive without one. Ten minutes, once.
+Uploads go through a **Google Apps Script web app** that runs as Jason and writes into
+the shared "Photo Dump" folder. That means **nobody uploading needs a Google account** —
+not Gmail, not anything. They open the link and tap.
 
-## 1. Make the Drive folder
+No Google Cloud project, no OAuth client, no API keys, nothing stored in this repo.
 
-In Google Drive, create the folder (e.g. "USA 2K26 photos") and share it with whoever
-is on the trip, with **Editor** access. Open it and copy the id out of the address bar —
-the part after `/folders/`.
+## One-time setup (Jason, about five minutes)
 
-## 2. Create the OAuth client
+1. Go to <https://script.google.com> and click **New project**.
+2. Delete whatever is in the editor and paste in the whole of
+   `docs/apps-script/Code.gs` from this repo.
+3. Check the `FOLDER_ID` at the top matches the Drive folder you want. It is the part of
+   the folder's URL after `/folders/`.
+4. Click **Deploy → New deployment**. Choose type **Web app**. Set:
+   - **Execute as:** Me
+   - **Who has access:** Anyone
+5. Click Deploy. Google will ask you to authorise it — approve. On the "Google hasn't
+   verified this app" screen, click **Advanced → Go to (project name)**. This warning is
+   about your own script, which is why it is unverified.
+6. Copy the **Web app URL**. It ends in `/exec`.
+7. Open the trip app's Photos tab → **Set up uploads** → paste the URL → Save. It will
+   confirm by naming the folder it reached.
 
-1. <https://console.cloud.google.com/> → create a project (any name).
-2. **APIs & Services → Library** → search **Google Drive API** → Enable.
-3. **APIs & Services → OAuth consent screen** → External → fill in the app name and your
-   email. Under **Test users**, add every Google account that will upload photos.
-   (Leave it in Testing mode — no verification needed for a handful of people.)
-4. **APIs & Services → Credentials** → **Create credentials → OAuth client ID** →
-   **Web application**.
-5. Under **Authorised JavaScript origins**, add wherever the app is served from:
-   - `https://jasonchang96.github.io` for the published site
-   - `http://localhost:8899` if you also run it locally
-6. Copy the client ID.
+Then send everyone the same `/exec` link, or just tell them to paste it in once.
 
-## 3. Paste it into the app
+## Changing it later
 
-Photos tab → **Set up / change folder** → paste the client ID and the folder id → Save.
-This is stored in that browser only, so each person does it once on their own phone.
+Editing the script requires **Deploy → Manage deployments → edit → New version**, or the
+live URL keeps serving the old code.
 
-The app asks for the `drive.file` scope, which only lets it see files it created itself —
-it cannot read the rest of anyone's Drive.
+## Limits and trade-offs
 
-## If uploads fail
-
-- **"access blocked"** — the account is not on the Test users list in step 3.
-- **"origin mismatch"** — the address in the browser bar is not in step 5. It must match
-  exactly, protocol included.
-- **404 on the folder** — the folder id is wrong, or the account has no Editor access.
+- **25MB per file.** Files are base64-encoded into the request body, and Apps Script will
+  not take much more. Phone photos are fine; long videos are not.
+- **The link is a write-only drop box, and anyone holding it can use it.** It cannot read
+  or delete anything in your Drive — the script only ever calls `createFile`. If the link
+  leaks and someone dumps junk in, delete the deployment and make a new one.
+- Every upload is renamed with a UTC timestamp so two phones cannot overwrite each other.

@@ -10,7 +10,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Karla:wght@400;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
-<link rel="stylesheet" href="css/app.css?v=mte9pelp">
+<link rel="stylesheet" href="css/app.css?v=mte9v42q">
 </head>
 <body>
 
@@ -44,15 +44,9 @@
           <div class="queue" id="queue"></div>
         </div>
         <details class="setup" id="setup">
-          <summary>Set up / change folder</summary>
-          <ol>
-            <li>Google Cloud console → <b>APIs &amp; Services</b> → enable <b>Google Drive API</b>.</li>
-            <li><b>Credentials</b> → Create <b>OAuth client ID</b> → Web application.</li>
-            <li>Add this page's address under <b>Authorised JavaScript origins</b>.</li>
-            <li>Paste the client ID below. Open the Drive folder and copy the id out of its URL.</li>
-          </ol>
-          <input id="cfg-client" placeholder="OAuth client ID (…apps.googleusercontent.com)" autocomplete="off">
-          <input id="cfg-folder" placeholder="Drive folder ID (optional — blank uploads to My Drive)" autocomplete="off">
+          <summary>Set up uploads</summary>
+          <p>Paste the upload link Jason set up. One time per phone — no Google account needed.</p>
+          <input id="cfg-endpoint" placeholder="https://script.google.com/macros/s/…/exec" autocomplete="off">
           <button class="btn ghost" id="save-cfg">Save</button>
           <p id="cfg-note"></p>
         </details>
@@ -63,11 +57,10 @@
   <footer>Jason &amp; Alicia · SLC → Tetons → Yellowstone → Glacier → Rainier → Seattle → Vancouver</footer>
 </div>
 
-<script src="https://accounts.google.com/gsi/client" async defer></script>
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-<script src="js/data.js?v=mte9pelp"></script>
-<script src="js/photos.js?v=mte9pelp"></script>
-<script src="js/drive.js?v=mte9pelp"></script>
-<script src="js/app.js?v=mte9pelp"></script>
+<script src="js/data.js?v=mte9v42q"></script>
+<script src="js/photos.js?v=mte9v42q"></script>
+<script src="js/drive.js?v=mte9v42q"></script>
+<script src="js/app.js?v=mte9v42q"></script>
 </body>
 </html>
