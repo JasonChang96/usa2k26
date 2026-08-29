@@ -53,7 +53,7 @@ button{font-family:inherit;font-size:inherit;color:inherit;border:0;background:n
 .leg:before,.leg:after{content:"";flex:1;height:1px;background:var(--line)}
 
 .day{
-  display:grid;grid-template-columns:96px 1fr;gap:16px;align-items:stretch;
+  display:grid;grid-template-columns:132px 1fr;gap:18px;align-items:stretch;
   width:100%;text-align:left;padding:10px;margin-bottom:8px;border-radius:14px;
   transition:background .18s;
 }
@@ -64,8 +64,8 @@ button{font-family:inherit;font-size:inherit;color:inherit;border:0;background:n
 }
 .day .thumb img{width:100%;height:100%;object-fit:cover}
 .day .num{
-  position:absolute;left:6px;top:6px;width:22px;height:22px;border-radius:50%;
-  background:var(--card);color:var(--ink);font-size:10px;font-weight:700;
+  position:absolute;left:7px;top:7px;width:25px;height:25px;border-radius:50%;
+  background:var(--card);color:var(--ink);font-size:11px;font-weight:700;
   display:grid;place-items:center;box-shadow:var(--shadow);
 }
 .day .body{min-width:0;padding-top:2px}
@@ -79,7 +79,7 @@ button{font-family:inherit;font-size:inherit;color:inherit;border:0;background:n
 .back{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-faint);padding:14px 0 4px}
 .hero{
   position:relative;border-radius:16px;overflow:hidden;margin:6px 0 20px;
-  aspect-ratio:16/9;background:var(--paper-2);box-shadow:var(--shadow);
+  aspect-ratio:3/2;background:var(--paper-2);box-shadow:var(--shadow);
 }
 .hero img{width:100%;height:100%;object-fit:cover}
 .hero .cap{
@@ -116,29 +116,30 @@ button{font-family:inherit;font-size:inherit;color:inherit;border:0;background:n
 .seg h4{font-family:var(--serif);font-weight:500;font-size:19px;line-height:1.2;margin:0 0 3px}
 .seg .meta{font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--rust);margin-bottom:4px}
 .seg p{margin:0;font-size:13px;color:var(--ink-soft)}
-.seg .strip{display:flex;gap:5px;margin-top:10px}
+.seg .strip{display:flex;gap:7px;margin-top:12px}
 .seg .strip i{
-  flex:1;aspect-ratio:1;border-radius:6px;background:var(--paper-2) center/cover no-repeat;
+  flex:1;aspect-ratio:1;border-radius:8px;background:var(--paper-2) center/cover no-repeat;
+  max-width:110px;
 }
 
 /* ---------- photo grid / polaroids ---------- */
-.gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:16px;margin:6px 0 24px}
+.gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(215px,1fr));gap:20px;margin:8px 0 26px}
 .pola{
-  background:#fff;padding:8px 8px 42px;border-radius:3px;position:relative;
+  background:#fff;padding:11px 11px 48px;border-radius:3px;position:relative;
   box-shadow:0 1px 2px rgba(60,48,30,.1),0 10px 22px -14px rgba(60,48,30,.5);
 }
 .pola:nth-child(3n+1){transform:rotate(-1.1deg)}
 .pola:nth-child(3n+2){transform:rotate(.7deg)}
 .pola:nth-child(3n){transform:rotate(-.4deg)}
 .pola:before{
-  content:"";position:absolute;top:-9px;left:50%;transform:translateX(-50%) rotate(-2deg);
-  width:52px;height:18px;background:var(--tape);border-radius:1px;
+  content:"";position:absolute;top:-10px;left:50%;transform:translateX(-50%) rotate(-2deg);
+  width:64px;height:21px;background:var(--tape);border-radius:1px;
 }
 .pola .frame{aspect-ratio:1;background:var(--paper-2);overflow:hidden;border-radius:1px}
 .pola .frame img{width:100%;height:100%;object-fit:cover}
 .pola figcaption{
-  position:absolute;left:10px;right:10px;bottom:8px;font-family:var(--serif);
-  font-size:13px;line-height:1.2;color:var(--ink);
+  position:absolute;left:13px;right:13px;bottom:11px;font-family:var(--serif);
+  font-size:15px;line-height:1.22;color:var(--ink);
   display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;
 }
 
@@ -211,9 +212,11 @@ footer{text-align:center;font-size:10px;letter-spacing:.18em;text-transform:uppe
 
 @media(max-width:520px){
   .wrap{padding:0 15px 110px}
-  .day{grid-template-columns:78px 1fr;gap:13px}
+  .day{grid-template-columns:106px 1fr;gap:14px}
   .day h3{font-size:19px}
-  .gallery{grid-template-columns:1fr 1fr;gap:12px}
+  .gallery{grid-template-columns:1fr 1fr;gap:14px}
+  .pola{padding:8px 8px 42px}
+  .pola figcaption{font-size:13px;left:10px;right:10px;bottom:9px}
   .fact{grid-template-columns:64px 1fr}
 }
 
