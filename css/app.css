@@ -236,3 +236,38 @@ footer{text-align:center;font-size:10px;letter-spacing:.18em;text-transform:uppe
 .leaflet-control-attribution{font-size:9px;background:rgba(251,247,240,.8)}
 .leaflet-bar a{color:var(--ink)}
 .nomap{display:grid;place-items:center;height:100%;color:var(--ink-faint);font-size:12px;padding:20px;text-align:center}
+
+/* ---------- clocks + weather ---------- */
+.strip{margin:-4px 0 6px}
+.clocks{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.clock{
+  background:var(--card);border-radius:14px;padding:12px 14px;text-align:center;
+  box-shadow:var(--shadow);
+}
+.clock .zn{font-size:9px;letter-spacing:.24em;text-transform:uppercase;color:var(--rust)}
+.clock .tm{
+  font-family:var(--serif);font-weight:300;font-size:34px;line-height:1.05;
+  margin:2px 0 1px;font-variant-numeric:tabular-nums;
+}
+.clock .dy{font-size:11px;color:var(--ink-soft)}
+.clock .pl{font-size:9px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-faint);margin-top:5px}
+
+.wx-wrap{margin-top:10px}
+.wx-wrap summary{
+  cursor:pointer;text-align:center;font-size:10px;letter-spacing:.2em;
+  text-transform:uppercase;color:var(--ink-faint);padding:6px 0;
+}
+.wx{display:grid;gap:8px;margin-top:4px}
+.wcard{background:var(--card);border-radius:12px;padding:11px 13px;box-shadow:var(--shadow)}
+.wcard header{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:8px}
+.wname{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-soft)}
+.wnow{font-family:var(--serif);font-size:20px}
+.wweek{display:grid;grid-template-columns:repeat(7,1fr);gap:3px;text-align:center}
+.wd{display:grid;gap:1px;padding:4px 0;border-radius:7px}
+.wd:first-child{background:var(--paper-2)}
+.wdow{font-size:9px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-faint)}
+.wic{font-size:14px;line-height:1.3}
+.wmx{font-size:12px;font-variant-numeric:tabular-nums}
+.wx-note,.wx-fail{text-align:center;font-size:10px;color:var(--ink-faint);margin:8px 0 0}
+@media(min-width:620px){.wx{grid-template-columns:1fr 1fr}}
+@media(max-width:400px){.clock .tm{font-size:29px}}

@@ -10,7 +10,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Karla:wght@400;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
-<link rel="stylesheet" href="css/app.css?v=mteafz56">
+<link rel="stylesheet" href="css/app.css?v=mteai2x8">
 </head>
 <body>
 
@@ -22,6 +22,15 @@
     <div class="dates">25 Sep — 10 Oct 2026</div>
     <div class="rule"></div>
   </header>
+
+  <section class="strip">
+    <div class="clocks" id="clocks"></div>
+    <details class="wx-wrap">
+      <summary>Weather — next 7 days</summary>
+      <div class="wx" id="wx"><p class="wx-fail">Loading…</p></div>
+      <p class="wx-note">Live forecast from today, not the trip dates.</p>
+    </details>
+  </section>
 
   <nav class="tabs">
     <button data-tab="itinerary">Itinerary</button>
@@ -60,9 +69,10 @@
 </div>
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-<script src="js/data.js?v=mteafz56"></script>
-<script src="js/photos.js?v=mteafz56"></script>
-<script src="js/drive.js?v=mteafz56"></script>
-<script src="js/app.js?v=mteafz56"></script>
+<script src="js/data.js?v=mteai2x8"></script>
+<script src="js/photos.js?v=mteai2x8"></script>
+<script src="js/drive.js?v=mteai2x8"></script>
+<script src="js/now.js?v=mteai2x8"></script>
+<script src="js/app.js?v=mteai2x8"></script>
 </body>
 </html>
