@@ -1,0 +1,41 @@
+{
+  "n": 1,
+  "date": "2026-09-25",
+  "dow": "Fri",
+  "title": "Fly into Salt Lake City",
+  "region": "Utah",
+  "hero": "Salt Lake City Temple Square",
+  "summary": "Land in Salt Lake City, walk the city center, then drive north to Logan for the night.",
+  "drive": "Salt Lake City to Logan · 1h 20m · 130 km",
+  "stay": {
+    "name": "Airbnb #1 — Logan",
+    "meta": "1 night",
+    "link": "https://www.airbnb.com/rooms/922565824584368585"
+  },
+  "segments": [
+    {
+      "id": "d01s1",
+      "name": "Segment 1 — Salt Lake City sightseeing",
+      "blurb": "Arrival afternoon on foot around downtown Salt Lake City.",
+      "time": "12:00–4:00pm",
+      "map": { "center": "Temple Square, Salt Lake City, Utah", "zoom": 14 },
+      "stops": [
+        { "name": "Ensign Peak", "q": "Ensign Peak Salt Lake City", "note": "Short hike, skyline and valley overlook." },
+        { "name": "Utah State Capitol Building", "q": "Utah State Capitol", "note": "Hilltop capitol above downtown." },
+        { "name": "Temple Square", "q": "Salt Lake City Temple Square", "note": "Historic LDS temple complex, city center." }
+      ]
+    },
+    {
+      "id": "d01s2",
+      "name": "Segment 2 — Food and the drive to Logan",
+      "blurb": "Snack and dinner in Salt Lake City, then north to Logan.",
+      "time": "4:00–8:00pm",
+      "map": { "from": "Salt Lake City, Utah", "to": "Logan, Utah" },
+      "stops": [
+        { "name": "In-N-Out (afternoon snack)", "q": "In-N-Out Burger sign", "note": "Quick stop before the drive north." },
+        { "name": "Osteria Amore (dinner)", "q": "Salt Lake City downtown restaurant street", "note": "Dinner stop in Salt Lake City." },
+        { "name": "Logan Canyon", "q": "Logan Canyon Utah", "note": "Canyon drive into Logan, evening arrival." }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "n": 14,
+  "date": "2026-10-08",
+  "dow": "Thu",
+  "title": "Whistler back to Vancouver, via Capilano",
+  "region": "British Columbia",
+  "hero": "Capilano Suspension Bridge",
+  "summary": "Sea-to-Sky drive south from Whistler, a four-minute detour to Capilano, then hand back the car.",
+  "drive": "Whistler to North Vancouver to Vancouver · 2h 00m · 126 km",
+  "stay": {
+    "name": "Airbnb — Mount Pleasant, Vancouver",
+    "meta": "1 night",
+    "link": "https://www.airbnb.com.sg/rooms/5471844"
+  },
+  "segments": [
+    {
+      "id": "d14s1",
+      "name": "Segment 1 — Whistler village, last morning",
+      "blurb": "Short walk before checkout, no gondola this late in the season.",
+      "time": "8:00–9:30am",
+      "map": { "center": "Whistler Village, BC", "zoom": 15 },
+      "stops": [
+        { "name": "Whistler Village Stroll", "q": "Whistler Village", "note": "Pedestrian village, shops and coffee before departure." },
+        { "name": "Lost Lake Trail", "q": "Lost Lake Whistler", "note": "Flat 15-min loop if there's time." }
+      ]
+    },
+    {
+      "id": "d14s2",
+      "name": "Segment 2 — Sea-to-Sky Highway south",
+      "blurb": "Scenic descent with optional falls, mine, and provincial park stops.",
+      "time": "9:30–11:30am",
+      "map": { "from": "Whistler, BC", "to": "Squamish, BC" },
+      "stops": [
+        { "name": "Brandywine Falls", "q": "Brandywine Falls Provincial Park", "note": "70m waterfall, 5-min walk from parking." },
+        { "name": "Murrin Provincial Park", "q": "Murrin Provincial Park", "note": "Small lake and cliffs, quick leg-stretch." },
+        { "name": "Britannia Mine Museum", "q": "Britannia Mine Museum", "note": "Former copper mine, underground train tour." },
+        { "name": "Porteau Cove", "q": "Porteau Cove Provincial Park", "note": "Howe Sound viewpoint, popular photo stop." }
+      ]
+    },
+    {
+      "id": "d14s3",
+      "name": "Segment 3 — Capilano Suspension Bridge",
+      "blurb": "Four-minute detour off the direct route into Vancouver.",
+      "time": "12:00–1:30pm",
+      "map": { "from": "Squamish, BC", "to": "Capilano Suspension Bridge Park, North Vancouver" },
+      "stops": [
+        { "name": "Capilano Suspension Bridge", "q": "Capilano Suspension Bridge", "note": "137m suspension bridge over the canyon." },
+        { "name": "Cleveland Dam", "q": "Cleveland Dam North Vancouver", "note": "Nearby viewpoint over Capilano Lake, free." }
+      ]
+    },
+    {
+      "id": "d14s4",
+      "name": "Segment 4 — Return car, settle into Mount Pleasant",
+      "blurb": "Drop the rental by 8pm, dinner near the Airbnb.",
+      "time": "2:00–8:00pm",
+      "map": { "from": "Capilano Suspension Bridge Park, North Vancouver", "to": "Mount Pleasant, Vancouver" },
+      "stops": [
+        { "name": "Rental car return", "q": "Vancouver skyline", "note": "Must be back in Vancouver by 8:00pm — no car after this." },
+        { "name": "Main Street, Mount Pleasant", "q": "Mount Pleasant Vancouver", "note": "Dinner along Main St, walk from the Airbnb." }
+      ]
+    }
+  ]
+}

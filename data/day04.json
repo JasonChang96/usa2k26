@@ -1,0 +1,73 @@
+{
+  "n": 4,
+  "date": "2026-09-28",
+  "dow": "Mon",
+  "title": "Yellowstone South Entrance and the Lower Loop",
+  "region": "Wyoming",
+  "hero": "Grand Prismatic Spring",
+  "summary": "Enter Yellowstone from the south at dawn and drive the park's Lower 8 loop clockwise to West Yellowstone.",
+  "drive": "Jackson to West Yellowstone via Yellowstone South Entrance and Grand Loop Road · 6h · 300 km",
+  "stay": {
+    "name": "Airbnb #3 — West Yellowstone",
+    "meta": "1 night",
+    "link": "https://www.airbnb.com/rooms/1528338870934746802"
+  },
+  "segments": [
+    {
+      "id": "d04s1",
+      "name": "Segment 1 — South Entrance to West Thumb",
+      "blurb": "The park's south approach, two waterfalls, and the lake's geyser basin.",
+      "time": "6:00–9:30am",
+      "map": { "from": "Yellowstone South Entrance, Wyoming", "to": "West Thumb Geyser Basin, Yellowstone National Park" },
+      "stops": [
+        { "name": "South Entrance Station", "q": "Yellowstone South Entrance", "note": "Park boundary; drive north from Jackson begins here." },
+        { "name": "Moose Falls", "q": "Moose Falls Yellowstone", "note": "Small waterfall steps from the road." },
+        { "name": "Lewis Falls", "q": "Lewis Falls Yellowstone", "note": "Wide falls on the Lewis River." },
+        { "name": "Lewis Lake Picnic Area", "q": "Lewis Lake Yellowstone", "note": "Lakeside pull-off, good rest stop." },
+        { "name": "Grant Village Visitor Center", "q": "Grant Village Yellowstone", "note": "Visitor center on the south shore of Yellowstone Lake." },
+        { "name": "West Thumb Geyser Basin", "q": "West Thumb Geyser Basin", "note": "Geysers and hot springs right on the lakeshore." }
+      ]
+    },
+    {
+      "id": "d04s2",
+      "name": "Segment 2 — Old Faithful and the Upper Geyser Basin",
+      "blurb": "The park's most famous geyser and the road leading to it.",
+      "time": "9:30–11:30am",
+      "map": { "from": "West Thumb Geyser Basin, Yellowstone National Park", "to": "Old Faithful, Yellowstone National Park" },
+      "stops": [
+        { "name": "Continental Divide", "q": "Continental Divide Yellowstone National Park", "note": "Marked crossing on the road south of Old Faithful." },
+        { "name": "Kepler Cascades", "q": "Kepler Cascades", "note": "Roadside waterfall just before Old Faithful." },
+        { "name": "Old Faithful", "q": "Old Faithful geyser", "note": "Eruptions roughly every 90 minutes." }
+      ]
+    },
+    {
+      "id": "d04s3",
+      "name": "Segment 3 — Midway and Lower Geyser Basins",
+      "blurb": "The largest hot spring in the US, then a paint pot loop.",
+      "time": "11:30am–1:00pm",
+      "map": { "from": "Old Faithful, Yellowstone National Park", "to": "Fountain Paint Pots, Yellowstone National Park" },
+      "stops": [
+        { "name": "Grand Prismatic Spring", "q": "Grand Prismatic Spring", "note": "Largest hot spring in the US; rainbow-colored." },
+        { "name": "Firehole Lake Drive", "q": "Firehole Lake Drive Yellowstone", "note": "One-way loop past Great Fountain Geyser." },
+        { "name": "Fountain Paint Pots", "q": "Fountain Paint Pots", "note": "Boardwalk loop past mudpots and geysers." }
+      ]
+    },
+    {
+      "id": "d04s4",
+      "name": "Segment 4 — Canyon and the Grand Canyon of the Yellowstone",
+      "blurb": "Waterfall overlooks, then mud pots on the way toward the lake.",
+      "time": "1:00–5:30pm",
+      "map": { "from": "Fountain Paint Pots, Yellowstone National Park", "to": "West Yellowstone, Montana" },
+      "stops": [
+        { "name": "Virginia Cascade Drive", "q": "Virginia Cascade Yellowstone", "note": "One-way spur past a narrow waterfall." },
+        { "name": "Canyon Visitor Education Center", "q": "Canyon Visitor Education Center Yellowstone", "note": "Exhibits on the canyon and its geology." },
+        { "name": "Inspiration Point", "q": "Inspiration Point Yellowstone Grand Canyon", "note": "Wide view down the canyon." },
+        { "name": "Lower Falls (Artist Point)", "q": "Lower Falls Yellowstone", "note": "308-foot waterfall, the canyon's centerpiece." },
+        { "name": "Upper Falls View", "q": "Upper Falls Yellowstone", "note": "Smaller falls upstream of the Lower Falls." },
+        { "name": "Sulphur Caldron", "q": "Sulphur Caldron Yellowstone", "note": "One of the most acidic springs in the park." },
+        { "name": "Mud Volcano Trail — Black Dragon's Caldron", "q": "Mud Volcano Yellowstone", "note": "Boardwalk past bubbling mud pots and steam vents." },
+        { "name": "LeHardys Rapids", "q": "LeHardys Rapids", "note": "Rapids on the Yellowstone River; cutthroat trout run here." }
+      ]
+    }
+  ]
+}

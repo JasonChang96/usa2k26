@@ -1,0 +1,54 @@
+{
+  "n": 12,
+  "date": "2026-10-06",
+  "dow": "Tue",
+  "title": "Downtown Vancouver by SkyTrain",
+  "region": "Vancouver, British Columbia",
+  "hero": "Gastown steam clock",
+  "summary": "A full downtown Vancouver day on the SkyTrain and on foot: Gastown, Chinatown, Stanley Park, English Bay.",
+  "stay": {
+    "name": "Airbnb — Renfrew-Collingwood, East Vancouver",
+    "meta": "night 2 of 2, checks out tomorrow morning",
+    "link": "https://www.airbnb.com.sg/rooms/780351322964363373"
+  },
+  "segments": [
+    {
+      "id": "d12s1",
+      "name": "Segment 1 — Gastown and Chinatown",
+      "blurb": "26 minutes from Renfrew-Collingwood on the Expo Line.",
+      "time": "9:00am-1:00pm",
+      "map": { "center": "Gastown, Vancouver, BC", "zoom": 15 },
+      "stops": [
+        { "name": "Gastown Steam Clock", "q": "Gastown steam clock", "note": "Steam-powered clock, whistles every 15 minutes." },
+        { "name": "Revolver Coffee", "q": "Gastown steam clock", "note": "Specialty coffee roaster in Gastown." },
+        { "name": "Millennium Gate, Chinatown", "q": "Vancouver Chinatown", "note": "Historic gate, Canada's oldest Chinatown." },
+        { "name": "Phnom Penh", "q": "Vancouver Chinatown", "note": "Cambodian-Vietnamese, butter beef and wings." },
+        { "name": "Bao Bei", "q": "Vancouver Chinatown", "note": "Modern Chinese small plates." }
+      ]
+    },
+    {
+      "id": "d12s2",
+      "name": "Segment 2 — Stanley Park seawall and Coal Harbour",
+      "blurb": "Walk the waterfront from downtown into the park.",
+      "time": "2:00-5:00pm",
+      "map": { "center": "Stanley Park, Vancouver, BC", "zoom": 14 },
+      "stops": [
+        { "name": "Coal Harbour", "q": "Coal Harbour Vancouver", "note": "Marina walk between downtown and Stanley Park." },
+        { "name": "Stanley Park Seawall", "q": "Stanley Park seawall", "note": "8.8km waterfront path around the park." },
+        { "name": "Brockton Point Totem Poles", "q": "Stanley Park seawall", "note": "Indigenous totem pole collection." }
+      ]
+    },
+    {
+      "id": "d12s3",
+      "name": "Segment 3 — English Bay sunset and dinner",
+      "blurb": "Sunset on the beach, then dinner downtown.",
+      "time": "5:30-9:00pm",
+      "map": { "center": "English Bay, Vancouver, BC", "zoom": 15 },
+      "stops": [
+        { "name": "English Bay Beach", "q": "English Bay Vancouver", "note": "West End beach, sunset viewpoint." },
+        { "name": "A-maze-ing Laughter sculptures", "q": "A-maze-ing Laughter Vancouver", "note": "14 bronze laughing figures by Yue Minjun." },
+        { "name": "Joe Fortes", "q": "English Bay Vancouver", "note": "Classic Robson Street oyster bar." }
+      ]
+    }
+  ]
+}

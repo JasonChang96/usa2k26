@@ -1,0 +1,32 @@
+{
+  "n": 16,
+  "date": "2026-10-10",
+  "dow": "Sat",
+  "title": "Fly home from Seattle",
+  "region": "Washington",
+  "hero": "Seattle-Tacoma International Airport",
+  "summary": "Short day — airport shuttle from the DoubleTree, international check-in, 10:15am flight.",
+  "segments": [
+    {
+      "id": "d16s1",
+      "name": "Segment 1 — Hotel shuttle to Sea-Tac",
+      "blurb": "24-hour DoubleTree shuttle, roughly a 10-minute ride.",
+      "time": "7:00am",
+      "map": { "from": "DoubleTree by Hilton Seattle Airport", "to": "Seattle-Tacoma International Airport" },
+      "stops": [
+        { "name": "DoubleTree shuttle pickup", "q": "Seattle-Tacoma International Airport", "note": "Catch the shuttle by about 7:00am." }
+      ]
+    },
+    {
+      "id": "d16s2",
+      "name": "Segment 2 — International check-in and departure",
+      "blurb": "Two hours ahead of an international flight, wheels up 10:15am.",
+      "time": "7:30–10:15am",
+      "map": { "center": "Seattle-Tacoma International Airport", "zoom": 15 },
+      "stops": [
+        { "name": "International check-in", "q": "Seattle-Tacoma International Airport", "note": "At the terminal by about 7:30am, two hours before departure." },
+        { "name": "Flight departs", "q": "Seattle-Tacoma International Airport", "note": "10:15am departure." }
+      ]
+    }
+  ]
+}

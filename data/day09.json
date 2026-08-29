@@ -1,0 +1,66 @@
+{
+  "n": 9,
+  "date": "2026-10-03",
+  "dow": "Sat",
+  "title": "Leavenworth to Mount Rainier, Paradise sunset",
+  "region": "Washington",
+  "hero": "Reflection Lakes Mount Rainier",
+  "summary": "South over Blewett Pass and Chinook Pass, then an afternoon at Paradise ending with sunset at Reflection Lakes.",
+  "drive": "Leavenworth to Paradise · ~3h driving · 105 mi",
+  "stay": {
+    "name": "Airbnb #7 — Mount Rainier area",
+    "meta": "1 night",
+    "link": "https://www.airbnb.com.sg/rooms/1540024658555591588"
+  },
+  "segments": [
+    {
+      "id": "d09s1",
+      "name": "Segment 1 — Leavenworth to Chinook Pass via Blewett Pass",
+      "blurb": "US-97 over Blewett Pass, then west on SR-410 toward the park.",
+      "time": "8:00–10:30am",
+      "map": { "from": "Leavenworth, Washington", "to": "Chinook Pass, Washington" },
+      "stops": [
+        { "name": "Blewett Pass", "q": "Blewett Pass Washington", "note": "US-97 summit between the Wenatchee and Yakima valleys." },
+        { "name": "Naches", "q": "Naches Washington", "note": "Small town where SR-410 branches off toward Chinook Pass." },
+        { "name": "Chinook Pass Entrance Arch", "q": "Chinook Pass Washington", "note": "Log entrance arch marking the park boundary at the summit." }
+      ]
+    },
+    {
+      "id": "d09s2",
+      "name": "Segment 2 — Tipsoo Lake and Chinook Pass",
+      "blurb": "Short stop at the alpine lake; SR-410 can close for winter by late October.",
+      "time": "10:30–11:30am",
+      "map": { "center": "Tipsoo Lake, Washington", "zoom": 14 },
+      "stops": [
+        { "name": "Tipsoo Lake", "q": "Tipsoo Lake Mount Rainier", "note": "Short loop trail; Rainier reflected in the lake when calm." },
+        { "name": "Naches Peak Loop Trail", "q": "Naches Peak Loop Trail", "note": "3.2-mile loop from the pass, optional if time allows." },
+        { "name": "Cayuse Pass", "q": "Cayuse Pass Washington", "note": "Junction where SR-410 meets SR-123 heading south into the park." }
+      ]
+    },
+    {
+      "id": "d09s3",
+      "name": "Segment 3 — Paradise, Myrtle Falls, Nisqually Vista",
+      "blurb": "The two short, well-known trails from the Paradise parking lot.",
+      "time": "1:00–5:00pm",
+      "map": { "center": "Paradise, Mount Rainier National Park", "zoom": 15 },
+      "stops": [
+        { "name": "Henry M. Jackson Visitor Center", "q": "Henry M Jackson Visitor Center Paradise", "note": "Starting point for the Paradise trails." },
+        { "name": "Myrtle Falls", "q": "Myrtle Falls Mount Rainier", "note": "0.8-mile round trip on the Skyline Trail; the park's most photographed falls." },
+        { "name": "Nisqually Vista Trail", "q": "Nisqually Vista Trail Mount Rainier", "note": "1.2-mile loop over Nisqually Glacier and valley views." },
+        { "name": "Skyline Trail", "q": "Skyline Trail Mount Rainier", "note": "Longer option climbing above Myrtle Falls toward Panorama Point." }
+      ]
+    },
+    {
+      "id": "d09s4",
+      "name": "Segment 4 — Sunset at Reflection Lakes",
+      "blurb": "Short drive from Paradise for the classic mountain-in-lake sunset shot.",
+      "time": "6:00–7:30pm",
+      "map": { "center": "Reflection Lakes, Mount Rainier National Park", "zoom": 15 },
+      "stops": [
+        { "name": "Reflection Lakes", "q": "Reflection Lakes Mount Rainier", "note": "Pull-off on Stevens Canyon Road, a few minutes from Paradise." },
+        { "name": "Louise Lake", "q": "Louise Lake Mount Rainier", "note": "Smaller lake just past Reflection Lakes, fewer crowds." },
+        { "name": "Narada Falls", "q": "Stevens Canyon Road Mount Rainier", "note": "168-foot falls on the way back toward Paradise." }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "n": 10,
+  "date": "2026-10-04",
+  "dow": "Sun",
+  "title": "Rainier Sunrise to Seattle, Road Trip's End",
+  "region": "Washington",
+  "hero": "Pike Place Market Seattle",
+  "summary": "Sunrise at Rainier, then west to Seattle to return the car, say goodbye, and settle into Belltown.",
+  "drive": "Paradise to Seattle-Tacoma Airport · 2h 15m · 94 mi",
+  "stay": {
+    "name": "Airbnb #8 — Belltown, Seattle",
+    "meta": "1 night",
+    "link": "https://www.airbnb.com.sg/rooms/986282080847684009"
+  },
+  "segments": [
+    {
+      "id": "d10s1",
+      "name": "Segment 1 — Rainier sunrise, Reflection Lakes",
+      "blurb": "Early light on the mountain before the long drive out.",
+      "time": "6:00–7:30am",
+      "map": { "center": "Reflection Lakes, Mount Rainier National Park", "zoom": 15 },
+      "stops": [
+        { "name": "Reflection Lakes", "q": "Reflection Lakes Mount Rainier", "note": "Same pull-off as last night, best light at dawn." },
+        { "name": "Henry M. Jackson Visitor Center", "q": "Henry M Jackson Visitor Center Paradise", "note": "Coffee and restrooms before the drive down." },
+        { "name": "Narada Falls", "q": "Stevens Canyon Road Mount Rainier", "note": "Quick stop on the way down toward Longmire." }
+      ]
+    },
+    {
+      "id": "d10s2",
+      "name": "Segment 2 — Drive to Seattle via Longmire",
+      "blurb": "Down through the park's original headquarters and the small gateway towns.",
+      "time": "8:00–10:30am",
+      "map": { "from": "Paradise, Mount Rainier National Park", "to": "Seattle, Washington" },
+      "stops": [
+        { "name": "Longmire", "q": "Longmire Mount Rainier", "note": "Historic park headquarters and the National Park Inn." },
+        { "name": "Ashford", "q": "Ashford Washington", "note": "Small gateway town just outside the Nisqually entrance." },
+        { "name": "Eatonville", "q": "Eatonville Washington", "note": "Town along SR-7 on the way north to I-5." }
+      ]
+    },
+    {
+      "id": "d10s3",
+      "name": "Segment 3 — SEA airport, car return and goodbye",
+      "blurb": "Rental car back at Sea-Tac; Kuek and Kim fly home at 7:50pm.",
+      "time": "3:00–5:00pm",
+      "map": { "center": "Seattle-Tacoma International Airport, Washington", "zoom": 14 },
+      "stops": [
+        { "name": "Seattle-Tacoma International Airport", "q": "Seattle-Tacoma International Airport", "note": "Rental car return, then Kuek and Kim head to their 7:50pm flight." },
+        { "name": "SEA Rental Car Facility", "q": "Seattle-Tacoma International Airport", "note": "Consolidated rental car return center, connected by shuttle." },
+        { "name": "Link Light Rail, Airport Station", "q": "Sea-Tac Airport Link light rail station", "note": "Train option into downtown Seattle after the return." }
+      ]
+    },
+    {
+      "id": "d10s4",
+      "name": "Segment 4 — First evening in Belltown",
+      "blurb": "Just Jason and Alicia now; Pike Place is an 8–10 minute walk.",
+      "time": "6:00–9:00pm",
+      "map": { "center": "Belltown, Seattle, Washington", "zoom": 16 },
+      "stops": [
+        { "name": "Belltown", "q": "Belltown Seattle", "note": "Dense residential neighborhood just north of downtown." },
+        { "name": "Pike Place Market", "q": "Pike Place Market Seattle", "note": "8–10 minute walk south along 1st or Western Ave." },
+        { "name": "Olympic Sculpture Park", "q": "Olympic Sculpture Park Seattle", "note": "Waterfront park a short walk west, open until dusk." }
+      ]
+    }
+  ]
+}

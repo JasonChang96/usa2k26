@@ -1,0 +1,55 @@
+{
+  "n": 13,
+  "date": "2026-10-07",
+  "dow": "Wed",
+  "title": "Sea-to-Sky to Whistler",
+  "region": "British Columbia",
+  "hero": "Sea to Sky Gondola Squamish",
+  "summary": "Pick up the rental car in Vancouver, drive the Sea-to-Sky Highway, and spend the evening in Whistler village.",
+  "drive": "Vancouver to Whistler · about 2h with stops · 120 km",
+  "stay": {
+    "name": "Pinnacle Hotel Whistler",
+    "meta": "1 night"
+  },
+  "segments": [
+    {
+      "id": "d13s1",
+      "name": "Segment 1 — Rental car pickup and Shannon Falls",
+      "blurb": "All luggage in the car; no return to the Vancouver Airbnb.",
+      "time": "8:30-9:30am",
+      "map": { "from": "Vancouver, BC", "to": "Whistler, BC" },
+      "stops": [
+        { "name": "Rental car pickup, downtown Vancouver", "q": "Vancouver skyline", "note": "8:30am pickup; check out of the Airbnb first." },
+        { "name": "Shannon Falls Provincial Park", "q": "Shannon Falls Provincial Park", "note": "Free roadside waterfall stop, 15 minutes." },
+        { "name": "Howe Sound", "q": "Howe Sound British Columbia", "note": "Scenic fjord views along Highway 99." }
+      ]
+    },
+    {
+      "id": "d13s2",
+      "name": "Segment 2 — Sea to Sky Gondola, Squamish",
+      "blurb": "CAD $69pp, summit boardwalk and suspension bridge.",
+      "time": "9:30-11:30am",
+      "map": { "center": "Sea to Sky Gondola, Squamish, BC", "zoom": 14 },
+      "stops": [
+        { "name": "Sea to Sky Gondola", "q": "Sea to Sky Gondola Squamish", "note": "Open year-round, 10-minute ride to the summit." },
+        { "name": "Sky Pilot Suspension Bridge", "q": "Sea to Sky Gondola Squamish", "note": "Suspension bridge at the gondola summit." },
+        { "name": "Squamish viewpoint", "q": "Squamish BC", "note": "Views over Howe Sound and the Stawamus Chief." }
+      ]
+    },
+    {
+      "id": "d13s3",
+      "name": "Segment 3 — Whistler village, spa, and dinner",
+      "blurb": "No alpine gondola — Peak 2 Peak closed for maintenance.",
+      "time": "12:30-9:00pm",
+      "map": { "center": "Whistler Village, BC", "zoom": 15 },
+      "stops": [
+        { "name": "Whistler Village", "q": "Whistler British Columbia village", "note": "Pedestrian village, lunch and shops." },
+        { "name": "Scandinave Spa Whistler", "q": "Whistler British Columbia village", "note": "CAD $115pp, outdoor Nordic baths, silence policy." },
+        { "name": "Whistler Train Wreck", "q": "Whistler Train Wreck", "note": "Suspension bridge trail to derailed boxcars." },
+        { "name": "Lost Lake", "q": "Lost Lake Whistler", "note": "Easy lakeside walk, fall colours." },
+        { "name": "Audain Art Museum", "q": "Whistler British Columbia village", "note": "Indigenous and BC art; wet-weather option." },
+        { "name": "Pinnacle Hotel Whistler", "q": "Whistler British Columbia village", "note": "Village dinner, then overnight here." }
+      ]
+    }
+  ]
+}

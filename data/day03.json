@@ -1,0 +1,71 @@
+{
+  "n": 3,
+  "date": "2026-09-27",
+  "dow": "Sun",
+  "title": "Teton Village, Death Canyon, and Jenny Lake",
+  "region": "Wyoming",
+  "hero": "Jenny Lake Grand Teton",
+  "summary": "Hike to Phelps Lake, boat across Jenny Lake to Inspiration Point, then explore String Lake and Jackson.",
+  "stay": {
+    "name": "Airbnb #2 — Jackson",
+    "meta": "2 nights",
+    "link": "https://www.airbnb.com/rooms/1410358581481167106"
+  },
+  "segments": [
+    {
+      "id": "d03s1",
+      "name": "Segment 1 — Teton Village and Death Canyon",
+      "blurb": "Breakfast, Teton Village, then Death Canyon hike to Phelps Lake.",
+      "time": "7:30am–12:00pm",
+      "map": { "from": "Teton Village, Wyoming", "to": "Death Canyon Trailhead, Wyoming" },
+      "stops": [
+        { "name": "Persephone Westbank (breakfast)", "q": "Teton Village Wyoming", "note": "Breakfast stop before the park." },
+        { "name": "Teton Village", "q": "Teton Village Wyoming", "note": "Base of the Jackson Hole ski resort." },
+        { "name": "Granite Canyon Entrance Station", "q": "Grand Teton National Park entrance sign", "note": "South entrance into the park." },
+        { "name": "Death Canyon Trailhead", "q": "Death Canyon Grand Teton", "note": "Trailhead for the Phelps Lake hike." },
+        { "name": "Phelps Lake Overlook", "q": "Phelps Lake Grand Teton", "note": "Overlook above the lake from the trail." },
+        { "name": "Laurance S. Rockefeller Preserve Center", "q": "Laurance S Rockefeller Preserve Grand Teton", "note": "Visitor center at the trailhead." }
+      ]
+    },
+    {
+      "id": "d03s2",
+      "name": "Segment 2 — Jenny Lake and Inspiration Point",
+      "blurb": "Boat shuttle across Jenny Lake and the hike up to Inspiration Point.",
+      "time": "12:30–3:00pm",
+      "map": { "center": "Jenny Lake, Wyoming", "zoom": 14 },
+      "stops": [
+        { "name": "Jenny Lake Visitor Center", "q": "Jenny Lake Visitor Center Wyoming", "note": "Visitor center on the east shore." },
+        { "name": "Jenny Lake Boat House", "q": "Jenny Lake Grand Teton", "note": "Dock for the shuttle boat across the lake." },
+        { "name": "Boat shuttle across Jenny Lake", "q": "Jenny Lake Grand Teton", "note": "Short crossing to the west shore trailhead." },
+        { "name": "Inspiration Point", "q": "Inspiration Point Grand Teton", "note": "Overlook above Jenny Lake after a short climb." },
+        { "name": "Cascade Canyon Turnout", "q": "Cascade Canyon Grand Teton", "note": "Canyon trail continuing past Inspiration Point." }
+      ]
+    },
+    {
+      "id": "d03s3",
+      "name": "Segment 3 — Jenny Lake Road and String Lake",
+      "blurb": "Scenic one-way loop road and the String Lake picnic area.",
+      "time": "3:00–5:30pm",
+      "map": { "from": "Jenny Lake Road, Wyoming", "to": "String Lake, Wyoming" },
+      "stops": [
+        { "name": "Jenny Lake Overlook", "q": "Jenny Lake Grand Teton", "note": "Roadside viewpoint on Jenny Lake Road." },
+        { "name": "Alder Fire Overlook", "q": "Grand Teton National Park forest fire regrowth", "note": "View over an old burn area's regrowth." },
+        { "name": "String Lake Picnic Area", "q": "String Lake Grand Teton", "note": "Picnic spot at the shallow lake's south end." },
+        { "name": "Cathedral Group Turnout", "q": "Cathedral Group Grand Teton", "note": "Classic view of the range's three main peaks." },
+        { "name": "String Lake Loop Hike (optional)", "q": "String Lake Grand Teton", "note": "Flat loop trail around the lake." }
+      ]
+    },
+    {
+      "id": "d03s4",
+      "name": "Segment 4 — Evening in Jackson",
+      "blurb": "Back to town for dinner after a full day in the park.",
+      "time": "6:00–9:00pm",
+      "map": { "center": "Jackson, Wyoming", "zoom": 15 },
+      "stops": [
+        { "name": "Jackson Town Square", "q": "Jackson Town Square Wyoming", "note": "Antler arches, center of downtown Jackson." },
+        { "name": "Million Dollar Cowboy Bar", "q": "Million Dollar Cowboy Bar Jackson Wyoming", "note": "Historic saloon on the square." },
+        { "name": "National Museum of Wildlife Art", "q": "National Museum of Wildlife Art Jackson", "note": "Art museum overlooking the National Elk Refuge." }
+      ]
+    }
+  ]
+}

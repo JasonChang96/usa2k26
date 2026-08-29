@@ -1,0 +1,57 @@
+{
+  "n": 7,
+  "date": "2026-10-01",
+  "dow": "Thu",
+  "title": "Kalispell to Sandpoint, Lake Pend Oreille",
+  "region": "Idaho Panhandle",
+  "hero": "Lake Pend Oreille Sandpoint",
+  "summary": "A forest highway from Glacier country into North Idaho, ending lakeside in Sandpoint.",
+  "drive": "West Glacier to Sandpoint · 4h 10m · 204 mi",
+  "stay": {
+    "name": "Airbnb #5 — Sandpoint",
+    "meta": "1 night",
+    "link": "https://www.airbnb.com/rooms/1526797092117497451"
+  },
+  "segments": [
+    {
+      "id": "d07s1",
+      "name": "Segment 1 — Kootenai National Forest, West Glacier to Bonners Ferry",
+      "blurb": "Two-lane highway through Kootenai National Forest along the Kootenai River.",
+      "time": "9:00am–1:00pm",
+      "map": { "from": "West Glacier, Montana", "to": "Bonners Ferry, Idaho" },
+      "stops": [
+        { "name": "Kootenai Falls", "q": "Kootenai Falls Montana", "note": "Roadside stop on US-2, largest undammed falls in Montana." },
+        { "name": "Troy, Montana", "q": "Kootenai River Montana", "note": "Small riverside town near the Idaho line." },
+        { "name": "Kootenai National Forest", "q": "Kootenai National Forest", "note": "Forest corridor for most of the morning drive." },
+        { "name": "Bonners Ferry", "q": "Bonners Ferry Idaho", "note": "Kootenai River crossing, gateway to the Idaho Panhandle." }
+      ]
+    },
+    {
+      "id": "d07s2",
+      "name": "Segment 2 — US-95 south to Sandpoint, tamarack country",
+      "blurb": "Selkirk Mountains foothills, with a larch-viewing detour up Pack River.",
+      "time": "1:00–3:30pm",
+      "map": { "from": "Bonners Ferry, Idaho", "to": "Sandpoint, Idaho" },
+      "stops": [
+        { "name": "Kaniksu National Forest", "q": "Kaniksu National Forest", "note": "Forest boundary the highway runs through south of Bonners Ferry." },
+        { "name": "Selkirk Mountains", "q": "Selkirk Mountains Idaho", "note": "Range visible to the west for most of the drive." },
+        { "name": "Upper Pack River Road", "q": "Kaniksu National Forest", "note": "Gravel side road off US-95 near Samuels; western larch turn gold in early October." },
+        { "name": "Sandpoint Long Bridge", "q": "Sandpoint Bridge Lake Pend Oreille", "note": "Two-mile wooden-piling bridge crossing the lake into town." }
+      ]
+    },
+    {
+      "id": "d07s3",
+      "name": "Segment 3 — Sandpoint lakeshore, afternoon into evening",
+      "blurb": "Lake Pend Oreille shoreline trails and the Schweitzer viewpoint above town.",
+      "time": "3:30–7:00pm",
+      "map": { "center": "Sandpoint, Idaho", "zoom": 14 },
+      "stops": [
+        { "name": "City Beach", "q": "City Beach Sandpoint Idaho", "note": "In-town lake beach and park, easy first stop." },
+        { "name": "Pend d'Oreille Bay Trail", "q": "Lake Pend Oreille Sandpoint", "note": "3.2-mile flat lakeside trail from Ponderay to Sandpoint." },
+        { "name": "Sand Creek Trail", "q": "Sandpoint Bridge Lake Pend Oreille", "note": "Paved path along Sand Creek from downtown Sandpoint." },
+        { "name": "Schweitzer Mountain Resort", "q": "Schweitzer Mountain Resort", "note": "Viewpoint above town, weather and time permitting." },
+        { "name": "Pend Oreille Scenic Byway", "q": "Pend Oreille Scenic Byway", "note": "SR-200 lakeshore drive east of town for evening light." }
+      ]
+    }
+  ]
+}

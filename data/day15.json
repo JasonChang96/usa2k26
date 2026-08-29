@@ -1,0 +1,61 @@
+{
+  "n": 15,
+  "date": "2026-10-09",
+  "dow": "Fri",
+  "title": "Last Vancouver day, transit only, train to Seattle",
+  "region": "British Columbia",
+  "hero": "Granville Island Public Market",
+  "summary": "No car today — Granville Island by Aquabus, then Pacific Central for the 4:55pm train to Seattle.",
+  "stay": {
+    "name": "DoubleTree by Hilton Seattle Airport",
+    "meta": "1 night, 24-hour airport shuttle"
+  },
+  "segments": [
+    {
+      "id": "d15s1",
+      "name": "Segment 1 — Breakfast in Mount Pleasant",
+      "blurb": "Coffee and breakfast on Main Street before heading out.",
+      "time": "8:00–9:30am",
+      "map": { "center": "Main Street, Mount Pleasant, Vancouver", "zoom": 16 },
+      "stops": [
+        { "name": "Main Street cafes", "q": "Mount Pleasant Vancouver", "note": "Walk from the Airbnb, no transit needed." }
+      ]
+    },
+    {
+      "id": "d15s2",
+      "name": "Segment 2 — Granville Island Public Market",
+      "blurb": "Bus or walk to the water, then Aquabus across False Creek.",
+      "time": "10:00am–12:30pm",
+      "map": { "center": "Granville Island, Vancouver", "zoom": 16 },
+      "stops": [
+        { "name": "Granville Island Public Market", "q": "Granville Island Public Market", "note": "Food stalls and produce, main draw." },
+        { "name": "Lee's Donuts", "q": "Granville Island Public Market", "note": "Classic donut stand inside the market." },
+        { "name": "Oyama Sausage", "q": "Granville Island Public Market", "note": "Charcuterie counter, good for a light lunch." },
+        { "name": "Granville Island Brewing", "q": "Granville Island Public Market", "note": "Tasting room a few steps from the market." }
+      ]
+    },
+    {
+      "id": "d15s3",
+      "name": "Segment 3 — Yaletown or the Art Gallery",
+      "blurb": "Pick one or two, kept light with the train ahead.",
+      "time": "1:00–2:30pm",
+      "map": { "center": "Yaletown, Vancouver", "zoom": 15 },
+      "stops": [
+        { "name": "Yaletown waterfront", "q": "Yaletown Vancouver", "note": "Converted warehouse district, cafes and shops." },
+        { "name": "Vancouver Art Gallery", "q": "Vancouver Art Gallery", "note": "Downtown museum, an indoor option if raining." }
+      ]
+    },
+    {
+      "id": "d15s4",
+      "name": "Segment 4 — Pacific Central Station, train to Seattle",
+      "blurb": "Missing this train wrecks tomorrow's flight home.",
+      "time": "3:00–9:20pm",
+      "map": { "from": "Mount Pleasant, Vancouver", "to": "Pacific Central Station, Vancouver" },
+      "stops": [
+        { "name": "Bags collected, en route to station", "q": "Mount Pleasant Vancouver", "note": "24 min by transit from Mount Pleasant — leave with margin." },
+        { "name": "Pacific Central Station — be there by 3:40pm", "q": "Pacific Central Station Vancouver", "note": "US immigration clears here before boarding. This is a hard deadline." },
+        { "name": "Amtrak Train 519 departs 4:55pm", "q": "King Street Station Seattle", "note": "Arrives Seattle King Street Station about 9:20pm." }
+      ]
+    }
+  ]
+}

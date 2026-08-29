@@ -1,0 +1,68 @@
+{
+  "n": 5,
+  "date": "2026-09-29",
+  "dow": "Tue",
+  "title": "Yellowstone's Upper Loop, then on to Glacier",
+  "region": "Wyoming / Montana",
+  "hero": "Mammoth Hot Springs Terraces",
+  "summary": "Finish Yellowstone's Upper 8 loop clockwise, then drive north-west toward West Glacier via Bozeman and Butte.",
+  "drive": "Canyon Village to West Glacier via Bozeman and Butte · 9h · 720 km",
+  "stay": {
+    "name": "Airbnb #4 — West Glacier",
+    "meta": "2 nights",
+    "link": "https://www.airbnb.com/rooms/833317616963247528"
+  },
+  "segments": [
+    {
+      "id": "d05s1",
+      "name": "Segment 1 — Gibbon Falls to Norris Geyser Basin",
+      "blurb": "A waterfall and two short-hike geyser basins on the way to Norris.",
+      "time": "8:00–10:30am",
+      "map": { "from": "Gibbon Falls, Yellowstone National Park", "to": "Norris Geyser Basin, Yellowstone National Park" },
+      "stops": [
+        { "name": "Gibbon Falls", "q": "Gibbon Falls Yellowstone", "note": "Roadside waterfall on the Gibbon River." },
+        { "name": "Beryl Spring", "q": "Beryl Spring Yellowstone", "note": "Small, loud hot spring right by the road." },
+        { "name": "Monument Geyser Basin", "q": "Norris Geyser Basin", "note": "Steep short hike to a ridge of geyser cones." },
+        { "name": "Artists' Paintpots", "q": "Artists Paint Pots Yellowstone", "note": "Boardwalk loop past mudpots and hot springs." },
+        { "name": "Norris Geyser Basin", "q": "Norris Geyser Basin", "note": "Hottest, most acidic basin in the park." }
+      ]
+    },
+    {
+      "id": "d05s2",
+      "name": "Segment 2 — Roaring Mountain to Mammoth Hot Springs",
+      "blurb": "A steaming hillside, then the park's terraced hot spring complex.",
+      "time": "10:30am–12:30pm",
+      "map": { "from": "Norris Geyser Basin, Yellowstone National Park", "to": "Mammoth Hot Springs, Yellowstone National Park" },
+      "stops": [
+        { "name": "Roaring Mountain", "q": "Roaring Mountain Yellowstone", "note": "Acidic hillside vented with steam and fumaroles." },
+        { "name": "Cleopatra Spring and Terrace", "q": "Mammoth Hot Springs Terraces", "note": "Travertine terrace within the Mammoth complex." },
+        { "name": "Mammoth Hot Springs", "q": "Mammoth Hot Springs Terraces", "note": "Wide travertine terraces, the park's north hub." },
+        { "name": "Mount Everts Viewpoint", "q": "Mount Everts Yellowstone", "note": "Long sedimentary ridge above Mammoth." }
+      ]
+    },
+    {
+      "id": "d05s3",
+      "name": "Segment 3 — Lamar Valley and Mount Washburn",
+      "blurb": "Open valley for wildlife, then a high summit lookout before exiting north.",
+      "time": "12:30–3:30pm",
+      "map": { "from": "Mammoth Hot Springs, Yellowstone National Park", "to": "Canyon Village, Yellowstone National Park" },
+      "stops": [
+        { "name": "Slough Creek", "q": "Slough Creek Yellowstone", "note": "Prime wildlife-watching meadow, wolves and bison." },
+        { "name": "Yellowstone River Overlook", "q": "Yellowstone River overlook Lamar Valley", "note": "Open view across the Lamar Valley." },
+        { "name": "Mount Washburn", "q": "Mount Washburn fire lookout", "note": "Fire lookout summit; wide views of the whole park." }
+      ]
+    },
+    {
+      "id": "d05s4",
+      "name": "Segment 4 — Drive to West Glacier via Bozeman and Butte",
+      "blurb": "Long transit day: out of the park, past Bozeman, through Butte.",
+      "time": "3:30–9:00pm",
+      "map": { "from": "Canyon Village, Yellowstone National Park", "to": "West Glacier, Montana" },
+      "stops": [
+        { "name": "Yellowstone Hot Springs (Paradise Valley)", "q": "Paradise Valley Montana Yellowstone River", "note": "Riverside soak stop north of the park, [to add]." },
+        { "name": "Bozeman", "q": "Bozeman Montana downtown", "note": "College town, good stretch-your-legs stop." },
+        { "name": "Butte — Berkeley Pit", "q": "Berkeley Pit Butte", "note": "Former open-pit copper mine, now a flooded overlook." }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "n": 11,
+  "date": "2026-10-05",
+  "dow": "Mon",
+  "title": "Seattle on Foot to the Night Train",
+  "region": "Seattle, Washington",
+  "hero": "Pike Place Market Seattle",
+  "summary": "A full Seattle day on foot from Belltown, then bags, bus to the station, and the 6pm train to Vancouver.",
+  "stay": {
+    "name": "Airbnb — Renfrew-Collingwood, East Vancouver",
+    "meta": "night 1 of 2",
+    "link": "https://www.airbnb.com.sg/rooms/780351322964363373"
+  },
+  "segments": [
+    {
+      "id": "d11s1",
+      "name": "Segment 1 — Pike Place Market on foot",
+      "blurb": "8-10 minute walk from the Belltown Airbnb.",
+      "time": "8:30-11:00am",
+      "map": { "center": "Pike Place Market, Seattle, WA", "zoom": 16 },
+      "stops": [
+        { "name": "Pike Place Market", "q": "Pike Place Market Seattle", "note": "Original farmers market, opened 1907." },
+        { "name": "Piroshky Piroshky", "q": "Pike Place Market Seattle", "note": "Russian bakery, savory piroshky." },
+        { "name": "Le Panier", "q": "Pike Place Market Seattle", "note": "French bakery, almond croissant." },
+        { "name": "Beecher's Handmade Cheese", "q": "Beecher's Handmade Cheese Pike Place", "note": "Mac and cheese, cheese made on-site." },
+        { "name": "Gum Wall", "q": "Gum Wall Seattle", "note": "Post Alley wall covered in chewed gum." }
+      ]
+    },
+    {
+      "id": "d11s2",
+      "name": "Segment 2 — Pioneer Square",
+      "blurb": "About 25 minutes on foot from the market.",
+      "time": "11:00am-1:00pm",
+      "map": { "center": "Pioneer Square, Seattle, WA", "zoom": 16 },
+      "stops": [
+        { "name": "Pioneer Square", "q": "Pioneer Square Seattle", "note": "Seattle's oldest neighborhood, Victorian-era buildings." },
+        { "name": "Klondike Gold Rush National Historical Park", "q": "Klondike Gold Rush National Historical Park Seattle", "note": "Free museum on the 1897 gold rush." },
+        { "name": "Salumi", "q": "Pioneer Square Seattle", "note": "Cash-only porchetta sandwich, lunch stop." }
+      ]
+    },
+    {
+      "id": "d11s3",
+      "name": "Segment 3 — Seattle Center and Chihuly Garden and Glass",
+      "blurb": "Back toward Belltown; collect bags after this.",
+      "time": "2:00-4:30pm",
+      "map": { "center": "Seattle Center, Seattle, WA", "zoom": 16 },
+      "stops": [
+        { "name": "Chihuly Garden and Glass", "q": "Chihuly Garden and Glass", "note": "Dale Chihuly glass sculpture garden and galleries." },
+        { "name": "Space Needle", "q": "Space Needle Seattle", "note": "1962 World's Fair observation tower." },
+        { "name": "Belltown", "q": "Belltown Seattle", "note": "Walk back to the Airbnb, collect bags." }
+      ]
+    },
+    {
+      "id": "d11s4",
+      "name": "Segment 4 — King Street Station and the 6:00 PM train",
+      "blurb": "Bus or Uber to the station, then Amtrak north.",
+      "time": "4:30-10:00pm",
+      "map": { "from": "Belltown, Seattle, WA", "to": "King Street Station, Seattle, WA" },
+      "stops": [
+        { "name": "Wall St & 5th Ave bus stop", "q": "Belltown Seattle", "note": "16 min bus to the station, every 15 min." },
+        { "name": "King Street Station", "q": "King Street Station Seattle", "note": "Be there by 5:00pm; train 518 at 6:00pm." },
+        { "name": "Pacific Central Station, Vancouver", "q": "Pacific Central Station Vancouver", "note": "Arrive 10:00pm; Canadian border check on arrival." }
+      ]
+    }
+  ]
+}
