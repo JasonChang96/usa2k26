@@ -1,8 +1,8 @@
 :root{
-  --paper:#F3EDE3; --paper-2:#EAE1D2; --card:#FBF7F0;
-  --ink:#2E2A24; --ink-soft:#726A5E; --ink-faint:#A79C8C;
-  --sage:#7C8B6C; --rust:#B06B4C; --line:#DCD1BC;
-  --tape:rgba(198,183,153,.5);
+  --paper:#F4E9D8; --paper-2:#EBDCC3; --card:#FDF6EA;
+  --ink:#33291F; --ink-soft:#756552; --ink-faint:#AD9C82;
+  --sage:#7E874F; --rust:#B0552F; --amber:#C9803A; --line:#DFCDAE;
+  --tape:rgba(201,178,133,.5);
   --shadow:0 1px 2px rgba(60,48,30,.06),0 8px 24px -12px rgba(60,48,30,.28);
   --serif:'Cormorant Garamond',Georgia,serif;
   --sans:'Karla',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
@@ -225,7 +225,7 @@ footer{text-align:center;font-size:10px;letter-spacing:.18em;text-transform:uppe
 @media(min-width:560px){.mapbox{aspect-ratio:4/3}}
 .leaflet-container{background:var(--paper-2);font-family:var(--sans)}
 /* Mute the standard OSM tiles down to the paper palette. */
-.leaflet-tile-pane{filter:grayscale(.62) sepia(.22) brightness(1.04) contrast(.94)}
+.leaflet-tile-pane{filter:grayscale(.5) sepia(.4) saturate(1.15) brightness(1.04) contrast(.93)}
 .mk{
   display:grid;place-items:center;width:26px;height:26px;border-radius:50%;
   background:var(--ink);color:var(--card);font-size:11px;font-weight:700;
@@ -275,10 +275,12 @@ footer{text-align:center;font-size:10px;letter-spacing:.18em;text-transform:uppe
 /* ---------- scrapbook: paper, tape, stitching ---------- */
 body{
   background-image:
-    radial-gradient(circle at 18% 12%,rgba(255,255,255,.55),transparent 45%),
-    radial-gradient(circle at 82% 78%,rgba(214,200,175,.35),transparent 50%),
-    radial-gradient(rgba(160,142,110,.13) 1px,transparent 1px);
-  background-size:auto,auto,22px 22px;
+    radial-gradient(circle at 12% 6%,rgba(255,246,228,.85),transparent 42%),
+    radial-gradient(circle at 88% 14%,rgba(214,138,58,.16),transparent 46%),
+    radial-gradient(circle at 78% 88%,rgba(160,70,38,.13),transparent 52%),
+    radial-gradient(circle at 22% 72%,rgba(180,150,70,.13),transparent 48%),
+    radial-gradient(rgba(150,120,80,.14) 1px,transparent 1px);
+  background-size:auto,auto,auto,auto,22px 22px;
 }
 /* washi tape, reusable */
 .tape{
@@ -411,4 +413,23 @@ footer{position:relative}
 @media(max-width:520px){
   .jumptab{padding:14px 7px;top:38%}
   .totop{width:52px;height:52px;right:12px;bottom:14px}
+}
+
+/* ---------- falling leaves ---------- */
+.leaves{position:fixed;inset:0;z-index:0;pointer-events:none;overflow:hidden}
+.wrap,.jumptab,.drawer,.totop,.scrim{position:relative;z-index:1}
+.leaf{
+  position:absolute;top:-8vh;width:var(--sz);height:var(--sz);color:var(--col);
+  opacity:var(--op);animation:fall var(--dur) linear var(--delay) infinite;
+  will-change:transform;
+}
+@keyframes fall{
+  0%   {transform:translate3d(0,-10vh,0) rotate(0deg)}
+  50%  {transform:translate3d(var(--sway),52vh,0) rotate(180deg)}
+  100% {transform:translate3d(0,115vh,0) rotate(360deg)}
+}
+/* pressed leaves tucked into the corners, like a scrapbook */
+.leaf.pressed{animation:none;opacity:.3;top:auto}
+@media(prefers-reduced-motion:reduce){
+  .leaf{animation:none;opacity:.18}
 }
