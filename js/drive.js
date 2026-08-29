@@ -69,19 +69,43 @@
     }
     for (const f of files) {
       const state = line(f.name);
-      try { await upload(f, access); state.textContent = 'uploaded'; state.className = 'state ok'; }
+      try {
+        await upload(f, access);
+        state.textContent = CFG.folder ? 'in the folder' : 'in My Drive';
+        state.className = 'state ok';
+      }
       catch (e) { state.textContent = e.message.slice(0, 40); state.className = 'state err'; }
     }
   }
 
-  document.getElementById('pick').onclick = () => input.click();
+  const pickBtn = document.getElementById('pick');
+
+  function reflect() {
+    const ready = !!CFG.client;
+    pickBtn.textContent = ready ? 'Upload photos' : 'Connect Google Drive first';
+    dz.classList.toggle('unset', !ready);
+  }
+
+  pickBtn.onclick = () => {
+    if (!CFG.client) {
+      document.getElementById('setup').open = true;
+      note.textContent = 'Not connected yet. Paste an OAuth client ID below, then upload.';
+      note.className = 'err';
+      document.getElementById('cfg-client').focus();
+      return;
+    }
+    input.click();
+  };
   input.onchange = () => { send([...input.files]); input.value = ''; };
 
   ['dragenter', 'dragover'].forEach(ev =>
     dz.addEventListener(ev, e => { e.preventDefault(); dz.classList.add('hot'); }));
   ['dragleave', 'drop'].forEach(ev =>
     dz.addEventListener(ev, e => { e.preventDefault(); dz.classList.remove('hot'); }));
-  dz.addEventListener('drop', e => send([...e.dataTransfer.files]));
+  dz.addEventListener('drop', e => {
+    if (!CFG.client) return pickBtn.onclick();
+    send([...e.dataTransfer.files]);
+  });
 
   const ci = document.getElementById('cfg-client');
   const fi = document.getElementById('cfg-folder');
@@ -91,5 +115,8 @@
     token = null;
     note.textContent = 'Saved on this device.';
     note.className = 'ok';
+    reflect();
   };
+
+  reflect();
 })();
