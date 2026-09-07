@@ -192,7 +192,10 @@
           "icon": "💰",
           "items": [
             { "t": "Empty carry-on space", "n": "For souvenirs and gear", "bag": "carry" },
-            { "t": "Spare foldable tote", "bag": "check" }
+            { "t": "Spare foldable tote", "bag": "check" },
+            { "t": "Small luggage scale", "n": "Stay under 23kg coming home heavier", "bag": "check" },
+            { "t": "Vacuum-seal bags", "n": "Compress dirty laundry on the way back", "bag": "check" },
+            { "t": "Buffer cash", "n": "For a possible overweight-bag fee", "bag": "carry" }
           ]
         }
       ]
