@@ -258,6 +258,7 @@ function route() {
   if (what === 'day')          { show('itinerary'); renderDay(arg); }
   else if (what === 'section') { show('sections');  renderSection(arg); }
   else if (what === 'sections'){ show('sections');  renderSections(); }
+  else if (what === 'packing') { show('packing'); Packing.render(); }
   else if (what === 'photos')  { show('photos'); }
   else                         { show('itinerary'); renderItinerary(); }
 }

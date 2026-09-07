@@ -78,7 +78,13 @@ days.sort((a, b) => a.n - b.n);
 const ids = days.flatMap(d => d.segments.map(s => s.id));
 if (new Set(ids).size !== ids.length) problems.push('duplicate segment ids');
 
-writeFileSync(join(root, 'js', 'data.js'), 'const TRIP = ' + JSON.stringify(days, null, 1) + ';\n');
+let packing = null;
+try { packing = JSON.parse(readFileSync(join(root, 'data', 'packing.json'), 'utf8')); }
+catch { problems.push('packing.json missing or invalid — the Packing tab will be empty'); }
+
+writeFileSync(join(root, 'js', 'data.js'),
+  'const TRIP = ' + JSON.stringify(days, null, 1) + ';\n' +
+  'const PACKING = ' + JSON.stringify(packing) + ';\n');
 
 const stamp = Date.now().toString(36);
 const html = join(root, 'index.html');
