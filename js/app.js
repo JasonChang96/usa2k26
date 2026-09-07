@@ -259,6 +259,7 @@ function route() {
   else if (what === 'section') { show('sections');  renderSection(arg); }
   else if (what === 'sections'){ show('sections');  renderSections(); }
   else if (what === 'packing') { show('packing'); Packing.render(); }
+  else if (what === 'games')   { show('games'); arg ? Games.play(arg) : Games.gallery(); }
   else if (what === 'photos')  { show('photos'); }
   else                         { show('itinerary'); renderItinerary(); }
 }

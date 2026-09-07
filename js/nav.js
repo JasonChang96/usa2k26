@@ -27,7 +27,7 @@
       <ul class="jump">${rows}</ul>
       <div class="dfoot">
         <a href="#/">Itinerary</a><a href="#/sections">Sections</a>
-        <a href="#/packing">Packing</a><a href="#/photos">Photos</a>
+        <a href="#/packing">Packing</a><a href="#/games">Games</a><a href="#/photos">Photos</a>
       </div>
     </nav>
     <button class="totop" id="totop" aria-label="Back to top">
