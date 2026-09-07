@@ -20,54 +20,6 @@ const Alerts = (() => {
   const RANK = { 'Park Closure': 0, 'Danger': 1, 'Caution': 2, 'Information': 3 };
   const TTL = 1000 * 60 * 60 * 3;
 
-  /* Getting somewhere, or not being able to. */
-  const ROADS = /\b(road|roads|highway|hwy|route|rte|pass|parkway|drive|entrance|gate|parking|bridge|tunnel|construction|detour|closed to (vehicle|traffic)|one[- ]way|delay|shuttle|access)\b/i;
-  const WEATHER = /\b(snow|snowfall|ice|icy|storm|flood|flooding|wind|fire|wildfire|smoke|air quality|avalanche|freez|winter conditions|weather)\b/i;
-  /* Things that are somebody else's trip. */
-  const NOISE = /\b(campground|campsite|camping|permit|backcountry|wilderness|fishing|fish|boat launch|marina|dock|horse|stock|pack animal|hunting|volunteer|employment|job|internship|artist|wedding|special use|lottery|ranger program|junior ranger|visitor center hours|bookstore|gift shop|pets?|dog|bicycle registration)\b/i;
-
-  /* Place names lifted straight out of the itinerary, so an alert that names a
-     stop we are actually going to always counts as relevant. */
-  const GENERIC = new Set(['lost lake', 'main street', 'the village', 'city beach',
-    'front street', 'the falls', 'north rim', 'south rim', 'the loop']);
-  let placeIndex = null;
-  function placesFor(codes) {
-    if (!placeIndex) {
-      placeIndex = {};
-      for (const [day, parks] of Object.entries(BY_DAY)) {
-        const d = (typeof TRIP !== 'undefined' ? TRIP : []).find(x => x.n === +day);
-        if (!d) continue;
-        const names = d.segments.flatMap(sg => sg.stops.map(st => st.name));
-        for (const p of parks) (placeIndex[p] ||= new Set());
-        for (const n of names) {
-          const clean = n.toLowerCase().replace(/\(.*?\)/g, '').split(/[,–—-]/)[0].trim();
-          if (clean.length < 6 || GENERIC.has(clean)) continue;
-          for (const p of parks) placeIndex[p].add(clean);
-        }
-      }
-    }
-    const out = new Set();
-    for (const c of codes || Object.keys(PARKS)) (placeIndex[c] || []).forEach(v => out.add(v));
-    return out;
-  }
-
-  /* Higher means "this could change our day". */
-  function score(a, places) {
-    const text = `${a.title} ${a.body}`;
-    let n = 0;
-    if (a.cat === 'Park Closure') n += 3;
-    else if (a.cat === 'Danger') n += 3;
-    else if (a.cat === 'Caution') n += 1;
-    /* Getting there is the whole point, so anything about roads clears the bar
-       on its own — even when the park files it as mere "Information". */
-    if (ROADS.test(text)) n += 4;
-    if (WEATHER.test(text)) n += 3;
-    const low = text.toLowerCase();
-    for (const p of places) if (low.includes(p)) { n += 4; a.hit = p; break; }
-    if (NOISE.test(text) && !ROADS.test(text)) n -= 5;
-    return n;
-  }
-
   let pending = null;
 
   async function load() {
@@ -98,6 +50,52 @@ const Alerts = (() => {
     return pending;
   }
 
+  /* Nothing counts unless it actually stops us doing something. */
+  const BLOCKER = /\b(clos(e|ed|ure|ures|ing)|no access|not accessible|inaccessible|unavailable|impassable|detour|prohibited|restricted|suspended|cancell?ed|not open|out of service)\b/i;
+  /* Roads and ways in. */
+  const ROADS = /\b(road|roads|highway|hwy|route|rte|pass|parkway|entrance|gate|bridge|tunnel|parking|lot|access)\b/i;
+  /* Somebody else's trip — we are not camping, permitting, fishing or hiking far. */
+  const NOISE = /\b(campground|campsite|camping|campfire|permit|backcountry|wilderness|fishing|fish|boat launch|marina|dock|horse|stock|pack animal|hunting|volunteer|employment|job|internship|artist|wedding|special use|lottery|ranger program|junior ranger|bookstore|gift shop|pets?|bicycle|air quality|smoke|elk|bison|wildlife|bear spray|hours|reservation|GPS|line|queue)\b/i;
+
+  const GENERIC = new Set(['lost lake', 'main street', 'the village', 'city beach',
+    'front street', 'the falls', 'north rim', 'south rim', 'the loop']);
+  let placeIndex = null;
+  function placesFor(codes) {
+    if (!placeIndex) {
+      placeIndex = {};
+      for (const [day, parks] of Object.entries(BY_DAY)) {
+        const d = (typeof TRIP !== 'undefined' ? TRIP : []).find(x => x.n === +day);
+        if (!d) continue;
+        for (const p of parks) (placeIndex[p] ||= new Set());
+        for (const sg of d.segments) for (const st of sg.stops) {
+          const clean = st.name.toLowerCase().replace(/\(.*?\)/g, '').split(/[,–—-]/)[0].trim();
+          if (clean.length < 6 || GENERIC.has(clean)) continue;
+          for (const p of parks) placeIndex[p].add(clean);
+        }
+      }
+    }
+    const out = new Set();
+    for (const c of codes || Object.keys(PARKS)) (placeIndex[c] || []).forEach(v => out.add(v));
+    return out;
+  }
+
+  /* Only two things earn a place: a road we drive, or a stop we planned to see. */
+  function score(a, places) {
+    const text = `${a.title} ${a.body}`;
+    const isClosure = a.cat === 'Park Closure';
+    if (!isClosure && !BLOCKER.test(text)) return -99;   // not a blocker at all
+
+    let n = isClosure ? 4 : 2;
+    const low = text.toLowerCase();
+    let named = null;
+    for (const p of places) if (low.includes(p)) { named = p; break; }
+    if (named) { n += 6; a.hit = named; }
+    if (ROADS.test(text)) n += 4;
+    if (a.cat === 'Danger') n += 2;
+    if (NOISE.test(text) && !named && !ROADS.test(text)) n -= 8;
+    return n;
+  }
+
   const card = a => `
     <article class="alert cat-${a.cat.replace(/\W+/g, '').toLowerCase()}">
       <div class="ahead">
@@ -117,11 +115,9 @@ const Alerts = (() => {
     const places = placesFor(codes);
     const scored = list.map(a => ({ ...a, s: score(a, places) }))
       .sort((x, y) => y.s - x.s || (RANK[x.cat] ?? 9) - (RANK[y.cat] ?? 9));
-    return {
-      keep: scored.filter(a => a.s >= 4),
-      rest: scored.filter(a => a.s < 4),
-      total: list.length
-    };
+    /* Five is the most anyone reads before it becomes wallpaper. */
+    const keep = scored.filter(a => a.s >= 8).slice(0, 5);
+    return { keep, rest: scored.filter(a => !keep.includes(a)), total: list.length };
   }
 
   async function mount(node, codes) {
@@ -136,9 +132,9 @@ const Alerts = (() => {
     node.innerHTML =
       (keep.length
         ? keep.map(card).join('')
-        : '<p class="anone">Nothing affecting roads or the places on our list.</p>') +
+        : '<p class="anone">Nothing closed on our roads or at our stops. All clear.</p>') +
       (rest.length ? `<details class="arest">
-        <summary>${rest.length} other notice${rest.length > 1 ? 's' : ''} — campgrounds, permits, and the like</summary>
+        <summary>${rest.length} other notice${rest.length > 1 ? 's' : ''} we can ignore</summary>
         ${rest.map(card).join('')}
       </details>` : '');
     if (!codes) badge(keep.length, total);
@@ -146,7 +142,9 @@ const Alerts = (() => {
 
   function badge(keep, total) {
     const b = document.getElementById('alertcount');
-    if (b) b.textContent = keep ? `${keep} for us · ${total} total` : `nothing urgent · ${total} total`;
+    if (b) b.textContent = keep
+      ? `${keep} affecting us · ${total} total`
+      : `nothing closed · ${total} total`;
   }
 
   return { mount, load, sift, parksForDay: n => BY_DAY[n] || null, name: c => PARKS[c] };
@@ -163,7 +161,7 @@ const Alerts = (() => {
   Alerts.sift(null).then(({ keep, total }) => {
     const b = document.getElementById('alertcount');
     if (b && total) b.textContent = keep.length
-      ? `${keep.length} for us · ${total} total`
-      : `nothing urgent · ${total} total`;
+      ? `${keep.length} affecting us · ${total} total`
+      : `nothing closed · ${total} total`;
   });
 })();
