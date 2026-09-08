@@ -24,89 +24,299 @@
   "lists": {
     "man": {
       "title": "The Loadout",
-      "tagline": "One bag out, one bag back. Vented, not bundled — he runs hot.",
+      "tagline": "One bag out, one bag back. Layered, not bundled — he runs hot.",
       "sections": [
         {
           "name": "The Loadout",
           "icon": "🎒",
           "items": [
-            { "t": "Duffel or wheeled checked bag, 23kg", "bag": "check" },
-            { "t": "Carry-on backpack", "n": "Keep it near-empty outbound", "bag": "carry" },
-            { "t": "Packable daypack", "n": "A few hours out of the car, not a hiking pack", "bag": "check" },
-            { "t": "Packing cubes ×3", "bag": "check" },
-            { "t": "Laundry bag", "bag": "check" }
+            {
+              "t": "Checked luggage",
+              "bag": "check"
+            },
+            {
+              "t": "Carry-on backpack",
+              "n": "Near-empty on the way out — it comes home full",
+              "bag": "carry"
+            },
+            {
+              "t": "Duffle bag ×1",
+              "n": "Packs flat inside the luggage, carries what we buy on the way back",
+              "bag": "check"
+            },
+            {
+              "t": "Packing cubes ×4",
+              "bag": "check"
+            },
+            {
+              "t": "Shopping bags ×3",
+              "bag": "check"
+            },
+            {
+              "t": "Water bottle ×1",
+              "bag": "carry"
+            }
           ]
         },
         {
-          "name": "Layer System",
+          "name": "Base Layers",
+          "icon": "🌡️",
+          "items": [
+            {
+              "t": "Short-sleeve Heattech ×3",
+              "bag": "check"
+            },
+            {
+              "t": "Long-sleeve inner wear ×2",
+              "n": "Heattech-weight, for the cold mornings",
+              "bag": "check"
+            },
+            {
+              "t": "Heattech leggings ×1",
+              "n": "Buy a second before we fly",
+              "bag": "check"
+            },
+            {
+              "t": "Uniqlo Airism ×5",
+              "n": "Sweat layer — you run hot",
+              "bag": "check"
+            },
+            {
+              "t": "Normal socks ×7",
+              "bag": "check"
+            },
+            {
+              "t": "Extra warm socks ×1",
+              "bag": "check"
+            },
+            {
+              "t": "Underwear ×7",
+              "n": "Consider a few disposable pairs to shed on the way",
+              "bag": "check"
+            }
+          ]
+        },
+        {
+          "name": "Mid & Outer",
           "icon": "🧥",
           "items": [
-            { "t": "Waterproof shell, pit zips", "n": "Vents beat carrying a second fleece", "bag": "wear" },
-            { "t": "One light packable vest", "n": "All the insulation you need — you'll overheat in the car", "bag": "wear" },
-            { "t": "Merino short-sleeve base layers ×2", "n": "Build up from these, don't overpack heavy", "bag": "check" },
-            { "t": "Merino long-sleeve ×1", "n": "Altitude mornings only", "bag": "check" },
-            { "t": "Breathable quick-dry hiking pants ×2", "bag": "check" },
-            { "t": "Jeans", "bag": "wear" },
-            { "t": "T-shirts ×4", "n": "Strip to this in an overheated lodge", "bag": "check" },
-            { "t": "Wool socks ×5, underwear ×7", "bag": "check" },
-            { "t": "Thin beanie and gloves", "n": "Minimal — you run hot, not bulky insulated kit", "bag": "check" }
+            {
+              "t": "Thin long-sleeve outer ×3",
+              "bag": "check"
+            },
+            {
+              "t": "Sweater / hoodie ×2",
+              "bag": "check"
+            },
+            {
+              "t": "Puffy vest ×1",
+              "n": "Warmth without cooking in the car",
+              "bag": "check"
+            },
+            {
+              "t": "Coats ×2, water/windproof",
+              "n": "Wear the heavier one through the airport",
+              "bag": "wear"
+            },
+            {
+              "t": "Gloves ×1 pair",
+              "bag": "check"
+            },
+            {
+              "t": "Beanie ×1",
+              "bag": "check"
+            },
+            {
+              "t": "Hiking set ×1",
+              "n": "Sports pants + jacket; nothing here needs real hiking kit",
+              "bag": "check"
+            }
           ]
         },
         {
-          "name": "Out of the Car Kit",
-          "icon": "🚗",
+          "name": "Pants & Shirts",
+          "icon": "👖",
           "items": [
-            { "t": "Waterproof walking shoes", "n": "Boardwalks and short trails — no need for boots", "bag": "wear" },
-            { "t": "Swim trunks", "n": "Scandinave spa, Whistler", "bag": "check" },
-            { "t": "Quick-dry towel", "n": "Spa doesn't always supply one", "bag": "check" },
-            { "t": "Refillable water bottle", "bag": "carry" },
-            { "t": "Sunglasses and sunscreen", "bag": "carry" },
-            { "t": "Blister plasters, road snacks", "bag": "check" }
+            {
+              "t": "Thick comfortable long pants ×2",
+              "bag": "check"
+            },
+            {
+              "t": "Thin comfortable long pants ×1",
+              "n": "The plane pair",
+              "bag": "wear"
+            },
+            {
+              "t": "Jeans ×1",
+              "bag": "check"
+            },
+            {
+              "t": "Stylish pants ×2",
+              "n": "Seattle and Vancouver dinners",
+              "bag": "check"
+            },
+            {
+              "t": "T-shirts ×5",
+              "bag": "check"
+            },
+            {
+              "t": "Sleep sets ×4",
+              "n": "Short-sleeve tee + shorts",
+              "bag": "check"
+            }
           ]
         },
         {
-          "name": "Power & Cables",
+          "name": "Wet Kit",
+          "icon": "🧖",
+          "items": [
+            {
+              "t": "Swim trunks ×1",
+              "n": "Scandinave spa, Whistler",
+              "bag": "check"
+            },
+            {
+              "t": "Towel ×1",
+              "n": "The spa doesn't always supply one",
+              "bag": "check"
+            }
+          ]
+        },
+        {
+          "name": "The Tech Bench",
           "icon": "🔌",
           "items": [
-            { "t": "US/Canada plug adapter ×1", "n": "SG uses UK-style plugs, NA doesn't", "bag": "carry" },
-            { "t": "Multi-port USB charger", "bag": "carry" },
-            { "t": "Phone + laptop cables", "bag": "carry" },
-            { "t": "Portable battery pack", "n": "Long drives, spotty park charging", "bag": "carry" },
-            { "t": "Offline maps downloaded", "n": "Cell coverage gaps in the parks", "bag": "carry" }
+            {
+              "t": "Laptop + charger",
+              "bag": "carry"
+            },
+            {
+              "t": "iPad + charger",
+              "bag": "carry"
+            },
+            {
+              "t": "Kindle",
+              "bag": "carry"
+            },
+            {
+              "t": "Phone charger + Apple Watch charger",
+              "bag": "carry"
+            },
+            {
+              "t": "Plug adapter",
+              "n": "Singapore runs UK-style plugs, North America doesn't",
+              "bag": "carry"
+            },
+            {
+              "t": "Portable charger",
+              "n": "Must be in the cabin, never checked",
+              "bag": "carry"
+            },
+            {
+              "t": "Osmo Pocket 3 + charger + small tripod",
+              "bag": "carry"
+            },
+            {
+              "t": "Camera + charger",
+              "bag": "carry"
+            },
+            {
+              "t": "Headphones",
+              "bag": "carry"
+            },
+            {
+              "t": "Notebook",
+              "bag": "carry"
+            }
           ]
         },
         {
-          "name": "Grooming Bench",
+          "name": "The Grooming Bench",
           "icon": "🧴",
           "items": [
-            { "t": "Toiletry kit, travel-size", "n": "Liquids under 100ml for carry-on", "bag": "carry" },
-            { "t": "Medication, original packaging", "n": "Keep on person, not checked", "bag": "carry" },
-            { "t": "Razor and deodorant", "bag": "check" },
-            { "t": "Travel toothbrush/paste", "bag": "carry" },
-            { "t": "Pain reliever, nail clippers", "bag": "check" }
+            {
+              "t": "Toothbrush",
+              "bag": "carry"
+            },
+            {
+              "t": "Toothpaste",
+              "bag": "carry"
+            },
+            {
+              "t": "Shaver + replacement head",
+              "bag": "check"
+            },
+            {
+              "t": "Shaving cream",
+              "n": "Or buy it there and skip the liquid",
+              "bag": "check"
+            },
+            {
+              "t": "Moisturiser",
+              "bag": "carry"
+            },
+            {
+              "t": "Shampoo + shower gel + face wash",
+              "n": "Decant under 100ml if it rides in the cabin",
+              "bag": "check"
+            },
+            {
+              "t": "Sunscreen",
+              "bag": "carry"
+            },
+            {
+              "t": "Nail clipper",
+              "n": "Checked bag only — TSA takes them off you otherwise",
+              "bag": "check"
+            },
+            {
+              "t": "Deodorant",
+              "bag": "check"
+            }
           ]
         },
         {
-          "name": "Papers & Nice Dinner",
-          "icon": "📁",
+          "name": "On Me",
+          "icon": "🎫",
           "items": [
-            { "t": "Passport", "bag": "carry" },
-            { "t": "ArriveCAN / Canada entry docs", "bag": "carry" },
-            { "t": "Travel insurance printout", "bag": "carry" },
-            { "t": "Driving licence, for both rental drivers", "bag": "carry" },
-            { "t": "Smart-casual shirt + chinos", "n": "One nice dinner, Seattle or Vancouver", "bag": "check" },
-            { "t": "Dress shoes, packable", "bag": "check" }
-          ]
-        },
-        {
-          "name": "Bring It Home",
-          "icon": "📦",
-          "items": [
-            { "t": "Empty carry-on space", "n": "For gear, gifts, park merch", "bag": "carry" },
-            { "t": "Foldable extra tote", "bag": "check" },
-            { "t": "Small luggage scale", "n": "Stay under 23kg coming home heavier", "bag": "check" },
-            { "t": "Vacuum-seal bags", "n": "Compress dirty laundry on the way back", "bag": "check" },
-            { "t": "Buffer cash", "n": "For a possible overweight-bag fee", "bag": "carry" }
+            {
+              "t": "Passport",
+              "bag": "carry"
+            },
+            {
+              "t": "Passport sling bag",
+              "bag": "wear"
+            },
+            {
+              "t": "Wallet",
+              "bag": "carry"
+            },
+            {
+              "t": "Phone",
+              "bag": "carry"
+            },
+            {
+              "t": "Ear buds",
+              "bag": "carry"
+            },
+            {
+              "t": "Apple Watch",
+              "bag": "wear"
+            },
+            {
+              "t": "Medications — Panadol, gastro, charcoal",
+              "n": "Original packaging, on your person",
+              "bag": "carry"
+            },
+            {
+              "t": "Driving licence",
+              "n": "Both rental drivers",
+              "bag": "carry"
+            },
+            {
+              "t": "ArriveCAN / Canada entry docs",
+              "bag": "carry"
+            }
           ]
         }
       ]
@@ -119,83 +329,225 @@
           "name": "Build Mode: The Suitcase",
           "icon": "🧳",
           "items": [
-            { "t": "Checked suitcase, 23kg", "bag": "check" },
-            { "t": "Carry-on bag", "n": "Leave it almost empty going out", "bag": "carry" },
-            { "t": "Foldable tote for the spa/day trips", "bag": "check" },
-            { "t": "Packing cubes ×3", "bag": "check" },
-            { "t": "Laundry bag", "bag": "check" }
+            {
+              "t": "Checked suitcase, 23kg",
+              "bag": "check"
+            },
+            {
+              "t": "Carry-on bag",
+              "n": "Leave it almost empty going out",
+              "bag": "carry"
+            },
+            {
+              "t": "Foldable tote for the spa/day trips",
+              "bag": "check"
+            },
+            {
+              "t": "Packing cubes ×3",
+              "bag": "check"
+            },
+            {
+              "t": "Laundry bag",
+              "bag": "check"
+            }
           ]
         },
         {
           "name": "Buy Mode: Layers",
           "icon": "🧶",
           "items": [
-            { "t": "Waterproof rain shell", "n": "Seattle/Vancouver near-certain rain", "bag": "wear" },
-            { "t": "Proper insulated jacket", "n": "Real warmth for freezing mornings, not a throw-on", "bag": "wear" },
-            { "t": "Thermal base layers, top + bottom ×2", "n": "Under everything on cold mornings", "bag": "check" },
-            { "t": "Warm cardigan or wrap", "n": "Doubles for the AC and sitting between spa baths", "bag": "check" },
-            { "t": "Leggings ×2, jeans", "bag": "check" },
-            { "t": "Tops ×5", "bag": "check" },
-            { "t": "Thick wool socks ×5, underwear ×7", "bag": "check" },
-            { "t": "Warm hat, gloves, scarf/neck warmer", "bag": "check" },
-            { "t": "Hand warmers", "n": "Logan Pass and Paradise viewpoints", "bag": "check" }
+            {
+              "t": "Waterproof rain shell",
+              "n": "Seattle/Vancouver near-certain rain",
+              "bag": "wear"
+            },
+            {
+              "t": "Proper insulated jacket",
+              "n": "Real warmth for freezing mornings, not a throw-on",
+              "bag": "wear"
+            },
+            {
+              "t": "Thermal base layers, top + bottom ×2",
+              "n": "Under everything on cold mornings",
+              "bag": "check"
+            },
+            {
+              "t": "Warm cardigan or wrap",
+              "n": "Doubles for the AC and sitting between spa baths",
+              "bag": "check"
+            },
+            {
+              "t": "Leggings ×2, jeans",
+              "bag": "check"
+            },
+            {
+              "t": "Tops ×5",
+              "bag": "check"
+            },
+            {
+              "t": "Thick wool socks ×5, underwear ×7",
+              "bag": "check"
+            },
+            {
+              "t": "Warm hat, gloves, scarf/neck warmer",
+              "bag": "check"
+            },
+            {
+              "t": "Hand warmers",
+              "n": "Logan Pass and Paradise viewpoints",
+              "bag": "check"
+            }
           ]
         },
         {
           "name": "Needs: Comfort & Style",
           "icon": "💚",
           "items": [
-            { "t": "Waterproof walking shoes", "n": "Boardwalks and short trails — not hiking boots", "bag": "wear" },
-            { "t": "Swimsuit + cover-up", "n": "Scandinave spa, Whistler", "bag": "check" },
-            { "t": "Flip-flops for spa floors", "bag": "check" },
-            { "t": "Nice dinner outfit + flats", "n": "One night out, Seattle or Vancouver", "bag": "check" },
-            { "t": "Comfy sneakers for driving days", "bag": "wear" }
+            {
+              "t": "Waterproof walking shoes",
+              "n": "Boardwalks and short trails — not hiking boots",
+              "bag": "wear"
+            },
+            {
+              "t": "Swimsuit + cover-up",
+              "n": "Scandinave spa, Whistler",
+              "bag": "check"
+            },
+            {
+              "t": "Flip-flops for spa floors",
+              "bag": "check"
+            },
+            {
+              "t": "Nice dinner outfit + flats",
+              "n": "One night out, Seattle or Vancouver",
+              "bag": "check"
+            },
+            {
+              "t": "Comfy sneakers for driving days",
+              "bag": "wear"
+            }
           ]
         },
         {
           "name": "Aspiration: Scenic Wanderer",
           "icon": "🏔️",
           "items": [
-            { "t": "Small daypack", "n": "A few hours at a viewpoint, not a summit pack", "bag": "check" },
-            { "t": "Refillable water bottle", "bag": "carry" },
-            { "t": "Sunglasses and sunscreen", "bag": "carry" },
-            { "t": "Blister plasters, road snacks", "bag": "check" },
-            { "t": "Hair ties, sun hat", "bag": "check" }
+            {
+              "t": "Small daypack",
+              "n": "A few hours at a viewpoint, not a summit pack",
+              "bag": "check"
+            },
+            {
+              "t": "Refillable water bottle",
+              "bag": "carry"
+            },
+            {
+              "t": "Sunglasses and sunscreen",
+              "bag": "carry"
+            },
+            {
+              "t": "Blister plasters, road snacks",
+              "bag": "check"
+            },
+            {
+              "t": "Hair ties, sun hat",
+              "bag": "check"
+            }
           ]
         },
         {
           "name": "Plumbob Power (Electronics)",
           "icon": "🔋",
           "items": [
-            { "t": "US/Canada plug adapter", "n": "SG uses UK-style plugs, NA doesn't", "bag": "carry" },
-            { "t": "Charging cables + block", "bag": "carry" },
-            { "t": "Portable battery pack", "n": "Long drives and the train", "bag": "carry" },
-            { "t": "Offline maps downloaded", "n": "Park cell coverage is patchy", "bag": "carry" },
-            { "t": "Headphones for the Amtrak legs", "bag": "carry" }
+            {
+              "t": "US/Canada plug adapter",
+              "n": "SG uses UK-style plugs, NA doesn't",
+              "bag": "carry"
+            },
+            {
+              "t": "Charging cables + block",
+              "bag": "carry"
+            },
+            {
+              "t": "Portable battery pack",
+              "n": "Long drives and the train",
+              "bag": "carry"
+            },
+            {
+              "t": "Offline maps downloaded",
+              "n": "Park cell coverage is patchy",
+              "bag": "carry"
+            },
+            {
+              "t": "Headphones for the Amtrak legs",
+              "bag": "carry"
+            }
           ]
         },
         {
           "name": "Needs: Hygiene & Docs",
           "icon": "🧴",
           "items": [
-            { "t": "Toiletries + skincare, travel-size", "n": "Liquids under 100ml in carry-on", "bag": "carry" },
-            { "t": "Medication, original packaging", "n": "Always on person", "bag": "carry" },
-            { "t": "Makeup bag, minimal kit", "bag": "check" },
-            { "t": "Passport", "bag": "carry" },
-            { "t": "ArriveCAN / Canada entry docs", "bag": "carry" },
-            { "t": "Travel insurance printout", "bag": "carry" },
-            { "t": "Driving licence, for both rental drivers", "bag": "carry" }
+            {
+              "t": "Toiletries + skincare, travel-size",
+              "n": "Liquids under 100ml in carry-on",
+              "bag": "carry"
+            },
+            {
+              "t": "Medication, original packaging",
+              "n": "Always on person",
+              "bag": "carry"
+            },
+            {
+              "t": "Makeup bag, minimal kit",
+              "bag": "check"
+            },
+            {
+              "t": "Passport",
+              "bag": "carry"
+            },
+            {
+              "t": "ArriveCAN / Canada entry docs",
+              "bag": "carry"
+            },
+            {
+              "t": "Travel insurance printout",
+              "bag": "carry"
+            },
+            {
+              "t": "Driving licence, for both rental drivers",
+              "bag": "carry"
+            }
           ]
         },
         {
           "name": "Motherlode (Bring It Home)",
           "icon": "💰",
           "items": [
-            { "t": "Empty carry-on space", "n": "For souvenirs and gear", "bag": "carry" },
-            { "t": "Spare foldable tote", "bag": "check" },
-            { "t": "Small luggage scale", "n": "Stay under 23kg coming home heavier", "bag": "check" },
-            { "t": "Vacuum-seal bags", "n": "Compress dirty laundry on the way back", "bag": "check" },
-            { "t": "Buffer cash", "n": "For a possible overweight-bag fee", "bag": "carry" }
+            {
+              "t": "Empty carry-on space",
+              "n": "For souvenirs and gear",
+              "bag": "carry"
+            },
+            {
+              "t": "Spare foldable tote",
+              "bag": "check"
+            },
+            {
+              "t": "Small luggage scale",
+              "n": "Stay under 23kg coming home heavier",
+              "bag": "check"
+            },
+            {
+              "t": "Vacuum-seal bags",
+              "n": "Compress dirty laundry on the way back",
+              "bag": "check"
+            },
+            {
+              "t": "Buffer cash",
+              "n": "For a possible overweight-bag fee",
+              "bag": "carry"
+            }
           ]
         }
       ]
