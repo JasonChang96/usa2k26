@@ -9,14 +9,20 @@ const Packing = (() => {
   let editing = false;
   const store = w => `usa2k26.pack.${w}`;
 
+  /* A rewritten shipped list supersedes the working copy — otherwise anyone who
+     ever tapped edit would keep seeing the list from the day they tapped it. */
+  const stamp = w => JSON.stringify(PACKING.lists[w]).length;
+
   /* On first edit we take a working copy, so everything afterwards is plain
      CRUD on one structure rather than a pile of overrides. */
   function list(w) {
     try {
       const saved = JSON.parse(localStorage.getItem(store(w)) || 'null');
-      if (saved) return saved;
+      if (saved && saved.v === stamp(w)) return saved;
+      if (saved) localStorage.removeItem(store(w));
     } catch {}
     const base = structuredClone(PACKING.lists[w]);
+    base.v = stamp(w);
     base.sections.forEach((s, si) => s.items.forEach((it, ii) => {
       it.id = `${si}-${ii}`;
       it.done = localStorage.getItem(`pk:${w}:${si}:${ii}`) === '1';   // keep old ticks
