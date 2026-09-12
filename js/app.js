@@ -190,6 +190,24 @@ function trailBadge(st) {
   </span>`;
 }
 
+
+/* Research notes run long and the sourcing is worth keeping, so the first sentence
+   stands and the rest folds away. */
+function note(text, tone) {
+  if (!text) return '';
+  if (text.length <= 150) return `<p class="enote ${tone}">${text}</p>`;
+  const stop = text.search(/(?<=[.!?])\s/);
+  /* A researcher's first sentence can itself run 300 characters, so the summary
+     gets cut at a word instead and the whole note repeats inside. */
+  const cut = stop > 0 && stop < 180 ? stop + 1 : text.lastIndexOf(' ', 170);
+  const head = text.slice(0, cut).trim() + (stop + 1 === cut ? '' : '…');
+  const rest = (stop + 1 === cut ? text.slice(cut) : text).trim();
+  return `<details class="enote ${tone} long">
+    <summary>${head}<span>more</span></summary>
+    <p>${rest}</p>
+  </details>`;
+}
+
 function expectPanel(s) {
   const e = s.expect;
   if (!e && !s.seasonal && !s.cost) return '';
@@ -211,8 +229,8 @@ function expectPanel(s) {
         ${e?.need ? `<div><dt>Time here</dt><dd>${e.need}</dd></div>` : ''}
         ${e?.parking ? `<div><dt>Getting in</dt><dd>${e.parking}</dd></div>` : ''}
       </dl>
-      ${s.cost ? `<p class="enote money">${s.cost}</p>` : ''}
-      ${s.seasonal ? `<p class="enote warn">${s.seasonal}</p>` : ''}
+      ${note(s.cost, 'money')}
+      ${note(s.seasonal, 'warn')}
       ${paths ? `<div class="h-sec">Pick your version</div><div class="paths">${paths}</div>` : ''}
     </section>`;
 }
