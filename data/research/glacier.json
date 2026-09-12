@@ -1,75 +1,120 @@
 {
   "d06s1": {
     "expect": {
-      "arrive": "Sunrise at 6,646 ft is windy and often near freezing in late September; the visitor center doesn't open until 9am.",
-      "parking": "By Sept 30 the 235-space lot is first-come, first-served, no time limit or shuttle needed.",
-      "need": "3-4 hours",
+      "arrive": "Logan Pass Visitor Center lot (235 spaces) is famous for filling before sunrise in season; late September with the 2026 shuttle/timed-parking system off, it is first-come first-served and cold, windy, and dark at 5-6am.",
+      "parking": "235 spaces; in-season this lot fills before dawn most days — arriving well before 5am is the only way to guarantee a spot.",
+      "need": "4-4.5 hours including the drive down to Saint Mary",
       "paths": [
-        { "opt": "Sunrise view only", "do": "Watch sunrise from the Logan Pass lot and boardwalk edge, no hike.", "cost": "30 min" },
-        { "opt": "Hidden Lake Overlook boardwalk", "do": "Walk the boardwalk to the overlook and back.", "cost": "1h 30m" },
-        { "opt": "Full loop plus St Mary stops", "do": "Hidden Lake Overlook, then drive down to Sun Point and St. Mary Falls.", "cost": "4h" }
+        { "opt": "Sunrise from the lot, no walk", "do": "Watch sunrise from the Logan Pass parking area and boardwalk start, back in the car for the rest of the East Side stops.", "cost": "30-40 min" },
+        { "opt": "Hidden Lake Overlook", "do": "Boardwalk and stairs up to the overlook and back, bundled up against the wind.", "cost": "1h 30m-2h" },
+        { "opt": "Overlook plus East Side stops", "do": "Hidden Lake Overlook, then drive down with stops at Sunrift Gorge, Sun Point, and Wild Goose Island.", "cost": "4h" }
       ]
     },
-    "alt": ["Logan Pass Glacier National Park", "Hidden Lake Glacier National Park", "Wild Goose Island Saint Mary Lake", "Sunrift Gorge"],
+    "alt": [
+      "Logan Pass sunrise Glacier National Park",
+      "Going-to-the-Sun Road alpine section",
+      "Wild Goose Island Saint Mary Lake",
+      "Jackson Glacier Overlook"
+    ],
+    "seasonal": "Going-to-the-Sun Road has no fixed closing date — it typically shuts in mid-to-late October (often around the third Monday) but has closed as early as October 11-16 in past years after early snow, and the alpine section was even closed temporarily September 6-9, 2026 for heavy rain and rockfall risk. On September 30, 2026 the road should very likely still be open, but there is real year-to-year risk of an early snow closure by then — check the park's current road status page the morning of. Separately, the 2026 vehicle-reservation system was dropped entirely, and the ticketed Logan Pass shuttle and three-hour timed parking pilot ran only July 1-September 7, 2026, so neither applies on September 30 — no ticket or reservation needed, but the lot's usual fill-before-dawn pattern is unaffected by that system's end. Sources: nps.gov/glac/planyourvisit/visiting-loganpass-2026.htm, nps.gov/glac/planyourvisit/vehicle-reservations2026.htm, nps.gov/glac/learn/news (historical closure releases)."
+    ,
     "stops": {
-      "Logan Pass": { "kind": "view" },
+      "Logan Pass": { "kind": "sight" },
       "Hidden Lake Overlook": {
         "kind": "hike",
-        "trail": { "dist": "4.2 km round trip", "time": "1h-1h 30m", "gain": "185 m", "from": "Logan Pass Visitor Center", "grade": "moderate" }
+        "trail": {
+          "dist": "2.6 mi (4.2 km) round trip",
+          "time": "1h 30m-2h",
+          "gain": "608 ft (185 m)",
+          "from": "Logan Pass Visitor Center boardwalk",
+          "grade": "moderate"
+        }
       },
       "Saint Mary Falls": {
         "kind": "hike",
-        "trail": { "dist": "3.8 km round trip", "time": "1h-1h 15m", "gain": "79 m", "from": "St. Mary Falls Trailhead", "grade": "moderate" }
+        "trail": {
+          "dist": "2.4 mi (3.9 km) round trip",
+          "time": "1h-1h 15m",
+          "from": "Saint Mary Falls Trailhead",
+          "grade": "easy"
+        }
       },
       "Sunrift Gorge": { "kind": "view" },
       "Sun Point Nature Trail": {
         "kind": "walk",
-        "trail": { "dist": "2.8 km round trip", "time": "45 min-1h", "gain": "87 m", "from": "Sun Point Picnic Area", "grade": "easy" }
+        "trail": {
+          "dist": "1.8 mi (2.9 km) round trip",
+          "time": "45 min-1h",
+          "gain": "284 ft (87 m)",
+          "from": "Sun Point parking area",
+          "grade": "easy"
+        }
       },
       "Wild Goose Island Lookout": { "kind": "view" },
       "Explore Saint Mary": { "kind": "sight" }
-    },
-    "seasonal": "GTSR's alpine section through Logan Pass can close for snow anytime from early September; NPS says it's typically open through the third Monday of October (Oct 19, 2026), but closures as early as Sept 3 have occurred — check nps.gov/glac road status the week before."
+    }
   },
   "d06s2": {
     "expect": {
-      "arrive": "Trail of the Cedars boardwalk is right off the road; the Avalanche Lake trailhead shares the same lot.",
-      "parking": "Avalanche Creek lot is small and is consistently the first in the park to fill.",
-      "need": "2-3 hours",
+      "arrive": "Avalanche Creek's lot is small and paved and fills by mid-morning in season; Lake McDonald's lodge and lakeshore have their own larger lot and are visible right from the road.",
+      "parking": "Avalanche Creek lot holds roughly 45-50 cars and is often full by 9-10am; overflow means parking along the road shoulder.",
+      "need": "2.5-3.5 hours",
       "paths": [
-        { "opt": "Trail of the Cedars only", "do": "Flat boardwalk loop through old-growth cedar, no elevation gain.", "cost": "25 min" },
-        { "opt": "Add Avalanche Lake", "do": "Continue past the cedars up to the lake and back.", "cost": "2h 30m" },
-        { "opt": "Lake McDonald drive-by", "do": "Skip the hike, stop at the lodge and lakeshore instead.", "cost": "20 min" }
+        { "opt": "Cedars only", "do": "Flat boardwalk loop through the old-growth cedars, no further hike.", "cost": "30-40 min" },
+        { "opt": "Add Lake McDonald", "do": "Trail of the Cedars, then a stop at the lake and historic lodge.", "cost": "1h 30m" },
+        { "opt": "Add Avalanche Lake", "do": "Cedars loop, then the climb up to Avalanche Lake and back, then Lake McDonald.", "cost": "3h 30m" }
       ]
     },
-    "alt": ["Trail of the Cedars Glacier National Park", "Avalanche Lake Montana", "Lake McDonald Glacier National Park", "Lake McDonald Lodge"],
+    "alt": [
+      "Lake McDonald Lodge Glacier National Park",
+      "Avalanche Gorge Glacier National Park",
+      "McDonald Creek Glacier National Park",
+      "Old-growth cedar forest Glacier National Park"
+    ],
     "stops": {
       "Trail of the Cedars": {
         "kind": "walk",
-        "trail": { "dist": "1 km loop", "from": "Avalanche Creek / Trail of the Cedars trailhead", "grade": "easy" }
+        "trail": {
+          "dist": "0.9 mi (1.1 km) loop",
+          "time": "30-40 min",
+          "gain": "83 ft (25 m)",
+          "from": "Avalanche Picnic Area",
+          "grade": "easy"
+        }
       },
       "Avalanche Lake": {
         "kind": "hike",
-        "trail": { "dist": "7.4 km round trip", "time": "2h-2h 30m", "gain": "226 m", "from": "Avalanche Picnic Area", "grade": "moderate" }
+        "trail": {
+          "dist": "4.6 mi (7.4 km) round trip",
+          "time": "2h-2h 30m",
+          "gain": "741 ft (226 m)",
+          "from": "Avalanche Picnic Area (via Trail of the Cedars)",
+          "grade": "moderate"
+        }
       },
-      "Lake McDonald": { "kind": "view" },
+      "Lake McDonald": { "kind": "sight" },
       "The Desoto Grill": { "kind": "food" },
       "Sykes Diner & Market": { "kind": "food" }
     }
   },
   "d07s1": {
     "expect": {
-      "arrive": "Two-lane US-2 through forest; Kootenai Falls is a short walk down from a large roadside pullout.",
-      "parking": "Kootenai Falls pullout is large and rarely full outside summer weekends.",
-      "need": "3-4 hours",
+      "arrive": "Kootenai Falls is a roadside pull-off on US-2 with a short unpaved path down to the overlook; the falls are audible before they're visible and the swinging bridge is a longer walk further down.",
+      "parking": "Small gravel lot right off the highway; rarely full outside summer weekends.",
+      "need": "4h including the drive",
       "paths": [
-        { "opt": "Drive straight through", "do": "Stay on US-2, stop only for photos from the car.", "cost": "3h" },
-        { "opt": "Kootenai Falls stop", "do": "Walk down to the falls viewpoint and swinging bridge.", "cost": "3h 40m" }
+        { "opt": "Overlook only", "do": "Short walk down to the falls overlook, skip the swinging bridge.", "cost": "20-30 min" },
+        { "opt": "Add the swinging bridge", "do": "Continue down past the overlook to the swinging bridge over the river.", "cost": "45 min-1h" }
       ]
     },
-    "alt": ["Kootenai Falls Montana", "Kootenai River Montana", "Yaak River Valley"],
+    "alt": [
+      "Kootenai River Montana canyon",
+      "Troy Montana riverside town",
+      "US Highway 2 Montana forest",
+      "Kootenai National Forest scenery"
+    ],
     "stops": {
-      "Kootenai Falls": { "kind": "walk" },
+      "Kootenai Falls": { "kind": "view" },
       "Troy, Montana": { "kind": "sight" },
       "Kootenai National Forest": { "kind": "drive" },
       "Bonners Ferry": { "kind": "sight" }
@@ -77,35 +122,45 @@
   },
   "d07s2": {
     "expect": {
-      "arrive": "Highway drive with the Selkirks to the west; the Pack River detour is unpaved and only worth it if the larch are turning.",
-      "need": "2-3 hours",
+      "arrive": "US-95 south of Bonners Ferry is a two-lane highway with the Selkirks visible to the west most of the way; Upper Pack River Road is unpaved gravel and only worth the detour if the larch are already turning.",
+      "need": "2.5h including the drive",
       "paths": [
-        { "opt": "Straight to Sandpoint", "do": "Stay on US-95, no detour.", "cost": "1h 15m" },
-        { "opt": "Pack River larch detour", "do": "Turn up gravel Upper Pack River Road for golden tamarack views.", "cost": "2h" }
+        { "opt": "Straight through", "do": "Drive US-95 to Sandpoint with photo stops at pull-outs only.", "cost": "1h 30m" },
+        { "opt": "Larch detour", "do": "Turn up Upper Pack River Road for a look at the western larch before continuing to Sandpoint.", "cost": "+30-40 min" }
       ]
     },
-    "alt": ["Selkirk Mountains Idaho", "Western larch autumn Idaho", "Kaniksu National Forest"],
+    "alt": [
+      "Selkirk Mountains Idaho autumn",
+      "Western larch gold Idaho panhandle",
+      "Kaniksu National Forest scenery",
+      "Long Bridge Sandpoint Idaho lake"
+    ],
     "stops": {
       "Kaniksu National Forest": { "kind": "drive" },
       "Selkirk Mountains": { "kind": "view" },
       "Upper Pack River Road": { "kind": "drive" },
-      "Sandpoint Long Bridge": { "kind": "view" }
+      "Sandpoint Long Bridge": { "kind": "sight" }
     }
   },
   "d07s3": {
     "expect": {
-      "arrive": "City Beach is a short walk from downtown parking; the Long Bridge and open lake are right behind it.",
-      "parking": "Downtown Sandpoint street parking and the City Beach lot fill on nice afternoons.",
-      "need": "2-3 hours",
+      "arrive": "City Beach is an in-town park with its own lot, flat and easy; the Pend d'Oreille Bay Trail and Sand Creek Trail are both flat lakeside/creekside paths starting within walking distance of downtown.",
+      "parking": "City Beach and downtown Sandpoint have municipal lots and metered street parking; not a squeeze outside summer weekends.",
+      "need": "2.5-3.5 hours",
       "paths": [
-        { "opt": "City Beach only", "do": "Walk the beach and watch boats on the lake.", "cost": "30 min" },
-        { "opt": "Sand Creek Trail stroll", "do": "Paved path along the creek from downtown, flat and short.", "cost": "1h" },
-        { "opt": "Add Pend d'Oreille Bay Trail", "do": "Continue along the lakeshore trail toward Ponderay.", "cost": "2h" }
+        { "opt": "City Beach only", "do": "Walk the beach and park, no trail.", "cost": "30-40 min" },
+        { "opt": "Add a lakeside walk", "do": "City Beach, then part of the Pend d'Oreille Bay Trail or Sand Creek Trail out and back.", "cost": "1h 30m" },
+        { "opt": "Add Schweitzer viewpoint", "do": "Lakeside walk, then drive up to Schweitzer Mountain Resort for the overlook before dinner.", "cost": "2h 30m-3h" }
       ]
     },
-    "alt": ["Lake Pend Oreille", "Sandpoint Long Bridge Idaho", "City Beach Sandpoint", "Schweitzer Mountain Resort"],
+    "alt": [
+      "City Beach Sandpoint Idaho",
+      "Lake Pend Oreille shoreline autumn",
+      "Sand Creek downtown Sandpoint",
+      "Schweitzer Mountain Resort viewpoint"
+    ],
     "stops": {
-      "City Beach": { "kind": "walk" },
+      "City Beach": { "kind": "sight" },
       "Pend d'Oreille Bay Trail": { "kind": "walk" },
       "Sand Creek Trail": { "kind": "walk" },
       "Schweitzer Mountain Resort": { "kind": "view" },
@@ -114,69 +169,89 @@
   },
   "d08s1": {
     "expect": {
-      "arrive": "Highway drive past two lakes; Farragut and Silverwood are both roadside stops, not required detours.",
-      "need": "2-3 hours",
+      "arrive": "US-95 south of Sandpoint runs along the shoulders of Lake Pend Oreille and then Lake Coeur d'Alene; Farragut and Silverwood are both roadside, quick-look stops rather than full visits given the drive to Spokane.",
+      "need": "2h including the drive",
       "paths": [
-        { "opt": "Drive straight through", "do": "US-95 to I-90, no stops.", "cost": "1h 45m" },
-        { "opt": "Farragut State Park stop", "do": "Walk the shoreline near the old naval training station.", "cost": "2h 30m" }
+        { "opt": "Drive straight to Spokane", "do": "No stops, just the highway.", "cost": "1h 45m" },
+        { "opt": "Quick lake-view stop", "do": "Pull off at a Farragut or Lake Coeur d'Alene viewpoint for a few minutes.", "cost": "+15-20 min" }
       ]
     },
-    "alt": ["Farragut State Park Idaho", "Lake Coeur d'Alene", "Silverwood Theme Park"],
+    "alt": [
+      "Farragut State Park Idaho lakeshore",
+      "Silverwood Theme Park entrance",
+      "Lake Coeur d'Alene Idaho autumn",
+      "Lake Pend Oreille from US-95"
+    ],
     "stops": {
-      "Farragut State Park": { "kind": "sight" },
+      "Farragut State Park": { "kind": "view" },
       "Silverwood Theme Park": { "kind": "sight" },
       "Lake Coeur d'Alene": { "kind": "view" }
     }
   },
   "d08s2": {
     "expect": {
-      "arrive": "Riverfront Park sits right downtown; the falls are visible from the pedestrian bridges within minutes of any garage.",
-      "parking": "Several downtown parking garages border the park; none are free, none are huge.",
-      "need": "2 hours",
+      "arrive": "Riverfront Park is entirely walkable from downtown parking garages; the falls are visible right from the park paths without any hike, and Havermale Island's paths are flat and paved.",
+      "parking": "No park-specific lot; downtown Spokane garages and metered street parking serve the park, tightest on weekday mornings.",
+      "need": "2-2.5 hours",
       "paths": [
-        { "opt": "Falls viewpoints only", "do": "Walk the pedestrian bridges over both falls channels.", "cost": "30 min" },
-        { "opt": "Full park loop", "do": "Loop the paths on both riverbanks past the Pavilion and Clocktower.", "cost": "1h 15m" },
-        { "opt": "Add Davenport Hotel", "do": "Walk a few blocks over to see the historic lobby.", "cost": "2h" }
+        { "opt": "Falls viewpoints only", "do": "Walk the park paths to the falls overlooks and back.", "cost": "40 min" },
+        { "opt": "Add the Davenport Hotel", "do": "Falls viewpoints, then walk a few blocks to see the Davenport lobby.", "cost": "1h 15m" },
+        { "opt": "Add Manito Park", "do": "Falls and Davenport, then drive south to Manito Park's gardens.", "cost": "2h 30m" }
       ]
     },
-    "alt": ["Spokane Falls", "Riverfront Park Spokane", "Davenport Hotel Spokane", "Spokane Falls SkyRide gondola"],
+    "alt": [
+      "Spokane Falls SkyRide gondola",
+      "Havermale Island Spokane",
+      "Davenport Hotel lobby Spokane",
+      "Manito Park Duncan Garden Spokane"
+    ],
     "stops": {
       "Riverfront Park": { "kind": "walk" },
       "Spokane Falls": { "kind": "view" },
       "Davenport Hotel": { "kind": "sight" },
-      "Manito Park": { "kind": "walk" }
+      "Manito Park": { "kind": "sight" }
     }
   },
   "d08s3": {
     "expect": {
-      "arrive": "Long highway push from I-90 to US-2; Cashmere and Ohme Gardens are the only reasons to leave the car before Tumwater Canyon.",
-      "need": "3-4 hours driving, plus stops",
+      "arrive": "I-90 to Wenatchee is fast interstate driving; Cashmere is a small walkable historic downtown right off the highway, and Tumwater Canyon is a two-lane river canyon road with pull-outs but no long stops needed.",
+      "need": "3.5h including the drive",
       "paths": [
-        { "opt": "Drive straight through", "do": "I-90 to US-2, no stops.", "cost": "3h" },
-        { "opt": "Cashmere candy stop", "do": "Quick walk through downtown Cashmere.", "cost": "3h 30m" },
-        { "opt": "Add Ohme Gardens", "do": "Walk the alpine garden paths overlooking the valley.", "cost": "4h 15m" }
+        { "opt": "Drive straight through", "do": "No stops, straight to Leavenworth.", "cost": "3h" },
+        { "opt": "Cashmere stop", "do": "Walk Cashmere's short main street, candy shop stop.", "cost": "+30-40 min" },
+        { "opt": "Add Ohme Gardens", "do": "Cashmere plus a stop at Ohme Gardens overlooking the valley.", "cost": "+1h" }
       ]
     },
-    "alt": ["Cashmere Washington", "Ohme Gardens Wenatchee", "Tumwater Canyon autumn", "Wenatchee River canyon"],
+    "alt": [
+      "Cashmere Washington downtown",
+      "Aplets and Cotlets factory Cashmere",
+      "Ohme Gardens Wenatchee overlook",
+      "Tumwater Canyon Wenatchee River autumn"
+    ],
     "stops": {
       "Cashmere": { "kind": "sight" },
-      "Ohme Gardens": { "kind": "walk" },
+      "Ohme Gardens": { "kind": "sight" },
       "Tumwater Canyon": { "kind": "drive" }
     }
   },
   "d08s4": {
     "expect": {
-      "arrive": "Front Street is pedestrian-only and packed for Oktoberfest opening weekend; expect a slow walk-in from wherever you park.",
-      "parking": "Downtown lots fill early on Oktoberfest weekend; expect to park several blocks out.",
-      "need": "2-3 hours",
+      "arrive": "Front Street is closed to cars and entirely on foot; this is Oktoberfest opening weekend so expect real crowds, live music, and both beer-garden venues running well past dark.",
+      "parking": "Village lots and street parking fill early on Oktoberfest weekend; expect to park several blocks out and walk in.",
+      "need": "2.5-3 hours",
       "paths": [
-        { "opt": "Front Street stroll", "do": "Walk the main street and browse storefronts.", "cost": "1h" },
-        { "opt": "Add a beer garden", "do": "Stop into Front Street Park for the Oktoberfest tent.", "cost": "2h 30m" }
+        { "opt": "Walk Front Street, dinner", "do": "Stroll the storefronts, dinner at a Bavarian restaurant.", "cost": "1h 30m" },
+        { "opt": "Add the beer garden", "do": "Front Street and dinner, then time in the Front Street Park beer garden for the festival atmosphere.", "cost": "2h 30m-3h" }
       ]
     },
-    "alt": ["Leavenworth Washington Bavarian village", "Front Street Leavenworth", "Leavenworth Oktoberfest"],
+    "alt": [
+      "Leavenworth Bavarian village lights",
+      "Oktoberfest Leavenworth Washington",
+      "Front Street Leavenworth storefronts",
+      "Alpen Strasse Leavenworth architecture"
+    ],
     "stops": {
-      "Front Street": { "kind": "sight" },
+      "Front Street": { "kind": "walk" },
       "9th Street / Alpen Strasse": { "kind": "sight" },
       "Front Street Park": { "kind": "sight" }
     }

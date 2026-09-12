@@ -1067,6 +1067,7 @@ const TRIP = [
       "name": "South Entrance Station",
       "q": "Yellowstone South Entrance",
       "note": "Park boundary; drive north from Jackson begins here.",
+      "kind": "sight",
       "ll": [
        43.75222,
        -110.72227
@@ -1076,6 +1077,7 @@ const TRIP = [
       "name": "Moose Falls",
       "q": "Moose Falls Yellowstone",
       "note": "Small waterfall steps from the road.",
+      "kind": "view",
       "ll": [
        44.15186,
        -110.67263
@@ -1085,6 +1087,7 @@ const TRIP = [
       "name": "Lewis Falls",
       "q": "Lewis Falls Yellowstone",
       "note": "Wide falls on the Lewis River.",
+      "kind": "view",
       "ll": [
        44.26735,
        -110.6369
@@ -1094,6 +1097,7 @@ const TRIP = [
       "name": "Lewis Lake Picnic Area",
       "q": "Lewis Lake Yellowstone",
       "note": "Lakeside pull-off, good rest stop.",
+      "kind": "sight",
       "ll": [
        44.28303,
        -110.628
@@ -1103,6 +1107,7 @@ const TRIP = [
       "name": "Grant Village Visitor Center",
       "q": "Grant Village Yellowstone",
       "note": "Visitor center on the south shore of Yellowstone Lake.",
+      "kind": "sight",
       "ll": [
        44.39358,
        -110.55632
@@ -1112,11 +1117,46 @@ const TRIP = [
       "name": "West Thumb Geyser Basin",
       "q": "West Thumb Geyser Basin",
       "note": "Geysers and hot springs right on the lakeshore.",
+      "kind": "walk",
+      "trail": {
+       "dist": "0.75 mi (1.2 km) round trip",
+       "time": "30-45 min",
+       "from": "West Thumb Geyser Basin parking lot",
+       "grade": "easy"
+      },
       "ll": [
        44.41701,
        -110.57197
       ]
      }
+    ],
+    "expect": {
+     "arrive": "South Entrance is a simple gate check, then a two-lane forested road; Grant Village and West Thumb both have proper paved lots that rarely fill this early.",
+     "parking": "Grant Village Visitor Center and West Thumb Geyser Basin both have full-size paved lots; neither is reported to fill before mid-morning.",
+     "need": "3-3.5 hours including the drive",
+     "paths": [
+      {
+       "opt": "Drive straight through",
+       "do": "Roadside look at Moose Falls and Lewis Falls from the pull-offs, no stop at Grant Village.",
+       "cost": "1h"
+      },
+      {
+       "opt": "Add West Thumb",
+       "do": "Same pull-offs, plus the West Thumb Geyser Basin boardwalk loops on the lakeshore.",
+       "cost": "1h 45m"
+      },
+      {
+       "opt": "Full stop tour",
+       "do": "Both waterfalls, Lewis Lake picnic area, Grant Village Visitor Center, and the full West Thumb boardwalk.",
+       "cost": "2h 30m"
+      }
+     ]
+    },
+    "alt": [
+     "Lewis Falls Yellowstone autumn",
+     "Yellowstone Lake West Thumb shoreline",
+     "Grant Village Visitor Center exterior",
+     "Lewis River canyon Yellowstone"
     ]
    },
    {
@@ -1141,6 +1181,7 @@ const TRIP = [
       "name": "Continental Divide",
       "q": "Continental Divide Yellowstone National Park",
       "note": "Marked crossing on the road south of Old Faithful.",
+      "kind": "sight",
       "ll": [
        44.42286,
        -110.66069
@@ -1150,6 +1191,7 @@ const TRIP = [
       "name": "Kepler Cascades",
       "q": "Kepler Cascades",
       "note": "Roadside waterfall just before Old Faithful.",
+      "kind": "view",
       "ll": [
        44.44554,
        -110.80587
@@ -1159,12 +1201,42 @@ const TRIP = [
       "name": "Old Faithful",
       "q": "Old Faithful geyser",
       "note": "Eruptions roughly every 90 minutes.",
+      "kind": "sight",
       "ll": [
        44.46046,
        -110.82815
       ]
      }
-    ]
+    ],
+    "expect": {
+     "arrive": "Old Faithful's lot is enormous but this is the park's single busiest stop; it fills on clear late-September mornings by mid-morning and overflows to a second lot across the road. The geyser itself is visible from the visitor center deck and much of the boardwalk without walking far, but the wider Upper Geyser Basin (Morning Glory Pool, Geyser Hill) needs real boardwalk time.",
+     "parking": "Main Old Faithful lot holds hundreds of cars but fills by mid-morning in good weather; an overflow lot sits across the road near the Old Faithful Inn.",
+     "need": "1.5-2.5 hours",
+     "paths": [
+      {
+       "opt": "One eruption, no walk",
+       "do": "Check the prediction board at the Visitor Education Center, watch the eruption from the boardwalk benches nearby.",
+       "cost": "45 min-1h"
+      },
+      {
+       "opt": "Add Geyser Hill",
+       "do": "After the eruption, walk the boardwalk loop around Geyser Hill's smaller geysers and pools.",
+       "cost": "1h 45m"
+      },
+      {
+       "opt": "Full Upper Geyser Basin walk",
+       "do": "Boardwalk out toward Morning Glory Pool and back, past Castle, Grand, and Riverside Geysers.",
+       "cost": "2h 30m"
+      }
+     ]
+    },
+    "alt": [
+     "Castle Geyser Yellowstone",
+     "Morning Glory Pool Yellowstone",
+     "Old Faithful Inn lobby interior",
+     "Riverside Geyser Yellowstone eruption"
+    ],
+    "seasonal": "Biscuit Basin, a short drive north of Old Faithful on the way to Midway, has been closed since a July 23, 2024 hydrothermal explosion and was hit by a second explosion on July 13, 2026; it remains closed indefinitely as of 2026 (nps.gov/yell/planyourvisit/conditions.htm). It is not on this itinerary but travelers sometimes expect to stop there — do not plan a stop."
    },
    {
     "id": "d04s3",
@@ -1185,15 +1257,34 @@ const TRIP = [
       "name": "Grand Prismatic Spring",
       "q": "Grand Prismatic Spring",
       "note": "Largest hot spring in the US; rainbow-colored.",
+      "kind": "walk",
       "ll": [
        44.52511,
        -110.83819
       ]
      },
      {
+      "name": "Grand Prismatic Overlook (Fairy Falls Trailhead)",
+      "q": "Grand Prismatic Spring overlook Yellowstone",
+      "note": "The view from above — colours don't read from the boardwalk.",
+      "kind": "hike",
+      "trail": {
+       "dist": "1.2 mi (1.9 km) round trip",
+       "time": "45 min-1h",
+       "gain": "105 ft (32 m)",
+       "from": "Fairy Falls Trailhead, 1 mi south of Midway Geyser Basin",
+       "grade": "easy"
+      },
+      "ll": [
+       44.519,
+       -110.833
+      ]
+     },
+     {
       "name": "Firehole Lake Drive",
       "q": "Firehole Lake Drive Yellowstone",
       "note": "One-way loop past Great Fountain Geyser.",
+      "kind": "drive",
       "ll": [
        44.54028,
        -110.80174
@@ -1203,11 +1294,40 @@ const TRIP = [
       "name": "Fountain Paint Pots",
       "q": "Fountain Paint Pots",
       "note": "Boardwalk loop past mudpots and geysers.",
+      "kind": "walk",
       "ll": [
        44.55061,
        -110.80624
       ]
      }
+    ],
+    "expect": {
+     "arrive": "Grand Prismatic itself is a flat boardwalk loop right off the Midway Geyser Basin lot, but the spring's full rainbow color only reads from above; the classic overhead photo requires the separate Fairy Falls Trailhead lot one mile south, which is small and known to fill by mid-morning.",
+     "parking": "Midway Geyser Basin's lot is mid-sized and fills by late morning; the Fairy Falls Trailhead lot for the overlook is much smaller and fills faster — arrive before 10am or expect roadside parking.",
+     "need": "1.5-2.5 hours",
+     "paths": [
+      {
+       "opt": "Boardwalk only",
+       "do": "Walk the flat Midway boardwalk past Excelsior Geyser and along the edge of Grand Prismatic.",
+       "cost": "30-40 min"
+      },
+      {
+       "opt": "Add the overlook",
+       "do": "Drive to the separate Fairy Falls Trailhead and walk up to the Grand Prismatic Overlook for the postcard view from above.",
+       "cost": "1h 15m"
+      },
+      {
+       "opt": "Full loop with Firehole Lake Drive",
+       "do": "Midway boardwalk, the overlook hike, and the one-way Firehole Lake Drive past Great Fountain Geyser plus Fountain Paint Pots.",
+       "cost": "2h 15m"
+      }
+     ]
+    },
+    "alt": [
+     "Grand Prismatic Spring aerial view",
+     "Excelsior Geyser crater Yellowstone",
+     "Great Fountain Geyser Firehole Lake Drive",
+     "Fountain Paint Pots mudpots"
     ]
    },
    {
@@ -1229,6 +1349,7 @@ const TRIP = [
       "name": "Virginia Cascade Drive",
       "q": "Virginia Cascade Yellowstone",
       "note": "One-way spur past a narrow waterfall.",
+      "kind": "drive",
       "ll": [
        44.71393,
        -110.64927
@@ -1238,6 +1359,7 @@ const TRIP = [
       "name": "Canyon Visitor Education Center",
       "q": "Canyon Visitor Education Center Yellowstone",
       "note": "Exhibits on the canyon and its geology.",
+      "kind": "sight",
       "ll": [
        44.73473,
        -110.49189
@@ -1247,6 +1369,7 @@ const TRIP = [
       "name": "Inspiration Point",
       "q": "Inspiration Point Yellowstone Grand Canyon",
       "note": "Wide view down the canyon.",
+      "kind": "view",
       "ll": [
        44.72467,
        -110.46979
@@ -1255,12 +1378,14 @@ const TRIP = [
      {
       "name": "Lower Falls (Artist Point)",
       "q": "Lower Falls Yellowstone",
-      "note": "308-foot waterfall, the canyon's centerpiece."
+      "note": "308-foot waterfall, the canyon's centerpiece.",
+      "kind": "view"
      },
      {
       "name": "Upper Falls View",
       "q": "Upper Falls Yellowstone",
       "note": "Smaller falls upstream of the Lower Falls.",
+      "kind": "view",
       "ll": [
        44.71478,
        -110.4973
@@ -1270,6 +1395,7 @@ const TRIP = [
       "name": "Sulphur Caldron",
       "q": "Sulphur Caldron Yellowstone",
       "note": "One of the most acidic springs in the park.",
+      "kind": "view",
       "ll": [
        44.62403,
        -110.43349
@@ -1279,6 +1405,7 @@ const TRIP = [
       "name": "Mud Volcano Trail — Black Dragon's Caldron",
       "q": "Mud Volcano Yellowstone",
       "note": "Boardwalk past bubbling mud pots and steam vents.",
+      "kind": "walk",
       "ll": [
        44.62015,
        -110.43528
@@ -1288,11 +1415,40 @@ const TRIP = [
       "name": "LeHardys Rapids",
       "q": "LeHardys Rapids",
       "note": "Rapids on the Yellowstone River; cutthroat trout run here.",
+      "kind": "view",
       "ll": [
        44.60737,
        -110.38388
       ]
      }
+    ],
+    "expect": {
+     "arrive": "Canyon Village has the biggest lots on this stretch and rarely fills; the individual overlooks (Inspiration Point, Artist Point) are small paved pull-offs a short walk from their own car parks, not from Canyon Village itself. The canyon and both falls are visible without much walking, but the best angles need the short paved paths at each overlook.",
+     "parking": "Canyon Visitor Education Center has a large lot; Artist Point and Inspiration Point each have their own smaller lots that fill on clear afternoons.",
+     "need": "3-4 hours",
+     "paths": [
+      {
+       "opt": "The two icon overlooks",
+       "do": "Artist Point and Inspiration Point only, both short walks from their own lots.",
+       "cost": "1h"
+      },
+      {
+       "opt": "Add Brink of the Lower Falls",
+       "do": "Same two overlooks plus the steep short trail down to the brink of the Lower Falls.",
+       "cost": "2h"
+      },
+      {
+       "opt": "Full canyon tour",
+       "do": "Both overlooks, Brink of the Lower Falls, Upper Falls View, plus Sulphur Caldron and Mud Volcano on the way south.",
+       "cost": "3h 30m"
+      }
+     ]
+    },
+    "alt": [
+     "Grand Canyon of the Yellowstone Lower Falls",
+     "Yellowstone River canyon yellow rock",
+     "Mud Volcano steam vents",
+     "Sulphur Caldron acidic spring"
     ]
    }
   ]
@@ -1331,6 +1487,7 @@ const TRIP = [
       "name": "Gibbon Falls",
       "q": "Gibbon Falls Yellowstone",
       "note": "Roadside waterfall on the Gibbon River.",
+      "kind": "view",
       "ll": [
        44.65402,
        -110.77075
@@ -1340,6 +1497,7 @@ const TRIP = [
       "name": "Beryl Spring",
       "q": "Beryl Spring Yellowstone",
       "note": "Small, loud hot spring right by the road.",
+      "kind": "view",
       "ll": [
        44.67869,
        -110.74654
@@ -1349,6 +1507,14 @@ const TRIP = [
       "name": "Monument Geyser Basin",
       "q": "Norris Geyser Basin",
       "note": "Steep short hike to a ridge of geyser cones.",
+      "kind": "hike",
+      "trail": {
+       "dist": "2.4 mi (3.8 km) round trip",
+       "time": "2-2.5h",
+       "gain": "roughly 800 ft (244 m)",
+       "from": "Monument Geyser Basin Trailhead",
+       "grade": "moderate"
+      },
       "ll": [
        44.68768,
        -110.74738
@@ -1358,6 +1524,7 @@ const TRIP = [
       "name": "Artists' Paintpots",
       "q": "Artists Paint Pots Yellowstone",
       "note": "Boardwalk loop past mudpots and hot springs.",
+      "kind": "walk",
       "ll": [
        44.69154,
        -110.73825
@@ -1367,12 +1534,49 @@ const TRIP = [
       "name": "Norris Geyser Basin",
       "q": "Norris Geyser Basin",
       "note": "Hottest, most acidic basin in the park.",
+      "kind": "walk",
+      "trail": {
+       "dist": "1.2 km + 2.4 km",
+       "time": "30–90 min",
+       "from": "Norris Geyser Basin parking lot / Norris Museum",
+       "grade": "easy",
+       "caveat": "Porcelain Basin and Back Basin are two separate loops, not one trail"
+      },
       "ll": [
        44.72652,
        -110.70357
       ]
      }
-    ]
+    ],
+    "expect": {
+     "arrive": "Gibbon Falls and Beryl Spring are both direct roadside pull-offs, no real walk. Norris has the biggest lot on this stretch and is the hottest, most acidic basin in the park; it's split into two separate boardwalk loops (Porcelain Basin and Back Basin) that don't connect at both ends, so plan which one(s) you're doing before setting off from the car.",
+     "parking": "Norris Geyser Basin's lot is large and generally has room outside of midday peak; Gibbon Falls and Beryl Spring are small pull-offs with a handful of spaces each.",
+     "need": "2-2.5 hours",
+     "paths": [
+      {
+       "opt": "Roadside stops only",
+       "do": "Gibbon Falls and Beryl Spring from the pull-offs, skip Norris's basins.",
+       "cost": "20 min"
+      },
+      {
+       "opt": "Porcelain Basin only",
+       "do": "Same pull-offs, plus the shorter Porcelain Basin loop at Norris.",
+       "cost": "1h"
+      },
+      {
+       "opt": "Both Norris loops",
+       "do": "Porcelain Basin and Back Basin, the full Norris visit.",
+       "cost": "1h 45m"
+      }
+     ]
+    },
+    "alt": [
+     "Gibbon Falls Yellowstone",
+     "Norris Geyser Basin Porcelain Basin",
+     "Steamboat Geyser Norris eruption",
+     "Artists Paint Pots mud pots Yellowstone"
+    ],
+    "seasonal": "Monument Geyser Basin's trail is a steep 2.4 mi (3.8 km) round trip climbing roughly 800 ft — real hiking, not a stroll (nps.gov/places/000/monument-geyser-basin-trailhead.htm and USGS). Given the no-strenuous-hikes rule, skip it and view the basin's steam plumes from the road instead."
    },
    {
     "id": "d05s2",
@@ -1393,6 +1597,7 @@ const TRIP = [
       "name": "Roaring Mountain",
       "q": "Roaring Mountain Yellowstone",
       "note": "Acidic hillside vented with steam and fumaroles.",
+      "kind": "view",
       "ll": [
        44.77716,
        -110.72743
@@ -1401,12 +1606,14 @@ const TRIP = [
      {
       "name": "Cleopatra Spring and Terrace",
       "q": "Mammoth Hot Springs Terraces",
-      "note": "Travertine terrace within the Mammoth complex."
+      "note": "Travertine terrace within the Mammoth complex.",
+      "kind": "walk"
      },
      {
       "name": "Mammoth Hot Springs",
       "q": "Mammoth Hot Springs Terraces",
       "note": "Wide travertine terraces, the park's north hub.",
+      "kind": "walk",
       "ll": [
        44.97062,
        -110.70564
@@ -1416,11 +1623,35 @@ const TRIP = [
       "name": "Mount Everts Viewpoint",
       "q": "Mount Everts Yellowstone",
       "note": "Long sedimentary ridge above Mammoth.",
+      "kind": "view",
       "ll": [
        44.97494,
        -110.66132
       ]
      }
+    ],
+    "expect": {
+     "arrive": "Roaring Mountain is a roadside pull-off with the steaming hillside visible straight from the car. Mammoth's terraces sprawl across a hillside above the village; the Lower Terraces have a boardwalk right off the main lot, the Upper Terraces are reached by a one-way drive loop above them.",
+     "parking": "Roaring Mountain's pull-off is small; Mammoth has several lots around the village and near the Lower Terraces, generally with room outside of midday.",
+     "need": "1.5-2 hours",
+     "paths": [
+      {
+       "opt": "Roadside and Lower Terraces boardwalk only",
+       "do": "Roaring Mountain from the pull-off, then the flat lower boardwalk loop at Mammoth.",
+       "cost": "1h"
+      },
+      {
+       "opt": "Add the Upper Terrace Drive",
+       "do": "Same, plus the one-way scenic drive above the terraces with its own pull-offs.",
+       "cost": "1h 30m"
+      }
+     ]
+    },
+    "alt": [
+     "Mammoth Hot Springs travertine terraces",
+     "Roaring Mountain steam vents",
+     "Minerva Terrace Mammoth Hot Springs",
+     "Fort Yellowstone historic buildings Mammoth"
     ]
    },
    {
@@ -1445,6 +1676,7 @@ const TRIP = [
       "name": "Slough Creek",
       "q": "Slough Creek Yellowstone",
       "note": "Prime wildlife-watching meadow, wolves and bison.",
+      "kind": "view",
       "ll": [
        44.92809,
        -110.32576
@@ -1454,6 +1686,7 @@ const TRIP = [
       "name": "Yellowstone River Overlook",
       "q": "Yellowstone River overlook Lamar Valley",
       "note": "Open view across the Lamar Valley.",
+      "kind": "view",
       "ll": [
        44.90472,
        -110.39139
@@ -1463,12 +1696,49 @@ const TRIP = [
       "name": "Mount Washburn",
       "q": "Mount Washburn fire lookout",
       "note": "Fire lookout summit; wide views of the whole park.",
+      "kind": "hike",
+      "trail": {
+       "dist": "6.2 mi (10 km) round trip",
+       "time": "3-4h",
+       "gain": "1,400 ft (425 m)",
+       "from": "Dunraven Pass trailhead",
+       "grade": "strenuous"
+      },
       "ll": [
        44.79756,
        -110.43379
       ]
      }
-    ]
+    ],
+    "expect": {
+     "arrive": "Lamar Valley's turnouts are wide gravel shoulders right on the road, wildlife visible with the naked eye from the car in many cases. Mount Washburn's trailhead at Dunraven Pass is a real mountain summit hike — this is not a stroll, and the road itself sits at high elevation where a September storm can close it with little warning.",
+     "parking": "Lamar Valley turnouts are informal gravel pull-offs, plentiful but the best wildlife-viewing spots fill at dawn and dusk; Dunraven Pass trailhead lot is small and can fill on clear days.",
+     "need": "2.5-3 hours",
+     "paths": [
+      {
+       "opt": "Lamar Valley only, drive past Washburn",
+       "do": "Stop at the wildlife turnouts, continue over Dunraven Pass without stopping.",
+       "cost": "1h"
+      },
+      {
+       "opt": "Washburn drive-by view",
+       "do": "Same, plus a few minutes at the Dunraven Pass trailhead pull-off for the view without hiking.",
+       "cost": "1h 20m"
+      },
+      {
+       "opt": "Full Mount Washburn hike",
+       "do": "The full out-and-back to the fire lookout summit — not recommended for this trip; strenuous, high elevation, real time cost.",
+       "cost": "3-4h"
+      }
+     ]
+    },
+    "alt": [
+     "Lamar Valley bison herd Yellowstone",
+     "Mount Washburn fire lookout tower",
+     "Specimen Ridge Yellowstone autumn",
+     "Yellowstone wolf Lamar Valley"
+    ],
+    "seasonal": "The road over Dunraven Pass (Canyon to Tower) is scheduled to stay open through late September into October 2026, but it's one of the first roads to close if an early storm hits — check current conditions the morning of. The NPS also flags grizzly bears actively feeding on whitebark pine nuts on Mount Washburn in fall and recommends hiking only in groups of 3+ with bear spray — one more reason the drive-by option fits this trip better than the hike (nps.gov/thingstodo/yell-trail-dunraven-pass-mount-washburn.htm)."
    },
    {
     "id": "d05s4",
@@ -1492,6 +1762,7 @@ const TRIP = [
       "name": "Yellowstone Hot Springs (Paradise Valley)",
       "q": "Paradise Valley Montana Yellowstone River",
       "note": "Riverside soak stop north of the park, [to add].",
+      "kind": "sight",
       "ll": [
        41.42201,
        -117.38737
@@ -1501,6 +1772,7 @@ const TRIP = [
       "name": "Bozeman",
       "q": "Bozeman Montana downtown",
       "note": "College town, good stretch-your-legs stop.",
+      "kind": "sight",
       "ll": [
        45.67943,
        -111.04405
@@ -1510,11 +1782,40 @@ const TRIP = [
       "name": "Butte — Berkeley Pit",
       "q": "Berkeley Pit Butte",
       "note": "Former open-pit copper mine, now a flooded overlook.",
+      "kind": "sight",
       "ll": [
        46.01715,
        -112.51173
       ]
      }
+    ],
+    "expect": {
+     "arrive": "This is the long transit leg — nine hours of driving from Canyon Village to West Glacier. Bozeman is a normal college-town downtown with metered street parking; Butte's Berkeley Pit has its own small paid viewing-stand lot right at the edge of the flooded pit.",
+     "parking": "Bozeman downtown has metered spaces and a few public garages; the Berkeley Pit lot in Butte is small but rarely full given the short visit duration.",
+     "need": "9h drive plus stops",
+     "paths": [
+      {
+       "opt": "Drive straight through",
+       "do": "Gas and bathroom stops only, no detours.",
+       "cost": "9h"
+      },
+      {
+       "opt": "Bozeman stretch stop",
+       "do": "Add a 30-45 minute walk through downtown Bozeman for dinner or coffee.",
+       "cost": "9h 45m"
+      },
+      {
+       "opt": "Add Berkeley Pit",
+       "do": "Same Bozeman stop, plus 20-30 minutes at the Berkeley Pit overlook in Butte.",
+       "cost": "10h 15m"
+      }
+     ]
+    },
+    "alt": [
+     "Bozeman Montana Main Street downtown",
+     "Berkeley Pit Butte Montana flooded mine",
+     "Paradise Valley Montana Yellowstone River",
+     "Butte Montana headframes mining town"
     ]
    }
   ]
@@ -1553,7 +1854,7 @@ const TRIP = [
       "name": "Logan Pass",
       "q": "Logan Pass Glacier National Park",
       "note": "Highest point on Going-to-the-Sun Road, 6,646 ft.",
-      "kind": "view",
+      "kind": "sight",
       "ll": [
        48.69667,
        -113.7179
@@ -1565,10 +1866,10 @@ const TRIP = [
       "note": "Short boardwalk hike from the Logan Pass visitor center.",
       "kind": "hike",
       "trail": {
-       "dist": "4.2 km round trip",
-       "time": "1h-1h 30m",
-       "gain": "185 m",
-       "from": "Logan Pass Visitor Center",
+       "dist": "2.6 mi (4.2 km) round trip",
+       "time": "1h 30m-2h",
+       "gain": "608 ft (185 m)",
+       "from": "Logan Pass Visitor Center boardwalk",
        "grade": "moderate"
       },
       "ll": [
@@ -1582,11 +1883,10 @@ const TRIP = [
       "note": "Trailhead waterfall on the east side.",
       "kind": "hike",
       "trail": {
-       "dist": "3.8 km round trip",
+       "dist": "2.4 mi (3.9 km) round trip",
        "time": "1h-1h 15m",
-       "gain": "79 m",
-       "from": "St. Mary Falls Trailhead",
-       "grade": "moderate"
+       "from": "Saint Mary Falls Trailhead",
+       "grade": "easy"
       },
       "ll": [
        48.66797,
@@ -1609,10 +1909,10 @@ const TRIP = [
       "note": "Short trail with views across Saint Mary Lake.",
       "kind": "walk",
       "trail": {
-       "dist": "2.8 km round trip",
+       "dist": "1.8 mi (2.9 km) round trip",
        "time": "45 min-1h",
-       "gain": "87 m",
-       "from": "Sun Point Picnic Area",
+       "gain": "284 ft (87 m)",
+       "from": "Sun Point parking area",
        "grade": "easy"
       },
       "ll": [
@@ -1642,34 +1942,34 @@ const TRIP = [
      }
     ],
     "expect": {
-     "arrive": "Sunrise at 6,646 ft is windy and often near freezing in late September; the visitor center doesn't open until 9am.",
-     "parking": "By Sept 30 the 235-space lot is first-come, first-served, no time limit or shuttle needed.",
-     "need": "3-4 hours",
+     "arrive": "Logan Pass Visitor Center lot (235 spaces) is famous for filling before sunrise in season; late September with the 2026 shuttle/timed-parking system off, it is first-come first-served and cold, windy, and dark at 5-6am.",
+     "parking": "235 spaces; in-season this lot fills before dawn most days — arriving well before 5am is the only way to guarantee a spot.",
+     "need": "4-4.5 hours including the drive down to Saint Mary",
      "paths": [
       {
-       "opt": "Sunrise view only",
-       "do": "Watch sunrise from the Logan Pass lot and boardwalk edge, no hike.",
-       "cost": "30 min"
+       "opt": "Sunrise from the lot, no walk",
+       "do": "Watch sunrise from the Logan Pass parking area and boardwalk start, back in the car for the rest of the East Side stops.",
+       "cost": "30-40 min"
       },
       {
-       "opt": "Hidden Lake Overlook boardwalk",
-       "do": "Walk the boardwalk to the overlook and back.",
-       "cost": "1h 30m"
+       "opt": "Hidden Lake Overlook",
+       "do": "Boardwalk and stairs up to the overlook and back, bundled up against the wind.",
+       "cost": "1h 30m-2h"
       },
       {
-       "opt": "Full loop plus St Mary stops",
-       "do": "Hidden Lake Overlook, then drive down to Sun Point and St. Mary Falls.",
+       "opt": "Overlook plus East Side stops",
+       "do": "Hidden Lake Overlook, then drive down with stops at Sunrift Gorge, Sun Point, and Wild Goose Island.",
        "cost": "4h"
       }
      ]
     },
     "alt": [
-     "Logan Pass Glacier National Park",
-     "Hidden Lake Glacier National Park",
+     "Logan Pass sunrise Glacier National Park",
+     "Going-to-the-Sun Road alpine section",
      "Wild Goose Island Saint Mary Lake",
-     "Sunrift Gorge"
+     "Jackson Glacier Overlook"
     ],
-    "seasonal": "GTSR's alpine section through Logan Pass can close for snow anytime from early September; NPS says it's typically open through the third Monday of October (Oct 19, 2026), but closures as early as Sept 3 have occurred — check nps.gov/glac road status the week before."
+    "seasonal": "Going-to-the-Sun Road has no fixed closing date — it typically shuts in mid-to-late October (often around the third Monday) but has closed as early as October 11-16 in past years after early snow, and the alpine section was even closed temporarily September 6-9, 2026 for heavy rain and rockfall risk. On September 30, 2026 the road should very likely still be open, but there is real year-to-year risk of an early snow closure by then — check the park's current road status page the morning of. Separately, the 2026 vehicle-reservation system was dropped entirely, and the ticketed Logan Pass shuttle and three-hour timed parking pilot ran only July 1-September 7, 2026, so neither applies on September 30 — no ticket or reservation needed, but the lot's usual fill-before-dawn pattern is unaffected by that system's end. Sources: nps.gov/glac/planyourvisit/visiting-loganpass-2026.htm, nps.gov/glac/planyourvisit/vehicle-reservations2026.htm, nps.gov/glac/learn/news (historical closure releases)."
    },
    {
     "id": "d06s2",
@@ -1695,8 +1995,10 @@ const TRIP = [
       "note": "Boardwalk loop through old-growth cedar and hemlock.",
       "kind": "walk",
       "trail": {
-       "dist": "1 km loop",
-       "from": "Avalanche Creek / Trail of the Cedars trailhead",
+       "dist": "0.9 mi (1.1 km) loop",
+       "time": "30-40 min",
+       "gain": "83 ft (25 m)",
+       "from": "Avalanche Picnic Area",
        "grade": "easy"
       },
       "ll": [
@@ -1710,10 +2012,10 @@ const TRIP = [
       "note": "Optional add-on hike above Avalanche Gorge.",
       "kind": "hike",
       "trail": {
-       "dist": "7.4 km round trip",
+       "dist": "4.6 mi (7.4 km) round trip",
        "time": "2h-2h 30m",
-       "gain": "226 m",
-       "from": "Avalanche Picnic Area",
+       "gain": "741 ft (226 m)",
+       "from": "Avalanche Picnic Area (via Trail of the Cedars)",
        "grade": "moderate"
       },
       "ll": [
@@ -1725,7 +2027,7 @@ const TRIP = [
       "name": "Lake McDonald",
       "q": "Lake McDonald Glacier National Park",
       "note": "Largest lake in the park, historic lodge on its shore.",
-      "kind": "view",
+      "kind": "sight",
       "ll": [
        48.58397,
        -113.91906
@@ -1753,32 +2055,32 @@ const TRIP = [
      }
     ],
     "expect": {
-     "arrive": "Trail of the Cedars boardwalk is right off the road; the Avalanche Lake trailhead shares the same lot.",
-     "parking": "Avalanche Creek lot is small and is consistently the first in the park to fill.",
-     "need": "2-3 hours",
+     "arrive": "Avalanche Creek's lot is small and paved and fills by mid-morning in season; Lake McDonald's lodge and lakeshore have their own larger lot and are visible right from the road.",
+     "parking": "Avalanche Creek lot holds roughly 45-50 cars and is often full by 9-10am; overflow means parking along the road shoulder.",
+     "need": "2.5-3.5 hours",
      "paths": [
       {
-       "opt": "Trail of the Cedars only",
-       "do": "Flat boardwalk loop through old-growth cedar, no elevation gain.",
-       "cost": "25 min"
+       "opt": "Cedars only",
+       "do": "Flat boardwalk loop through the old-growth cedars, no further hike.",
+       "cost": "30-40 min"
+      },
+      {
+       "opt": "Add Lake McDonald",
+       "do": "Trail of the Cedars, then a stop at the lake and historic lodge.",
+       "cost": "1h 30m"
       },
       {
        "opt": "Add Avalanche Lake",
-       "do": "Continue past the cedars up to the lake and back.",
-       "cost": "2h 30m"
-      },
-      {
-       "opt": "Lake McDonald drive-by",
-       "do": "Skip the hike, stop at the lodge and lakeshore instead.",
-       "cost": "20 min"
+       "do": "Cedars loop, then the climb up to Avalanche Lake and back, then Lake McDonald.",
+       "cost": "3h 30m"
       }
      ]
     },
     "alt": [
-     "Trail of the Cedars Glacier National Park",
-     "Avalanche Lake Montana",
-     "Lake McDonald Glacier National Park",
-     "Lake McDonald Lodge"
+     "Lake McDonald Lodge Glacier National Park",
+     "Avalanche Gorge Glacier National Park",
+     "McDonald Creek Glacier National Park",
+     "Old-growth cedar forest Glacier National Park"
     ]
    }
   ]
@@ -1820,7 +2122,7 @@ const TRIP = [
       "name": "Kootenai Falls",
       "q": "Kootenai Falls Montana",
       "note": "Roadside stop on US-2, largest undammed falls in Montana.",
-      "kind": "walk",
+      "kind": "view",
       "ll": [
        47.72185,
        -116.82641
@@ -1858,26 +2160,27 @@ const TRIP = [
      }
     ],
     "expect": {
-     "arrive": "Two-lane US-2 through forest; Kootenai Falls is a short walk down from a large roadside pullout.",
-     "parking": "Kootenai Falls pullout is large and rarely full outside summer weekends.",
-     "need": "3-4 hours",
+     "arrive": "Kootenai Falls is a roadside pull-off on US-2 with a short unpaved path down to the overlook; the falls are audible before they're visible and the swinging bridge is a longer walk further down.",
+     "parking": "Small gravel lot right off the highway; rarely full outside summer weekends.",
+     "need": "4h including the drive",
      "paths": [
       {
-       "opt": "Drive straight through",
-       "do": "Stay on US-2, stop only for photos from the car.",
-       "cost": "3h"
+       "opt": "Overlook only",
+       "do": "Short walk down to the falls overlook, skip the swinging bridge.",
+       "cost": "20-30 min"
       },
       {
-       "opt": "Kootenai Falls stop",
-       "do": "Walk down to the falls viewpoint and swinging bridge.",
-       "cost": "3h 40m"
+       "opt": "Add the swinging bridge",
+       "do": "Continue down past the overlook to the swinging bridge over the river.",
+       "cost": "45 min-1h"
       }
      ]
     },
     "alt": [
-     "Kootenai Falls Montana",
-     "Kootenai River Montana",
-     "Yaak River Valley"
+     "Kootenai River Montana canyon",
+     "Troy Montana riverside town",
+     "US Highway 2 Montana forest",
+     "Kootenai National Forest scenery"
     ]
    },
    {
@@ -1932,7 +2235,7 @@ const TRIP = [
       "name": "Sandpoint Long Bridge",
       "q": "Sandpoint Bridge Lake Pend Oreille",
       "note": "Two-mile wooden-piling bridge crossing the lake into town.",
-      "kind": "view",
+      "kind": "sight",
       "ll": [
        48.27325,
        -116.54395
@@ -1940,25 +2243,26 @@ const TRIP = [
      }
     ],
     "expect": {
-     "arrive": "Highway drive with the Selkirks to the west; the Pack River detour is unpaved and only worth it if the larch are turning.",
-     "need": "2-3 hours",
+     "arrive": "US-95 south of Bonners Ferry is a two-lane highway with the Selkirks visible to the west most of the way; Upper Pack River Road is unpaved gravel and only worth the detour if the larch are already turning.",
+     "need": "2.5h including the drive",
      "paths": [
       {
-       "opt": "Straight to Sandpoint",
-       "do": "Stay on US-95, no detour.",
-       "cost": "1h 15m"
+       "opt": "Straight through",
+       "do": "Drive US-95 to Sandpoint with photo stops at pull-outs only.",
+       "cost": "1h 30m"
       },
       {
-       "opt": "Pack River larch detour",
-       "do": "Turn up gravel Upper Pack River Road for golden tamarack views.",
-       "cost": "2h"
+       "opt": "Larch detour",
+       "do": "Turn up Upper Pack River Road for a look at the western larch before continuing to Sandpoint.",
+       "cost": "+30-40 min"
       }
      ]
     },
     "alt": [
-     "Selkirk Mountains Idaho",
-     "Western larch autumn Idaho",
-     "Kaniksu National Forest"
+     "Selkirk Mountains Idaho autumn",
+     "Western larch gold Idaho panhandle",
+     "Kaniksu National Forest scenery",
+     "Long Bridge Sandpoint Idaho lake"
     ]
    },
    {
@@ -1979,7 +2283,7 @@ const TRIP = [
       "name": "City Beach",
       "q": "City Beach Sandpoint Idaho",
       "note": "In-town lake beach and park, easy first stop.",
-      "kind": "walk",
+      "kind": "sight",
       "ll": [
        48.27338,
        -116.54019
@@ -2023,32 +2327,32 @@ const TRIP = [
      }
     ],
     "expect": {
-     "arrive": "City Beach is a short walk from downtown parking; the Long Bridge and open lake are right behind it.",
-     "parking": "Downtown Sandpoint street parking and the City Beach lot fill on nice afternoons.",
-     "need": "2-3 hours",
+     "arrive": "City Beach is an in-town park with its own lot, flat and easy; the Pend d'Oreille Bay Trail and Sand Creek Trail are both flat lakeside/creekside paths starting within walking distance of downtown.",
+     "parking": "City Beach and downtown Sandpoint have municipal lots and metered street parking; not a squeeze outside summer weekends.",
+     "need": "2.5-3.5 hours",
      "paths": [
       {
        "opt": "City Beach only",
-       "do": "Walk the beach and watch boats on the lake.",
-       "cost": "30 min"
+       "do": "Walk the beach and park, no trail.",
+       "cost": "30-40 min"
       },
       {
-       "opt": "Sand Creek Trail stroll",
-       "do": "Paved path along the creek from downtown, flat and short.",
-       "cost": "1h"
+       "opt": "Add a lakeside walk",
+       "do": "City Beach, then part of the Pend d'Oreille Bay Trail or Sand Creek Trail out and back.",
+       "cost": "1h 30m"
       },
       {
-       "opt": "Add Pend d'Oreille Bay Trail",
-       "do": "Continue along the lakeshore trail toward Ponderay.",
-       "cost": "2h"
+       "opt": "Add Schweitzer viewpoint",
+       "do": "Lakeside walk, then drive up to Schweitzer Mountain Resort for the overlook before dinner.",
+       "cost": "2h 30m-3h"
       }
      ]
     },
     "alt": [
-     "Lake Pend Oreille",
-     "Sandpoint Long Bridge Idaho",
-     "City Beach Sandpoint",
-     "Schweitzer Mountain Resort"
+     "City Beach Sandpoint Idaho",
+     "Lake Pend Oreille shoreline autumn",
+     "Sand Creek downtown Sandpoint",
+     "Schweitzer Mountain Resort viewpoint"
     ]
    }
   ]
@@ -2090,7 +2394,7 @@ const TRIP = [
       "name": "Farragut State Park",
       "q": "Farragut State Park Idaho",
       "note": "Former naval training station on the south shore of Lake Pend Oreille.",
-      "kind": "sight",
+      "kind": "view",
       "ll": [
        47.79013,
        -117.36492
@@ -2118,25 +2422,26 @@ const TRIP = [
      }
     ],
     "expect": {
-     "arrive": "Highway drive past two lakes; Farragut and Silverwood are both roadside stops, not required detours.",
-     "need": "2-3 hours",
+     "arrive": "US-95 south of Sandpoint runs along the shoulders of Lake Pend Oreille and then Lake Coeur d'Alene; Farragut and Silverwood are both roadside, quick-look stops rather than full visits given the drive to Spokane.",
+     "need": "2h including the drive",
      "paths": [
       {
-       "opt": "Drive straight through",
-       "do": "US-95 to I-90, no stops.",
+       "opt": "Drive straight to Spokane",
+       "do": "No stops, just the highway.",
        "cost": "1h 45m"
       },
       {
-       "opt": "Farragut State Park stop",
-       "do": "Walk the shoreline near the old naval training station.",
-       "cost": "2h 30m"
+       "opt": "Quick lake-view stop",
+       "do": "Pull off at a Farragut or Lake Coeur d'Alene viewpoint for a few minutes.",
+       "cost": "+15-20 min"
       }
      ]
     },
     "alt": [
-     "Farragut State Park Idaho",
-     "Lake Coeur d'Alene",
-     "Silverwood Theme Park"
+     "Farragut State Park Idaho lakeshore",
+     "Silverwood Theme Park entrance",
+     "Lake Coeur d'Alene Idaho autumn",
+     "Lake Pend Oreille from US-95"
     ]
    },
    {
@@ -2187,7 +2492,7 @@ const TRIP = [
       "name": "Manito Park",
       "q": "Manito Park Spokane",
       "note": "Duncan Garden and Japanese Garden, 2.5 miles south of downtown; free entry.",
-      "kind": "walk",
+      "kind": "sight",
       "ll": [
        47.63587,
        -117.41355
@@ -2195,32 +2500,32 @@ const TRIP = [
      }
     ],
     "expect": {
-     "arrive": "Riverfront Park sits right downtown; the falls are visible from the pedestrian bridges within minutes of any garage.",
-     "parking": "Several downtown parking garages border the park; none are free, none are huge.",
-     "need": "2 hours",
+     "arrive": "Riverfront Park is entirely walkable from downtown parking garages; the falls are visible right from the park paths without any hike, and Havermale Island's paths are flat and paved.",
+     "parking": "No park-specific lot; downtown Spokane garages and metered street parking serve the park, tightest on weekday mornings.",
+     "need": "2-2.5 hours",
      "paths": [
       {
        "opt": "Falls viewpoints only",
-       "do": "Walk the pedestrian bridges over both falls channels.",
-       "cost": "30 min"
+       "do": "Walk the park paths to the falls overlooks and back.",
+       "cost": "40 min"
       },
       {
-       "opt": "Full park loop",
-       "do": "Loop the paths on both riverbanks past the Pavilion and Clocktower.",
+       "opt": "Add the Davenport Hotel",
+       "do": "Falls viewpoints, then walk a few blocks to see the Davenport lobby.",
        "cost": "1h 15m"
       },
       {
-       "opt": "Add Davenport Hotel",
-       "do": "Walk a few blocks over to see the historic lobby.",
-       "cost": "2h"
+       "opt": "Add Manito Park",
+       "do": "Falls and Davenport, then drive south to Manito Park's gardens.",
+       "cost": "2h 30m"
       }
      ]
     },
     "alt": [
-     "Spokane Falls",
-     "Riverfront Park Spokane",
-     "Davenport Hotel Spokane",
-     "Spokane Falls SkyRide gondola"
+     "Spokane Falls SkyRide gondola",
+     "Havermale Island Spokane",
+     "Davenport Hotel lobby Spokane",
+     "Manito Park Duncan Garden Spokane"
     ]
    },
    {
@@ -2255,7 +2560,7 @@ const TRIP = [
       "name": "Ohme Gardens",
       "q": "Ohme Gardens Wenatchee",
       "note": "Alpine garden overlooking the Wenatchee Valley, if time allows.",
-      "kind": "walk",
+      "kind": "sight",
       "ll": [
        47.47795,
        -120.32651
@@ -2273,31 +2578,31 @@ const TRIP = [
      }
     ],
     "expect": {
-     "arrive": "Long highway push from I-90 to US-2; Cashmere and Ohme Gardens are the only reasons to leave the car before Tumwater Canyon.",
-     "need": "3-4 hours driving, plus stops",
+     "arrive": "I-90 to Wenatchee is fast interstate driving; Cashmere is a small walkable historic downtown right off the highway, and Tumwater Canyon is a two-lane river canyon road with pull-outs but no long stops needed.",
+     "need": "3.5h including the drive",
      "paths": [
       {
        "opt": "Drive straight through",
-       "do": "I-90 to US-2, no stops.",
+       "do": "No stops, straight to Leavenworth.",
        "cost": "3h"
       },
       {
-       "opt": "Cashmere candy stop",
-       "do": "Quick walk through downtown Cashmere.",
-       "cost": "3h 30m"
+       "opt": "Cashmere stop",
+       "do": "Walk Cashmere's short main street, candy shop stop.",
+       "cost": "+30-40 min"
       },
       {
        "opt": "Add Ohme Gardens",
-       "do": "Walk the alpine garden paths overlooking the valley.",
-       "cost": "4h 15m"
+       "do": "Cashmere plus a stop at Ohme Gardens overlooking the valley.",
+       "cost": "+1h"
       }
      ]
     },
     "alt": [
-     "Cashmere Washington",
-     "Ohme Gardens Wenatchee",
-     "Tumwater Canyon autumn",
-     "Wenatchee River canyon"
+     "Cashmere Washington downtown",
+     "Aplets and Cotlets factory Cashmere",
+     "Ohme Gardens Wenatchee overlook",
+     "Tumwater Canyon Wenatchee River autumn"
     ]
    },
    {
@@ -2318,7 +2623,7 @@ const TRIP = [
       "name": "Front Street",
       "q": "Front Street Leavenworth Washington",
       "note": "Pedestrianized main street, Bavarian-themed storefronts.",
-      "kind": "sight",
+      "kind": "walk",
       "ll": [
        47.5961,
        -120.66037
@@ -2346,26 +2651,27 @@ const TRIP = [
      }
     ],
     "expect": {
-     "arrive": "Front Street is pedestrian-only and packed for Oktoberfest opening weekend; expect a slow walk-in from wherever you park.",
-     "parking": "Downtown lots fill early on Oktoberfest weekend; expect to park several blocks out.",
-     "need": "2-3 hours",
+     "arrive": "Front Street is closed to cars and entirely on foot; this is Oktoberfest opening weekend so expect real crowds, live music, and both beer-garden venues running well past dark.",
+     "parking": "Village lots and street parking fill early on Oktoberfest weekend; expect to park several blocks out and walk in.",
+     "need": "2.5-3 hours",
      "paths": [
       {
-       "opt": "Front Street stroll",
-       "do": "Walk the main street and browse storefronts.",
-       "cost": "1h"
+       "opt": "Walk Front Street, dinner",
+       "do": "Stroll the storefronts, dinner at a Bavarian restaurant.",
+       "cost": "1h 30m"
       },
       {
-       "opt": "Add a beer garden",
-       "do": "Stop into Front Street Park for the Oktoberfest tent.",
-       "cost": "2h 30m"
+       "opt": "Add the beer garden",
+       "do": "Front Street and dinner, then time in the Front Street Park beer garden for the festival atmosphere.",
+       "cost": "2h 30m-3h"
       }
      ]
     },
     "alt": [
-     "Leavenworth Washington Bavarian village",
-     "Front Street Leavenworth",
-     "Leavenworth Oktoberfest"
+     "Leavenworth Bavarian village lights",
+     "Oktoberfest Leavenworth Washington",
+     "Front Street Leavenworth storefronts",
+     "Alpen Strasse Leavenworth architecture"
     ]
    }
   ]
@@ -2435,8 +2741,8 @@ const TRIP = [
      }
     ],
     "expect": {
-     "arrive": "Two mountain passes back to back, about two and a half hours of driving with only brief roadside stops before the park.",
-     "parking": "Small gravel pull-offs at Blewett Pass and the entrance arch; no real lots.",
+     "arrive": "Two mountain passes back to back on two-lane highway; Blewett Pass and the Chinook Pass entrance arch are quick roadside pull-offs, not destinations.",
+     "parking": "Gravel shoulders only at both summits, room for a handful of cars, never busy.",
      "need": "2h 30m",
      "paths": [
       {
@@ -2452,10 +2758,11 @@ const TRIP = [
      ]
     },
     "alt": [
-     "Blewett Pass Washington summit",
-     "Chinook Pass entrance arch Mount Rainier",
-     "Naches Washington downtown"
-    ]
+     "Blewett Pass Washington summit sign",
+     "Naches Washington Yakima River valley",
+     "Chinook Pass log entrance arch"
+    ],
+    "seasonal": "This whole segment depends on SR-410 over Chinook Pass being open. WSDOT's typical closing date is late October — Oct 24, 2025; Oct 31, 2024 (an early storm closure); Nov 10, 2023 — so Oct 3 is normally well clear, but 2024's closure shows an early cold snap can force it shut with little notice. Check wsdot.wa.gov/travel/roads-bridges/mountain-pass-closure-and-opening-dates the morning of departure; there is no good detour if it's closed (the alternative is back through Yakima and up I-5, adding hours)."
    },
    {
     "id": "d09s2",
@@ -2476,12 +2783,6 @@ const TRIP = [
       "q": "Tipsoo Lake Mount Rainier",
       "note": "Short loop trail; Rainier reflected in the lake when calm.",
       "kind": "walk",
-      "trail": {
-       "dist": "0.5 mile / 0.8 km loop",
-       "time": "20 min",
-       "from": "Tipsoo Lake parking area",
-       "grade": "easy"
-      },
       "ll": [
        46.86894,
        -121.51713
@@ -2493,10 +2794,10 @@ const TRIP = [
       "note": "3.2-mile loop from the pass, optional if time allows.",
       "kind": "hike",
       "trail": {
-       "dist": "3.5 miles round trip",
+       "dist": "3.4 mi (5.6 km) round trip",
        "time": "2h",
        "gain": "500 ft",
-       "from": "Chinook Pass / Tipsoo Lake trailhead",
+       "from": "Tipsoo Lake / Chinook Pass trailhead",
        "grade": "moderate"
       },
       "ll": [
@@ -2516,33 +2817,33 @@ const TRIP = [
      }
     ],
     "expect": {
-     "arrive": "Alpine lake right off SR-410; Rainier reflects in it on calm mornings, but the mountain often clouds over within minutes.",
-     "parking": "Small paved lot at Tipsoo Lake fills by mid-morning in fall; roadside shoulders nearby.",
-     "need": "1h",
+     "arrive": "Small alpine lake right off the highway at the pass; Rainier reflects in it on still mornings but the mountain is frequently clouded over within minutes since it makes its own weather.",
+     "parking": "Small paved lot at the pass, plus a bit of shoulder; rarely full this late in the season on a weekday.",
+     "need": "45 min",
      "paths": [
       {
        "opt": "Lake loop only",
-       "do": "Walk the short loop around Tipsoo Lake itself.",
-       "cost": "20 min"
+       "do": "Walk the easy path around Tipsoo Lake itself.",
+       "cost": "20-30 min"
       },
       {
        "opt": "Add Cayuse Pass",
-       "do": "Short drive to the Cayuse Pass junction for a photo.",
+       "do": "Short drive to the Cayuse Pass junction for a photo, no walking.",
        "cost": "40 min"
       },
       {
        "opt": "Naches Peak Loop",
-       "do": "Full loop trail from the pass, real elevation gain but no scrambling — only if the weather is holding.",
+       "do": "Full loop trail from the pass with real elevation gain but no scrambling.",
        "cost": "2h"
       }
      ]
     },
     "alt": [
      "Tipsoo Lake Mount Rainier reflection",
-     "Naches Peak Loop trail",
-     "Cayuse Pass Washington"
+     "Naches Peak Loop trail autumn",
+     "Cayuse Pass Washington highway"
     ],
-    "seasonal": "SR 410/Chinook Pass and SR 123/Cayuse Pass usually close for winter in late October (Oct 24, 2025; Oct 31, 2024; Nov 10, 2023) and reopen around late May — Oct 3 is well before the typical window, but an early storm can still force a temporary closure, so check WSDOT before leaving Leavenworth."
+    "seasonal": "SR-410/Chinook Pass and SR-123/Cayuse Pass close together — see d09s1 for the closure risk. No official round-trip distance for the short walk around Tipsoo Lake itself was found on nps.gov; the NPS page (nps.gov/mora/planyourvisit/day-hiking-at-mount-rainier.htm) only lists the connecting Naches Peak Loop Trail at 3.4 mi / 2h, so the lake-loop trail object is omitted rather than estimated."
    },
    {
     "id": "d09s3",
@@ -2570,7 +2871,7 @@ const TRIP = [
       "note": "0.8-mile round trip on the Skyline Trail; the park's most photographed falls.",
       "kind": "walk",
       "trail": {
-       "dist": "1 mile round trip",
+       "dist": "1 mi (1.6 km) round trip",
        "time": "35 min",
        "gain": "100 ft",
        "from": "Paradise upper parking lot / Jackson Visitor Center",
@@ -2587,10 +2888,10 @@ const TRIP = [
       "note": "1.2-mile loop over Nisqually Glacier and valley views.",
       "kind": "walk",
       "trail": {
-       "dist": "1.2 miles round trip",
+       "dist": "1.2 mi (1.9 km) loop",
        "time": "45 min",
        "gain": "200 ft",
-       "from": "Paradise lower parking lot",
+       "from": "Paradise lower parking lot, Nisqually Vista trailhead",
        "grade": "easy"
       },
       "ll": [
@@ -2604,11 +2905,12 @@ const TRIP = [
       "note": "Longer option climbing above Myrtle Falls toward Panorama Point.",
       "kind": "hike",
       "trail": {
-       "dist": "5.5 miles round trip for the full loop; 4 miles round trip to Panorama Point via the Golden Gate Trail for a shorter turnaround",
-       "time": "4h 30m full loop; roughly 2h 30m-3h to Panorama Point and back",
-       "gain": "1,700 ft full loop",
-       "from": "Paradise upper parking lot",
-       "grade": "strenuous"
+       "dist": "8.9 km round trip",
+       "time": "4h 30m for the full loop",
+       "gain": "1,700 ft",
+       "from": "Paradise upper parking lot, next to the visitor center",
+       "grade": "strenuous — the full loop is out of scope for this trip; if walking any of it, turn around at or before the Golden Gate Trail junction (about 2 mi in, near Panorama Point) rather than completing the loop",
+       "caveat": "The full loop. The Golden Gate Trail cuts it shorter, but NPS publishes no figure for that"
       },
       "ll": [
        46.8016,
@@ -2617,9 +2919,9 @@ const TRIP = [
      }
     ],
     "expect": {
-     "arrive": "Wide subalpine meadow below the summit; Rainier makes its own weather and is often partly or fully clouded over.",
-     "parking": "Two large lots fill by late morning on clear fall weekends; arrive before 11am to be safe.",
-     "need": "3-4h",
+     "arrive": "Wide subalpine meadow below the summit; the mountain is visible maybe half the time even in good weather and is frequently clouded over for hours at a stretch — plan the visit assuming you might not see it.",
+     "parking": "Two lots (upper near the visitor center, lower near the Nisqually Vista trailhead) that together hold a few hundred cars; they fill by mid-to-late morning on clear fall weekends, easier on a Saturday afternoon arrival at this time of year.",
+     "need": "2-3h",
      "paths": [
       {
        "opt": "Myrtle Falls only",
@@ -2628,23 +2930,23 @@ const TRIP = [
       },
       {
        "opt": "Myrtle Falls + Nisqually Vista",
-       "do": "Both easy, mostly flat trails, no real climbing.",
+       "do": "Both easy, mostly flat/paved trails, no real climbing, from two different lots.",
        "cost": "1h 20m"
       },
       {
-       "opt": "Push to Panorama Point",
-       "do": "Skyline and Golden Gate trails up to the viewpoint; a real climb with no scrambling, skip if cold or wet underfoot.",
-       "cost": "2h 30m-3h"
+       "opt": "Push onto the Skyline Trail",
+       "do": "Continue past Myrtle Falls onto the Skyline Trail toward Panorama Point via the Golden Gate cutoff, a real climb but no scrambling — only worth it if the mountain is out and legs are willing.",
+       "cost": "2-2.5h round trip to Golden Gate junction and back"
       }
      ]
     },
     "alt": [
-     "Myrtle Falls Mount Rainier",
-     "Nisqually Vista Trail Paradise",
-     "Paradise meadows Mount Rainier",
+     "Mount Rainier Paradise meadow autumn",
+     "Myrtle Falls Mount Rainier reflection",
+     "Nisqually Glacier valley view Paradise",
      "Henry M Jackson Visitor Center Paradise"
     ],
-    "seasonal": "Jackson Visitor Center is open 9:30am-4pm daily Sept 28-Oct 12 (down from summer's 9:30am-6:30pm); no timed-entry vehicle reservation is required anywhere in the park in 2026 — the pilot program was cancelled for the year."
+    "seasonal": "No timed-entry reservation is needed anywhere in the park in 2026 — NPS cancelled the system this year and is managing crowding through parking only (nps.gov/mora/planyourvisit/timed-entry-reservations.htm). The Jackson Visitor Center moves to winter hours on October 14 (10am-5pm, weekends/holidays only through year-end) per NPS-sourced reporting, so on October 3 it should still be on its daily fall schedule — but confirm hours close to the date since the exact 2026 daily-to-winter cutover date wasn't independently verified beyond that secondary source."
    },
    {
     "id": "d09s4",
@@ -2663,11 +2965,11 @@ const TRIP = [
       "note": "Pull-off on Stevens Canyon Road, a few minutes from Paradise.",
       "kind": "walk",
       "trail": {
-       "dist": "0.5 mile round trip",
-       "time": "30 min",
-       "gain": "negligible",
-       "from": "Reflection Lakes pull-off",
-       "grade": "easy"
+       "dist": "4.8 km loop",
+       "time": "not stated by NPS",
+       "from": "Reflection Lakes pull-off, Stevens Canyon Road",
+       "grade": "moderate — a flat shoreline-only stroll is possible but has no official separate distance",
+       "caveat": "That is the full Lakes Trail to Faraway Rock. The shoreline by the car is a few minutes"
       },
       "ll": [
        46.76958,
@@ -2688,14 +2990,7 @@ const TRIP = [
       "name": "Narada Falls",
       "q": "Stevens Canyon Road Mount Rainier",
       "note": "168-foot falls on the way back toward Paradise.",
-      "kind": "walk",
-      "trail": {
-       "dist": "0.4 mile round trip",
-       "time": "20 min",
-       "gain": "200 ft, steep",
-       "from": "Narada Falls parking area",
-       "grade": "moderate"
-      },
+      "kind": "sight",
       "ll": [
        46.77502,
        -121.74615
@@ -2703,27 +2998,33 @@ const TRIP = [
      }
     ],
     "expect": {
-     "arrive": "Small roadside pull-offs on Stevens Canyon Road; a still evening doubles the mountain in the water, but cloud or wind can erase it.",
-     "parking": "A handful of small pull-offs, not a real lot; fills fast right at sunset.",
+     "arrive": "A short pull-off on Stevens Canyon Road a few minutes from Paradise; this is the classic mountain-in-lake shot but it only works if the water is glassy and the summit is actually visible, neither guaranteed.",
+     "parking": "Small roadside lot plus turnouts along the road; fills right at sunset in good weather, arrive 30-45 min early to get a spot.",
      "need": "1-1.5h",
      "paths": [
       {
-       "opt": "Photo and back",
-       "do": "Walk the short lakeside loop for the classic shot.",
-       "cost": "30 min"
+       "opt": "Roadside shot only",
+       "do": "Park at the main pull-off, walk to the water's edge, no trail.",
+       "cost": "20 min"
       },
       {
-       "opt": "Add Louise Lake",
-       "do": "Continue a few minutes down the road to the quieter second lake.",
-       "cost": "50 min"
+       "opt": "Add Louise Lake / Narada Falls",
+       "do": "Short drive further along Stevens Canyon Road and back toward Paradise.",
+       "cost": "1h"
+      },
+      {
+       "opt": "Walk part of the Lakes Trail shoreline",
+       "do": "Follow the trail along the lake edge partway without committing to the full loop up to Faraway Rock.",
+       "cost": "30-45 min"
       }
      ]
     },
     "alt": [
      "Reflection Lakes Mount Rainier sunset",
      "Louise Lake Mount Rainier",
-     "Narada Falls Mount Rainier"
-    ]
+     "Narada Falls Stevens Canyon Road"
+    ],
+    "seasonal": "nps.gov/places/reflection-lakes.htm gives only the roughly 3-mile Lakes Trail loop to Faraway Rock, with no NPS time estimate and no separate official number for a shoreline-only walk — the trail object above reflects that gap rather than an estimate for the shorter stroll."
    }
   ]
  },
@@ -2758,13 +3059,6 @@ const TRIP = [
       "q": "Reflection Lakes Mount Rainier",
       "note": "Same pull-off as last night, best light at dawn.",
       "kind": "walk",
-      "trail": {
-       "dist": "0.5 mile round trip",
-       "time": "30 min",
-       "gain": "negligible",
-       "from": "Reflection Lakes pull-off",
-       "grade": "easy"
-      },
       "ll": [
        46.76958,
        -121.73021
@@ -2781,13 +3075,6 @@ const TRIP = [
       "q": "Stevens Canyon Road Mount Rainier",
       "note": "Quick stop on the way down toward Longmire.",
       "kind": "walk",
-      "trail": {
-       "dist": "0.4 mile round trip",
-       "time": "20 min",
-       "gain": "200 ft, steep",
-       "from": "Narada Falls parking area",
-       "grade": "moderate"
-      },
       "ll": [
        46.77502,
        -121.74615
@@ -2795,8 +3082,8 @@ const TRIP = [
      }
     ],
     "expect": {
-     "arrive": "Same pull-offs before dawn, often near freezing in early October; the payoff is sunrise light on the summit if skies are clear.",
-     "parking": "Wide open before sunrise; just watch for ice on the pavement and boardwalk edges.",
+     "arrive": "Same pull-off before dawn, often near or below freezing in early October at this elevation; the payoff is alpenglow on the summit if the sky is clear, which is not the default at Rainier.",
+     "parking": "Wide open before sunrise, nobody else here yet; watch for ice on the pavement and any boardwalk edges.",
      "need": "1-1.5h",
      "paths": [
       {
@@ -2806,16 +3093,17 @@ const TRIP = [
       },
       {
        "opt": "Add a coffee stop",
-       "do": "Drive up to Jackson Visitor Center once it opens.",
+       "do": "Drive up to Jackson Visitor Center once it opens for coffee and indoor restrooms.",
        "cost": "1h 15m"
       }
      ]
     },
     "alt": [
-     "Mount Rainier sunrise Reflection Lakes",
-     "Mount Rainier alpenglow"
+     "Mount Rainier sunrise alpenglow",
+     "Reflection Lakes dawn mist",
+     "Mount Rainier from Stevens Canyon Road"
     ],
-    "seasonal": "Jackson Visitor Center doesn't open until 9:30am, well after sunrise — no coffee or indoor restrooms until then; dress for cold, especially for her, since Paradise at dawn in early October regularly sits near or below freezing."
+    "seasonal": "Bring real layers, especially for her — Paradise at dawn in early October regularly sits at or below freezing, and there is no shelter at the lake pull-off. The Jackson Visitor Center does not open at first light; check posted hours before counting on coffee immediately after sunrise."
    },
    {
     "id": "d10s2",
@@ -2841,9 +3129,9 @@ const TRIP = [
       "note": "Historic park headquarters and the National Park Inn.",
       "kind": "walk",
       "trail": {
-       "dist": "0.7 mile loop",
-       "time": "30 min",
-       "from": "Longmire Museum",
+       "dist": "0.7 mi (1.1 km) loop",
+       "time": "20 min",
+       "from": "Longmire, Trail of the Shadows trailhead across from the National Park Inn",
        "grade": "easy"
       },
       "ll": [
@@ -2873,26 +3161,26 @@ const TRIP = [
      }
     ],
     "expect": {
-     "arrive": "Historic log buildings and the National Park Inn at the park's original headquarters; a good last easy-walk stop.",
-     "parking": "Small lot fills with day visitors by mid-morning; easy if you're through early.",
+     "arrive": "Historic log buildings, the National Park Inn, and a small museum at the park's original headquarters; a calm, easy last stop before the long valley drive.",
+     "parking": "Small lot, fills with day visitors by mid-morning; easy if through by 9-10am.",
      "need": "45 min-1h",
      "paths": [
       {
        "opt": "Museum and porch only",
-       "do": "Look at the historic buildings, skip the trail.",
+       "do": "Look at the historic buildings and inn exterior, skip the trail.",
        "cost": "15 min"
       },
       {
        "opt": "Trail of the Shadows loop",
        "do": "Flat loop around Longmire Meadow past the old mineral springs.",
-       "cost": "30 min"
+       "cost": "20-30 min"
       }
      ]
     },
     "alt": [
-     "Longmire National Park Inn Mount Rainier",
-     "Trail of the Shadows Longmire",
-     "Eatonville Washington downtown"
+     "Longmire National Park Inn historic",
+     "Trail of the Shadows mineral springs",
+     "Longmire Museum Mount Rainier"
     ]
    },
    {
@@ -2937,8 +3225,8 @@ const TRIP = [
      }
     ],
     "expect": {
-     "arrive": "Consolidated rental car return is a short drive off the terminal loop, then a shuttle to check-in.",
-     "need": "1-1.5h for return and check-in",
+     "arrive": "Consolidated rental car return facility is a separate building off the terminal loop, reached by its own access road, then a free shuttle bus to the terminal.",
+     "need": "1-1.5h for return, shuttle, and check-in",
      "paths": [
       {
        "opt": "Straight to check-in",
@@ -2946,15 +3234,15 @@ const TRIP = [
        "cost": "1h"
       },
       {
-       "opt": "Light rail into the city",
-       "do": "Link light rail runs from the airport station straight into downtown.",
+       "opt": "Light rail into the city first",
+       "do": "For anyone continuing into Seattle rather than flying, Link light rail runs from the airport station straight downtown.",
        "cost": "40 min to downtown"
       }
      ]
     },
     "alt": [
-     "Seattle-Tacoma International Airport",
-     "SEA airport rental car return"
+     "Seattle-Tacoma International Airport terminal",
+     "SEA Rental Car Facility exterior"
     ]
    },
    {
@@ -3003,30 +3291,30 @@ const TRIP = [
      }
     ],
     "expect": {
-     "arrive": "Dense residential blocks a few minutes north of downtown; restaurants and bars at street level, easy flat walking everywhere.",
+     "arrive": "Dense residential blocks a few minutes' walk north of downtown; restaurants and bars at street level, entirely flat walking.",
      "need": "3h",
      "paths": [
       {
        "opt": "Stay in Belltown",
-       "do": "Dinner within a few blocks, no real walking required.",
-       "cost": "2h"
+       "do": "Dinner and a walk around the neighborhood only.",
+       "cost": "1.5h"
       },
       {
        "opt": "Walk to Pike Place",
-       "do": "8-10 minute walk south on 1st or Western Ave before it closes for the night.",
-       "cost": "1h"
+       "do": "Belltown dinner, then the walk down to Pike Place Market for the evening market atmosphere.",
+       "cost": "2.5h"
       },
       {
-       "opt": "Add the sculpture park",
-       "do": "Continue west to the waterfront park, open until dusk.",
-       "cost": "1h 30m"
+       "opt": "Add the Sculpture Park",
+       "do": "Same as above plus a sunset walk through Olympic Sculpture Park before it closes at dusk.",
+       "cost": "3h"
       }
      ]
     },
     "alt": [
-     "Belltown Seattle street",
-     "Pike Place Market Seattle",
-     "Olympic Sculpture Park Seattle"
+     "Belltown Seattle street life",
+     "Pike Place Market evening lights",
+     "Olympic Sculpture Park sunset"
     ]
    }
   ]
@@ -3599,6 +3887,7 @@ const TRIP = [
       "name": "Rental car pickup, downtown Vancouver",
       "q": "Vancouver skyline",
       "note": "8:30am pickup; check out of the Airbnb first.",
+      "kind": "drive",
       "ll": [
        49.29149,
        -123.1299
@@ -3608,6 +3897,14 @@ const TRIP = [
       "name": "Shannon Falls Provincial Park",
       "q": "Shannon Falls Provincial Park",
       "note": "Free roadside waterfall stop, 15 minutes.",
+      "kind": "walk",
+      "trail": {
+       "dist": "about 700 m round trip",
+       "time": "15-20 min",
+       "from": "Shannon Falls Provincial Park parking lot",
+       "grade": "easy",
+       "caveat": "Doubled from the 350 m one way that BC Parks publishes"
+      },
       "ll": [
        49.6665,
        -123.16258
@@ -3617,11 +3914,34 @@ const TRIP = [
       "name": "Howe Sound",
       "q": "Howe Sound British Columbia",
       "note": "Scenic fjord views along Highway 99.",
+      "kind": "view",
       "ll": [
        49.34094,
        -123.26654
       ]
      }
+    ],
+    "expect": {
+     "arrive": "Rental pickup is an ordinary downtown Vancouver counter; Shannon Falls is a direct roadside pull-off on Highway 99, falls visible within a couple minutes of parking.",
+     "parking": "Shannon Falls has a sizeable paved lot right off the highway; it can fill on summer weekends but is easy on an October weekday.",
+     "need": "1.5-2 hours including the drive from Vancouver",
+     "paths": [
+      {
+       "opt": "Photo and go",
+       "do": "Walk to the first, lower viewpoint only.",
+       "cost": "10-15 min"
+      },
+      {
+       "opt": "Both viewpoints",
+       "do": "Walk the crusher-dust trail to both viewing platforms, about 5 minutes apart.",
+       "cost": "20-25 min"
+      }
+     ]
+    },
+    "alt": [
+     "Shannon Falls waterfall British Columbia",
+     "Stawamus Chief granite monolith Squamish",
+     "Howe Sound fjord aerial view"
     ]
    },
    {
@@ -3642,6 +3962,7 @@ const TRIP = [
       "name": "Sea to Sky Gondola",
       "q": "Sea to Sky Gondola Squamish",
       "note": "Open year-round, 10-minute ride to the summit.",
+      "kind": "sight",
       "ll": [
        49.67316,
        -123.14385
@@ -3651,6 +3972,13 @@ const TRIP = [
       "name": "Sky Pilot Suspension Bridge",
       "q": "Sea to Sky Gondola Squamish",
       "note": "Suspension bridge at the gondola summit.",
+      "kind": "walk",
+      "trail": {
+       "time": "about 30 min",
+       "from": "Sea to Sky Gondola summit station",
+       "grade": "easy",
+       "caveat": "Both summit interpretive loops together. No official distance published"
+      },
       "ll": [
        49.67064,
        -123.1309
@@ -3660,12 +3988,36 @@ const TRIP = [
       "name": "Squamish viewpoint",
       "q": "Squamish BC",
       "note": "Views over Howe Sound and the Stawamus Chief.",
+      "kind": "view",
       "ll": [
        49.78483,
        -123.10882
       ]
      }
-    ]
+    ],
+    "expect": {
+     "arrive": "The gondola base is a large paid parking lot off Highway 99 just south of Squamish town; it is the main draw of the area and does fill on clear-weather weekends, less so on an October weekday.",
+     "parking": "Large paved lot at the base station; a fee applies and it can fill on busy days, but should be straightforward on a weekday in October.",
+     "need": "2-2.5 hours including the ride up and down",
+     "paths": [
+      {
+       "opt": "Ride up, boardwalk loop, ride down",
+       "do": "Gondola both ways, one of the two easy summit interpretive loops and the Sky Pilot Suspension Bridge, no real hiking.",
+       "cost": "1h 15m"
+      },
+      {
+       "opt": "Both summit loops",
+       "do": "Gondola both ways, walk both interpretive loops plus the suspension bridge and viewing platforms.",
+       "cost": "1h 45m"
+      }
+     ]
+    },
+    "alt": [
+     "Sea to Sky Gondola summit boardwalk",
+     "Stawamus Chief view from gondola summit",
+     "Howe Sound viewpoint Squamish"
+    ],
+    "cost": "Adult round-trip gondola ticket: $73.95 CAD booked online, $81.95 CAD at the window (seatoskygondola.com/hours-and-prices/, read 2026-09-12). Booking ahead isn't required but is cheaper. October 13-30 hours drop to 9am-4pm Mon-Fri (last gondola down 5pm) and 9am-5pm weekends (last down 6pm) — a shorter shoulder-season window than summer."
    },
    {
     "id": "d13s3",
@@ -3685,6 +4037,7 @@ const TRIP = [
       "name": "Whistler Village",
       "q": "Whistler British Columbia village",
       "note": "Pedestrian village, lunch and shops.",
+      "kind": "sight",
       "ll": [
        50.11466,
        -122.95598
@@ -3694,6 +4047,7 @@ const TRIP = [
       "name": "Scandinave Spa Whistler",
       "q": "Whistler British Columbia village",
       "note": "CAD $115pp, outdoor Nordic baths, silence policy.",
+      "kind": "sight",
       "ll": [
        50.13604,
        -122.94794
@@ -3703,6 +4057,7 @@ const TRIP = [
       "name": "Whistler Train Wreck",
       "q": "Whistler Train Wreck",
       "note": "Suspension bridge trail to derailed boxcars.",
+      "kind": "walk",
       "ll": [
        50.08156,
        -123.05557
@@ -3712,6 +4067,7 @@ const TRIP = [
       "name": "Lost Lake",
       "q": "Lost Lake Whistler",
       "note": "Easy lakeside walk, fall colours.",
+      "kind": "walk",
       "ll": [
        50.12887,
        -122.93727
@@ -3721,6 +4077,7 @@ const TRIP = [
       "name": "Audain Art Museum",
       "q": "Whistler British Columbia village",
       "note": "Indigenous and BC art; wet-weather option.",
+      "kind": "sight",
       "ll": [
        50.11822,
        -122.95277
@@ -3730,12 +4087,43 @@ const TRIP = [
       "name": "Pinnacle Hotel Whistler",
       "q": "Whistler British Columbia village",
       "note": "Village dinner, then overnight here.",
+      "kind": "sight",
       "ll": [
        50.11744,
        -122.95743
       ]
      }
-    ]
+    ],
+    "expect": {
+     "arrive": "Whistler Village is fully pedestrian; park once and walk everywhere. Scandinave Spa is a 10-minute drive south of the village with its own gravel lot.",
+     "parking": "Village day lots and parkades charge by the hour and fill on weekends; Scandinave's own lot is modest but rarely full on a weekday.",
+     "need": "Full afternoon and evening",
+     "paths": [
+      {
+       "opt": "Village only",
+       "do": "Lunch, shops, wander the village stroll, skip the spa.",
+       "cost": "1.5-2h"
+      },
+      {
+       "opt": "Village plus spa",
+       "do": "Lunch in the village, then the Scandinave Spa Thermal Journey.",
+       "cost": "4.5-5.5h total"
+      },
+      {
+       "opt": "Add Train Wreck or Lost Lake",
+       "do": "Village, spa, and a short walk to the Train Wreck bridge or around part of Lost Lake before dinner.",
+       "cost": "6-7h total"
+      }
+     ]
+    },
+    "alt": [
+     "Whistler Village pedestrian street autumn",
+     "Scandinave Spa Whistler outdoor baths",
+     "Lost Lake Whistler fall colours",
+     "Whistler Train Wreck suspension bridge boxcars"
+    ],
+    "seasonal": "The Peak 2 Peak Gondola is closed for its fall maintenance shutdown, September 8-20, 2026, and does not reopen for the fall season, so there is no alpine gondola option on this itinerary regardless of exact date (whistlerblackcomb.com, read 2026-09-12).",
+    "cost": "Scandinave Spa Whistler Thermal Journey: $138 CAD weekday (Mon-Thu) rate for the Oct 13-Nov 5, 2026 season, weekends priced higher (scandinave.com/whistler/rates/, read 2026-09-12). Book online in advance at scandinave.zenoti.com. Minimum age 14, with 14-15 year-olds requiring a parent/guardian present and proof of age at check-in (scandinave.com/minor-guests, read 2026-09-12). Bathing suits are mandatory (not clothing-optional); sandals recommended for the wet decking. Complete silence is enforced across the whole site and phones must stay in lockers. Open 9am-10pm daily; plan on 3-5 hours for a proper visit (3-4 thermal cycles of hot/cold/rest, about 45 min each)."
    }
   ]
  },
@@ -3772,6 +4160,7 @@ const TRIP = [
       "name": "Whistler Village Stroll",
       "q": "Whistler Village",
       "note": "Pedestrian village, shops and coffee before departure.",
+      "kind": "sight",
       "ll": [
        50.11616,
        -122.9552
@@ -3781,11 +4170,32 @@ const TRIP = [
       "name": "Lost Lake Trail",
       "q": "Lost Lake Whistler",
       "note": "Flat 15-min loop if there's time.",
+      "kind": "walk",
       "ll": [
        50.12015,
        -122.94801
       ]
      }
+    ],
+    "expect": {
+     "arrive": "A last, easy morning in the pedestrian village before checkout; nothing to drive to yet.",
+     "need": "1-1.5 hours",
+     "paths": [
+      {
+       "opt": "Coffee and shops",
+       "do": "Walk the village stroll, coffee, browse before checkout.",
+       "cost": "45 min"
+      },
+      {
+       "opt": "Add Lost Lake",
+       "do": "Village stroll plus a short flat walk at Lost Lake.",
+       "cost": "1h 15m"
+      }
+     ]
+    },
+    "alt": [
+     "Whistler Village morning autumn",
+     "Lost Lake Whistler shoreline"
     ]
    },
    {
@@ -3810,6 +4220,13 @@ const TRIP = [
       "name": "Brandywine Falls",
       "q": "Brandywine Falls Provincial Park",
       "note": "70m waterfall, 5-min walk from parking.",
+      "kind": "walk",
+      "trail": {
+       "time": "20–40 min round trip",
+       "from": "Brandywine Falls Provincial Park parking lot",
+       "grade": "easy",
+       "caveat": "Doubled from the 10–20 min one way that BC Parks publishes"
+      },
       "ll": [
        50.04688,
        -123.11781
@@ -3819,6 +4236,7 @@ const TRIP = [
       "name": "Murrin Provincial Park",
       "q": "Murrin Provincial Park",
       "note": "Small lake and cliffs, quick leg-stretch.",
+      "kind": "walk",
       "ll": [
        49.64543,
        -123.20766
@@ -3828,6 +4246,7 @@ const TRIP = [
       "name": "Britannia Mine Museum",
       "q": "Britannia Mine Museum",
       "note": "Former copper mine, underground train tour.",
+      "kind": "sight",
       "ll": [
        49.6231,
        -123.20396
@@ -3837,11 +4256,40 @@ const TRIP = [
       "name": "Porteau Cove",
       "q": "Porteau Cove Provincial Park",
       "note": "Howe Sound viewpoint, popular photo stop.",
+      "kind": "view",
       "ll": [
        49.55615,
        -123.23894
       ]
      }
+    ],
+    "expect": {
+     "arrive": "All four stops are direct highway pull-offs on Highway 99 heading south; Brandywine's lot is the biggest draw and can be tight, the others are small and quiet.",
+     "parking": "Brandywine Falls has a paved lot that can fill on weekends; Murrin, Porteau Cove, and Britannia Mine each have their own smaller dedicated lots.",
+     "need": "1.5-2.5 hours depending on stops chosen",
+     "paths": [
+      {
+       "opt": "Brandywine only",
+       "do": "Stop for the falls viewpoint, skip the rest.",
+       "cost": "20-30 min"
+      },
+      {
+       "opt": "Add Murrin and Porteau Cove",
+       "do": "Brandywine Falls, a quick look at Murrin's lake, and the Porteau Cove viewpoint.",
+       "cost": "1h 15m"
+      },
+      {
+       "opt": "Add Britannia Mine",
+       "do": "All of the above plus the underground train tour at Britannia Mine Museum.",
+       "cost": "2.5-3h"
+      }
+     ]
+    },
+    "alt": [
+     "Brandywine Falls British Columbia",
+     "Murrin Provincial Park lake climbers",
+     "Porteau Cove Howe Sound viewpoint",
+     "Britannia Mine Museum headframe"
     ]
    },
    {
@@ -3866,6 +4314,7 @@ const TRIP = [
       "name": "Capilano Suspension Bridge",
       "q": "Capilano Suspension Bridge",
       "note": "137m suspension bridge over the canyon.",
+      "kind": "sight",
       "ll": [
        49.3429,
        -123.1151
@@ -3875,12 +4324,36 @@ const TRIP = [
       "name": "Cleveland Dam",
       "q": "Cleveland Dam North Vancouver",
       "note": "Nearby viewpoint over Capilano Lake, free.",
+      "kind": "view",
       "ll": [
        49.36016,
        -123.11052
       ]
      }
-    ]
+    ],
+    "expect": {
+     "arrive": "Capilano's own lot sits right at the entrance and is paid; it is one of the busiest attractions in the region and the lot does fill by mid-morning even off-season, with overflow shuttle parking used on busy days.",
+     "parking": "Paid lot at the entrance; fills by late morning most days, overflow lots run a shuttle when it does.",
+     "need": "1.5-2 hours",
+     "paths": [
+      {
+       "opt": "Bridge only",
+       "do": "Cross the main suspension bridge and back, skip Cliffwalk and Treetops.",
+       "cost": "40 min"
+      },
+      {
+       "opt": "Full grounds",
+       "do": "Suspension bridge, Cliffwalk, and Treetops Adventure loops.",
+       "cost": "1.5-2h"
+      }
+     ]
+    },
+    "alt": [
+     "Capilano Suspension Bridge canyon",
+     "Capilano Cliffwalk cantilevered walkway",
+     "Cleveland Dam Capilano Lake"
+    ],
+    "cost": "Capilano uses dynamic, timed-entry pricing set at checkout (capbridge.com/tickets-and-hours/, read 2026-09-12) rather than one published flat adult rate, and advance timed-entry booking is required — you pick a date and arrival window online. Third-party trip sites report 2026 adult prices roughly in the $65-80 CAD range, but only the date-specific checkout price is authoritative; do not treat that range as fixed. Fall hours: Sept 8-Oct 8, 9am-7pm; Oct 9-Nov 1 shifts to 10am-8pm for the Canyon Frights event (extended to 9pm on select nights)."
    },
    {
     "id": "d14s4",
@@ -3904,6 +4377,7 @@ const TRIP = [
       "name": "Rental car return",
       "q": "Vancouver skyline",
       "note": "Must be back in Vancouver by 8:00pm — no car after this.",
+      "kind": "drive",
       "ll": [
        49.02293,
        -122.38255
@@ -3913,11 +4387,32 @@ const TRIP = [
       "name": "Main Street, Mount Pleasant",
       "q": "Mount Pleasant Vancouver",
       "note": "Dinner along Main St, walk from the Airbnb.",
+      "kind": "food",
       "ll": [
        49.26168,
        -123.10131
       ]
      }
+    ],
+    "expect": {
+     "arrive": "Straightforward rental return at a downtown counter, then walking distance from the Mount Pleasant Airbnb to Main Street's restaurants.",
+     "need": "Rest of the afternoon and evening",
+     "paths": [
+      {
+       "opt": "Drop and settle",
+       "do": "Return the car, taxi/rideshare to the Airbnb, rest before dinner.",
+       "cost": "1h"
+      },
+      {
+       "opt": "Drop and walk Main St",
+       "do": "Return the car, then walk Main Street for dinner and a browse.",
+       "cost": "2-3h"
+      }
+     ]
+    },
+    "alt": [
+     "Vancouver Main Street Mount Pleasant",
+     "Vancouver skyline dusk"
     ]
    }
   ]

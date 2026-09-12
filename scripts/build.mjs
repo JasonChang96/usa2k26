@@ -51,8 +51,10 @@ for (const f of files) {
       for (const k of ['dist', 'time', 'gain'])
         if ((st.trail?.[k] || '').length > 34)
           problems.push(`${f}/${s.id}: "${st.name}" trail.${k} too long for the badge — split it`);
-      if (st.trail && !st.trail.dist)
-        problems.push(`${f}/${s.id}: "${st.name}" has a trail with no distance`);
+      /* Some agencies publish a walking time and no distance at all. Either is
+         enough to be worth showing; neither is not. */
+      if (st.trail && !st.trail.dist && !st.trail.time)
+        problems.push(`${f}/${s.id}: "${st.name}" has a trail with no distance or time`);
       const names = [`${st.name}, ${d.region}`, st.name, `${st.q}, ${d.region}`];
       const ll = [...names.map(q => biased(q, anchor)), ...names].map(k => geo[k]).find(Boolean);
       if (ll) { st.ll = ll; located++; }

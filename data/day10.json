@@ -27,14 +27,7 @@
           "name": "Reflection Lakes",
           "q": "Reflection Lakes Mount Rainier",
           "note": "Same pull-off as last night, best light at dawn.",
-          "kind": "walk",
-          "trail": {
-            "dist": "0.5 mile round trip",
-            "time": "30 min",
-            "gain": "negligible",
-            "from": "Reflection Lakes pull-off",
-            "grade": "easy"
-          }
+          "kind": "walk"
         },
         {
           "name": "Henry M. Jackson Visitor Center",
@@ -46,19 +39,12 @@
           "name": "Narada Falls",
           "q": "Stevens Canyon Road Mount Rainier",
           "note": "Quick stop on the way down toward Longmire.",
-          "kind": "walk",
-          "trail": {
-            "dist": "0.4 mile round trip",
-            "time": "20 min",
-            "gain": "200 ft, steep",
-            "from": "Narada Falls parking area",
-            "grade": "moderate"
-          }
+          "kind": "walk"
         }
       ],
       "expect": {
-        "arrive": "Same pull-offs before dawn, often near freezing in early October; the payoff is sunrise light on the summit if skies are clear.",
-        "parking": "Wide open before sunrise; just watch for ice on the pavement and boardwalk edges.",
+        "arrive": "Same pull-off before dawn, often near or below freezing in early October at this elevation; the payoff is alpenglow on the summit if the sky is clear, which is not the default at Rainier.",
+        "parking": "Wide open before sunrise, nobody else here yet; watch for ice on the pavement and any boardwalk edges.",
         "need": "1-1.5h",
         "paths": [
           {
@@ -68,16 +54,17 @@
           },
           {
             "opt": "Add a coffee stop",
-            "do": "Drive up to Jackson Visitor Center once it opens.",
+            "do": "Drive up to Jackson Visitor Center once it opens for coffee and indoor restrooms.",
             "cost": "1h 15m"
           }
         ]
       },
       "alt": [
-        "Mount Rainier sunrise Reflection Lakes",
-        "Mount Rainier alpenglow"
+        "Mount Rainier sunrise alpenglow",
+        "Reflection Lakes dawn mist",
+        "Mount Rainier from Stevens Canyon Road"
       ],
-      "seasonal": "Jackson Visitor Center doesn't open until 9:30am, well after sunrise — no coffee or indoor restrooms until then; dress for cold, especially for her, since Paradise at dawn in early October regularly sits near or below freezing."
+      "seasonal": "Bring real layers, especially for her — Paradise at dawn in early October regularly sits at or below freezing, and there is no shelter at the lake pull-off. The Jackson Visitor Center does not open at first light; check posted hours before counting on coffee immediately after sunrise."
     },
     {
       "id": "d10s2",
@@ -95,9 +82,9 @@
           "note": "Historic park headquarters and the National Park Inn.",
           "kind": "walk",
           "trail": {
-            "dist": "0.7 mile loop",
-            "time": "30 min",
-            "from": "Longmire Museum",
+            "dist": "0.7 mi (1.1 km) loop",
+            "time": "20 min",
+            "from": "Longmire, Trail of the Shadows trailhead across from the National Park Inn",
             "grade": "easy"
           }
         },
@@ -115,26 +102,26 @@
         }
       ],
       "expect": {
-        "arrive": "Historic log buildings and the National Park Inn at the park's original headquarters; a good last easy-walk stop.",
-        "parking": "Small lot fills with day visitors by mid-morning; easy if you're through early.",
+        "arrive": "Historic log buildings, the National Park Inn, and a small museum at the park's original headquarters; a calm, easy last stop before the long valley drive.",
+        "parking": "Small lot, fills with day visitors by mid-morning; easy if through by 9-10am.",
         "need": "45 min-1h",
         "paths": [
           {
             "opt": "Museum and porch only",
-            "do": "Look at the historic buildings, skip the trail.",
+            "do": "Look at the historic buildings and inn exterior, skip the trail.",
             "cost": "15 min"
           },
           {
             "opt": "Trail of the Shadows loop",
             "do": "Flat loop around Longmire Meadow past the old mineral springs.",
-            "cost": "30 min"
+            "cost": "20-30 min"
           }
         ]
       },
       "alt": [
-        "Longmire National Park Inn Mount Rainier",
-        "Trail of the Shadows Longmire",
-        "Eatonville Washington downtown"
+        "Longmire National Park Inn historic",
+        "Trail of the Shadows mineral springs",
+        "Longmire Museum Mount Rainier"
       ]
     },
     {
@@ -167,8 +154,8 @@
         }
       ],
       "expect": {
-        "arrive": "Consolidated rental car return is a short drive off the terminal loop, then a shuttle to check-in.",
-        "need": "1-1.5h for return and check-in",
+        "arrive": "Consolidated rental car return facility is a separate building off the terminal loop, reached by its own access road, then a free shuttle bus to the terminal.",
+        "need": "1-1.5h for return, shuttle, and check-in",
         "paths": [
           {
             "opt": "Straight to check-in",
@@ -176,15 +163,15 @@
             "cost": "1h"
           },
           {
-            "opt": "Light rail into the city",
-            "do": "Link light rail runs from the airport station straight into downtown.",
+            "opt": "Light rail into the city first",
+            "do": "For anyone continuing into Seattle rather than flying, Link light rail runs from the airport station straight downtown.",
             "cost": "40 min to downtown"
           }
         ]
       },
       "alt": [
-        "Seattle-Tacoma International Airport",
-        "SEA airport rental car return"
+        "Seattle-Tacoma International Airport terminal",
+        "SEA Rental Car Facility exterior"
       ]
     },
     {
@@ -217,30 +204,30 @@
         }
       ],
       "expect": {
-        "arrive": "Dense residential blocks a few minutes north of downtown; restaurants and bars at street level, easy flat walking everywhere.",
+        "arrive": "Dense residential blocks a few minutes' walk north of downtown; restaurants and bars at street level, entirely flat walking.",
         "need": "3h",
         "paths": [
           {
             "opt": "Stay in Belltown",
-            "do": "Dinner within a few blocks, no real walking required.",
-            "cost": "2h"
+            "do": "Dinner and a walk around the neighborhood only.",
+            "cost": "1.5h"
           },
           {
             "opt": "Walk to Pike Place",
-            "do": "8-10 minute walk south on 1st or Western Ave before it closes for the night.",
-            "cost": "1h"
+            "do": "Belltown dinner, then the walk down to Pike Place Market for the evening market atmosphere.",
+            "cost": "2.5h"
           },
           {
-            "opt": "Add the sculpture park",
-            "do": "Continue west to the waterfront park, open until dusk.",
-            "cost": "1h 30m"
+            "opt": "Add the Sculpture Park",
+            "do": "Same as above plus a sunset walk through Olympic Sculpture Park before it closes at dusk.",
+            "cost": "3h"
           }
         ]
       },
       "alt": [
-        "Belltown Seattle street",
-        "Pike Place Market Seattle",
-        "Olympic Sculpture Park Seattle"
+        "Belltown Seattle street life",
+        "Pike Place Market evening lights",
+        "Olympic Sculpture Park sunset"
       ]
     }
   ]

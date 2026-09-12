@@ -27,7 +27,7 @@
           "name": "Logan Pass",
           "q": "Logan Pass Glacier National Park",
           "note": "Highest point on Going-to-the-Sun Road, 6,646 ft.",
-          "kind": "view"
+          "kind": "sight"
         },
         {
           "name": "Hidden Lake Overlook",
@@ -35,10 +35,10 @@
           "note": "Short boardwalk hike from the Logan Pass visitor center.",
           "kind": "hike",
           "trail": {
-            "dist": "4.2 km round trip",
-            "time": "1h-1h 30m",
-            "gain": "185 m",
-            "from": "Logan Pass Visitor Center",
+            "dist": "2.6 mi (4.2 km) round trip",
+            "time": "1h 30m-2h",
+            "gain": "608 ft (185 m)",
+            "from": "Logan Pass Visitor Center boardwalk",
             "grade": "moderate"
           }
         },
@@ -48,11 +48,10 @@
           "note": "Trailhead waterfall on the east side.",
           "kind": "hike",
           "trail": {
-            "dist": "3.8 km round trip",
+            "dist": "2.4 mi (3.9 km) round trip",
             "time": "1h-1h 15m",
-            "gain": "79 m",
-            "from": "St. Mary Falls Trailhead",
-            "grade": "moderate"
+            "from": "Saint Mary Falls Trailhead",
+            "grade": "easy"
           }
         },
         {
@@ -67,10 +66,10 @@
           "note": "Short trail with views across Saint Mary Lake.",
           "kind": "walk",
           "trail": {
-            "dist": "2.8 km round trip",
+            "dist": "1.8 mi (2.9 km) round trip",
             "time": "45 min-1h",
-            "gain": "87 m",
-            "from": "Sun Point Picnic Area",
+            "gain": "284 ft (87 m)",
+            "from": "Sun Point parking area",
             "grade": "easy"
           }
         },
@@ -88,34 +87,34 @@
         }
       ],
       "expect": {
-        "arrive": "Sunrise at 6,646 ft is windy and often near freezing in late September; the visitor center doesn't open until 9am.",
-        "parking": "By Sept 30 the 235-space lot is first-come, first-served, no time limit or shuttle needed.",
-        "need": "3-4 hours",
+        "arrive": "Logan Pass Visitor Center lot (235 spaces) is famous for filling before sunrise in season; late September with the 2026 shuttle/timed-parking system off, it is first-come first-served and cold, windy, and dark at 5-6am.",
+        "parking": "235 spaces; in-season this lot fills before dawn most days — arriving well before 5am is the only way to guarantee a spot.",
+        "need": "4-4.5 hours including the drive down to Saint Mary",
         "paths": [
           {
-            "opt": "Sunrise view only",
-            "do": "Watch sunrise from the Logan Pass lot and boardwalk edge, no hike.",
-            "cost": "30 min"
+            "opt": "Sunrise from the lot, no walk",
+            "do": "Watch sunrise from the Logan Pass parking area and boardwalk start, back in the car for the rest of the East Side stops.",
+            "cost": "30-40 min"
           },
           {
-            "opt": "Hidden Lake Overlook boardwalk",
-            "do": "Walk the boardwalk to the overlook and back.",
-            "cost": "1h 30m"
+            "opt": "Hidden Lake Overlook",
+            "do": "Boardwalk and stairs up to the overlook and back, bundled up against the wind.",
+            "cost": "1h 30m-2h"
           },
           {
-            "opt": "Full loop plus St Mary stops",
-            "do": "Hidden Lake Overlook, then drive down to Sun Point and St. Mary Falls.",
+            "opt": "Overlook plus East Side stops",
+            "do": "Hidden Lake Overlook, then drive down with stops at Sunrift Gorge, Sun Point, and Wild Goose Island.",
             "cost": "4h"
           }
         ]
       },
       "alt": [
-        "Logan Pass Glacier National Park",
-        "Hidden Lake Glacier National Park",
+        "Logan Pass sunrise Glacier National Park",
+        "Going-to-the-Sun Road alpine section",
         "Wild Goose Island Saint Mary Lake",
-        "Sunrift Gorge"
+        "Jackson Glacier Overlook"
       ],
-      "seasonal": "GTSR's alpine section through Logan Pass can close for snow anytime from early September; NPS says it's typically open through the third Monday of October (Oct 19, 2026), but closures as early as Sept 3 have occurred — check nps.gov/glac road status the week before."
+      "seasonal": "Going-to-the-Sun Road has no fixed closing date — it typically shuts in mid-to-late October (often around the third Monday) but has closed as early as October 11-16 in past years after early snow, and the alpine section was even closed temporarily September 6-9, 2026 for heavy rain and rockfall risk. On September 30, 2026 the road should very likely still be open, but there is real year-to-year risk of an early snow closure by then — check the park's current road status page the morning of. Separately, the 2026 vehicle-reservation system was dropped entirely, and the ticketed Logan Pass shuttle and three-hour timed parking pilot ran only July 1-September 7, 2026, so neither applies on September 30 — no ticket or reservation needed, but the lot's usual fill-before-dawn pattern is unaffected by that system's end. Sources: nps.gov/glac/planyourvisit/visiting-loganpass-2026.htm, nps.gov/glac/planyourvisit/vehicle-reservations2026.htm, nps.gov/glac/learn/news (historical closure releases)."
     },
     {
       "id": "d06s2",
@@ -133,8 +132,10 @@
           "note": "Boardwalk loop through old-growth cedar and hemlock.",
           "kind": "walk",
           "trail": {
-            "dist": "1 km loop",
-            "from": "Avalanche Creek / Trail of the Cedars trailhead",
+            "dist": "0.9 mi (1.1 km) loop",
+            "time": "30-40 min",
+            "gain": "83 ft (25 m)",
+            "from": "Avalanche Picnic Area",
             "grade": "easy"
           }
         },
@@ -144,10 +145,10 @@
           "note": "Optional add-on hike above Avalanche Gorge.",
           "kind": "hike",
           "trail": {
-            "dist": "7.4 km round trip",
+            "dist": "4.6 mi (7.4 km) round trip",
             "time": "2h-2h 30m",
-            "gain": "226 m",
-            "from": "Avalanche Picnic Area",
+            "gain": "741 ft (226 m)",
+            "from": "Avalanche Picnic Area (via Trail of the Cedars)",
             "grade": "moderate"
           }
         },
@@ -155,7 +156,7 @@
           "name": "Lake McDonald",
           "q": "Lake McDonald Glacier National Park",
           "note": "Largest lake in the park, historic lodge on its shore.",
-          "kind": "view"
+          "kind": "sight"
         },
         {
           "name": "The Desoto Grill",
@@ -171,32 +172,32 @@
         }
       ],
       "expect": {
-        "arrive": "Trail of the Cedars boardwalk is right off the road; the Avalanche Lake trailhead shares the same lot.",
-        "parking": "Avalanche Creek lot is small and is consistently the first in the park to fill.",
-        "need": "2-3 hours",
+        "arrive": "Avalanche Creek's lot is small and paved and fills by mid-morning in season; Lake McDonald's lodge and lakeshore have their own larger lot and are visible right from the road.",
+        "parking": "Avalanche Creek lot holds roughly 45-50 cars and is often full by 9-10am; overflow means parking along the road shoulder.",
+        "need": "2.5-3.5 hours",
         "paths": [
           {
-            "opt": "Trail of the Cedars only",
-            "do": "Flat boardwalk loop through old-growth cedar, no elevation gain.",
-            "cost": "25 min"
+            "opt": "Cedars only",
+            "do": "Flat boardwalk loop through the old-growth cedars, no further hike.",
+            "cost": "30-40 min"
+          },
+          {
+            "opt": "Add Lake McDonald",
+            "do": "Trail of the Cedars, then a stop at the lake and historic lodge.",
+            "cost": "1h 30m"
           },
           {
             "opt": "Add Avalanche Lake",
-            "do": "Continue past the cedars up to the lake and back.",
-            "cost": "2h 30m"
-          },
-          {
-            "opt": "Lake McDonald drive-by",
-            "do": "Skip the hike, stop at the lodge and lakeshore instead.",
-            "cost": "20 min"
+            "do": "Cedars loop, then the climb up to Avalanche Lake and back, then Lake McDonald.",
+            "cost": "3h 30m"
           }
         ]
       },
       "alt": [
-        "Trail of the Cedars Glacier National Park",
-        "Avalanche Lake Montana",
-        "Lake McDonald Glacier National Park",
-        "Lake McDonald Lodge"
+        "Lake McDonald Lodge Glacier National Park",
+        "Avalanche Gorge Glacier National Park",
+        "McDonald Creek Glacier National Park",
+        "Old-growth cedar forest Glacier National Park"
       ]
     }
   ]

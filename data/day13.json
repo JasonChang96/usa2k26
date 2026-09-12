@@ -17,11 +17,58 @@
       "name": "Segment 1 — Rental car pickup and Shannon Falls",
       "blurb": "All luggage in the car; no return to the Vancouver Airbnb.",
       "time": "8:30-9:30am",
-      "map": { "from": "Vancouver, BC", "to": "Whistler, BC" },
+      "map": {
+        "from": "Vancouver, BC",
+        "to": "Whistler, BC"
+      },
       "stops": [
-        { "name": "Rental car pickup, downtown Vancouver", "q": "Vancouver skyline", "note": "8:30am pickup; check out of the Airbnb first." },
-        { "name": "Shannon Falls Provincial Park", "q": "Shannon Falls Provincial Park", "note": "Free roadside waterfall stop, 15 minutes." },
-        { "name": "Howe Sound", "q": "Howe Sound British Columbia", "note": "Scenic fjord views along Highway 99." }
+        {
+          "name": "Rental car pickup, downtown Vancouver",
+          "q": "Vancouver skyline",
+          "note": "8:30am pickup; check out of the Airbnb first.",
+          "kind": "drive"
+        },
+        {
+          "name": "Shannon Falls Provincial Park",
+          "q": "Shannon Falls Provincial Park",
+          "note": "Free roadside waterfall stop, 15 minutes.",
+          "kind": "walk",
+          "trail": {
+            "dist": "about 700 m round trip",
+            "time": "15-20 min",
+            "from": "Shannon Falls Provincial Park parking lot",
+            "grade": "easy",
+            "caveat": "Doubled from the 350 m one way that BC Parks publishes"
+          }
+        },
+        {
+          "name": "Howe Sound",
+          "q": "Howe Sound British Columbia",
+          "note": "Scenic fjord views along Highway 99.",
+          "kind": "view"
+        }
+      ],
+      "expect": {
+        "arrive": "Rental pickup is an ordinary downtown Vancouver counter; Shannon Falls is a direct roadside pull-off on Highway 99, falls visible within a couple minutes of parking.",
+        "parking": "Shannon Falls has a sizeable paved lot right off the highway; it can fill on summer weekends but is easy on an October weekday.",
+        "need": "1.5-2 hours including the drive from Vancouver",
+        "paths": [
+          {
+            "opt": "Photo and go",
+            "do": "Walk to the first, lower viewpoint only.",
+            "cost": "10-15 min"
+          },
+          {
+            "opt": "Both viewpoints",
+            "do": "Walk the crusher-dust trail to both viewing platforms, about 5 minutes apart.",
+            "cost": "20-25 min"
+          }
+        ]
+      },
+      "alt": [
+        "Shannon Falls waterfall British Columbia",
+        "Stawamus Chief granite monolith Squamish",
+        "Howe Sound fjord aerial view"
       ]
     },
     {
@@ -29,27 +76,137 @@
       "name": "Segment 2 — Sea to Sky Gondola, Squamish",
       "blurb": "CAD $69pp, summit boardwalk and suspension bridge.",
       "time": "9:30-11:30am",
-      "map": { "center": "Sea to Sky Gondola, Squamish, BC", "zoom": 14 },
+      "map": {
+        "center": "Sea to Sky Gondola, Squamish, BC",
+        "zoom": 14
+      },
       "stops": [
-        { "name": "Sea to Sky Gondola", "q": "Sea to Sky Gondola Squamish", "note": "Open year-round, 10-minute ride to the summit." },
-        { "name": "Sky Pilot Suspension Bridge", "q": "Sea to Sky Gondola Squamish", "note": "Suspension bridge at the gondola summit." },
-        { "name": "Squamish viewpoint", "q": "Squamish BC", "note": "Views over Howe Sound and the Stawamus Chief." }
-      ]
+        {
+          "name": "Sea to Sky Gondola",
+          "q": "Sea to Sky Gondola Squamish",
+          "note": "Open year-round, 10-minute ride to the summit.",
+          "kind": "sight"
+        },
+        {
+          "name": "Sky Pilot Suspension Bridge",
+          "q": "Sea to Sky Gondola Squamish",
+          "note": "Suspension bridge at the gondola summit.",
+          "kind": "walk",
+          "trail": {
+            "time": "about 30 min",
+            "from": "Sea to Sky Gondola summit station",
+            "grade": "easy",
+            "caveat": "Both summit interpretive loops together. No official distance published"
+          }
+        },
+        {
+          "name": "Squamish viewpoint",
+          "q": "Squamish BC",
+          "note": "Views over Howe Sound and the Stawamus Chief.",
+          "kind": "view"
+        }
+      ],
+      "expect": {
+        "arrive": "The gondola base is a large paid parking lot off Highway 99 just south of Squamish town; it is the main draw of the area and does fill on clear-weather weekends, less so on an October weekday.",
+        "parking": "Large paved lot at the base station; a fee applies and it can fill on busy days, but should be straightforward on a weekday in October.",
+        "need": "2-2.5 hours including the ride up and down",
+        "paths": [
+          {
+            "opt": "Ride up, boardwalk loop, ride down",
+            "do": "Gondola both ways, one of the two easy summit interpretive loops and the Sky Pilot Suspension Bridge, no real hiking.",
+            "cost": "1h 15m"
+          },
+          {
+            "opt": "Both summit loops",
+            "do": "Gondola both ways, walk both interpretive loops plus the suspension bridge and viewing platforms.",
+            "cost": "1h 45m"
+          }
+        ]
+      },
+      "alt": [
+        "Sea to Sky Gondola summit boardwalk",
+        "Stawamus Chief view from gondola summit",
+        "Howe Sound viewpoint Squamish"
+      ],
+      "cost": "Adult round-trip gondola ticket: $73.95 CAD booked online, $81.95 CAD at the window (seatoskygondola.com/hours-and-prices/, read 2026-09-12). Booking ahead isn't required but is cheaper. October 13-30 hours drop to 9am-4pm Mon-Fri (last gondola down 5pm) and 9am-5pm weekends (last down 6pm) — a shorter shoulder-season window than summer."
     },
     {
       "id": "d13s3",
       "name": "Segment 3 — Whistler village, spa, and dinner",
       "blurb": "No alpine gondola — Peak 2 Peak closed for maintenance.",
       "time": "12:30-9:00pm",
-      "map": { "center": "Whistler Village, BC", "zoom": 15 },
+      "map": {
+        "center": "Whistler Village, BC",
+        "zoom": 15
+      },
       "stops": [
-        { "name": "Whistler Village", "q": "Whistler British Columbia village", "note": "Pedestrian village, lunch and shops." },
-        { "name": "Scandinave Spa Whistler", "q": "Whistler British Columbia village", "note": "CAD $115pp, outdoor Nordic baths, silence policy." },
-        { "name": "Whistler Train Wreck", "q": "Whistler Train Wreck", "note": "Suspension bridge trail to derailed boxcars." },
-        { "name": "Lost Lake", "q": "Lost Lake Whistler", "note": "Easy lakeside walk, fall colours." },
-        { "name": "Audain Art Museum", "q": "Whistler British Columbia village", "note": "Indigenous and BC art; wet-weather option." },
-        { "name": "Pinnacle Hotel Whistler", "q": "Whistler British Columbia village", "note": "Village dinner, then overnight here." }
-      ]
+        {
+          "name": "Whistler Village",
+          "q": "Whistler British Columbia village",
+          "note": "Pedestrian village, lunch and shops.",
+          "kind": "sight"
+        },
+        {
+          "name": "Scandinave Spa Whistler",
+          "q": "Whistler British Columbia village",
+          "note": "CAD $115pp, outdoor Nordic baths, silence policy.",
+          "kind": "sight"
+        },
+        {
+          "name": "Whistler Train Wreck",
+          "q": "Whistler Train Wreck",
+          "note": "Suspension bridge trail to derailed boxcars.",
+          "kind": "walk"
+        },
+        {
+          "name": "Lost Lake",
+          "q": "Lost Lake Whistler",
+          "note": "Easy lakeside walk, fall colours.",
+          "kind": "walk"
+        },
+        {
+          "name": "Audain Art Museum",
+          "q": "Whistler British Columbia village",
+          "note": "Indigenous and BC art; wet-weather option.",
+          "kind": "sight"
+        },
+        {
+          "name": "Pinnacle Hotel Whistler",
+          "q": "Whistler British Columbia village",
+          "note": "Village dinner, then overnight here.",
+          "kind": "sight"
+        }
+      ],
+      "expect": {
+        "arrive": "Whistler Village is fully pedestrian; park once and walk everywhere. Scandinave Spa is a 10-minute drive south of the village with its own gravel lot.",
+        "parking": "Village day lots and parkades charge by the hour and fill on weekends; Scandinave's own lot is modest but rarely full on a weekday.",
+        "need": "Full afternoon and evening",
+        "paths": [
+          {
+            "opt": "Village only",
+            "do": "Lunch, shops, wander the village stroll, skip the spa.",
+            "cost": "1.5-2h"
+          },
+          {
+            "opt": "Village plus spa",
+            "do": "Lunch in the village, then the Scandinave Spa Thermal Journey.",
+            "cost": "4.5-5.5h total"
+          },
+          {
+            "opt": "Add Train Wreck or Lost Lake",
+            "do": "Village, spa, and a short walk to the Train Wreck bridge or around part of Lost Lake before dinner.",
+            "cost": "6-7h total"
+          }
+        ]
+      },
+      "alt": [
+        "Whistler Village pedestrian street autumn",
+        "Scandinave Spa Whistler outdoor baths",
+        "Lost Lake Whistler fall colours",
+        "Whistler Train Wreck suspension bridge boxcars"
+      ],
+      "seasonal": "The Peak 2 Peak Gondola is closed for its fall maintenance shutdown, September 8-20, 2026, and does not reopen for the fall season, so there is no alpine gondola option on this itinerary regardless of exact date (whistlerblackcomb.com, read 2026-09-12).",
+      "cost": "Scandinave Spa Whistler Thermal Journey: $138 CAD weekday (Mon-Thu) rate for the Oct 13-Nov 5, 2026 season, weekends priced higher (scandinave.com/whistler/rates/, read 2026-09-12). Book online in advance at scandinave.zenoti.com. Minimum age 14, with 14-15 year-olds requiring a parent/guardian present and proof of age at check-in (scandinave.com/minor-guests, read 2026-09-12). Bathing suits are mandatory (not clothing-optional); sandals recommended for the wet decking. Complete silence is enforced across the whole site and phones must stay in lockers. Open 9am-10pm daily; plan on 3-5 hours for a proper visit (3-4 thermal cycles of hot/cold/rest, about 45 min each)."
     }
   ]
 }

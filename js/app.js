@@ -185,6 +185,7 @@ function trailBadge(st) {
   return `<span class="trail${t.grade ? ' g-' + t.grade : ''}">
     <b>${bits.join(' · ')}</b>
     ${t.from ? `<i>round trip from ${t.from}</i>` : ''}
+    ${t.caveat ? `<i class="cav">${t.caveat}.</i>` : ''}
     ${t.grade ? `<em>${t.grade}</em>` : ''}
   </span>`;
 }

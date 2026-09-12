@@ -29,13 +29,15 @@ Added to the existing day JSON. All fields OPTIONAL — omit rather than guess.
   "time": "1h–1h 30m",
   "gain": "120 m",
   "from": "Jenny Lake boat dock",
-  "grade": "easy | moderate | strenuous"
+  "grade": "easy | moderate | strenuous",
+  "caveat": "One clause, only when the number needs a qualifier. No trailing full stop."
 }
 ```
 
 - `trail` — ONLY for stops you actually walk. Always ROUND TRIP, back to the car
   park (or boat dock) named in `from`.
-- `dist` — metric first. Round trip, never one-way.
+- `dist` — metric first. Round trip, never one-way. Keep every field under 34
+  characters: the badge is one line on a phone. Qualifiers go in `caveat`, not here.
 - `grade` — easy = flat/paved/boardwalk. moderate = real climb but no scrambling.
   strenuous = long or steep. Jason and Alicia are not doing strenuous.
 

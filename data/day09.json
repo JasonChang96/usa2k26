@@ -43,8 +43,8 @@
         }
       ],
       "expect": {
-        "arrive": "Two mountain passes back to back, about two and a half hours of driving with only brief roadside stops before the park.",
-        "parking": "Small gravel pull-offs at Blewett Pass and the entrance arch; no real lots.",
+        "arrive": "Two mountain passes back to back on two-lane highway; Blewett Pass and the Chinook Pass entrance arch are quick roadside pull-offs, not destinations.",
+        "parking": "Gravel shoulders only at both summits, room for a handful of cars, never busy.",
         "need": "2h 30m",
         "paths": [
           {
@@ -60,10 +60,11 @@
         ]
       },
       "alt": [
-        "Blewett Pass Washington summit",
-        "Chinook Pass entrance arch Mount Rainier",
-        "Naches Washington downtown"
-      ]
+        "Blewett Pass Washington summit sign",
+        "Naches Washington Yakima River valley",
+        "Chinook Pass log entrance arch"
+      ],
+      "seasonal": "This whole segment depends on SR-410 over Chinook Pass being open. WSDOT's typical closing date is late October — Oct 24, 2025; Oct 31, 2024 (an early storm closure); Nov 10, 2023 — so Oct 3 is normally well clear, but 2024's closure shows an early cold snap can force it shut with little notice. Check wsdot.wa.gov/travel/roads-bridges/mountain-pass-closure-and-opening-dates the morning of departure; there is no good detour if it's closed (the alternative is back through Yakima and up I-5, adding hours)."
     },
     {
       "id": "d09s2",
@@ -79,13 +80,7 @@
           "name": "Tipsoo Lake",
           "q": "Tipsoo Lake Mount Rainier",
           "note": "Short loop trail; Rainier reflected in the lake when calm.",
-          "kind": "walk",
-          "trail": {
-            "dist": "0.5 mile / 0.8 km loop",
-            "time": "20 min",
-            "from": "Tipsoo Lake parking area",
-            "grade": "easy"
-          }
+          "kind": "walk"
         },
         {
           "name": "Naches Peak Loop Trail",
@@ -93,10 +88,10 @@
           "note": "3.2-mile loop from the pass, optional if time allows.",
           "kind": "hike",
           "trail": {
-            "dist": "3.5 miles round trip",
+            "dist": "3.4 mi (5.6 km) round trip",
             "time": "2h",
             "gain": "500 ft",
-            "from": "Chinook Pass / Tipsoo Lake trailhead",
+            "from": "Tipsoo Lake / Chinook Pass trailhead",
             "grade": "moderate"
           }
         },
@@ -108,33 +103,33 @@
         }
       ],
       "expect": {
-        "arrive": "Alpine lake right off SR-410; Rainier reflects in it on calm mornings, but the mountain often clouds over within minutes.",
-        "parking": "Small paved lot at Tipsoo Lake fills by mid-morning in fall; roadside shoulders nearby.",
-        "need": "1h",
+        "arrive": "Small alpine lake right off the highway at the pass; Rainier reflects in it on still mornings but the mountain is frequently clouded over within minutes since it makes its own weather.",
+        "parking": "Small paved lot at the pass, plus a bit of shoulder; rarely full this late in the season on a weekday.",
+        "need": "45 min",
         "paths": [
           {
             "opt": "Lake loop only",
-            "do": "Walk the short loop around Tipsoo Lake itself.",
-            "cost": "20 min"
+            "do": "Walk the easy path around Tipsoo Lake itself.",
+            "cost": "20-30 min"
           },
           {
             "opt": "Add Cayuse Pass",
-            "do": "Short drive to the Cayuse Pass junction for a photo.",
+            "do": "Short drive to the Cayuse Pass junction for a photo, no walking.",
             "cost": "40 min"
           },
           {
             "opt": "Naches Peak Loop",
-            "do": "Full loop trail from the pass, real elevation gain but no scrambling — only if the weather is holding.",
+            "do": "Full loop trail from the pass with real elevation gain but no scrambling.",
             "cost": "2h"
           }
         ]
       },
       "alt": [
         "Tipsoo Lake Mount Rainier reflection",
-        "Naches Peak Loop trail",
-        "Cayuse Pass Washington"
+        "Naches Peak Loop trail autumn",
+        "Cayuse Pass Washington highway"
       ],
-      "seasonal": "SR 410/Chinook Pass and SR 123/Cayuse Pass usually close for winter in late October (Oct 24, 2025; Oct 31, 2024; Nov 10, 2023) and reopen around late May — Oct 3 is well before the typical window, but an early storm can still force a temporary closure, so check WSDOT before leaving Leavenworth."
+      "seasonal": "SR-410/Chinook Pass and SR-123/Cayuse Pass close together — see d09s1 for the closure risk. No official round-trip distance for the short walk around Tipsoo Lake itself was found on nps.gov; the NPS page (nps.gov/mora/planyourvisit/day-hiking-at-mount-rainier.htm) only lists the connecting Naches Peak Loop Trail at 3.4 mi / 2h, so the lake-loop trail object is omitted rather than estimated."
     },
     {
       "id": "d09s3",
@@ -158,7 +153,7 @@
           "note": "0.8-mile round trip on the Skyline Trail; the park's most photographed falls.",
           "kind": "walk",
           "trail": {
-            "dist": "1 mile round trip",
+            "dist": "1 mi (1.6 km) round trip",
             "time": "35 min",
             "gain": "100 ft",
             "from": "Paradise upper parking lot / Jackson Visitor Center",
@@ -171,10 +166,10 @@
           "note": "1.2-mile loop over Nisqually Glacier and valley views.",
           "kind": "walk",
           "trail": {
-            "dist": "1.2 miles round trip",
+            "dist": "1.2 mi (1.9 km) loop",
             "time": "45 min",
             "gain": "200 ft",
-            "from": "Paradise lower parking lot",
+            "from": "Paradise lower parking lot, Nisqually Vista trailhead",
             "grade": "easy"
           }
         },
@@ -184,18 +179,19 @@
           "note": "Longer option climbing above Myrtle Falls toward Panorama Point.",
           "kind": "hike",
           "trail": {
-            "dist": "5.5 miles round trip for the full loop; 4 miles round trip to Panorama Point via the Golden Gate Trail for a shorter turnaround",
-            "time": "4h 30m full loop; roughly 2h 30m-3h to Panorama Point and back",
-            "gain": "1,700 ft full loop",
-            "from": "Paradise upper parking lot",
-            "grade": "strenuous"
+            "dist": "8.9 km round trip",
+            "time": "4h 30m for the full loop",
+            "gain": "1,700 ft",
+            "from": "Paradise upper parking lot, next to the visitor center",
+            "grade": "strenuous — the full loop is out of scope for this trip; if walking any of it, turn around at or before the Golden Gate Trail junction (about 2 mi in, near Panorama Point) rather than completing the loop",
+            "caveat": "The full loop. The Golden Gate Trail cuts it shorter, but NPS publishes no figure for that"
           }
         }
       ],
       "expect": {
-        "arrive": "Wide subalpine meadow below the summit; Rainier makes its own weather and is often partly or fully clouded over.",
-        "parking": "Two large lots fill by late morning on clear fall weekends; arrive before 11am to be safe.",
-        "need": "3-4h",
+        "arrive": "Wide subalpine meadow below the summit; the mountain is visible maybe half the time even in good weather and is frequently clouded over for hours at a stretch — plan the visit assuming you might not see it.",
+        "parking": "Two lots (upper near the visitor center, lower near the Nisqually Vista trailhead) that together hold a few hundred cars; they fill by mid-to-late morning on clear fall weekends, easier on a Saturday afternoon arrival at this time of year.",
+        "need": "2-3h",
         "paths": [
           {
             "opt": "Myrtle Falls only",
@@ -204,23 +200,23 @@
           },
           {
             "opt": "Myrtle Falls + Nisqually Vista",
-            "do": "Both easy, mostly flat trails, no real climbing.",
+            "do": "Both easy, mostly flat/paved trails, no real climbing, from two different lots.",
             "cost": "1h 20m"
           },
           {
-            "opt": "Push to Panorama Point",
-            "do": "Skyline and Golden Gate trails up to the viewpoint; a real climb with no scrambling, skip if cold or wet underfoot.",
-            "cost": "2h 30m-3h"
+            "opt": "Push onto the Skyline Trail",
+            "do": "Continue past Myrtle Falls onto the Skyline Trail toward Panorama Point via the Golden Gate cutoff, a real climb but no scrambling — only worth it if the mountain is out and legs are willing.",
+            "cost": "2-2.5h round trip to Golden Gate junction and back"
           }
         ]
       },
       "alt": [
-        "Myrtle Falls Mount Rainier",
-        "Nisqually Vista Trail Paradise",
-        "Paradise meadows Mount Rainier",
+        "Mount Rainier Paradise meadow autumn",
+        "Myrtle Falls Mount Rainier reflection",
+        "Nisqually Glacier valley view Paradise",
         "Henry M Jackson Visitor Center Paradise"
       ],
-      "seasonal": "Jackson Visitor Center is open 9:30am-4pm daily Sept 28-Oct 12 (down from summer's 9:30am-6:30pm); no timed-entry vehicle reservation is required anywhere in the park in 2026 — the pilot program was cancelled for the year."
+      "seasonal": "No timed-entry reservation is needed anywhere in the park in 2026 — NPS cancelled the system this year and is managing crowding through parking only (nps.gov/mora/planyourvisit/timed-entry-reservations.htm). The Jackson Visitor Center moves to winter hours on October 14 (10am-5pm, weekends/holidays only through year-end) per NPS-sourced reporting, so on October 3 it should still be on its daily fall schedule — but confirm hours close to the date since the exact 2026 daily-to-winter cutover date wasn't independently verified beyond that secondary source."
     },
     {
       "id": "d09s4",
@@ -238,11 +234,11 @@
           "note": "Pull-off on Stevens Canyon Road, a few minutes from Paradise.",
           "kind": "walk",
           "trail": {
-            "dist": "0.5 mile round trip",
-            "time": "30 min",
-            "gain": "negligible",
-            "from": "Reflection Lakes pull-off",
-            "grade": "easy"
+            "dist": "4.8 km loop",
+            "time": "not stated by NPS",
+            "from": "Reflection Lakes pull-off, Stevens Canyon Road",
+            "grade": "moderate — a flat shoreline-only stroll is possible but has no official separate distance",
+            "caveat": "That is the full Lakes Trail to Faraway Rock. The shoreline by the car is a few minutes"
           }
         },
         {
@@ -255,38 +251,37 @@
           "name": "Narada Falls",
           "q": "Stevens Canyon Road Mount Rainier",
           "note": "168-foot falls on the way back toward Paradise.",
-          "kind": "walk",
-          "trail": {
-            "dist": "0.4 mile round trip",
-            "time": "20 min",
-            "gain": "200 ft, steep",
-            "from": "Narada Falls parking area",
-            "grade": "moderate"
-          }
+          "kind": "sight"
         }
       ],
       "expect": {
-        "arrive": "Small roadside pull-offs on Stevens Canyon Road; a still evening doubles the mountain in the water, but cloud or wind can erase it.",
-        "parking": "A handful of small pull-offs, not a real lot; fills fast right at sunset.",
+        "arrive": "A short pull-off on Stevens Canyon Road a few minutes from Paradise; this is the classic mountain-in-lake shot but it only works if the water is glassy and the summit is actually visible, neither guaranteed.",
+        "parking": "Small roadside lot plus turnouts along the road; fills right at sunset in good weather, arrive 30-45 min early to get a spot.",
         "need": "1-1.5h",
         "paths": [
           {
-            "opt": "Photo and back",
-            "do": "Walk the short lakeside loop for the classic shot.",
-            "cost": "30 min"
+            "opt": "Roadside shot only",
+            "do": "Park at the main pull-off, walk to the water's edge, no trail.",
+            "cost": "20 min"
           },
           {
-            "opt": "Add Louise Lake",
-            "do": "Continue a few minutes down the road to the quieter second lake.",
-            "cost": "50 min"
+            "opt": "Add Louise Lake / Narada Falls",
+            "do": "Short drive further along Stevens Canyon Road and back toward Paradise.",
+            "cost": "1h"
+          },
+          {
+            "opt": "Walk part of the Lakes Trail shoreline",
+            "do": "Follow the trail along the lake edge partway without committing to the full loop up to Faraway Rock.",
+            "cost": "30-45 min"
           }
         ]
       },
       "alt": [
         "Reflection Lakes Mount Rainier sunset",
         "Louise Lake Mount Rainier",
-        "Narada Falls Mount Rainier"
-      ]
+        "Narada Falls Stevens Canyon Road"
+      ],
+      "seasonal": "nps.gov/places/reflection-lakes.htm gives only the roughly 3-mile Lakes Trail loop to Faraway Rock, with no NPS time estimate and no separate official number for a shoreline-only walk — the trail object above reflects that gap rather than an estimate for the shorter stroll."
     }
   ]
 }

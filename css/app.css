@@ -790,3 +790,4 @@ li.on .ptext small{opacity:.4}
 .path.on .pn{background:var(--card);color:var(--sage)}
 .path.on .pb u{color:#EBD9A8}
 .path.on .pb span{color:#E9ECDB}
+.trail i.cav{color:var(--rust);font-size:11px}

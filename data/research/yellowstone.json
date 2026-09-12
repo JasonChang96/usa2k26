@@ -1,0 +1,398 @@
+{
+  "d04s1": {
+    "expect": {
+      "arrive": "South Entrance is a simple gate check, then a two-lane forested road; Grant Village and West Thumb both have proper paved lots that rarely fill this early.",
+      "parking": "Grant Village Visitor Center and West Thumb Geyser Basin both have full-size paved lots; neither is reported to fill before mid-morning.",
+      "need": "3-3.5 hours including the drive",
+      "paths": [
+        {
+          "opt": "Drive straight through",
+          "do": "Roadside look at Moose Falls and Lewis Falls from the pull-offs, no stop at Grant Village.",
+          "cost": "1h"
+        },
+        {
+          "opt": "Add West Thumb",
+          "do": "Same pull-offs, plus the West Thumb Geyser Basin boardwalk loops on the lakeshore.",
+          "cost": "1h 45m"
+        },
+        {
+          "opt": "Full stop tour",
+          "do": "Both waterfalls, Lewis Lake picnic area, Grant Village Visitor Center, and the full West Thumb boardwalk.",
+          "cost": "2h 30m"
+        }
+      ]
+    },
+    "alt": [
+      "Lewis Falls Yellowstone autumn",
+      "Yellowstone Lake West Thumb shoreline",
+      "Grant Village Visitor Center exterior",
+      "Lewis River canyon Yellowstone"
+    ],
+    "stops": {
+      "South Entrance Station": {
+        "kind": "sight"
+      },
+      "Moose Falls": {
+        "kind": "view"
+      },
+      "Lewis Falls": {
+        "kind": "view"
+      },
+      "Lewis Lake Picnic Area": {
+        "kind": "sight"
+      },
+      "Grant Village Visitor Center": {
+        "kind": "sight"
+      },
+      "West Thumb Geyser Basin": {
+        "kind": "walk",
+        "trail": {
+          "dist": "0.75 mi (1.2 km) round trip",
+          "time": "30-45 min",
+          "from": "West Thumb Geyser Basin parking lot",
+          "grade": "easy"
+        }
+      }
+    }
+  },
+  "d04s2": {
+    "expect": {
+      "arrive": "Old Faithful's lot is enormous but this is the park's single busiest stop; it fills on clear late-September mornings by mid-morning and overflows to a second lot across the road. The geyser itself is visible from the visitor center deck and much of the boardwalk without walking far, but the wider Upper Geyser Basin (Morning Glory Pool, Geyser Hill) needs real boardwalk time.",
+      "parking": "Main Old Faithful lot holds hundreds of cars but fills by mid-morning in good weather; an overflow lot sits across the road near the Old Faithful Inn.",
+      "need": "1.5-2.5 hours",
+      "paths": [
+        {
+          "opt": "One eruption, no walk",
+          "do": "Check the prediction board at the Visitor Education Center, watch the eruption from the boardwalk benches nearby.",
+          "cost": "45 min-1h"
+        },
+        {
+          "opt": "Add Geyser Hill",
+          "do": "After the eruption, walk the boardwalk loop around Geyser Hill's smaller geysers and pools.",
+          "cost": "1h 45m"
+        },
+        {
+          "opt": "Full Upper Geyser Basin walk",
+          "do": "Boardwalk out toward Morning Glory Pool and back, past Castle, Grand, and Riverside Geysers.",
+          "cost": "2h 30m"
+        }
+      ]
+    },
+    "alt": [
+      "Castle Geyser Yellowstone",
+      "Morning Glory Pool Yellowstone",
+      "Old Faithful Inn lobby interior",
+      "Riverside Geyser Yellowstone eruption"
+    ],
+    "seasonal": "Biscuit Basin, a short drive north of Old Faithful on the way to Midway, has been closed since a July 23, 2024 hydrothermal explosion and was hit by a second explosion on July 13, 2026; it remains closed indefinitely as of 2026 (nps.gov/yell/planyourvisit/conditions.htm). It is not on this itinerary but travelers sometimes expect to stop there — do not plan a stop.",
+    "stops": {
+      "Continental Divide": {
+        "kind": "sight"
+      },
+      "Kepler Cascades": {
+        "kind": "view"
+      },
+      "Old Faithful": {
+        "kind": "sight"
+      }
+    }
+  },
+  "d04s3": {
+    "expect": {
+      "arrive": "Grand Prismatic itself is a flat boardwalk loop right off the Midway Geyser Basin lot, but the spring's full rainbow color only reads from above; the classic overhead photo requires the separate Fairy Falls Trailhead lot one mile south, which is small and known to fill by mid-morning.",
+      "parking": "Midway Geyser Basin's lot is mid-sized and fills by late morning; the Fairy Falls Trailhead lot for the overlook is much smaller and fills faster — arrive before 10am or expect roadside parking.",
+      "need": "1.5-2.5 hours",
+      "paths": [
+        {
+          "opt": "Boardwalk only",
+          "do": "Walk the flat Midway boardwalk past Excelsior Geyser and along the edge of Grand Prismatic.",
+          "cost": "30-40 min"
+        },
+        {
+          "opt": "Add the overlook",
+          "do": "Drive to the separate Fairy Falls Trailhead and walk up to the Grand Prismatic Overlook for the postcard view from above.",
+          "cost": "1h 15m"
+        },
+        {
+          "opt": "Full loop with Firehole Lake Drive",
+          "do": "Midway boardwalk, the overlook hike, and the one-way Firehole Lake Drive past Great Fountain Geyser plus Fountain Paint Pots.",
+          "cost": "2h 15m"
+        }
+      ]
+    },
+    "alt": [
+      "Grand Prismatic Spring aerial view",
+      "Excelsior Geyser crater Yellowstone",
+      "Great Fountain Geyser Firehole Lake Drive",
+      "Fountain Paint Pots mudpots"
+    ],
+    "stops": {
+      "Grand Prismatic Spring": {
+        "kind": "walk"
+      },
+      "Grand Prismatic Overlook (Fairy Falls Trailhead)": {
+        "kind": "hike",
+        "trail": {
+          "dist": "1.2 mi (1.9 km) round trip",
+          "time": "45 min-1h",
+          "gain": "105 ft (32 m)",
+          "from": "Fairy Falls Trailhead, 1 mi south of Midway Geyser Basin",
+          "grade": "easy"
+        }
+      },
+      "Firehole Lake Drive": {
+        "kind": "drive"
+      },
+      "Fountain Paint Pots": {
+        "kind": "walk"
+      }
+    }
+  },
+  "d04s4": {
+    "expect": {
+      "arrive": "Canyon Village has the biggest lots on this stretch and rarely fills; the individual overlooks (Inspiration Point, Artist Point) are small paved pull-offs a short walk from their own car parks, not from Canyon Village itself. The canyon and both falls are visible without much walking, but the best angles need the short paved paths at each overlook.",
+      "parking": "Canyon Visitor Education Center has a large lot; Artist Point and Inspiration Point each have their own smaller lots that fill on clear afternoons.",
+      "need": "3-4 hours",
+      "paths": [
+        {
+          "opt": "The two icon overlooks",
+          "do": "Artist Point and Inspiration Point only, both short walks from their own lots.",
+          "cost": "1h"
+        },
+        {
+          "opt": "Add Brink of the Lower Falls",
+          "do": "Same two overlooks plus the steep short trail down to the brink of the Lower Falls.",
+          "cost": "2h"
+        },
+        {
+          "opt": "Full canyon tour",
+          "do": "Both overlooks, Brink of the Lower Falls, Upper Falls View, plus Sulphur Caldron and Mud Volcano on the way south.",
+          "cost": "3h 30m"
+        }
+      ]
+    },
+    "alt": [
+      "Grand Canyon of the Yellowstone Lower Falls",
+      "Yellowstone River canyon yellow rock",
+      "Mud Volcano steam vents",
+      "Sulphur Caldron acidic spring"
+    ],
+    "stops": {
+      "Virginia Cascade Drive": {
+        "kind": "drive"
+      },
+      "Canyon Visitor Education Center": {
+        "kind": "sight"
+      },
+      "Inspiration Point": {
+        "kind": "view"
+      },
+      "Lower Falls (Artist Point)": {
+        "kind": "view"
+      },
+      "Upper Falls View": {
+        "kind": "view"
+      },
+      "Sulphur Caldron": {
+        "kind": "view"
+      },
+      "Mud Volcano Trail — Black Dragon's Caldron": {
+        "kind": "walk"
+      },
+      "LeHardys Rapids": {
+        "kind": "view"
+      }
+    }
+  },
+  "d05s1": {
+    "expect": {
+      "arrive": "Gibbon Falls and Beryl Spring are both direct roadside pull-offs, no real walk. Norris has the biggest lot on this stretch and is the hottest, most acidic basin in the park; it's split into two separate boardwalk loops (Porcelain Basin and Back Basin) that don't connect at both ends, so plan which one(s) you're doing before setting off from the car.",
+      "parking": "Norris Geyser Basin's lot is large and generally has room outside of midday peak; Gibbon Falls and Beryl Spring are small pull-offs with a handful of spaces each.",
+      "need": "2-2.5 hours",
+      "paths": [
+        {
+          "opt": "Roadside stops only",
+          "do": "Gibbon Falls and Beryl Spring from the pull-offs, skip Norris's basins.",
+          "cost": "20 min"
+        },
+        {
+          "opt": "Porcelain Basin only",
+          "do": "Same pull-offs, plus the shorter Porcelain Basin loop at Norris.",
+          "cost": "1h"
+        },
+        {
+          "opt": "Both Norris loops",
+          "do": "Porcelain Basin and Back Basin, the full Norris visit.",
+          "cost": "1h 45m"
+        }
+      ]
+    },
+    "alt": [
+      "Gibbon Falls Yellowstone",
+      "Norris Geyser Basin Porcelain Basin",
+      "Steamboat Geyser Norris eruption",
+      "Artists Paint Pots mud pots Yellowstone"
+    ],
+    "seasonal": "Monument Geyser Basin's trail is a steep 2.4 mi (3.8 km) round trip climbing roughly 800 ft — real hiking, not a stroll (nps.gov/places/000/monument-geyser-basin-trailhead.htm and USGS). Given the no-strenuous-hikes rule, skip it and view the basin's steam plumes from the road instead.",
+    "stops": {
+      "Gibbon Falls": {
+        "kind": "view"
+      },
+      "Beryl Spring": {
+        "kind": "view"
+      },
+      "Monument Geyser Basin": {
+        "kind": "hike",
+        "trail": {
+          "dist": "2.4 mi (3.8 km) round trip",
+          "time": "2-2.5h",
+          "gain": "roughly 800 ft (244 m)",
+          "from": "Monument Geyser Basin Trailhead",
+          "grade": "moderate"
+        }
+      },
+      "Artists' Paintpots": {
+        "kind": "walk"
+      },
+      "Norris Geyser Basin": {
+        "kind": "walk",
+        "trail": {
+          "dist": "1.2 km + 2.4 km",
+          "time": "30–90 min",
+          "from": "Norris Geyser Basin parking lot / Norris Museum",
+          "grade": "easy",
+          "caveat": "Porcelain Basin and Back Basin are two separate loops, not one trail"
+        }
+      }
+    }
+  },
+  "d05s2": {
+    "expect": {
+      "arrive": "Roaring Mountain is a roadside pull-off with the steaming hillside visible straight from the car. Mammoth's terraces sprawl across a hillside above the village; the Lower Terraces have a boardwalk right off the main lot, the Upper Terraces are reached by a one-way drive loop above them.",
+      "parking": "Roaring Mountain's pull-off is small; Mammoth has several lots around the village and near the Lower Terraces, generally with room outside of midday.",
+      "need": "1.5-2 hours",
+      "paths": [
+        {
+          "opt": "Roadside and Lower Terraces boardwalk only",
+          "do": "Roaring Mountain from the pull-off, then the flat lower boardwalk loop at Mammoth.",
+          "cost": "1h"
+        },
+        {
+          "opt": "Add the Upper Terrace Drive",
+          "do": "Same, plus the one-way scenic drive above the terraces with its own pull-offs.",
+          "cost": "1h 30m"
+        }
+      ]
+    },
+    "alt": [
+      "Mammoth Hot Springs travertine terraces",
+      "Roaring Mountain steam vents",
+      "Minerva Terrace Mammoth Hot Springs",
+      "Fort Yellowstone historic buildings Mammoth"
+    ],
+    "stops": {
+      "Roaring Mountain": {
+        "kind": "view"
+      },
+      "Cleopatra Spring and Terrace": {
+        "kind": "walk"
+      },
+      "Mammoth Hot Springs": {
+        "kind": "walk"
+      },
+      "Mount Everts Viewpoint": {
+        "kind": "view"
+      }
+    }
+  },
+  "d05s3": {
+    "expect": {
+      "arrive": "Lamar Valley's turnouts are wide gravel shoulders right on the road, wildlife visible with the naked eye from the car in many cases. Mount Washburn's trailhead at Dunraven Pass is a real mountain summit hike — this is not a stroll, and the road itself sits at high elevation where a September storm can close it with little warning.",
+      "parking": "Lamar Valley turnouts are informal gravel pull-offs, plentiful but the best wildlife-viewing spots fill at dawn and dusk; Dunraven Pass trailhead lot is small and can fill on clear days.",
+      "need": "2.5-3 hours",
+      "paths": [
+        {
+          "opt": "Lamar Valley only, drive past Washburn",
+          "do": "Stop at the wildlife turnouts, continue over Dunraven Pass without stopping.",
+          "cost": "1h"
+        },
+        {
+          "opt": "Washburn drive-by view",
+          "do": "Same, plus a few minutes at the Dunraven Pass trailhead pull-off for the view without hiking.",
+          "cost": "1h 20m"
+        },
+        {
+          "opt": "Full Mount Washburn hike",
+          "do": "The full out-and-back to the fire lookout summit — not recommended for this trip; strenuous, high elevation, real time cost.",
+          "cost": "3-4h"
+        }
+      ]
+    },
+    "alt": [
+      "Lamar Valley bison herd Yellowstone",
+      "Mount Washburn fire lookout tower",
+      "Specimen Ridge Yellowstone autumn",
+      "Yellowstone wolf Lamar Valley"
+    ],
+    "seasonal": "The road over Dunraven Pass (Canyon to Tower) is scheduled to stay open through late September into October 2026, but it's one of the first roads to close if an early storm hits — check current conditions the morning of. The NPS also flags grizzly bears actively feeding on whitebark pine nuts on Mount Washburn in fall and recommends hiking only in groups of 3+ with bear spray — one more reason the drive-by option fits this trip better than the hike (nps.gov/thingstodo/yell-trail-dunraven-pass-mount-washburn.htm).",
+    "stops": {
+      "Slough Creek": {
+        "kind": "view"
+      },
+      "Yellowstone River Overlook": {
+        "kind": "view"
+      },
+      "Mount Washburn": {
+        "kind": "hike",
+        "trail": {
+          "dist": "6.2 mi (10 km) round trip",
+          "time": "3-4h",
+          "gain": "1,400 ft (425 m)",
+          "from": "Dunraven Pass trailhead",
+          "grade": "strenuous"
+        }
+      }
+    }
+  },
+  "d05s4": {
+    "expect": {
+      "arrive": "This is the long transit leg — nine hours of driving from Canyon Village to West Glacier. Bozeman is a normal college-town downtown with metered street parking; Butte's Berkeley Pit has its own small paid viewing-stand lot right at the edge of the flooded pit.",
+      "parking": "Bozeman downtown has metered spaces and a few public garages; the Berkeley Pit lot in Butte is small but rarely full given the short visit duration.",
+      "need": "9h drive plus stops",
+      "paths": [
+        {
+          "opt": "Drive straight through",
+          "do": "Gas and bathroom stops only, no detours.",
+          "cost": "9h"
+        },
+        {
+          "opt": "Bozeman stretch stop",
+          "do": "Add a 30-45 minute walk through downtown Bozeman for dinner or coffee.",
+          "cost": "9h 45m"
+        },
+        {
+          "opt": "Add Berkeley Pit",
+          "do": "Same Bozeman stop, plus 20-30 minutes at the Berkeley Pit overlook in Butte.",
+          "cost": "10h 15m"
+        }
+      ]
+    },
+    "alt": [
+      "Bozeman Montana Main Street downtown",
+      "Berkeley Pit Butte Montana flooded mine",
+      "Paradise Valley Montana Yellowstone River",
+      "Butte Montana headframes mining town"
+    ],
+    "stops": {
+      "Yellowstone Hot Springs (Paradise Valley)": {
+        "kind": "sight"
+      },
+      "Bozeman": {
+        "kind": "sight"
+      },
+      "Butte — Berkeley Pit": {
+        "kind": "sight"
+      }
+    }
+  }
+}

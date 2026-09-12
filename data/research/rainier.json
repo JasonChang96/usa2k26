@@ -5,8 +5,16 @@
       "parking": "Gravel shoulders only at both summits, room for a handful of cars, never busy.",
       "need": "2h 30m",
       "paths": [
-        { "opt": "Straight through", "do": "Photo stop at the entrance arch only, no detours.", "cost": "2h 30m" },
-        { "opt": "Add a Naches break", "do": "Coffee or gas stop in Naches before the climb to the pass.", "cost": "2h 50m" }
+        {
+          "opt": "Straight through",
+          "do": "Photo stop at the entrance arch only, no detours.",
+          "cost": "2h 30m"
+        },
+        {
+          "opt": "Add a Naches break",
+          "do": "Coffee or gas stop in Naches before the climb to the pass.",
+          "cost": "2h 50m"
+        }
       ]
     },
     "alt": [
@@ -15,9 +23,15 @@
       "Chinook Pass log entrance arch"
     ],
     "stops": {
-      "Blewett Pass": { "kind": "sight" },
-      "Naches": { "kind": "sight" },
-      "Chinook Pass Entrance Arch": { "kind": "sight" }
+      "Blewett Pass": {
+        "kind": "sight"
+      },
+      "Naches": {
+        "kind": "sight"
+      },
+      "Chinook Pass Entrance Arch": {
+        "kind": "sight"
+      }
     },
     "seasonal": "This whole segment depends on SR-410 over Chinook Pass being open. WSDOT's typical closing date is late October — Oct 24, 2025; Oct 31, 2024 (an early storm closure); Nov 10, 2023 — so Oct 3 is normally well clear, but 2024's closure shows an early cold snap can force it shut with little notice. Check wsdot.wa.gov/travel/roads-bridges/mountain-pass-closure-and-opening-dates the morning of departure; there is no good detour if it's closed (the alternative is back through Yakima and up I-5, adding hours)."
   },
@@ -27,9 +41,21 @@
       "parking": "Small paved lot at the pass, plus a bit of shoulder; rarely full this late in the season on a weekday.",
       "need": "45 min",
       "paths": [
-        { "opt": "Lake loop only", "do": "Walk the easy path around Tipsoo Lake itself.", "cost": "20-30 min" },
-        { "opt": "Add Cayuse Pass", "do": "Short drive to the Cayuse Pass junction for a photo, no walking.", "cost": "40 min" },
-        { "opt": "Naches Peak Loop", "do": "Full loop trail from the pass with real elevation gain but no scrambling.", "cost": "2h" }
+        {
+          "opt": "Lake loop only",
+          "do": "Walk the easy path around Tipsoo Lake itself.",
+          "cost": "20-30 min"
+        },
+        {
+          "opt": "Add Cayuse Pass",
+          "do": "Short drive to the Cayuse Pass junction for a photo, no walking.",
+          "cost": "40 min"
+        },
+        {
+          "opt": "Naches Peak Loop",
+          "do": "Full loop trail from the pass with real elevation gain but no scrambling.",
+          "cost": "2h"
+        }
       ]
     },
     "alt": [
@@ -51,7 +77,9 @@
           "grade": "moderate"
         }
       },
-      "Cayuse Pass": { "kind": "sight" }
+      "Cayuse Pass": {
+        "kind": "sight"
+      }
     },
     "seasonal": "SR-410/Chinook Pass and SR-123/Cayuse Pass close together — see d09s1 for the closure risk. No official round-trip distance for the short walk around Tipsoo Lake itself was found on nps.gov; the NPS page (nps.gov/mora/planyourvisit/day-hiking-at-mount-rainier.htm) only lists the connecting Naches Peak Loop Trail at 3.4 mi / 2h, so the lake-loop trail object is omitted rather than estimated."
   },
@@ -61,9 +89,21 @@
       "parking": "Two lots (upper near the visitor center, lower near the Nisqually Vista trailhead) that together hold a few hundred cars; they fill by mid-to-late morning on clear fall weekends, easier on a Saturday afternoon arrival at this time of year.",
       "need": "2-3h",
       "paths": [
-        { "opt": "Myrtle Falls only", "do": "Paved path from the visitor center up to the falls overlook and back.", "cost": "35 min" },
-        { "opt": "Myrtle Falls + Nisqually Vista", "do": "Both easy, mostly flat/paved trails, no real climbing, from two different lots.", "cost": "1h 20m" },
-        { "opt": "Push onto the Skyline Trail", "do": "Continue past Myrtle Falls onto the Skyline Trail toward Panorama Point via the Golden Gate cutoff, a real climb but no scrambling — only worth it if the mountain is out and legs are willing.", "cost": "2-2.5h round trip to Golden Gate junction and back" }
+        {
+          "opt": "Myrtle Falls only",
+          "do": "Paved path from the visitor center up to the falls overlook and back.",
+          "cost": "35 min"
+        },
+        {
+          "opt": "Myrtle Falls + Nisqually Vista",
+          "do": "Both easy, mostly flat/paved trails, no real climbing, from two different lots.",
+          "cost": "1h 20m"
+        },
+        {
+          "opt": "Push onto the Skyline Trail",
+          "do": "Continue past Myrtle Falls onto the Skyline Trail toward Panorama Point via the Golden Gate cutoff, a real climb but no scrambling — only worth it if the mountain is out and legs are willing.",
+          "cost": "2-2.5h round trip to Golden Gate junction and back"
+        }
       ]
     },
     "alt": [
@@ -73,7 +113,9 @@
       "Henry M Jackson Visitor Center Paradise"
     ],
     "stops": {
-      "Henry M. Jackson Visitor Center": { "kind": "sight" },
+      "Henry M. Jackson Visitor Center": {
+        "kind": "sight"
+      },
       "Myrtle Falls": {
         "kind": "walk",
         "trail": {
@@ -97,11 +139,12 @@
       "Skyline Trail": {
         "kind": "hike",
         "trail": {
-          "dist": "5.5 mi (8.9 km) round trip for the full loop",
+          "dist": "8.9 km round trip",
           "time": "4h 30m for the full loop",
           "gain": "1,700 ft",
           "from": "Paradise upper parking lot, next to the visitor center",
-          "grade": "strenuous — the full loop is out of scope for this trip; if walking any of it, turn around at or before the Golden Gate Trail junction (about 2 mi in, near Panorama Point) rather than completing the loop"
+          "grade": "strenuous — the full loop is out of scope for this trip; if walking any of it, turn around at or before the Golden Gate Trail junction (about 2 mi in, near Panorama Point) rather than completing the loop",
+          "caveat": "The full loop. The Golden Gate Trail cuts it shorter, but NPS publishes no figure for that"
         }
       }
     },
@@ -113,9 +156,21 @@
       "parking": "Small roadside lot plus turnouts along the road; fills right at sunset in good weather, arrive 30-45 min early to get a spot.",
       "need": "1-1.5h",
       "paths": [
-        { "opt": "Roadside shot only", "do": "Park at the main pull-off, walk to the water's edge, no trail.", "cost": "20 min" },
-        { "opt": "Add Louise Lake / Narada Falls", "do": "Short drive further along Stevens Canyon Road and back toward Paradise.", "cost": "1h" },
-        { "opt": "Walk part of the Lakes Trail shoreline", "do": "Follow the trail along the lake edge partway without committing to the full loop up to Faraway Rock.", "cost": "30-45 min" }
+        {
+          "opt": "Roadside shot only",
+          "do": "Park at the main pull-off, walk to the water's edge, no trail.",
+          "cost": "20 min"
+        },
+        {
+          "opt": "Add Louise Lake / Narada Falls",
+          "do": "Short drive further along Stevens Canyon Road and back toward Paradise.",
+          "cost": "1h"
+        },
+        {
+          "opt": "Walk part of the Lakes Trail shoreline",
+          "do": "Follow the trail along the lake edge partway without committing to the full loop up to Faraway Rock.",
+          "cost": "30-45 min"
+        }
       ]
     },
     "alt": [
@@ -127,14 +182,19 @@
       "Reflection Lakes": {
         "kind": "walk",
         "trail": {
-          "dist": "approximately 3 mi (4.8 km) loop for the full Lakes Trail up to Faraway Rock",
+          "dist": "4.8 km loop",
           "time": "not stated by NPS",
           "from": "Reflection Lakes pull-off, Stevens Canyon Road",
-          "grade": "moderate — a flat shoreline-only stroll is possible but has no official separate distance"
+          "grade": "moderate — a flat shoreline-only stroll is possible but has no official separate distance",
+          "caveat": "That is the full Lakes Trail to Faraway Rock. The shoreline by the car is a few minutes"
         }
       },
-      "Louise Lake": { "kind": "view" },
-      "Narada Falls": { "kind": "sight" }
+      "Louise Lake": {
+        "kind": "view"
+      },
+      "Narada Falls": {
+        "kind": "sight"
+      }
     },
     "seasonal": "nps.gov/places/reflection-lakes.htm gives only the roughly 3-mile Lakes Trail loop to Faraway Rock, with no NPS time estimate and no separate official number for a shoreline-only walk — the trail object above reflects that gap rather than an estimate for the shorter stroll."
   },
@@ -144,8 +204,16 @@
       "parking": "Wide open before sunrise, nobody else here yet; watch for ice on the pavement and any boardwalk edges.",
       "need": "1-1.5h",
       "paths": [
-        { "opt": "Sunrise and back", "do": "Stand at the lakeside pull-off for first light, then leave.", "cost": "45 min" },
-        { "opt": "Add a coffee stop", "do": "Drive up to Jackson Visitor Center once it opens for coffee and indoor restrooms.", "cost": "1h 15m" }
+        {
+          "opt": "Sunrise and back",
+          "do": "Stand at the lakeside pull-off for first light, then leave.",
+          "cost": "45 min"
+        },
+        {
+          "opt": "Add a coffee stop",
+          "do": "Drive up to Jackson Visitor Center once it opens for coffee and indoor restrooms.",
+          "cost": "1h 15m"
+        }
       ]
     },
     "alt": [
@@ -154,9 +222,15 @@
       "Mount Rainier from Stevens Canyon Road"
     ],
     "stops": {
-      "Reflection Lakes": { "kind": "walk" },
-      "Henry M. Jackson Visitor Center": { "kind": "sight" },
-      "Narada Falls": { "kind": "walk" }
+      "Reflection Lakes": {
+        "kind": "walk"
+      },
+      "Henry M. Jackson Visitor Center": {
+        "kind": "sight"
+      },
+      "Narada Falls": {
+        "kind": "walk"
+      }
     },
     "seasonal": "Bring real layers, especially for her — Paradise at dawn in early October regularly sits at or below freezing, and there is no shelter at the lake pull-off. The Jackson Visitor Center does not open at first light; check posted hours before counting on coffee immediately after sunrise."
   },
@@ -166,8 +240,16 @@
       "parking": "Small lot, fills with day visitors by mid-morning; easy if through by 9-10am.",
       "need": "45 min-1h",
       "paths": [
-        { "opt": "Museum and porch only", "do": "Look at the historic buildings and inn exterior, skip the trail.", "cost": "15 min" },
-        { "opt": "Trail of the Shadows loop", "do": "Flat loop around Longmire Meadow past the old mineral springs.", "cost": "20-30 min" }
+        {
+          "opt": "Museum and porch only",
+          "do": "Look at the historic buildings and inn exterior, skip the trail.",
+          "cost": "15 min"
+        },
+        {
+          "opt": "Trail of the Shadows loop",
+          "do": "Flat loop around Longmire Meadow past the old mineral springs.",
+          "cost": "20-30 min"
+        }
       ]
     },
     "alt": [
@@ -185,8 +267,12 @@
           "grade": "easy"
         }
       },
-      "Ashford": { "kind": "sight" },
-      "Eatonville": { "kind": "sight" }
+      "Ashford": {
+        "kind": "sight"
+      },
+      "Eatonville": {
+        "kind": "sight"
+      }
     }
   },
   "d10s3": {
@@ -194,8 +280,16 @@
       "arrive": "Consolidated rental car return facility is a separate building off the terminal loop, reached by its own access road, then a free shuttle bus to the terminal.",
       "need": "1-1.5h for return, shuttle, and check-in",
       "paths": [
-        { "opt": "Straight to check-in", "do": "Return the car, shuttle to the terminal, head to security.", "cost": "1h" },
-        { "opt": "Light rail into the city first", "do": "For anyone continuing into Seattle rather than flying, Link light rail runs from the airport station straight downtown.", "cost": "40 min to downtown" }
+        {
+          "opt": "Straight to check-in",
+          "do": "Return the car, shuttle to the terminal, head to security.",
+          "cost": "1h"
+        },
+        {
+          "opt": "Light rail into the city first",
+          "do": "For anyone continuing into Seattle rather than flying, Link light rail runs from the airport station straight downtown.",
+          "cost": "40 min to downtown"
+        }
       ]
     },
     "alt": [
@@ -203,9 +297,15 @@
       "SEA Rental Car Facility exterior"
     ],
     "stops": {
-      "Seattle-Tacoma International Airport": { "kind": "sight" },
-      "SEA Rental Car Facility": { "kind": "sight" },
-      "Link Light Rail, Airport Station": { "kind": "sight" }
+      "Seattle-Tacoma International Airport": {
+        "kind": "sight"
+      },
+      "SEA Rental Car Facility": {
+        "kind": "sight"
+      },
+      "Link Light Rail, Airport Station": {
+        "kind": "sight"
+      }
     }
   },
   "d10s4": {
@@ -213,9 +313,21 @@
       "arrive": "Dense residential blocks a few minutes' walk north of downtown; restaurants and bars at street level, entirely flat walking.",
       "need": "3h",
       "paths": [
-        { "opt": "Stay in Belltown", "do": "Dinner and a walk around the neighborhood only.", "cost": "1.5h" },
-        { "opt": "Walk to Pike Place", "do": "Belltown dinner, then the walk down to Pike Place Market for the evening market atmosphere.", "cost": "2.5h" },
-        { "opt": "Add the Sculpture Park", "do": "Same as above plus a sunset walk through Olympic Sculpture Park before it closes at dusk.", "cost": "3h" }
+        {
+          "opt": "Stay in Belltown",
+          "do": "Dinner and a walk around the neighborhood only.",
+          "cost": "1.5h"
+        },
+        {
+          "opt": "Walk to Pike Place",
+          "do": "Belltown dinner, then the walk down to Pike Place Market for the evening market atmosphere.",
+          "cost": "2.5h"
+        },
+        {
+          "opt": "Add the Sculpture Park",
+          "do": "Same as above plus a sunset walk through Olympic Sculpture Park before it closes at dusk.",
+          "cost": "3h"
+        }
       ]
     },
     "alt": [
@@ -224,9 +336,15 @@
       "Olympic Sculpture Park sunset"
     ],
     "stops": {
-      "Belltown": { "kind": "sight" },
-      "Pike Place Market": { "kind": "sight" },
-      "Olympic Sculpture Park": { "kind": "walk" }
+      "Belltown": {
+        "kind": "sight"
+      },
+      "Pike Place Market": {
+        "kind": "sight"
+      },
+      "Olympic Sculpture Park": {
+        "kind": "walk"
+      }
     }
   }
 }

@@ -18,10 +18,43 @@
       "name": "Segment 1 — Whistler village, last morning",
       "blurb": "Short walk before checkout, no gondola this late in the season.",
       "time": "8:00–9:30am",
-      "map": { "center": "Whistler Village, BC", "zoom": 15 },
+      "map": {
+        "center": "Whistler Village, BC",
+        "zoom": 15
+      },
       "stops": [
-        { "name": "Whistler Village Stroll", "q": "Whistler Village", "note": "Pedestrian village, shops and coffee before departure." },
-        { "name": "Lost Lake Trail", "q": "Lost Lake Whistler", "note": "Flat 15-min loop if there's time." }
+        {
+          "name": "Whistler Village Stroll",
+          "q": "Whistler Village",
+          "note": "Pedestrian village, shops and coffee before departure.",
+          "kind": "sight"
+        },
+        {
+          "name": "Lost Lake Trail",
+          "q": "Lost Lake Whistler",
+          "note": "Flat 15-min loop if there's time.",
+          "kind": "walk"
+        }
+      ],
+      "expect": {
+        "arrive": "A last, easy morning in the pedestrian village before checkout; nothing to drive to yet.",
+        "need": "1-1.5 hours",
+        "paths": [
+          {
+            "opt": "Coffee and shops",
+            "do": "Walk the village stroll, coffee, browse before checkout.",
+            "cost": "45 min"
+          },
+          {
+            "opt": "Add Lost Lake",
+            "do": "Village stroll plus a short flat walk at Lost Lake.",
+            "cost": "1h 15m"
+          }
+        ]
+      },
+      "alt": [
+        "Whistler Village morning autumn",
+        "Lost Lake Whistler shoreline"
       ]
     },
     {
@@ -29,12 +62,69 @@
       "name": "Segment 2 — Sea-to-Sky Highway south",
       "blurb": "Scenic descent with optional falls, mine, and provincial park stops.",
       "time": "9:30–11:30am",
-      "map": { "from": "Whistler, BC", "to": "Squamish, BC" },
+      "map": {
+        "from": "Whistler, BC",
+        "to": "Squamish, BC"
+      },
       "stops": [
-        { "name": "Brandywine Falls", "q": "Brandywine Falls Provincial Park", "note": "70m waterfall, 5-min walk from parking." },
-        { "name": "Murrin Provincial Park", "q": "Murrin Provincial Park", "note": "Small lake and cliffs, quick leg-stretch." },
-        { "name": "Britannia Mine Museum", "q": "Britannia Mine Museum", "note": "Former copper mine, underground train tour." },
-        { "name": "Porteau Cove", "q": "Porteau Cove Provincial Park", "note": "Howe Sound viewpoint, popular photo stop." }
+        {
+          "name": "Brandywine Falls",
+          "q": "Brandywine Falls Provincial Park",
+          "note": "70m waterfall, 5-min walk from parking.",
+          "kind": "walk",
+          "trail": {
+            "time": "20–40 min round trip",
+            "from": "Brandywine Falls Provincial Park parking lot",
+            "grade": "easy",
+            "caveat": "Doubled from the 10–20 min one way that BC Parks publishes"
+          }
+        },
+        {
+          "name": "Murrin Provincial Park",
+          "q": "Murrin Provincial Park",
+          "note": "Small lake and cliffs, quick leg-stretch.",
+          "kind": "walk"
+        },
+        {
+          "name": "Britannia Mine Museum",
+          "q": "Britannia Mine Museum",
+          "note": "Former copper mine, underground train tour.",
+          "kind": "sight"
+        },
+        {
+          "name": "Porteau Cove",
+          "q": "Porteau Cove Provincial Park",
+          "note": "Howe Sound viewpoint, popular photo stop.",
+          "kind": "view"
+        }
+      ],
+      "expect": {
+        "arrive": "All four stops are direct highway pull-offs on Highway 99 heading south; Brandywine's lot is the biggest draw and can be tight, the others are small and quiet.",
+        "parking": "Brandywine Falls has a paved lot that can fill on weekends; Murrin, Porteau Cove, and Britannia Mine each have their own smaller dedicated lots.",
+        "need": "1.5-2.5 hours depending on stops chosen",
+        "paths": [
+          {
+            "opt": "Brandywine only",
+            "do": "Stop for the falls viewpoint, skip the rest.",
+            "cost": "20-30 min"
+          },
+          {
+            "opt": "Add Murrin and Porteau Cove",
+            "do": "Brandywine Falls, a quick look at Murrin's lake, and the Porteau Cove viewpoint.",
+            "cost": "1h 15m"
+          },
+          {
+            "opt": "Add Britannia Mine",
+            "do": "All of the above plus the underground train tour at Britannia Mine Museum.",
+            "cost": "2.5-3h"
+          }
+        ]
+      },
+      "alt": [
+        "Brandywine Falls British Columbia",
+        "Murrin Provincial Park lake climbers",
+        "Porteau Cove Howe Sound viewpoint",
+        "Britannia Mine Museum headframe"
       ]
     },
     {
@@ -42,21 +132,90 @@
       "name": "Segment 3 — Capilano Suspension Bridge",
       "blurb": "Four-minute detour off the direct route into Vancouver.",
       "time": "12:00–1:30pm",
-      "map": { "from": "Squamish, BC", "to": "Capilano Suspension Bridge Park, North Vancouver" },
+      "map": {
+        "from": "Squamish, BC",
+        "to": "Capilano Suspension Bridge Park, North Vancouver"
+      },
       "stops": [
-        { "name": "Capilano Suspension Bridge", "q": "Capilano Suspension Bridge", "note": "137m suspension bridge over the canyon." },
-        { "name": "Cleveland Dam", "q": "Cleveland Dam North Vancouver", "note": "Nearby viewpoint over Capilano Lake, free." }
-      ]
+        {
+          "name": "Capilano Suspension Bridge",
+          "q": "Capilano Suspension Bridge",
+          "note": "137m suspension bridge over the canyon.",
+          "kind": "sight"
+        },
+        {
+          "name": "Cleveland Dam",
+          "q": "Cleveland Dam North Vancouver",
+          "note": "Nearby viewpoint over Capilano Lake, free.",
+          "kind": "view"
+        }
+      ],
+      "expect": {
+        "arrive": "Capilano's own lot sits right at the entrance and is paid; it is one of the busiest attractions in the region and the lot does fill by mid-morning even off-season, with overflow shuttle parking used on busy days.",
+        "parking": "Paid lot at the entrance; fills by late morning most days, overflow lots run a shuttle when it does.",
+        "need": "1.5-2 hours",
+        "paths": [
+          {
+            "opt": "Bridge only",
+            "do": "Cross the main suspension bridge and back, skip Cliffwalk and Treetops.",
+            "cost": "40 min"
+          },
+          {
+            "opt": "Full grounds",
+            "do": "Suspension bridge, Cliffwalk, and Treetops Adventure loops.",
+            "cost": "1.5-2h"
+          }
+        ]
+      },
+      "alt": [
+        "Capilano Suspension Bridge canyon",
+        "Capilano Cliffwalk cantilevered walkway",
+        "Cleveland Dam Capilano Lake"
+      ],
+      "cost": "Capilano uses dynamic, timed-entry pricing set at checkout (capbridge.com/tickets-and-hours/, read 2026-09-12) rather than one published flat adult rate, and advance timed-entry booking is required — you pick a date and arrival window online. Third-party trip sites report 2026 adult prices roughly in the $65-80 CAD range, but only the date-specific checkout price is authoritative; do not treat that range as fixed. Fall hours: Sept 8-Oct 8, 9am-7pm; Oct 9-Nov 1 shifts to 10am-8pm for the Canyon Frights event (extended to 9pm on select nights)."
     },
     {
       "id": "d14s4",
       "name": "Segment 4 — Return car, settle into Mount Pleasant",
       "blurb": "Drop the rental by 8pm, dinner near the Airbnb.",
       "time": "2:00–8:00pm",
-      "map": { "from": "Capilano Suspension Bridge Park, North Vancouver", "to": "Mount Pleasant, Vancouver" },
+      "map": {
+        "from": "Capilano Suspension Bridge Park, North Vancouver",
+        "to": "Mount Pleasant, Vancouver"
+      },
       "stops": [
-        { "name": "Rental car return", "q": "Vancouver skyline", "note": "Must be back in Vancouver by 8:00pm — no car after this." },
-        { "name": "Main Street, Mount Pleasant", "q": "Mount Pleasant Vancouver", "note": "Dinner along Main St, walk from the Airbnb." }
+        {
+          "name": "Rental car return",
+          "q": "Vancouver skyline",
+          "note": "Must be back in Vancouver by 8:00pm — no car after this.",
+          "kind": "drive"
+        },
+        {
+          "name": "Main Street, Mount Pleasant",
+          "q": "Mount Pleasant Vancouver",
+          "note": "Dinner along Main St, walk from the Airbnb.",
+          "kind": "food"
+        }
+      ],
+      "expect": {
+        "arrive": "Straightforward rental return at a downtown counter, then walking distance from the Mount Pleasant Airbnb to Main Street's restaurants.",
+        "need": "Rest of the afternoon and evening",
+        "paths": [
+          {
+            "opt": "Drop and settle",
+            "do": "Return the car, taxi/rideshare to the Airbnb, rest before dinner.",
+            "cost": "1h"
+          },
+          {
+            "opt": "Drop and walk Main St",
+            "do": "Return the car, then walk Main Street for dinner and a browse.",
+            "cost": "2-3h"
+          }
+        ]
+      },
+      "alt": [
+        "Vancouver Main Street Mount Pleasant",
+        "Vancouver skyline dusk"
       ]
     }
   ]

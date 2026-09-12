@@ -1,0 +1,281 @@
+{
+  "d13s1": {
+    "expect": {
+      "arrive": "Rental pickup is an ordinary downtown Vancouver counter; Shannon Falls is a direct roadside pull-off on Highway 99, falls visible within a couple minutes of parking.",
+      "parking": "Shannon Falls has a sizeable paved lot right off the highway; it can fill on summer weekends but is easy on an October weekday.",
+      "need": "1.5-2 hours including the drive from Vancouver",
+      "paths": [
+        {
+          "opt": "Photo and go",
+          "do": "Walk to the first, lower viewpoint only.",
+          "cost": "10-15 min"
+        },
+        {
+          "opt": "Both viewpoints",
+          "do": "Walk the crusher-dust trail to both viewing platforms, about 5 minutes apart.",
+          "cost": "20-25 min"
+        }
+      ]
+    },
+    "alt": [
+      "Shannon Falls waterfall British Columbia",
+      "Stawamus Chief granite monolith Squamish",
+      "Howe Sound fjord aerial view"
+    ],
+    "stops": {
+      "Rental car pickup, downtown Vancouver": {
+        "kind": "drive"
+      },
+      "Shannon Falls Provincial Park": {
+        "kind": "walk",
+        "trail": {
+          "dist": "about 700 m round trip",
+          "time": "15-20 min",
+          "from": "Shannon Falls Provincial Park parking lot",
+          "grade": "easy",
+          "caveat": "Doubled from the 350 m one way that BC Parks publishes"
+        }
+      },
+      "Howe Sound": {
+        "kind": "view"
+      }
+    }
+  },
+  "d13s2": {
+    "expect": {
+      "arrive": "The gondola base is a large paid parking lot off Highway 99 just south of Squamish town; it is the main draw of the area and does fill on clear-weather weekends, less so on an October weekday.",
+      "parking": "Large paved lot at the base station; a fee applies and it can fill on busy days, but should be straightforward on a weekday in October.",
+      "need": "2-2.5 hours including the ride up and down",
+      "paths": [
+        {
+          "opt": "Ride up, boardwalk loop, ride down",
+          "do": "Gondola both ways, one of the two easy summit interpretive loops and the Sky Pilot Suspension Bridge, no real hiking.",
+          "cost": "1h 15m"
+        },
+        {
+          "opt": "Both summit loops",
+          "do": "Gondola both ways, walk both interpretive loops plus the suspension bridge and viewing platforms.",
+          "cost": "1h 45m"
+        }
+      ]
+    },
+    "alt": [
+      "Sea to Sky Gondola summit boardwalk",
+      "Stawamus Chief view from gondola summit",
+      "Howe Sound viewpoint Squamish"
+    ],
+    "cost": "Adult round-trip gondola ticket: $73.95 CAD booked online, $81.95 CAD at the window (seatoskygondola.com/hours-and-prices/, read 2026-09-12). Booking ahead isn't required but is cheaper. October 13-30 hours drop to 9am-4pm Mon-Fri (last gondola down 5pm) and 9am-5pm weekends (last down 6pm) — a shorter shoulder-season window than summer.",
+    "stops": {
+      "Sea to Sky Gondola": {
+        "kind": "sight"
+      },
+      "Sky Pilot Suspension Bridge": {
+        "kind": "walk",
+        "trail": {
+          "time": "about 30 min",
+          "from": "Sea to Sky Gondola summit station",
+          "grade": "easy",
+          "caveat": "Both summit interpretive loops together. No official distance published"
+        }
+      },
+      "Squamish viewpoint": {
+        "kind": "view"
+      }
+    }
+  },
+  "d13s3": {
+    "expect": {
+      "arrive": "Whistler Village is fully pedestrian; park once and walk everywhere. Scandinave Spa is a 10-minute drive south of the village with its own gravel lot.",
+      "parking": "Village day lots and parkades charge by the hour and fill on weekends; Scandinave's own lot is modest but rarely full on a weekday.",
+      "need": "Full afternoon and evening",
+      "paths": [
+        {
+          "opt": "Village only",
+          "do": "Lunch, shops, wander the village stroll, skip the spa.",
+          "cost": "1.5-2h"
+        },
+        {
+          "opt": "Village plus spa",
+          "do": "Lunch in the village, then the Scandinave Spa Thermal Journey.",
+          "cost": "4.5-5.5h total"
+        },
+        {
+          "opt": "Add Train Wreck or Lost Lake",
+          "do": "Village, spa, and a short walk to the Train Wreck bridge or around part of Lost Lake before dinner.",
+          "cost": "6-7h total"
+        }
+      ]
+    },
+    "alt": [
+      "Whistler Village pedestrian street autumn",
+      "Scandinave Spa Whistler outdoor baths",
+      "Lost Lake Whistler fall colours",
+      "Whistler Train Wreck suspension bridge boxcars"
+    ],
+    "cost": "Scandinave Spa Whistler Thermal Journey: $138 CAD weekday (Mon-Thu) rate for the Oct 13-Nov 5, 2026 season, weekends priced higher (scandinave.com/whistler/rates/, read 2026-09-12). Book online in advance at scandinave.zenoti.com. Minimum age 14, with 14-15 year-olds requiring a parent/guardian present and proof of age at check-in (scandinave.com/minor-guests, read 2026-09-12). Bathing suits are mandatory (not clothing-optional); sandals recommended for the wet decking. Complete silence is enforced across the whole site and phones must stay in lockers. Open 9am-10pm daily; plan on 3-5 hours for a proper visit (3-4 thermal cycles of hot/cold/rest, about 45 min each).",
+    "seasonal": "The Peak 2 Peak Gondola is closed for its fall maintenance shutdown, September 8-20, 2026, and does not reopen for the fall season, so there is no alpine gondola option on this itinerary regardless of exact date (whistlerblackcomb.com, read 2026-09-12).",
+    "stops": {
+      "Whistler Village": {
+        "kind": "sight"
+      },
+      "Scandinave Spa Whistler": {
+        "kind": "sight"
+      },
+      "Whistler Train Wreck": {
+        "kind": "walk"
+      },
+      "Lost Lake": {
+        "kind": "walk"
+      },
+      "Audain Art Museum": {
+        "kind": "sight"
+      },
+      "Pinnacle Hotel Whistler": {
+        "kind": "sight"
+      }
+    }
+  },
+  "d14s1": {
+    "expect": {
+      "arrive": "A last, easy morning in the pedestrian village before checkout; nothing to drive to yet.",
+      "need": "1-1.5 hours",
+      "paths": [
+        {
+          "opt": "Coffee and shops",
+          "do": "Walk the village stroll, coffee, browse before checkout.",
+          "cost": "45 min"
+        },
+        {
+          "opt": "Add Lost Lake",
+          "do": "Village stroll plus a short flat walk at Lost Lake.",
+          "cost": "1h 15m"
+        }
+      ]
+    },
+    "alt": [
+      "Whistler Village morning autumn",
+      "Lost Lake Whistler shoreline"
+    ],
+    "stops": {
+      "Whistler Village Stroll": {
+        "kind": "sight"
+      },
+      "Lost Lake Trail": {
+        "kind": "walk"
+      }
+    }
+  },
+  "d14s2": {
+    "expect": {
+      "arrive": "All four stops are direct highway pull-offs on Highway 99 heading south; Brandywine's lot is the biggest draw and can be tight, the others are small and quiet.",
+      "parking": "Brandywine Falls has a paved lot that can fill on weekends; Murrin, Porteau Cove, and Britannia Mine each have their own smaller dedicated lots.",
+      "need": "1.5-2.5 hours depending on stops chosen",
+      "paths": [
+        {
+          "opt": "Brandywine only",
+          "do": "Stop for the falls viewpoint, skip the rest.",
+          "cost": "20-30 min"
+        },
+        {
+          "opt": "Add Murrin and Porteau Cove",
+          "do": "Brandywine Falls, a quick look at Murrin's lake, and the Porteau Cove viewpoint.",
+          "cost": "1h 15m"
+        },
+        {
+          "opt": "Add Britannia Mine",
+          "do": "All of the above plus the underground train tour at Britannia Mine Museum.",
+          "cost": "2.5-3h"
+        }
+      ]
+    },
+    "alt": [
+      "Brandywine Falls British Columbia",
+      "Murrin Provincial Park lake climbers",
+      "Porteau Cove Howe Sound viewpoint",
+      "Britannia Mine Museum headframe"
+    ],
+    "stops": {
+      "Brandywine Falls": {
+        "kind": "walk",
+        "trail": {
+          "time": "20–40 min round trip",
+          "from": "Brandywine Falls Provincial Park parking lot",
+          "grade": "easy",
+          "caveat": "Doubled from the 10–20 min one way that BC Parks publishes"
+        }
+      },
+      "Murrin Provincial Park": {
+        "kind": "walk"
+      },
+      "Britannia Mine Museum": {
+        "kind": "sight"
+      },
+      "Porteau Cove": {
+        "kind": "view"
+      }
+    }
+  },
+  "d14s3": {
+    "expect": {
+      "arrive": "Capilano's own lot sits right at the entrance and is paid; it is one of the busiest attractions in the region and the lot does fill by mid-morning even off-season, with overflow shuttle parking used on busy days.",
+      "parking": "Paid lot at the entrance; fills by late morning most days, overflow lots run a shuttle when it does.",
+      "need": "1.5-2 hours",
+      "paths": [
+        {
+          "opt": "Bridge only",
+          "do": "Cross the main suspension bridge and back, skip Cliffwalk and Treetops.",
+          "cost": "40 min"
+        },
+        {
+          "opt": "Full grounds",
+          "do": "Suspension bridge, Cliffwalk, and Treetops Adventure loops.",
+          "cost": "1.5-2h"
+        }
+      ]
+    },
+    "alt": [
+      "Capilano Suspension Bridge canyon",
+      "Capilano Cliffwalk cantilevered walkway",
+      "Cleveland Dam Capilano Lake"
+    ],
+    "cost": "Capilano uses dynamic, timed-entry pricing set at checkout (capbridge.com/tickets-and-hours/, read 2026-09-12) rather than one published flat adult rate, and advance timed-entry booking is required — you pick a date and arrival window online. Third-party trip sites report 2026 adult prices roughly in the $65-80 CAD range, but only the date-specific checkout price is authoritative; do not treat that range as fixed. Fall hours: Sept 8-Oct 8, 9am-7pm; Oct 9-Nov 1 shifts to 10am-8pm for the Canyon Frights event (extended to 9pm on select nights).",
+    "stops": {
+      "Capilano Suspension Bridge": {
+        "kind": "sight"
+      },
+      "Cleveland Dam": {
+        "kind": "view"
+      }
+    }
+  },
+  "d14s4": {
+    "expect": {
+      "arrive": "Straightforward rental return at a downtown counter, then walking distance from the Mount Pleasant Airbnb to Main Street's restaurants.",
+      "need": "Rest of the afternoon and evening",
+      "paths": [
+        {
+          "opt": "Drop and settle",
+          "do": "Return the car, taxi/rideshare to the Airbnb, rest before dinner.",
+          "cost": "1h"
+        },
+        {
+          "opt": "Drop and walk Main St",
+          "do": "Return the car, then walk Main Street for dinner and a browse.",
+          "cost": "2-3h"
+        }
+      ]
+    },
+    "alt": [
+      "Vancouver Main Street Mount Pleasant",
+      "Vancouver skyline dusk"
+    ],
+    "stops": {
+      "Rental car return": {
+        "kind": "drive"
+      },
+      "Main Street, Mount Pleasant": {
+        "kind": "food"
+      }
+    }
+  }
+}

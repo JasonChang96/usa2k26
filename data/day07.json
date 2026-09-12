@@ -27,7 +27,7 @@
           "name": "Kootenai Falls",
           "q": "Kootenai Falls Montana",
           "note": "Roadside stop on US-2, largest undammed falls in Montana.",
-          "kind": "walk"
+          "kind": "view"
         },
         {
           "name": "Troy, Montana",
@@ -49,26 +49,27 @@
         }
       ],
       "expect": {
-        "arrive": "Two-lane US-2 through forest; Kootenai Falls is a short walk down from a large roadside pullout.",
-        "parking": "Kootenai Falls pullout is large and rarely full outside summer weekends.",
-        "need": "3-4 hours",
+        "arrive": "Kootenai Falls is a roadside pull-off on US-2 with a short unpaved path down to the overlook; the falls are audible before they're visible and the swinging bridge is a longer walk further down.",
+        "parking": "Small gravel lot right off the highway; rarely full outside summer weekends.",
+        "need": "4h including the drive",
         "paths": [
           {
-            "opt": "Drive straight through",
-            "do": "Stay on US-2, stop only for photos from the car.",
-            "cost": "3h"
+            "opt": "Overlook only",
+            "do": "Short walk down to the falls overlook, skip the swinging bridge.",
+            "cost": "20-30 min"
           },
           {
-            "opt": "Kootenai Falls stop",
-            "do": "Walk down to the falls viewpoint and swinging bridge.",
-            "cost": "3h 40m"
+            "opt": "Add the swinging bridge",
+            "do": "Continue down past the overlook to the swinging bridge over the river.",
+            "cost": "45 min-1h"
           }
         ]
       },
       "alt": [
-        "Kootenai Falls Montana",
-        "Kootenai River Montana",
-        "Yaak River Valley"
+        "Kootenai River Montana canyon",
+        "Troy Montana riverside town",
+        "US Highway 2 Montana forest",
+        "Kootenai National Forest scenery"
       ]
     },
     {
@@ -103,29 +104,30 @@
           "name": "Sandpoint Long Bridge",
           "q": "Sandpoint Bridge Lake Pend Oreille",
           "note": "Two-mile wooden-piling bridge crossing the lake into town.",
-          "kind": "view"
+          "kind": "sight"
         }
       ],
       "expect": {
-        "arrive": "Highway drive with the Selkirks to the west; the Pack River detour is unpaved and only worth it if the larch are turning.",
-        "need": "2-3 hours",
+        "arrive": "US-95 south of Bonners Ferry is a two-lane highway with the Selkirks visible to the west most of the way; Upper Pack River Road is unpaved gravel and only worth the detour if the larch are already turning.",
+        "need": "2.5h including the drive",
         "paths": [
           {
-            "opt": "Straight to Sandpoint",
-            "do": "Stay on US-95, no detour.",
-            "cost": "1h 15m"
+            "opt": "Straight through",
+            "do": "Drive US-95 to Sandpoint with photo stops at pull-outs only.",
+            "cost": "1h 30m"
           },
           {
-            "opt": "Pack River larch detour",
-            "do": "Turn up gravel Upper Pack River Road for golden tamarack views.",
-            "cost": "2h"
+            "opt": "Larch detour",
+            "do": "Turn up Upper Pack River Road for a look at the western larch before continuing to Sandpoint.",
+            "cost": "+30-40 min"
           }
         ]
       },
       "alt": [
-        "Selkirk Mountains Idaho",
-        "Western larch autumn Idaho",
-        "Kaniksu National Forest"
+        "Selkirk Mountains Idaho autumn",
+        "Western larch gold Idaho panhandle",
+        "Kaniksu National Forest scenery",
+        "Long Bridge Sandpoint Idaho lake"
       ]
     },
     {
@@ -142,7 +144,7 @@
           "name": "City Beach",
           "q": "City Beach Sandpoint Idaho",
           "note": "In-town lake beach and park, easy first stop.",
-          "kind": "walk"
+          "kind": "sight"
         },
         {
           "name": "Pend d'Oreille Bay Trail",
@@ -170,32 +172,32 @@
         }
       ],
       "expect": {
-        "arrive": "City Beach is a short walk from downtown parking; the Long Bridge and open lake are right behind it.",
-        "parking": "Downtown Sandpoint street parking and the City Beach lot fill on nice afternoons.",
-        "need": "2-3 hours",
+        "arrive": "City Beach is an in-town park with its own lot, flat and easy; the Pend d'Oreille Bay Trail and Sand Creek Trail are both flat lakeside/creekside paths starting within walking distance of downtown.",
+        "parking": "City Beach and downtown Sandpoint have municipal lots and metered street parking; not a squeeze outside summer weekends.",
+        "need": "2.5-3.5 hours",
         "paths": [
           {
             "opt": "City Beach only",
-            "do": "Walk the beach and watch boats on the lake.",
-            "cost": "30 min"
+            "do": "Walk the beach and park, no trail.",
+            "cost": "30-40 min"
           },
           {
-            "opt": "Sand Creek Trail stroll",
-            "do": "Paved path along the creek from downtown, flat and short.",
-            "cost": "1h"
+            "opt": "Add a lakeside walk",
+            "do": "City Beach, then part of the Pend d'Oreille Bay Trail or Sand Creek Trail out and back.",
+            "cost": "1h 30m"
           },
           {
-            "opt": "Add Pend d'Oreille Bay Trail",
-            "do": "Continue along the lakeshore trail toward Ponderay.",
-            "cost": "2h"
+            "opt": "Add Schweitzer viewpoint",
+            "do": "Lakeside walk, then drive up to Schweitzer Mountain Resort for the overlook before dinner.",
+            "cost": "2h 30m-3h"
           }
         ]
       },
       "alt": [
-        "Lake Pend Oreille",
-        "Sandpoint Long Bridge Idaho",
-        "City Beach Sandpoint",
-        "Schweitzer Mountain Resort"
+        "City Beach Sandpoint Idaho",
+        "Lake Pend Oreille shoreline autumn",
+        "Sand Creek downtown Sandpoint",
+        "Schweitzer Mountain Resort viewpoint"
       ]
     }
   ]

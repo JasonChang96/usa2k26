@@ -18,26 +18,143 @@
       "name": "Segment 1 — Gibbon Falls to Norris Geyser Basin",
       "blurb": "A waterfall and two short-hike geyser basins on the way to Norris.",
       "time": "8:00–10:30am",
-      "map": { "from": "Gibbon Falls, Yellowstone National Park", "to": "Norris Geyser Basin, Yellowstone National Park" },
+      "map": {
+        "from": "Gibbon Falls, Yellowstone National Park",
+        "to": "Norris Geyser Basin, Yellowstone National Park"
+      },
       "stops": [
-        { "name": "Gibbon Falls", "q": "Gibbon Falls Yellowstone", "note": "Roadside waterfall on the Gibbon River." },
-        { "name": "Beryl Spring", "q": "Beryl Spring Yellowstone", "note": "Small, loud hot spring right by the road." },
-        { "name": "Monument Geyser Basin", "q": "Norris Geyser Basin", "note": "Steep short hike to a ridge of geyser cones." },
-        { "name": "Artists' Paintpots", "q": "Artists Paint Pots Yellowstone", "note": "Boardwalk loop past mudpots and hot springs." },
-        { "name": "Norris Geyser Basin", "q": "Norris Geyser Basin", "note": "Hottest, most acidic basin in the park." }
-      ]
+        {
+          "name": "Gibbon Falls",
+          "q": "Gibbon Falls Yellowstone",
+          "note": "Roadside waterfall on the Gibbon River.",
+          "kind": "view"
+        },
+        {
+          "name": "Beryl Spring",
+          "q": "Beryl Spring Yellowstone",
+          "note": "Small, loud hot spring right by the road.",
+          "kind": "view"
+        },
+        {
+          "name": "Monument Geyser Basin",
+          "q": "Norris Geyser Basin",
+          "note": "Steep short hike to a ridge of geyser cones.",
+          "kind": "hike",
+          "trail": {
+            "dist": "2.4 mi (3.8 km) round trip",
+            "time": "2-2.5h",
+            "gain": "roughly 800 ft (244 m)",
+            "from": "Monument Geyser Basin Trailhead",
+            "grade": "moderate"
+          }
+        },
+        {
+          "name": "Artists' Paintpots",
+          "q": "Artists Paint Pots Yellowstone",
+          "note": "Boardwalk loop past mudpots and hot springs.",
+          "kind": "walk"
+        },
+        {
+          "name": "Norris Geyser Basin",
+          "q": "Norris Geyser Basin",
+          "note": "Hottest, most acidic basin in the park.",
+          "kind": "walk",
+          "trail": {
+            "dist": "1.2 km + 2.4 km",
+            "time": "30–90 min",
+            "from": "Norris Geyser Basin parking lot / Norris Museum",
+            "grade": "easy",
+            "caveat": "Porcelain Basin and Back Basin are two separate loops, not one trail"
+          }
+        }
+      ],
+      "expect": {
+        "arrive": "Gibbon Falls and Beryl Spring are both direct roadside pull-offs, no real walk. Norris has the biggest lot on this stretch and is the hottest, most acidic basin in the park; it's split into two separate boardwalk loops (Porcelain Basin and Back Basin) that don't connect at both ends, so plan which one(s) you're doing before setting off from the car.",
+        "parking": "Norris Geyser Basin's lot is large and generally has room outside of midday peak; Gibbon Falls and Beryl Spring are small pull-offs with a handful of spaces each.",
+        "need": "2-2.5 hours",
+        "paths": [
+          {
+            "opt": "Roadside stops only",
+            "do": "Gibbon Falls and Beryl Spring from the pull-offs, skip Norris's basins.",
+            "cost": "20 min"
+          },
+          {
+            "opt": "Porcelain Basin only",
+            "do": "Same pull-offs, plus the shorter Porcelain Basin loop at Norris.",
+            "cost": "1h"
+          },
+          {
+            "opt": "Both Norris loops",
+            "do": "Porcelain Basin and Back Basin, the full Norris visit.",
+            "cost": "1h 45m"
+          }
+        ]
+      },
+      "alt": [
+        "Gibbon Falls Yellowstone",
+        "Norris Geyser Basin Porcelain Basin",
+        "Steamboat Geyser Norris eruption",
+        "Artists Paint Pots mud pots Yellowstone"
+      ],
+      "seasonal": "Monument Geyser Basin's trail is a steep 2.4 mi (3.8 km) round trip climbing roughly 800 ft — real hiking, not a stroll (nps.gov/places/000/monument-geyser-basin-trailhead.htm and USGS). Given the no-strenuous-hikes rule, skip it and view the basin's steam plumes from the road instead."
     },
     {
       "id": "d05s2",
       "name": "Segment 2 — Roaring Mountain to Mammoth Hot Springs",
       "blurb": "A steaming hillside, then the park's terraced hot spring complex.",
       "time": "10:30am–12:30pm",
-      "map": { "from": "Norris Geyser Basin, Yellowstone National Park", "to": "Mammoth Hot Springs, Yellowstone National Park" },
+      "map": {
+        "from": "Norris Geyser Basin, Yellowstone National Park",
+        "to": "Mammoth Hot Springs, Yellowstone National Park"
+      },
       "stops": [
-        { "name": "Roaring Mountain", "q": "Roaring Mountain Yellowstone", "note": "Acidic hillside vented with steam and fumaroles." },
-        { "name": "Cleopatra Spring and Terrace", "q": "Mammoth Hot Springs Terraces", "note": "Travertine terrace within the Mammoth complex." },
-        { "name": "Mammoth Hot Springs", "q": "Mammoth Hot Springs Terraces", "note": "Wide travertine terraces, the park's north hub." },
-        { "name": "Mount Everts Viewpoint", "q": "Mount Everts Yellowstone", "note": "Long sedimentary ridge above Mammoth." }
+        {
+          "name": "Roaring Mountain",
+          "q": "Roaring Mountain Yellowstone",
+          "note": "Acidic hillside vented with steam and fumaroles.",
+          "kind": "view"
+        },
+        {
+          "name": "Cleopatra Spring and Terrace",
+          "q": "Mammoth Hot Springs Terraces",
+          "note": "Travertine terrace within the Mammoth complex.",
+          "kind": "walk"
+        },
+        {
+          "name": "Mammoth Hot Springs",
+          "q": "Mammoth Hot Springs Terraces",
+          "note": "Wide travertine terraces, the park's north hub.",
+          "kind": "walk"
+        },
+        {
+          "name": "Mount Everts Viewpoint",
+          "q": "Mount Everts Yellowstone",
+          "note": "Long sedimentary ridge above Mammoth.",
+          "kind": "view"
+        }
+      ],
+      "expect": {
+        "arrive": "Roaring Mountain is a roadside pull-off with the steaming hillside visible straight from the car. Mammoth's terraces sprawl across a hillside above the village; the Lower Terraces have a boardwalk right off the main lot, the Upper Terraces are reached by a one-way drive loop above them.",
+        "parking": "Roaring Mountain's pull-off is small; Mammoth has several lots around the village and near the Lower Terraces, generally with room outside of midday.",
+        "need": "1.5-2 hours",
+        "paths": [
+          {
+            "opt": "Roadside and Lower Terraces boardwalk only",
+            "do": "Roaring Mountain from the pull-off, then the flat lower boardwalk loop at Mammoth.",
+            "cost": "1h"
+          },
+          {
+            "opt": "Add the Upper Terrace Drive",
+            "do": "Same, plus the one-way scenic drive above the terraces with its own pull-offs.",
+            "cost": "1h 30m"
+          }
+        ]
+      },
+      "alt": [
+        "Mammoth Hot Springs travertine terraces",
+        "Roaring Mountain steam vents",
+        "Minerva Terrace Mammoth Hot Springs",
+        "Fort Yellowstone historic buildings Mammoth"
       ]
     },
     {
@@ -45,23 +162,123 @@
       "name": "Segment 3 — Lamar Valley and Mount Washburn",
       "blurb": "Open valley for wildlife, then a high summit lookout before exiting north.",
       "time": "12:30–3:30pm",
-      "map": { "from": "Mammoth Hot Springs, Yellowstone National Park", "to": "Canyon Village, Yellowstone National Park" },
+      "map": {
+        "from": "Mammoth Hot Springs, Yellowstone National Park",
+        "to": "Canyon Village, Yellowstone National Park"
+      },
       "stops": [
-        { "name": "Slough Creek", "q": "Slough Creek Yellowstone", "note": "Prime wildlife-watching meadow, wolves and bison." },
-        { "name": "Yellowstone River Overlook", "q": "Yellowstone River overlook Lamar Valley", "note": "Open view across the Lamar Valley." },
-        { "name": "Mount Washburn", "q": "Mount Washburn fire lookout", "note": "Fire lookout summit; wide views of the whole park." }
-      ]
+        {
+          "name": "Slough Creek",
+          "q": "Slough Creek Yellowstone",
+          "note": "Prime wildlife-watching meadow, wolves and bison.",
+          "kind": "view"
+        },
+        {
+          "name": "Yellowstone River Overlook",
+          "q": "Yellowstone River overlook Lamar Valley",
+          "note": "Open view across the Lamar Valley.",
+          "kind": "view"
+        },
+        {
+          "name": "Mount Washburn",
+          "q": "Mount Washburn fire lookout",
+          "note": "Fire lookout summit; wide views of the whole park.",
+          "kind": "hike",
+          "trail": {
+            "dist": "6.2 mi (10 km) round trip",
+            "time": "3-4h",
+            "gain": "1,400 ft (425 m)",
+            "from": "Dunraven Pass trailhead",
+            "grade": "strenuous"
+          }
+        }
+      ],
+      "expect": {
+        "arrive": "Lamar Valley's turnouts are wide gravel shoulders right on the road, wildlife visible with the naked eye from the car in many cases. Mount Washburn's trailhead at Dunraven Pass is a real mountain summit hike — this is not a stroll, and the road itself sits at high elevation where a September storm can close it with little warning.",
+        "parking": "Lamar Valley turnouts are informal gravel pull-offs, plentiful but the best wildlife-viewing spots fill at dawn and dusk; Dunraven Pass trailhead lot is small and can fill on clear days.",
+        "need": "2.5-3 hours",
+        "paths": [
+          {
+            "opt": "Lamar Valley only, drive past Washburn",
+            "do": "Stop at the wildlife turnouts, continue over Dunraven Pass without stopping.",
+            "cost": "1h"
+          },
+          {
+            "opt": "Washburn drive-by view",
+            "do": "Same, plus a few minutes at the Dunraven Pass trailhead pull-off for the view without hiking.",
+            "cost": "1h 20m"
+          },
+          {
+            "opt": "Full Mount Washburn hike",
+            "do": "The full out-and-back to the fire lookout summit — not recommended for this trip; strenuous, high elevation, real time cost.",
+            "cost": "3-4h"
+          }
+        ]
+      },
+      "alt": [
+        "Lamar Valley bison herd Yellowstone",
+        "Mount Washburn fire lookout tower",
+        "Specimen Ridge Yellowstone autumn",
+        "Yellowstone wolf Lamar Valley"
+      ],
+      "seasonal": "The road over Dunraven Pass (Canyon to Tower) is scheduled to stay open through late September into October 2026, but it's one of the first roads to close if an early storm hits — check current conditions the morning of. The NPS also flags grizzly bears actively feeding on whitebark pine nuts on Mount Washburn in fall and recommends hiking only in groups of 3+ with bear spray — one more reason the drive-by option fits this trip better than the hike (nps.gov/thingstodo/yell-trail-dunraven-pass-mount-washburn.htm)."
     },
     {
       "id": "d05s4",
       "name": "Segment 4 — Drive to West Glacier via Bozeman and Butte",
       "blurb": "Long transit day: out of the park, past Bozeman, through Butte.",
       "time": "3:30–9:00pm",
-      "map": { "from": "Canyon Village, Yellowstone National Park", "to": "West Glacier, Montana" },
+      "map": {
+        "from": "Canyon Village, Yellowstone National Park",
+        "to": "West Glacier, Montana"
+      },
       "stops": [
-        { "name": "Yellowstone Hot Springs (Paradise Valley)", "q": "Paradise Valley Montana Yellowstone River", "note": "Riverside soak stop north of the park, [to add]." },
-        { "name": "Bozeman", "q": "Bozeman Montana downtown", "note": "College town, good stretch-your-legs stop." },
-        { "name": "Butte — Berkeley Pit", "q": "Berkeley Pit Butte", "note": "Former open-pit copper mine, now a flooded overlook." }
+        {
+          "name": "Yellowstone Hot Springs (Paradise Valley)",
+          "q": "Paradise Valley Montana Yellowstone River",
+          "note": "Riverside soak stop north of the park, [to add].",
+          "kind": "sight"
+        },
+        {
+          "name": "Bozeman",
+          "q": "Bozeman Montana downtown",
+          "note": "College town, good stretch-your-legs stop.",
+          "kind": "sight"
+        },
+        {
+          "name": "Butte — Berkeley Pit",
+          "q": "Berkeley Pit Butte",
+          "note": "Former open-pit copper mine, now a flooded overlook.",
+          "kind": "sight"
+        }
+      ],
+      "expect": {
+        "arrive": "This is the long transit leg — nine hours of driving from Canyon Village to West Glacier. Bozeman is a normal college-town downtown with metered street parking; Butte's Berkeley Pit has its own small paid viewing-stand lot right at the edge of the flooded pit.",
+        "parking": "Bozeman downtown has metered spaces and a few public garages; the Berkeley Pit lot in Butte is small but rarely full given the short visit duration.",
+        "need": "9h drive plus stops",
+        "paths": [
+          {
+            "opt": "Drive straight through",
+            "do": "Gas and bathroom stops only, no detours.",
+            "cost": "9h"
+          },
+          {
+            "opt": "Bozeman stretch stop",
+            "do": "Add a 30-45 minute walk through downtown Bozeman for dinner or coffee.",
+            "cost": "9h 45m"
+          },
+          {
+            "opt": "Add Berkeley Pit",
+            "do": "Same Bozeman stop, plus 20-30 minutes at the Berkeley Pit overlook in Butte.",
+            "cost": "10h 15m"
+          }
+        ]
+      },
+      "alt": [
+        "Bozeman Montana Main Street downtown",
+        "Berkeley Pit Butte Montana flooded mine",
+        "Paradise Valley Montana Yellowstone River",
+        "Butte Montana headframes mining town"
       ]
     }
   ]

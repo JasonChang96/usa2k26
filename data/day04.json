@@ -18,14 +18,81 @@
       "name": "Segment 1 — South Entrance to West Thumb",
       "blurb": "The park's south approach, two waterfalls, and the lake's geyser basin.",
       "time": "6:00–9:30am",
-      "map": { "from": "Yellowstone South Entrance, Wyoming", "to": "West Thumb Geyser Basin, Yellowstone National Park" },
+      "map": {
+        "from": "Yellowstone South Entrance, Wyoming",
+        "to": "West Thumb Geyser Basin, Yellowstone National Park"
+      },
       "stops": [
-        { "name": "South Entrance Station", "q": "Yellowstone South Entrance", "note": "Park boundary; drive north from Jackson begins here." },
-        { "name": "Moose Falls", "q": "Moose Falls Yellowstone", "note": "Small waterfall steps from the road." },
-        { "name": "Lewis Falls", "q": "Lewis Falls Yellowstone", "note": "Wide falls on the Lewis River." },
-        { "name": "Lewis Lake Picnic Area", "q": "Lewis Lake Yellowstone", "note": "Lakeside pull-off, good rest stop." },
-        { "name": "Grant Village Visitor Center", "q": "Grant Village Yellowstone", "note": "Visitor center on the south shore of Yellowstone Lake." },
-        { "name": "West Thumb Geyser Basin", "q": "West Thumb Geyser Basin", "note": "Geysers and hot springs right on the lakeshore." }
+        {
+          "name": "South Entrance Station",
+          "q": "Yellowstone South Entrance",
+          "note": "Park boundary; drive north from Jackson begins here.",
+          "kind": "sight"
+        },
+        {
+          "name": "Moose Falls",
+          "q": "Moose Falls Yellowstone",
+          "note": "Small waterfall steps from the road.",
+          "kind": "view"
+        },
+        {
+          "name": "Lewis Falls",
+          "q": "Lewis Falls Yellowstone",
+          "note": "Wide falls on the Lewis River.",
+          "kind": "view"
+        },
+        {
+          "name": "Lewis Lake Picnic Area",
+          "q": "Lewis Lake Yellowstone",
+          "note": "Lakeside pull-off, good rest stop.",
+          "kind": "sight"
+        },
+        {
+          "name": "Grant Village Visitor Center",
+          "q": "Grant Village Yellowstone",
+          "note": "Visitor center on the south shore of Yellowstone Lake.",
+          "kind": "sight"
+        },
+        {
+          "name": "West Thumb Geyser Basin",
+          "q": "West Thumb Geyser Basin",
+          "note": "Geysers and hot springs right on the lakeshore.",
+          "kind": "walk",
+          "trail": {
+            "dist": "0.75 mi (1.2 km) round trip",
+            "time": "30-45 min",
+            "from": "West Thumb Geyser Basin parking lot",
+            "grade": "easy"
+          }
+        }
+      ],
+      "expect": {
+        "arrive": "South Entrance is a simple gate check, then a two-lane forested road; Grant Village and West Thumb both have proper paved lots that rarely fill this early.",
+        "parking": "Grant Village Visitor Center and West Thumb Geyser Basin both have full-size paved lots; neither is reported to fill before mid-morning.",
+        "need": "3-3.5 hours including the drive",
+        "paths": [
+          {
+            "opt": "Drive straight through",
+            "do": "Roadside look at Moose Falls and Lewis Falls from the pull-offs, no stop at Grant Village.",
+            "cost": "1h"
+          },
+          {
+            "opt": "Add West Thumb",
+            "do": "Same pull-offs, plus the West Thumb Geyser Basin boardwalk loops on the lakeshore.",
+            "cost": "1h 45m"
+          },
+          {
+            "opt": "Full stop tour",
+            "do": "Both waterfalls, Lewis Lake picnic area, Grant Village Visitor Center, and the full West Thumb boardwalk.",
+            "cost": "2h 30m"
+          }
+        ]
+      },
+      "alt": [
+        "Lewis Falls Yellowstone autumn",
+        "Yellowstone Lake West Thumb shoreline",
+        "Grant Village Visitor Center exterior",
+        "Lewis River canyon Yellowstone"
       ]
     },
     {
@@ -33,23 +100,129 @@
       "name": "Segment 2 — Old Faithful and the Upper Geyser Basin",
       "blurb": "The park's most famous geyser and the road leading to it.",
       "time": "9:30–11:30am",
-      "map": { "from": "West Thumb Geyser Basin, Yellowstone National Park", "to": "Old Faithful, Yellowstone National Park" },
+      "map": {
+        "from": "West Thumb Geyser Basin, Yellowstone National Park",
+        "to": "Old Faithful, Yellowstone National Park"
+      },
       "stops": [
-        { "name": "Continental Divide", "q": "Continental Divide Yellowstone National Park", "note": "Marked crossing on the road south of Old Faithful." },
-        { "name": "Kepler Cascades", "q": "Kepler Cascades", "note": "Roadside waterfall just before Old Faithful." },
-        { "name": "Old Faithful", "q": "Old Faithful geyser", "note": "Eruptions roughly every 90 minutes." }
-      ]
+        {
+          "name": "Continental Divide",
+          "q": "Continental Divide Yellowstone National Park",
+          "note": "Marked crossing on the road south of Old Faithful.",
+          "kind": "sight"
+        },
+        {
+          "name": "Kepler Cascades",
+          "q": "Kepler Cascades",
+          "note": "Roadside waterfall just before Old Faithful.",
+          "kind": "view"
+        },
+        {
+          "name": "Old Faithful",
+          "q": "Old Faithful geyser",
+          "note": "Eruptions roughly every 90 minutes.",
+          "kind": "sight"
+        }
+      ],
+      "expect": {
+        "arrive": "Old Faithful's lot is enormous but this is the park's single busiest stop; it fills on clear late-September mornings by mid-morning and overflows to a second lot across the road. The geyser itself is visible from the visitor center deck and much of the boardwalk without walking far, but the wider Upper Geyser Basin (Morning Glory Pool, Geyser Hill) needs real boardwalk time.",
+        "parking": "Main Old Faithful lot holds hundreds of cars but fills by mid-morning in good weather; an overflow lot sits across the road near the Old Faithful Inn.",
+        "need": "1.5-2.5 hours",
+        "paths": [
+          {
+            "opt": "One eruption, no walk",
+            "do": "Check the prediction board at the Visitor Education Center, watch the eruption from the boardwalk benches nearby.",
+            "cost": "45 min-1h"
+          },
+          {
+            "opt": "Add Geyser Hill",
+            "do": "After the eruption, walk the boardwalk loop around Geyser Hill's smaller geysers and pools.",
+            "cost": "1h 45m"
+          },
+          {
+            "opt": "Full Upper Geyser Basin walk",
+            "do": "Boardwalk out toward Morning Glory Pool and back, past Castle, Grand, and Riverside Geysers.",
+            "cost": "2h 30m"
+          }
+        ]
+      },
+      "alt": [
+        "Castle Geyser Yellowstone",
+        "Morning Glory Pool Yellowstone",
+        "Old Faithful Inn lobby interior",
+        "Riverside Geyser Yellowstone eruption"
+      ],
+      "seasonal": "Biscuit Basin, a short drive north of Old Faithful on the way to Midway, has been closed since a July 23, 2024 hydrothermal explosion and was hit by a second explosion on July 13, 2026; it remains closed indefinitely as of 2026 (nps.gov/yell/planyourvisit/conditions.htm). It is not on this itinerary but travelers sometimes expect to stop there — do not plan a stop."
     },
     {
       "id": "d04s3",
       "name": "Segment 3 — Midway and Lower Geyser Basins",
       "blurb": "The largest hot spring in the US, then a paint pot loop.",
       "time": "11:30am–1:00pm",
-      "map": { "from": "Old Faithful, Yellowstone National Park", "to": "Fountain Paint Pots, Yellowstone National Park" },
+      "map": {
+        "from": "Old Faithful, Yellowstone National Park",
+        "to": "Fountain Paint Pots, Yellowstone National Park"
+      },
       "stops": [
-        { "name": "Grand Prismatic Spring", "q": "Grand Prismatic Spring", "note": "Largest hot spring in the US; rainbow-colored." },
-        { "name": "Firehole Lake Drive", "q": "Firehole Lake Drive Yellowstone", "note": "One-way loop past Great Fountain Geyser." },
-        { "name": "Fountain Paint Pots", "q": "Fountain Paint Pots", "note": "Boardwalk loop past mudpots and geysers." }
+        {
+          "name": "Grand Prismatic Spring",
+          "q": "Grand Prismatic Spring",
+          "note": "Largest hot spring in the US; rainbow-colored.",
+          "kind": "walk"
+        },
+        {
+          "name": "Grand Prismatic Overlook (Fairy Falls Trailhead)",
+          "q": "Grand Prismatic Spring overlook Yellowstone",
+          "note": "The view from above — colours don't read from the boardwalk.",
+          "kind": "hike",
+          "trail": {
+            "dist": "1.2 mi (1.9 km) round trip",
+            "time": "45 min-1h",
+            "gain": "105 ft (32 m)",
+            "from": "Fairy Falls Trailhead, 1 mi south of Midway Geyser Basin",
+            "grade": "easy"
+          }
+        },
+        {
+          "name": "Firehole Lake Drive",
+          "q": "Firehole Lake Drive Yellowstone",
+          "note": "One-way loop past Great Fountain Geyser.",
+          "kind": "drive"
+        },
+        {
+          "name": "Fountain Paint Pots",
+          "q": "Fountain Paint Pots",
+          "note": "Boardwalk loop past mudpots and geysers.",
+          "kind": "walk"
+        }
+      ],
+      "expect": {
+        "arrive": "Grand Prismatic itself is a flat boardwalk loop right off the Midway Geyser Basin lot, but the spring's full rainbow color only reads from above; the classic overhead photo requires the separate Fairy Falls Trailhead lot one mile south, which is small and known to fill by mid-morning.",
+        "parking": "Midway Geyser Basin's lot is mid-sized and fills by late morning; the Fairy Falls Trailhead lot for the overlook is much smaller and fills faster — arrive before 10am or expect roadside parking.",
+        "need": "1.5-2.5 hours",
+        "paths": [
+          {
+            "opt": "Boardwalk only",
+            "do": "Walk the flat Midway boardwalk past Excelsior Geyser and along the edge of Grand Prismatic.",
+            "cost": "30-40 min"
+          },
+          {
+            "opt": "Add the overlook",
+            "do": "Drive to the separate Fairy Falls Trailhead and walk up to the Grand Prismatic Overlook for the postcard view from above.",
+            "cost": "1h 15m"
+          },
+          {
+            "opt": "Full loop with Firehole Lake Drive",
+            "do": "Midway boardwalk, the overlook hike, and the one-way Firehole Lake Drive past Great Fountain Geyser plus Fountain Paint Pots.",
+            "cost": "2h 15m"
+          }
+        ]
+      },
+      "alt": [
+        "Grand Prismatic Spring aerial view",
+        "Excelsior Geyser crater Yellowstone",
+        "Great Fountain Geyser Firehole Lake Drive",
+        "Fountain Paint Pots mudpots"
       ]
     },
     {
@@ -57,16 +230,87 @@
       "name": "Segment 4 — Canyon and the Grand Canyon of the Yellowstone",
       "blurb": "Waterfall overlooks, then mud pots on the way toward the lake.",
       "time": "1:00–5:30pm",
-      "map": { "from": "Fountain Paint Pots, Yellowstone National Park", "to": "West Yellowstone, Montana" },
+      "map": {
+        "from": "Fountain Paint Pots, Yellowstone National Park",
+        "to": "West Yellowstone, Montana"
+      },
       "stops": [
-        { "name": "Virginia Cascade Drive", "q": "Virginia Cascade Yellowstone", "note": "One-way spur past a narrow waterfall." },
-        { "name": "Canyon Visitor Education Center", "q": "Canyon Visitor Education Center Yellowstone", "note": "Exhibits on the canyon and its geology." },
-        { "name": "Inspiration Point", "q": "Inspiration Point Yellowstone Grand Canyon", "note": "Wide view down the canyon." },
-        { "name": "Lower Falls (Artist Point)", "q": "Lower Falls Yellowstone", "note": "308-foot waterfall, the canyon's centerpiece." },
-        { "name": "Upper Falls View", "q": "Upper Falls Yellowstone", "note": "Smaller falls upstream of the Lower Falls." },
-        { "name": "Sulphur Caldron", "q": "Sulphur Caldron Yellowstone", "note": "One of the most acidic springs in the park." },
-        { "name": "Mud Volcano Trail — Black Dragon's Caldron", "q": "Mud Volcano Yellowstone", "note": "Boardwalk past bubbling mud pots and steam vents." },
-        { "name": "LeHardys Rapids", "q": "LeHardys Rapids", "note": "Rapids on the Yellowstone River; cutthroat trout run here." }
+        {
+          "name": "Virginia Cascade Drive",
+          "q": "Virginia Cascade Yellowstone",
+          "note": "One-way spur past a narrow waterfall.",
+          "kind": "drive"
+        },
+        {
+          "name": "Canyon Visitor Education Center",
+          "q": "Canyon Visitor Education Center Yellowstone",
+          "note": "Exhibits on the canyon and its geology.",
+          "kind": "sight"
+        },
+        {
+          "name": "Inspiration Point",
+          "q": "Inspiration Point Yellowstone Grand Canyon",
+          "note": "Wide view down the canyon.",
+          "kind": "view"
+        },
+        {
+          "name": "Lower Falls (Artist Point)",
+          "q": "Lower Falls Yellowstone",
+          "note": "308-foot waterfall, the canyon's centerpiece.",
+          "kind": "view"
+        },
+        {
+          "name": "Upper Falls View",
+          "q": "Upper Falls Yellowstone",
+          "note": "Smaller falls upstream of the Lower Falls.",
+          "kind": "view"
+        },
+        {
+          "name": "Sulphur Caldron",
+          "q": "Sulphur Caldron Yellowstone",
+          "note": "One of the most acidic springs in the park.",
+          "kind": "view"
+        },
+        {
+          "name": "Mud Volcano Trail — Black Dragon's Caldron",
+          "q": "Mud Volcano Yellowstone",
+          "note": "Boardwalk past bubbling mud pots and steam vents.",
+          "kind": "walk"
+        },
+        {
+          "name": "LeHardys Rapids",
+          "q": "LeHardys Rapids",
+          "note": "Rapids on the Yellowstone River; cutthroat trout run here.",
+          "kind": "view"
+        }
+      ],
+      "expect": {
+        "arrive": "Canyon Village has the biggest lots on this stretch and rarely fills; the individual overlooks (Inspiration Point, Artist Point) are small paved pull-offs a short walk from their own car parks, not from Canyon Village itself. The canyon and both falls are visible without much walking, but the best angles need the short paved paths at each overlook.",
+        "parking": "Canyon Visitor Education Center has a large lot; Artist Point and Inspiration Point each have their own smaller lots that fill on clear afternoons.",
+        "need": "3-4 hours",
+        "paths": [
+          {
+            "opt": "The two icon overlooks",
+            "do": "Artist Point and Inspiration Point only, both short walks from their own lots.",
+            "cost": "1h"
+          },
+          {
+            "opt": "Add Brink of the Lower Falls",
+            "do": "Same two overlooks plus the steep short trail down to the brink of the Lower Falls.",
+            "cost": "2h"
+          },
+          {
+            "opt": "Full canyon tour",
+            "do": "Both overlooks, Brink of the Lower Falls, Upper Falls View, plus Sulphur Caldron and Mud Volcano on the way south.",
+            "cost": "3h 30m"
+          }
+        ]
+      },
+      "alt": [
+        "Grand Canyon of the Yellowstone Lower Falls",
+        "Yellowstone River canyon yellow rock",
+        "Mud Volcano steam vents",
+        "Sulphur Caldron acidic spring"
       ]
     }
   ]
