@@ -54,3 +54,12 @@ Must be valid JSON. No comments, no trailing commas.
     so the search disambiguates. If a stop is unlikely to have a Commons photo
     (a small cafe, a turnout), use the nearest famous landmark instead.
   - `note` — max 12 words, or omit. Say what it IS or why stop, not adjectives.
+
+## Optional richer fields
+
+A segment may also carry `expect`, `alt`, `seasonal` and `cost`, and a stop may carry
+`kind` and `trail`. These drive the "What to expect", "Pick your version" and hidden
+photo blocks on a section page. They are documented separately in `EXPECT-SCHEMA.md`
+and are normally written by research into `data/research/*.json`, then folded in with
+`node scripts/merge-research.mjs`. Editing them directly in `dayNN.json` works too, but
+a later merge run overwrites those fields from the research file.

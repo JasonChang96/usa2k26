@@ -18,11 +18,63 @@
       "name": "Segment 1 — Salt Lake City sightseeing",
       "blurb": "Arrival afternoon on foot around downtown Salt Lake City.",
       "time": "12:00–4:00pm",
-      "map": { "center": "Temple Square, Salt Lake City, Utah", "zoom": 14 },
+      "map": {
+        "center": "Temple Square, Salt Lake City, Utah",
+        "zoom": 14
+      },
       "stops": [
-        { "name": "Ensign Peak", "q": "Ensign Peak Salt Lake City", "note": "Short hike, skyline and valley overlook." },
-        { "name": "Utah State Capitol Building", "q": "Utah State Capitol", "note": "Hilltop capitol above downtown." },
-        { "name": "Temple Square", "q": "Salt Lake City Temple Square", "note": "Historic LDS temple complex, city center." }
+        {
+          "name": "Ensign Peak",
+          "q": "Ensign Peak Salt Lake City",
+          "note": "Short hike, skyline and valley overlook.",
+          "kind": "hike",
+          "trail": {
+            "dist": "1 mi (1.6 km) round trip",
+            "time": "30-45 min",
+            "from": "Ensign Peak Nature Park trailhead, 1002 N Ensign Vista Dr",
+            "grade": "easy"
+          }
+        },
+        {
+          "name": "Utah State Capitol Building",
+          "q": "Utah State Capitol",
+          "note": "Hilltop capitol above downtown.",
+          "kind": "sight"
+        },
+        {
+          "name": "Temple Square",
+          "q": "Salt Lake City Temple Square",
+          "note": "Historic LDS temple complex, city center.",
+          "kind": "sight"
+        }
+      ],
+      "expect": {
+        "arrive": "Downtown Salt Lake City is flat and walkable; Temple Square and the Capitol both have their own free lots, Ensign Peak's trailhead lot is a small gravel pull-in in a residential street.",
+        "parking": "Temple Square and Capitol lots are large and rarely full midday; Ensign Peak's lot holds maybe 15 cars and street parking fills on weekends.",
+        "need": "2-4 hours",
+        "paths": [
+          {
+            "opt": "Temple Square only",
+            "do": "Walk the plaza, Assembly Hall exterior, and grounds.",
+            "cost": "45 min"
+          },
+          {
+            "opt": "Add the Capitol",
+            "do": "Temple Square, then drive up to the Capitol steps and rotunda.",
+            "cost": "1h 30m"
+          },
+          {
+            "opt": "Full afternoon with Ensign Peak",
+            "do": "Capitol, Temple Square, plus the short climb up Ensign Peak for the skyline view.",
+            "cost": "3h"
+          }
+        ]
+      },
+      "alt": [
+        "Ensign Peak Salt Lake City overlook",
+        "Utah State Capitol building exterior",
+        "Salt Lake Temple Square Assembly Hall",
+        "Salt Lake City skyline from Capitol Hill"
       ]
     },
     {
@@ -30,11 +82,48 @@
       "name": "Segment 2 — Food and the drive to Logan",
       "blurb": "Snack and dinner in Salt Lake City, then north to Logan.",
       "time": "4:00–8:00pm",
-      "map": { "from": "Salt Lake City, Utah", "to": "Logan, Utah" },
+      "map": {
+        "from": "Salt Lake City, Utah",
+        "to": "Logan, Utah"
+      },
       "stops": [
-        { "name": "In-N-Out (afternoon snack)", "q": "In-N-Out Burger sign", "note": "Quick stop before the drive north." },
-        { "name": "Osteria Amore (dinner)", "q": "Salt Lake City downtown restaurant street", "note": "Dinner stop in Salt Lake City." },
-        { "name": "Logan Canyon", "q": "Logan Canyon Utah", "note": "Canyon drive into Logan, evening arrival." }
+        {
+          "name": "In-N-Out (afternoon snack)",
+          "q": "In-N-Out Burger sign",
+          "note": "Quick stop before the drive north."
+        },
+        {
+          "name": "Osteria Amore (dinner)",
+          "q": "Salt Lake City downtown restaurant street",
+          "note": "Dinner stop in Salt Lake City."
+        },
+        {
+          "name": "Logan Canyon",
+          "q": "Logan Canyon Utah",
+          "note": "Canyon drive into Logan, evening arrival.",
+          "kind": "drive"
+        }
+      ],
+      "expect": {
+        "arrive": "Both food stops are quick roadside/downtown stops; Logan Canyon is a two-lane mountain highway with occasional pull-outs, driven at dusk on this itinerary.",
+        "need": "1-2 hours plus the drive",
+        "paths": [
+          {
+            "opt": "Snack and go",
+            "do": "In-N-Out only, eat in the car on the way north.",
+            "cost": "20 min"
+          },
+          {
+            "opt": "Sit-down dinner",
+            "do": "In-N-Out snack, then a proper dinner at Osteria Amore before the drive.",
+            "cost": "1h 30m"
+          }
+        ]
+      },
+      "alt": [
+        "Logan Canyon Utah autumn foliage",
+        "In-N-Out Burger sign California",
+        "Downtown Salt Lake City restaurant row evening"
       ]
     }
   ]

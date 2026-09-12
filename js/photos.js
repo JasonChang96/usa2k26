@@ -62,8 +62,12 @@ const Photos = (() => {
        the results so they do not end up showing the same picture. */
     const nth = +(el.dataset.nth || 0);
     const results = await search(el.dataset.q, nth + 1);
+    /* A narrow phrase can return fewer images than we asked for. Falling back to
+       the first result would just repeat a picture already on the page, so a
+       strict slot removes itself instead. */
+    if (el.dataset.strict && !results[nth]) { el.closest('figure')?.remove(); return; }
     const p = results[nth] || results[0];
-    if (!p) return;
+    if (!p) { el.closest('figure[data-strict]')?.remove(); return; }
     if (el.tagName === 'IMG') { el.src = p.src; el.alt = el.dataset.q; }
     else el.style.backgroundImage = `url("${p.src}")`;
     el.classList.add('loaded');

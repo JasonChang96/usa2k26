@@ -17,13 +17,58 @@
       "name": "Segment 1 — Pike Place Market on foot",
       "blurb": "8-10 minute walk from the Belltown Airbnb.",
       "time": "8:30-11:00am",
-      "map": { "center": "Pike Place Market, Seattle, WA", "zoom": 16 },
+      "map": {
+        "center": "Pike Place Market, Seattle, WA",
+        "zoom": 16
+      },
       "stops": [
-        { "name": "Pike Place Market", "q": "Pike Place Market Seattle", "note": "Original farmers market, opened 1907." },
-        { "name": "Piroshky Piroshky", "q": "Pike Place Market Seattle", "note": "Russian bakery, savory piroshky." },
-        { "name": "Le Panier", "q": "Pike Place Market Seattle", "note": "French bakery, almond croissant." },
-        { "name": "Beecher's Handmade Cheese", "q": "Beecher's Handmade Cheese Pike Place", "note": "Mac and cheese, cheese made on-site." },
-        { "name": "Gum Wall", "q": "Gum Wall Seattle", "note": "Post Alley wall covered in chewed gum." }
+        {
+          "name": "Pike Place Market",
+          "q": "Pike Place Market Seattle",
+          "note": "Original farmers market, opened 1907."
+        },
+        {
+          "name": "Piroshky Piroshky",
+          "q": "Pike Place Market Seattle",
+          "note": "Russian bakery, savory piroshky."
+        },
+        {
+          "name": "Le Panier",
+          "q": "Pike Place Market Seattle",
+          "note": "French bakery, almond croissant."
+        },
+        {
+          "name": "Beecher's Handmade Cheese",
+          "q": "Beecher's Handmade Cheese Pike Place",
+          "note": "Mac and cheese, cheese made on-site."
+        },
+        {
+          "name": "Gum Wall",
+          "q": "Gum Wall Seattle",
+          "note": "Post Alley wall covered in chewed gum."
+        }
+      ],
+      "expect": {
+        "arrive": "8-10 min walk from Belltown; market opens early and is already busy with vendors by 8:30am, before tour groups arrive.",
+        "parking": "Walk from the Belltown Airbnb, no transit needed.",
+        "need": "2-2.5 hours",
+        "paths": [
+          {
+            "opt": "Rain plan",
+            "do": "Stay under the market's covered arcades (Main and North Arcade) the whole time; Post Alley and the Gum Wall are also covered.",
+            "cost": "1h 30m"
+          },
+          {
+            "opt": "Full wander",
+            "do": "Cover the main arcades, Post Alley, Gum Wall, and the waterfront side stalls below.",
+            "cost": "2h 30m"
+          }
+        ]
+      },
+      "alt": [
+        "Pike Place Market fish throwing",
+        "Post Alley Seattle",
+        "Pike Place Market flowers"
       ]
     },
     {
@@ -31,11 +76,47 @@
       "name": "Segment 2 — Pioneer Square",
       "blurb": "About 25 minutes on foot from the market.",
       "time": "11:00am-1:00pm",
-      "map": { "center": "Pioneer Square, Seattle, WA", "zoom": 16 },
+      "map": {
+        "center": "Pioneer Square, Seattle, WA",
+        "zoom": 16
+      },
       "stops": [
-        { "name": "Pioneer Square", "q": "Pioneer Square Seattle", "note": "Seattle's oldest neighborhood, Victorian-era buildings." },
-        { "name": "Klondike Gold Rush National Historical Park", "q": "Klondike Gold Rush National Historical Park Seattle", "note": "Free museum on the 1897 gold rush." },
-        { "name": "Salumi", "q": "Pioneer Square Seattle", "note": "Cash-only porchetta sandwich, lunch stop." }
+        {
+          "name": "Pioneer Square",
+          "q": "Pioneer Square Seattle",
+          "note": "Seattle's oldest neighborhood, Victorian-era buildings."
+        },
+        {
+          "name": "Klondike Gold Rush National Historical Park",
+          "q": "Klondike Gold Rush National Historical Park Seattle",
+          "note": "Free museum on the 1897 gold rush."
+        },
+        {
+          "name": "Salumi",
+          "q": "Pioneer Square Seattle",
+          "note": "Cash-only porchetta sandwich, lunch stop."
+        }
+      ],
+      "expect": {
+        "arrive": "About 25 min on foot from the market, downhill then flat; Pioneer Square is quiet mid-morning, mostly local foot traffic.",
+        "parking": "Walk from Pike Place, no transit needed.",
+        "need": "2 hours",
+        "paths": [
+          {
+            "opt": "Rain plan",
+            "do": "Klondike Gold Rush museum is free and indoors; linger there, then a quick look at the Pioneer Square buildings from under awnings.",
+            "cost": "1h"
+          },
+          {
+            "opt": "Full loop",
+            "do": "Museum, wander the square's ironwork storefronts, then Salumi for lunch (expect a short queue; cash only).",
+            "cost": "2h"
+          }
+        ]
+      },
+      "alt": [
+        "Pioneer Square Seattle pergola",
+        "Klondike Gold Rush National Historical Park Seattle interior"
       ]
     },
     {
@@ -43,24 +124,100 @@
       "name": "Segment 3 — Seattle Center and Chihuly Garden and Glass",
       "blurb": "Back toward Belltown; collect bags after this.",
       "time": "2:00-4:30pm",
-      "map": { "center": "Seattle Center, Seattle, WA", "zoom": 16 },
+      "map": {
+        "center": "Seattle Center, Seattle, WA",
+        "zoom": 16
+      },
       "stops": [
-        { "name": "Chihuly Garden and Glass", "q": "Chihuly Garden and Glass", "note": "Dale Chihuly glass sculpture garden and galleries." },
-        { "name": "Space Needle", "q": "Space Needle Seattle", "note": "1962 World's Fair observation tower." },
-        { "name": "Belltown", "q": "Belltown Seattle", "note": "Walk back to the Airbnb, collect bags." }
-      ]
+        {
+          "name": "Chihuly Garden and Glass",
+          "q": "Chihuly Garden and Glass",
+          "note": "Dale Chihuly glass sculpture garden and galleries."
+        },
+        {
+          "name": "Space Needle",
+          "q": "Space Needle Seattle",
+          "note": "1962 World's Fair observation tower."
+        },
+        {
+          "name": "Belltown",
+          "q": "Belltown Seattle",
+          "note": "Walk back to the Airbnb, collect bags."
+        }
+      ],
+      "expect": {
+        "arrive": "Seattle Center is a 15-20 min walk or a short bus/monorail ride from Pioneer Square; Chihuly Garden and Glass is fully indoor/glasshouse so it's a good rainy-afternoon stop.",
+        "parking": "Monorail from Westlake Center (2 min ride) or walk from downtown.",
+        "need": "2.5 hours",
+        "paths": [
+          {
+            "opt": "Chihuly only, then walk back",
+            "do": "Chihuly Garden and Glass galleries and glasshouse, skip the Space Needle, walk back to Belltown to collect bags.",
+            "cost": "1h 30m"
+          },
+          {
+            "opt": "Chihuly plus Space Needle",
+            "do": "Chihuly first, then Space Needle observation deck (book a timed slot in advance), then walk back for bags.",
+            "cost": "3h"
+          }
+        ]
+      },
+      "alt": [
+        "Chihuly Garden and Glass glasshouse",
+        "Space Needle Seattle observation deck",
+        "Seattle Center International Fountain"
+      ],
+      "seasonal": "Monday hours: Chihuly Garden and Glass 10:30am-6:30pm; Space Needle 10:30am-8:00pm. Both open on Mondays, no weekday closure to plan around.",
+      "cost": "Chihuly Garden and Glass adult admission is about $40-45 USD (chihulygardenandglass.com, read 2026-09-12). Space Needle adult admission ranges $35-55 USD depending on time/season, with timed entry every 15 min (spaceneedle.com, read 2026-09-12) - book ahead, especially for a specific arrival window."
     },
     {
       "id": "d11s4",
       "name": "Segment 4 — King Street Station and the 6:00 PM train",
       "blurb": "Bus or Uber to the station, then Amtrak north.",
       "time": "4:30-10:00pm",
-      "map": { "from": "Belltown, Seattle, WA", "to": "King Street Station, Seattle, WA" },
+      "map": {
+        "from": "Belltown, Seattle, WA",
+        "to": "King Street Station, Seattle, WA"
+      },
       "stops": [
-        { "name": "Wall St & 5th Ave bus stop", "q": "Belltown Seattle", "note": "16 min bus to the station, every 15 min." },
-        { "name": "King Street Station", "q": "King Street Station Seattle", "note": "Be there by 5:00pm; train 518 at 6:00pm." },
-        { "name": "Pacific Central Station, Vancouver", "q": "Pacific Central Station Vancouver", "note": "Arrive 10:00pm; Canadian border check on arrival." }
-      ]
+        {
+          "name": "Wall St & 5th Ave bus stop",
+          "q": "Belltown Seattle",
+          "note": "16 min bus to the station, every 15 min."
+        },
+        {
+          "name": "King Street Station",
+          "q": "King Street Station Seattle",
+          "note": "Be there by 5:00pm; train 518 at 6:00pm."
+        },
+        {
+          "name": "Pacific Central Station, Vancouver",
+          "q": "Pacific Central Station Vancouver",
+          "note": "Arrive 10:00pm; Canadian border check on arrival."
+        }
+      ],
+      "expect": {
+        "arrive": "Bags in hand from Belltown; bus stop at Wall St & 5th Ave has frequent service, or a 10-15 min Uber/taxi in light traffic.",
+        "parking": "Bus from Wall St & 5th Ave (16 min, every 15 min) or rideshare direct to King Street Station.",
+        "need": "1 hour before departure",
+        "paths": [
+          {
+            "opt": "Bus with bags",
+            "do": "Wall St & 5th Ave bus to King Street Station; buses have limited luggage space at busy times.",
+            "cost": "20 min"
+          },
+          {
+            "opt": "Rideshare with bags",
+            "do": "Uber/Lyft direct to the station door, easiest with two bags in the rain.",
+            "cost": "15 min"
+          }
+        ]
+      },
+      "alt": [
+        "King Street Station Seattle interior",
+        "Amtrak Cascades train Seattle"
+      ],
+      "seasonal": "Arrive by 5:00pm for the 6:00pm departure (Amtrak recommends 45 min before departure to check bags, more time if queues are long). Canadian customs/border check happens on arrival at Pacific Central Station in Vancouver around 10:00pm, not before boarding in Seattle."
     }
   ]
 }

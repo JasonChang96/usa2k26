@@ -1,0 +1,296 @@
+{
+  "d01s1": {
+    "expect": {
+      "arrive": "Downtown Salt Lake City is flat and walkable; Temple Square and the Capitol both have their own free lots, Ensign Peak's trailhead lot is a small gravel pull-in in a residential street.",
+      "parking": "Temple Square and Capitol lots are large and rarely full midday; Ensign Peak's lot holds maybe 15 cars and street parking fills on weekends.",
+      "need": "2-4 hours",
+      "paths": [
+        { "opt": "Temple Square only", "do": "Walk the plaza, Assembly Hall exterior, and grounds.", "cost": "45 min" },
+        { "opt": "Add the Capitol", "do": "Temple Square, then drive up to the Capitol steps and rotunda.", "cost": "1h 30m" },
+        { "opt": "Full afternoon with Ensign Peak", "do": "Capitol, Temple Square, plus the short climb up Ensign Peak for the skyline view.", "cost": "3h" }
+      ]
+    },
+    "alt": [
+      "Ensign Peak Salt Lake City overlook",
+      "Utah State Capitol building exterior",
+      "Salt Lake Temple Square Assembly Hall",
+      "Salt Lake City skyline from Capitol Hill"
+    ],
+    "stops": {
+      "Ensign Peak": {
+        "kind": "hike",
+        "trail": {
+          "dist": "1 mi (1.6 km) round trip",
+          "time": "30-45 min",
+          "from": "Ensign Peak Nature Park trailhead, 1002 N Ensign Vista Dr",
+          "grade": "easy"
+        }
+      },
+      "Utah State Capitol Building": {
+        "kind": "sight"
+      },
+      "Temple Square": {
+        "kind": "sight"
+      }
+    }
+  },
+  "d01s2": {
+    "expect": {
+      "arrive": "Both food stops are quick roadside/downtown stops; Logan Canyon is a two-lane mountain highway with occasional pull-outs, driven at dusk on this itinerary.",
+      "need": "1-2 hours plus the drive",
+      "paths": [
+        { "opt": "Snack and go", "do": "In-N-Out only, eat in the car on the way north.", "cost": "20 min" },
+        { "opt": "Sit-down dinner", "do": "In-N-Out snack, then a proper dinner at Osteria Amore before the drive.", "cost": "1h 30m" }
+      ]
+    },
+    "alt": [
+      "Logan Canyon Utah autumn foliage",
+      "In-N-Out Burger sign California",
+      "Downtown Salt Lake City restaurant row evening"
+    ],
+    "stops": {
+      "Logan Canyon": {
+        "kind": "drive"
+      }
+    }
+  },
+  "d02s1": {
+    "expect": {
+      "arrive": "A 5am start on US-89 through farm country, then Bear Lake's turquoise water comes into view at Garden City; Montpelier is a small Idaho town, Jackson is a proper mountain town with metered downtown parking.",
+      "need": "8 hours including the drive",
+      "paths": [
+        { "opt": "Drive straight through", "do": "Photo stops at overlooks only, no museum or beach time.", "cost": "4h 30m (drive time only)" },
+        { "opt": "Bear Lake beach break", "do": "Pull off at Bear Lake State Park for 20-30 minutes on the sand.", "cost": "+30 min" },
+        { "opt": "Full stop tour", "do": "Bear Lake beach, Butch Cassidy Museum in Montpelier, and a proper coffee/bakery stop in Jackson.", "cost": "+2h" }
+      ]
+    },
+    "alt": [
+      "Bear Lake Utah turquoise water",
+      "Garden City Utah Bear Lake shoreline",
+      "Montpelier Idaho Oregon Trail",
+      "Jackson Wyoming Town Square antler arch"
+    ],
+    "stops": {
+      "Garden City": { "kind": "sight" },
+      "Bear Lake State Park": { "kind": "view" },
+      "Montpelier, Idaho (Butch Cassidy Museum)": { "kind": "sight" },
+      "Alpine Junction / Snake River": { "kind": "view" },
+      "Persephone Bakery (Jackson)": { "kind": "food" },
+      "Cowboy Coffee Co.": { "kind": "food" }
+    }
+  },
+  "d02s2": {
+    "expect": {
+      "arrive": "Teton Park Road turnouts are all direct pull-offs, most with room for 5-15 cars; the Teton Range comes into full view starting at Windy Point and stays in frame the rest of the drive.",
+      "parking": "Small paved turnouts at each named stop; none have ever been reported full, they're too brief a stop for that.",
+      "need": "2-2.5 hours",
+      "paths": [
+        { "opt": "Drive it, stop for photos only", "do": "Pull into 3-4 of the best turnouts (Windy Point, Mount Moran, Jackson Point) without getting out for long.", "cost": "1h" },
+        { "opt": "Add the visitor center", "do": "Same turnouts plus 30-40 minutes inside Craig Thomas Discovery and Visitor Center.", "cost": "1h 45m" },
+        { "opt": "Every named stop", "do": "All eight turnouts and the homestead, a few minutes at each.", "cost": "2h 30m" }
+      ]
+    },
+    "alt": [
+      "Teton Range from Teton Park Road",
+      "Grand Teton Climbers Ranch historic cabins",
+      "Mount Moran Grand Teton reflection",
+      "Craig Thomas Discovery and Visitor Center"
+    ],
+    "stops": {
+      "Craig Thomas Discovery and Visitor Center": { "kind": "sight" },
+      "Windy Point Turnout": { "kind": "view" },
+      "Grand Teton Climbers Ranch": { "kind": "sight" },
+      "Teton Glacier Turnout": { "kind": "view" },
+      "Geraldine Lucas Homestead": { "kind": "sight" },
+      "Mountain View Turnout": { "kind": "view" },
+      "Mount Moran Turnout": { "kind": "view" },
+      "Jackson Point Overlook": { "kind": "view" }
+    }
+  },
+  "d02s3": {
+    "expect": {
+      "arrive": "Jackson Lake turnouts line the shoreline; Signal Mountain Summit Overlook is a few minutes' detour up a paved side road, the rest are direct roadside pull-offs.",
+      "need": "1-1.5 hours",
+      "paths": [
+        { "opt": "Shoreline turnouts only", "do": "Skip the Signal Mountain side road, stop at the lakeside overlooks and the dam.", "cost": "40 min" },
+        { "opt": "Add the summit road", "do": "Detour up Signal Mountain Summit Road for the highest view on the drive.", "cost": "+30-40 min" }
+      ]
+    },
+    "alt": [
+      "Jackson Lake Grand Teton shoreline",
+      "Signal Mountain summit view Wyoming",
+      "Jackson Lake Dam Wyoming",
+      "Oxbow Bend Grand Teton reflection"
+    ],
+    "stops": {
+      "Emma Matilda Overlook": { "kind": "view" },
+      "Signal Mountain Summit Overlook": { "kind": "view" },
+      "Catholic Bay Turnout": { "kind": "view" },
+      "Jackson Lake Dam Overlook": { "kind": "view" },
+      "Oxbow Bend Turnout": { "kind": "view" },
+      "Moran Entrance Station": { "kind": "sight" }
+    }
+  },
+  "d02s4": {
+    "expect": {
+      "arrive": "This is the golden-hour run down the valley; Snake River Overlook and Schwabacher Landing are both short walks from small gravel lots that get busy right at sunset, Mormon Row's barns are visible from the parking areas.",
+      "parking": "Snake River Overlook has about 16 spaces, Schwabacher Landing about 20 — both fill in the last hour before sunset in good weather.",
+      "need": "2-2.5 hours",
+      "paths": [
+        { "opt": "Hit the two icons", "do": "Snake River Overlook and the Moulton Barn at Mormon Row only.", "cost": "1h" },
+        { "opt": "Add Schwabacher", "do": "Same two plus the short walk in to Schwabacher Landing's beaver ponds.", "cost": "1h 40m" },
+        { "opt": "Every turnout", "do": "All named stops including Teton Point, Glacier View, and Blacktail Ponds.", "cost": "2h 30m" }
+      ]
+    },
+    "alt": [
+      "Snake River Overlook Grand Teton",
+      "Schwabacher Landing beaver pond reflection",
+      "Mormon Row T.A. Moulton Barn sunset",
+      "Blacktail Ponds Grand Teton wetlands"
+    ],
+    "stops": {
+      "Snake River Overlook": { "kind": "view" },
+      "Teton Point Turnout": { "kind": "view" },
+      "Schwabacher Landing": { "kind": "walk" },
+      "Glacier View Turnout": { "kind": "view" },
+      "Blacktail Ponds Overlook": { "kind": "view" },
+      "Mormon Row, T.A. Moulton Barn": { "kind": "sight" }
+    }
+  },
+  "d03s1": {
+    "expect": {
+      "arrive": "Teton Village is a small alpine-style base area with cafes right off the parking; Death Canyon Trailhead is a dirt/gravel lot at the end of a bumpy unpaved road past the Rockefeller Preserve.",
+      "parking": "Death Canyon Trailhead lot is small (room for roughly 20-25 cars) and can fill by mid-morning on weekends in good weather; the Preserve Center has a larger paved lot a short drive before it.",
+      "need": "3.5-4.5 hours including the hike",
+      "paths": [
+        { "opt": "Breakfast and village only", "do": "Persephone Westbank and a walk around Teton Village, skip the hike.", "cost": "1h" },
+        { "opt": "Preserve Center and overlook peek", "do": "Village, then drive to the Preserve Center and walk a few minutes onto the trail without going to the full overlook.", "cost": "1h 45m" },
+        { "opt": "Full Phelps Lake Overlook hike", "do": "Village, then the out-and-back to Phelps Lake Overlook from Death Canyon Trailhead.", "cost": "2h" }
+      ]
+    },
+    "alt": [
+      "Teton Village Jackson Hole base area",
+      "Death Canyon Grand Teton trailhead",
+      "Phelps Lake Grand Teton aerial",
+      "Laurance S Rockefeller Preserve Center"
+    ],
+    "seasonal": "The Jackson Hole Aerial Tram at Teton Village runs through October 4, 2026, so it is still operating on this date if they want a ride up the mountain instead of the hike.",
+    "stops": {
+      "Persephone Westbank (breakfast)": { "kind": "food" },
+      "Teton Village": { "kind": "sight" },
+      "Granite Canyon Entrance Station": { "kind": "sight" },
+      "Death Canyon Trailhead": { "kind": "sight" },
+      "Phelps Lake Overlook": {
+        "kind": "hike",
+        "trail": {
+          "dist": "2 mi (3.2 km) round trip",
+          "time": "1h-1h 15m",
+          "gain": "470 ft (140 m)",
+          "from": "Death Canyon Trailhead",
+          "grade": "easy"
+        }
+      },
+      "Laurance S. Rockefeller Preserve Center": { "kind": "sight" }
+    }
+  },
+  "d03s2": {
+    "expect": {
+      "arrive": "Jenny Lake Visitor Center sits above a large paved lot that fills by mid-morning in September; the shuttle boat leaves from a dock a short walk below the visitor center and runs continuously, no reservation.",
+      "parking": "Jenny Lake's main lot is one of the busiest in the park; if it is full there is overflow parking a short walk further from the dock.",
+      "need": "2-2.5 hours with the boat",
+      "paths": [
+        { "opt": "Boat there and back, no hike", "do": "Round-trip boat ride across and back without leaving the west dock.", "cost": "30-40 min" },
+        { "opt": "Boat to Inspiration Point", "do": "One-way or round-trip boat, then the climb to Inspiration Point and back to the dock.", "cost": "1h 30m-2h" },
+        { "opt": "Skip the boat, walk the shoreline", "do": "Hike the South Jenny Lake Trail around to Inspiration Point and back without the boat.", "cost": "3-4h" }
+      ]
+    },
+    "alt": [
+      "Jenny Lake Grand Teton autumn",
+      "Jenny Lake shuttle boat dock",
+      "Inspiration Point Grand Teton view",
+      "Cascade Canyon Grand Teton"
+    ],
+    "seasonal": "The Jenny Lake shuttle boat's 2026 season ends September 30 and narrows to 9am-5pm from September 8 onward, so it is running but on shortened hours on this date (jennylakeboating.com).",
+    "stops": {
+      "Jenny Lake Visitor Center": { "kind": "sight" },
+      "Jenny Lake Boat House": {
+        "kind": "sight",
+        "trail": {
+          "dist": "5.7 mi (9.2 km) round trip",
+          "time": "3-4h",
+          "gain": "870 ft (270 m)",
+          "from": "Jenny Lake Visitor Center, hiking the shoreline without the boat",
+          "grade": "moderate"
+        }
+      },
+      "Boat shuttle across Jenny Lake": { "kind": "drive" },
+      "Inspiration Point": {
+        "kind": "hike",
+        "trail": {
+          "dist": "1.8 mi (2.9 km) round trip",
+          "time": "1-1.5h",
+          "gain": "550 ft (170 m)",
+          "from": "Jenny Lake Boat Dock, west shore",
+          "grade": "moderate"
+        }
+      },
+      "Cascade Canyon Turnout": { "kind": "view" }
+    }
+  },
+  "d03s3": {
+    "expect": {
+      "arrive": "Jenny Lake Road is a one-way scenic loop with pull-outs; String Lake Picnic Area has a gravel/paved lot right at the shallow, warm south end of the lake, popular with families.",
+      "parking": "String Lake's lot is moderate-sized and fills on warm weekend afternoons; arriving mid-afternoon on a Sunday should be fine.",
+      "need": "1.5-2.5 hours",
+      "paths": [
+        { "opt": "Picnic and viewpoints only", "do": "String Lake Picnic Area, Cathedral Group Turnout, and the roadside overlooks, no lake walk.", "cost": "45 min" },
+        { "opt": "Partial shoreline walk", "do": "Walk part of the String Lake shoreline out and back instead of the full loop.", "cost": "1h" },
+        { "opt": "Full String Lake Loop", "do": "The complete flat loop trail around the lake.", "cost": "1.5-2h" }
+      ]
+    },
+    "alt": [
+      "Jenny Lake Road one-way loop",
+      "String Lake Grand Teton shoreline",
+      "Cathedral Group Grand Teton peaks",
+      "Grand Teton forest fire regrowth"
+    ],
+    "stops": {
+      "Jenny Lake Overlook": { "kind": "view" },
+      "Alder Fire Overlook": { "kind": "view" },
+      "String Lake Picnic Area": { "kind": "sight" },
+      "Cathedral Group Turnout": { "kind": "view" },
+      "String Lake Loop Hike (optional)": {
+        "kind": "hike",
+        "trail": {
+          "dist": "3.7 mi (5.6 km) loop",
+          "time": "1.5-2h",
+          "gain": "540 ft (160 m)",
+          "from": "String Lake Picnic Area",
+          "grade": "easy"
+        }
+      }
+    }
+  },
+  "d03s4": {
+    "expect": {
+      "arrive": "Jackson Town Square is compact and entirely on foot, with the four antler arches at the corners; the wildlife art museum is a short drive north of downtown.",
+      "parking": "Downtown Jackson has metered street parking plus a few public lots; it's tightest right around dinner time.",
+      "need": "2-3 hours",
+      "paths": [
+        { "opt": "Dinner and the square", "do": "Walk the square, dinner nearby.", "cost": "1h 30m" },
+        { "opt": "Add the Cowboy Bar", "do": "Square, dinner, then a drink at the Million Dollar Cowboy Bar.", "cost": "2h 30m" },
+        { "opt": "Add the museum", "do": "Squeeze in the wildlife art museum before it closes, then dinner and the square.", "cost": "3h" }
+      ]
+    },
+    "alt": [
+      "Jackson Wyoming Town Square antler arches",
+      "Million Dollar Cowboy Bar saloon",
+      "National Museum of Wildlife Art Jackson"
+    ],
+    "stops": {
+      "Jackson Town Square": { "kind": "sight" },
+      "Million Dollar Cowboy Bar": { "kind": "sight" },
+      "National Museum of Wildlife Art": { "kind": "sight" }
+    }
+  }
+}

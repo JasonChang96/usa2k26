@@ -18,8 +18,9 @@ No build tooling, no framework, no API keys in the repo.
 Each day is one file in `data/dayNN.json` — see `docs/SCHEMA.md`. After editing:
 
 ```
-node scripts/geocode.mjs   # look up any new place names (cached in data/geo.json)
-node scripts/build.mjs     # regenerate js/data.js
+node scripts/geocode.mjs         # look up any new place names (cached in data/geo.json)
+node scripts/merge-research.mjs  # fold data/research/*.json into the day files
+node scripts/build.mjs           # regenerate js/data.js
 ```
 
 `build.mjs` also validates the data and prints anything missing.

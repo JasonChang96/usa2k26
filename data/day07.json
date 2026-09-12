@@ -18,12 +18,57 @@
       "name": "Segment 1 — Kootenai National Forest, West Glacier to Bonners Ferry",
       "blurb": "Two-lane highway through Kootenai National Forest along the Kootenai River.",
       "time": "9:00am–1:00pm",
-      "map": { "from": "West Glacier, Montana", "to": "Bonners Ferry, Idaho" },
+      "map": {
+        "from": "West Glacier, Montana",
+        "to": "Bonners Ferry, Idaho"
+      },
       "stops": [
-        { "name": "Kootenai Falls", "q": "Kootenai Falls Montana", "note": "Roadside stop on US-2, largest undammed falls in Montana." },
-        { "name": "Troy, Montana", "q": "Kootenai River Montana", "note": "Small riverside town near the Idaho line." },
-        { "name": "Kootenai National Forest", "q": "Kootenai National Forest", "note": "Forest corridor for most of the morning drive." },
-        { "name": "Bonners Ferry", "q": "Bonners Ferry Idaho", "note": "Kootenai River crossing, gateway to the Idaho Panhandle." }
+        {
+          "name": "Kootenai Falls",
+          "q": "Kootenai Falls Montana",
+          "note": "Roadside stop on US-2, largest undammed falls in Montana.",
+          "kind": "walk"
+        },
+        {
+          "name": "Troy, Montana",
+          "q": "Kootenai River Montana",
+          "note": "Small riverside town near the Idaho line.",
+          "kind": "sight"
+        },
+        {
+          "name": "Kootenai National Forest",
+          "q": "Kootenai National Forest",
+          "note": "Forest corridor for most of the morning drive.",
+          "kind": "drive"
+        },
+        {
+          "name": "Bonners Ferry",
+          "q": "Bonners Ferry Idaho",
+          "note": "Kootenai River crossing, gateway to the Idaho Panhandle.",
+          "kind": "sight"
+        }
+      ],
+      "expect": {
+        "arrive": "Two-lane US-2 through forest; Kootenai Falls is a short walk down from a large roadside pullout.",
+        "parking": "Kootenai Falls pullout is large and rarely full outside summer weekends.",
+        "need": "3-4 hours",
+        "paths": [
+          {
+            "opt": "Drive straight through",
+            "do": "Stay on US-2, stop only for photos from the car.",
+            "cost": "3h"
+          },
+          {
+            "opt": "Kootenai Falls stop",
+            "do": "Walk down to the falls viewpoint and swinging bridge.",
+            "cost": "3h 40m"
+          }
+        ]
+      },
+      "alt": [
+        "Kootenai Falls Montana",
+        "Kootenai River Montana",
+        "Yaak River Valley"
       ]
     },
     {
@@ -31,12 +76,56 @@
       "name": "Segment 2 — US-95 south to Sandpoint, tamarack country",
       "blurb": "Selkirk Mountains foothills, with a larch-viewing detour up Pack River.",
       "time": "1:00–3:30pm",
-      "map": { "from": "Bonners Ferry, Idaho", "to": "Sandpoint, Idaho" },
+      "map": {
+        "from": "Bonners Ferry, Idaho",
+        "to": "Sandpoint, Idaho"
+      },
       "stops": [
-        { "name": "Kaniksu National Forest", "q": "Kaniksu National Forest", "note": "Forest boundary the highway runs through south of Bonners Ferry." },
-        { "name": "Selkirk Mountains", "q": "Selkirk Mountains Idaho", "note": "Range visible to the west for most of the drive." },
-        { "name": "Upper Pack River Road", "q": "Kaniksu National Forest", "note": "Gravel side road off US-95 near Samuels; western larch turn gold in early October." },
-        { "name": "Sandpoint Long Bridge", "q": "Sandpoint Bridge Lake Pend Oreille", "note": "Two-mile wooden-piling bridge crossing the lake into town." }
+        {
+          "name": "Kaniksu National Forest",
+          "q": "Kaniksu National Forest",
+          "note": "Forest boundary the highway runs through south of Bonners Ferry.",
+          "kind": "drive"
+        },
+        {
+          "name": "Selkirk Mountains",
+          "q": "Selkirk Mountains Idaho",
+          "note": "Range visible to the west for most of the drive.",
+          "kind": "view"
+        },
+        {
+          "name": "Upper Pack River Road",
+          "q": "Kaniksu National Forest",
+          "note": "Gravel side road off US-95 near Samuels; western larch turn gold in early October.",
+          "kind": "drive"
+        },
+        {
+          "name": "Sandpoint Long Bridge",
+          "q": "Sandpoint Bridge Lake Pend Oreille",
+          "note": "Two-mile wooden-piling bridge crossing the lake into town.",
+          "kind": "view"
+        }
+      ],
+      "expect": {
+        "arrive": "Highway drive with the Selkirks to the west; the Pack River detour is unpaved and only worth it if the larch are turning.",
+        "need": "2-3 hours",
+        "paths": [
+          {
+            "opt": "Straight to Sandpoint",
+            "do": "Stay on US-95, no detour.",
+            "cost": "1h 15m"
+          },
+          {
+            "opt": "Pack River larch detour",
+            "do": "Turn up gravel Upper Pack River Road for golden tamarack views.",
+            "cost": "2h"
+          }
+        ]
+      },
+      "alt": [
+        "Selkirk Mountains Idaho",
+        "Western larch autumn Idaho",
+        "Kaniksu National Forest"
       ]
     },
     {
@@ -44,13 +133,69 @@
       "name": "Segment 3 — Sandpoint lakeshore, afternoon into evening",
       "blurb": "Lake Pend Oreille shoreline trails and the Schweitzer viewpoint above town.",
       "time": "3:30–7:00pm",
-      "map": { "center": "Sandpoint, Idaho", "zoom": 14 },
+      "map": {
+        "center": "Sandpoint, Idaho",
+        "zoom": 14
+      },
       "stops": [
-        { "name": "City Beach", "q": "City Beach Sandpoint Idaho", "note": "In-town lake beach and park, easy first stop." },
-        { "name": "Pend d'Oreille Bay Trail", "q": "Lake Pend Oreille Sandpoint", "note": "3.2-mile flat lakeside trail from Ponderay to Sandpoint." },
-        { "name": "Sand Creek Trail", "q": "Sandpoint Bridge Lake Pend Oreille", "note": "Paved path along Sand Creek from downtown Sandpoint." },
-        { "name": "Schweitzer Mountain Resort", "q": "Schweitzer Mountain Resort", "note": "Viewpoint above town, weather and time permitting." },
-        { "name": "Pend Oreille Scenic Byway", "q": "Pend Oreille Scenic Byway", "note": "SR-200 lakeshore drive east of town for evening light." }
+        {
+          "name": "City Beach",
+          "q": "City Beach Sandpoint Idaho",
+          "note": "In-town lake beach and park, easy first stop.",
+          "kind": "walk"
+        },
+        {
+          "name": "Pend d'Oreille Bay Trail",
+          "q": "Lake Pend Oreille Sandpoint",
+          "note": "3.2-mile flat lakeside trail from Ponderay to Sandpoint.",
+          "kind": "walk"
+        },
+        {
+          "name": "Sand Creek Trail",
+          "q": "Sandpoint Bridge Lake Pend Oreille",
+          "note": "Paved path along Sand Creek from downtown Sandpoint.",
+          "kind": "walk"
+        },
+        {
+          "name": "Schweitzer Mountain Resort",
+          "q": "Schweitzer Mountain Resort",
+          "note": "Viewpoint above town, weather and time permitting.",
+          "kind": "view"
+        },
+        {
+          "name": "Pend Oreille Scenic Byway",
+          "q": "Pend Oreille Scenic Byway",
+          "note": "SR-200 lakeshore drive east of town for evening light.",
+          "kind": "drive"
+        }
+      ],
+      "expect": {
+        "arrive": "City Beach is a short walk from downtown parking; the Long Bridge and open lake are right behind it.",
+        "parking": "Downtown Sandpoint street parking and the City Beach lot fill on nice afternoons.",
+        "need": "2-3 hours",
+        "paths": [
+          {
+            "opt": "City Beach only",
+            "do": "Walk the beach and watch boats on the lake.",
+            "cost": "30 min"
+          },
+          {
+            "opt": "Sand Creek Trail stroll",
+            "do": "Paved path along the creek from downtown, flat and short.",
+            "cost": "1h"
+          },
+          {
+            "opt": "Add Pend d'Oreille Bay Trail",
+            "do": "Continue along the lakeshore trail toward Ponderay.",
+            "cost": "2h"
+          }
+        ]
+      },
+      "alt": [
+        "Lake Pend Oreille",
+        "Sandpoint Long Bridge Idaho",
+        "City Beach Sandpoint",
+        "Schweitzer Mountain Resort"
       ]
     }
   ]

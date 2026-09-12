@@ -16,9 +16,23 @@
       "name": "Segment 1 — Breakfast in Mount Pleasant",
       "blurb": "Coffee and breakfast on Main Street before heading out.",
       "time": "8:00–9:30am",
-      "map": { "center": "Main Street, Mount Pleasant, Vancouver", "zoom": 16 },
+      "map": {
+        "center": "Main Street, Mount Pleasant, Vancouver",
+        "zoom": 16
+      },
       "stops": [
-        { "name": "Main Street cafes", "q": "Mount Pleasant Vancouver", "note": "Walk from the Airbnb, no transit needed." }
+        {
+          "name": "Main Street cafes",
+          "q": "Mount Pleasant Vancouver",
+          "note": "Walk from the Airbnb, no transit needed."
+        }
+      ],
+      "expect": {
+        "arrive": "Walk from the Mount Pleasant Airbnb, no transit needed; Main Street cafes are quiet before 9am on a weekday.",
+        "need": "1-1.5 hours"
+      },
+      "alt": [
+        "Main Street Mount Pleasant Vancouver"
       ]
     },
     {
@@ -26,36 +40,148 @@
       "name": "Segment 2 — Granville Island Public Market",
       "blurb": "Bus or walk to the water, then Aquabus across False Creek.",
       "time": "10:00am–12:30pm",
-      "map": { "center": "Granville Island, Vancouver", "zoom": 16 },
+      "map": {
+        "center": "Granville Island, Vancouver",
+        "zoom": 16
+      },
       "stops": [
-        { "name": "Granville Island Public Market", "q": "Granville Island Public Market", "note": "Food stalls and produce, main draw." },
-        { "name": "Lee's Donuts", "q": "Granville Island Public Market", "note": "Classic donut stand inside the market." },
-        { "name": "Oyama Sausage", "q": "Granville Island Public Market", "note": "Charcuterie counter, good for a light lunch." },
-        { "name": "Granville Island Brewing", "q": "Granville Island Public Market", "note": "Tasting room a few steps from the market." }
-      ]
+        {
+          "name": "Granville Island Public Market",
+          "q": "Granville Island Public Market",
+          "note": "Food stalls and produce, main draw."
+        },
+        {
+          "name": "Lee's Donuts",
+          "q": "Granville Island Public Market",
+          "note": "Classic donut stand inside the market."
+        },
+        {
+          "name": "Oyama Sausage",
+          "q": "Granville Island Public Market",
+          "note": "Charcuterie counter, good for a light lunch."
+        },
+        {
+          "name": "Granville Island Brewing",
+          "q": "Granville Island Public Market",
+          "note": "Tasting room a few steps from the market."
+        }
+      ],
+      "expect": {
+        "arrive": "Walk or short bus to the False Creek dock, then the Aquabus mini-ferry across to Granville Island (about 5 min crossing, runs every few minutes); the market itself is indoors under one roof.",
+        "parking": "Aquabus or False Creek Ferries mini-ferry from downtown/Yaletown docks, or the #50 bus direct to Granville Island.",
+        "need": "2-2.5 hours",
+        "paths": [
+          {
+            "opt": "Market only",
+            "do": "Public Market food stalls, Lee's Donuts, Oyama Sausage counter; fully indoors, good if raining.",
+            "cost": "1h 15m"
+          },
+          {
+            "opt": "Market plus brewery",
+            "do": "Market first, then a short tasting flight at Granville Island Brewing next door.",
+            "cost": "2h"
+          }
+        ]
+      },
+      "alt": [
+        "Granville Island Public Market interior",
+        "Aquabus False Creek Vancouver",
+        "Granville Island Brewing"
+      ],
+      "cost": "Granville Island Public Market has no admission fee. Individual vendor prices apply; the market is reported open daily 9am-7pm in the April-October season (granvilleisland.com and secondary listings, read 2026-09-12) - not independently confirmed from the official page directly, worth a quick check closer to the date."
     },
     {
       "id": "d15s3",
       "name": "Segment 3 — Yaletown or the Art Gallery",
       "blurb": "Pick one or two, kept light with the train ahead.",
       "time": "1:00–2:30pm",
-      "map": { "center": "Yaletown, Vancouver", "zoom": 15 },
+      "map": {
+        "center": "Yaletown, Vancouver",
+        "zoom": 15
+      },
       "stops": [
-        { "name": "Yaletown waterfront", "q": "Yaletown Vancouver", "note": "Converted warehouse district, cafes and shops." },
-        { "name": "Vancouver Art Gallery", "q": "Vancouver Art Gallery", "note": "Downtown museum, an indoor option if raining." }
-      ]
+        {
+          "name": "Yaletown waterfront",
+          "q": "Yaletown Vancouver",
+          "note": "Converted warehouse district, cafes and shops."
+        },
+        {
+          "name": "Vancouver Art Gallery",
+          "q": "Vancouver Art Gallery",
+          "note": "Downtown museum, an indoor option if raining."
+        }
+      ],
+      "expect": {
+        "arrive": "Yaletown is a 15-20 min walk from Granville Island via the Cambie or Granville bridges, or a short Aquabus/ferry hop plus walk; the Vancouver Art Gallery is downtown, a further 10-15 min walk or a couple SkyTrain/bus stops.",
+        "need": "1.5 hours",
+        "paths": [
+          {
+            "opt": "Rain plan: Art Gallery",
+            "do": "Vancouver Art Gallery, fully indoors, an easy way to burn the time before heading to bags and the station.",
+            "cost": "1h 30m"
+          },
+          {
+            "opt": "Sun plan: Yaletown waterfront",
+            "do": "Walk the Yaletown waterfront path, browse converted-warehouse shops and cafes.",
+            "cost": "1h"
+          }
+        ]
+      },
+      "alt": [
+        "Yaletown Vancouver waterfront",
+        "Vancouver Art Gallery building"
+      ],
+      "seasonal": "Vancouver Art Gallery is closed on Tuesdays - not a conflict for day 15 (Friday), but relevant if plans shift; day 12 (Tuesday) does not currently include the gallery, which is correct given the closure.",
+      "cost": "Vancouver Art Gallery adult admission is $29 CAD (BC resident rate) to $35 CAD (non-resident); Friday hours 10am-8pm (vanartgallery.bc.ca, read 2026-09-12)."
     },
     {
       "id": "d15s4",
       "name": "Segment 4 — Pacific Central Station, train to Seattle",
       "blurb": "Missing this train wrecks tomorrow's flight home.",
       "time": "3:00–9:20pm",
-      "map": { "from": "Mount Pleasant, Vancouver", "to": "Pacific Central Station, Vancouver" },
+      "map": {
+        "from": "Mount Pleasant, Vancouver",
+        "to": "Pacific Central Station, Vancouver"
+      },
       "stops": [
-        { "name": "Bags collected, en route to station", "q": "Mount Pleasant Vancouver", "note": "24 min by transit from Mount Pleasant — leave with margin." },
-        { "name": "Pacific Central Station — be there by 3:40pm", "q": "Pacific Central Station Vancouver", "note": "US immigration clears here before boarding. This is a hard deadline." },
-        { "name": "Amtrak Train 519 departs 4:55pm", "q": "King Street Station Seattle", "note": "Arrives Seattle King Street Station about 9:20pm." }
-      ]
+        {
+          "name": "Bags collected, en route to station",
+          "q": "Mount Pleasant Vancouver",
+          "note": "24 min by transit from Mount Pleasant — leave with margin."
+        },
+        {
+          "name": "Pacific Central Station — be there by 3:40pm",
+          "q": "Pacific Central Station Vancouver",
+          "note": "US immigration clears here before boarding. This is a hard deadline."
+        },
+        {
+          "name": "Amtrak Train 519 departs 4:55pm",
+          "q": "King Street Station Seattle",
+          "note": "Arrives Seattle King Street Station about 9:20pm."
+        }
+      ],
+      "expect": {
+        "arrive": "About 24 min by transit from Mount Pleasant to Pacific Central Station with bags; US immigration preclearance happens here, before boarding, not on arrival in Seattle.",
+        "parking": "SkyTrain (Main St-Science World or Broadway-City Hall) or bus/rideshare with luggage.",
+        "need": "1h 15m before departure",
+        "paths": [
+          {
+            "opt": "Transit with bags",
+            "do": "SkyTrain to Main St-Science World, short walk to Pacific Central Station.",
+            "cost": "30-40 min"
+          },
+          {
+            "opt": "Rideshare with bags",
+            "do": "Uber/Lyft direct to the station door, simplest with luggage in the rain.",
+            "cost": "20 min"
+          }
+        ]
+      },
+      "alt": [
+        "Pacific Central Station Vancouver exterior",
+        "Amtrak Cascades train Vancouver"
+      ],
+      "seasonal": "US Customs and Border Protection preclearance for southbound trains is done at Pacific Central Station before boarding (Amtrak/WSDOT, read 2026-09-12); arrive at least 60 minutes before departure, and be seated at least 15 minutes before the train leaves. Checked baggage generally needs to be presented about 45 minutes before departure - the day file's 3:40pm arrival for a 4:55pm departure gives 75 minutes, which comfortably covers both. No stop in Blaine, WA is needed anymore under the new preclearance arrangement (as of June 2026)."
     }
   ]
 }

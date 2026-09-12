@@ -18,14 +18,74 @@
       "name": "Segment 1 — US-89 to Jackson",
       "blurb": "5am departure over Bear Lake and the Wyoming line into Jackson.",
       "time": "5:00am–1:00pm",
-      "map": { "from": "Logan, Utah", "to": "Jackson, Wyoming" },
+      "map": {
+        "from": "Logan, Utah",
+        "to": "Jackson, Wyoming"
+      },
       "stops": [
-        { "name": "Garden City", "q": "Bear Lake Utah", "note": "Lakefront town on US-89." },
-        { "name": "Bear Lake State Park", "q": "Bear Lake Utah", "note": "Turquoise glacial lake, Utah-Idaho line." },
-        { "name": "Montpelier, Idaho (Butch Cassidy Museum)", "q": "Montpelier Idaho", "note": "Bank robbed by Butch Cassidy in 1896." },
-        { "name": "Alpine Junction / Snake River", "q": "Alpine Junction Wyoming Snake River", "note": "Snake River canyon, Idaho-Wyoming border." },
-        { "name": "Persephone Bakery (Jackson)", "q": "Jackson Wyoming Town Square", "note": "Bakery stop in Jackson before the park." },
-        { "name": "Cowboy Coffee Co.", "q": "Jackson Wyoming Town Square", "note": "Coffee stop in Jackson." }
+        {
+          "name": "Garden City",
+          "q": "Bear Lake Utah",
+          "note": "Lakefront town on US-89.",
+          "kind": "sight"
+        },
+        {
+          "name": "Bear Lake State Park",
+          "q": "Bear Lake Utah",
+          "note": "Turquoise glacial lake, Utah-Idaho line.",
+          "kind": "view"
+        },
+        {
+          "name": "Montpelier, Idaho (Butch Cassidy Museum)",
+          "q": "Montpelier Idaho",
+          "note": "Bank robbed by Butch Cassidy in 1896.",
+          "kind": "sight"
+        },
+        {
+          "name": "Alpine Junction / Snake River",
+          "q": "Alpine Junction Wyoming Snake River",
+          "note": "Snake River canyon, Idaho-Wyoming border.",
+          "kind": "view"
+        },
+        {
+          "name": "Persephone Bakery (Jackson)",
+          "q": "Jackson Wyoming Town Square",
+          "note": "Bakery stop in Jackson before the park.",
+          "kind": "food"
+        },
+        {
+          "name": "Cowboy Coffee Co.",
+          "q": "Jackson Wyoming Town Square",
+          "note": "Coffee stop in Jackson.",
+          "kind": "food"
+        }
+      ],
+      "expect": {
+        "arrive": "A 5am start on US-89 through farm country, then Bear Lake's turquoise water comes into view at Garden City; Montpelier is a small Idaho town, Jackson is a proper mountain town with metered downtown parking.",
+        "need": "8 hours including the drive",
+        "paths": [
+          {
+            "opt": "Drive straight through",
+            "do": "Photo stops at overlooks only, no museum or beach time.",
+            "cost": "4h 30m (drive time only)"
+          },
+          {
+            "opt": "Bear Lake beach break",
+            "do": "Pull off at Bear Lake State Park for 20-30 minutes on the sand.",
+            "cost": "+30 min"
+          },
+          {
+            "opt": "Full stop tour",
+            "do": "Bear Lake beach, Butch Cassidy Museum in Montpelier, and a proper coffee/bakery stop in Jackson.",
+            "cost": "+2h"
+          }
+        ]
+      },
+      "alt": [
+        "Bear Lake Utah turquoise water",
+        "Garden City Utah Bear Lake shoreline",
+        "Montpelier Idaho Oregon Trail",
+        "Jackson Wyoming Town Square antler arch"
       ]
     },
     {
@@ -33,16 +93,87 @@
       "name": "Segment 2 — Teton Park Road, Moose to Signal Mountain",
       "blurb": "Start of the inner park road, turnout by turnout north from Moose.",
       "time": "1:00–3:30pm",
-      "map": { "from": "Moose, Wyoming", "to": "Signal Mountain Lodge, Wyoming" },
+      "map": {
+        "from": "Moose, Wyoming",
+        "to": "Signal Mountain Lodge, Wyoming"
+      },
       "stops": [
-        { "name": "Craig Thomas Discovery and Visitor Center", "q": "Craig Thomas Discovery and Visitor Center Grand Teton", "note": "Park visitor center at Moose entrance." },
-        { "name": "Windy Point Turnout", "q": "Teton Range from Teton Park Road", "note": "First full Teton Range panorama." },
-        { "name": "Grand Teton Climbers Ranch", "q": "Grand Teton Climbers Ranch", "note": "Historic AAC climbers' lodging." },
-        { "name": "Teton Glacier Turnout", "q": "Teton Glacier Wyoming", "note": "View of the range's largest glacier." },
-        { "name": "Geraldine Lucas Homestead", "q": "Grand Teton National Park historic homestead", "note": "Early homesteader's cabin near the road." },
-        { "name": "Mountain View Turnout", "q": "Teton Range from Teton Park Road", "note": "Roadside range overlook." },
-        { "name": "Mount Moran Turnout", "q": "Mount Moran Grand Teton", "note": "View of Mount Moran's flat-topped summit." },
-        { "name": "Jackson Point Overlook", "q": "Grand Teton National Park Teton Range panorama", "note": "Named for photographer W.H. Jackson." }
+        {
+          "name": "Craig Thomas Discovery and Visitor Center",
+          "q": "Craig Thomas Discovery and Visitor Center Grand Teton",
+          "note": "Park visitor center at Moose entrance.",
+          "kind": "sight"
+        },
+        {
+          "name": "Windy Point Turnout",
+          "q": "Teton Range from Teton Park Road",
+          "note": "First full Teton Range panorama.",
+          "kind": "view"
+        },
+        {
+          "name": "Grand Teton Climbers Ranch",
+          "q": "Grand Teton Climbers Ranch",
+          "note": "Historic AAC climbers' lodging.",
+          "kind": "sight"
+        },
+        {
+          "name": "Teton Glacier Turnout",
+          "q": "Teton Glacier Wyoming",
+          "note": "View of the range's largest glacier.",
+          "kind": "view"
+        },
+        {
+          "name": "Geraldine Lucas Homestead",
+          "q": "Grand Teton National Park historic homestead",
+          "note": "Early homesteader's cabin near the road.",
+          "kind": "sight"
+        },
+        {
+          "name": "Mountain View Turnout",
+          "q": "Teton Range from Teton Park Road",
+          "note": "Roadside range overlook.",
+          "kind": "view"
+        },
+        {
+          "name": "Mount Moran Turnout",
+          "q": "Mount Moran Grand Teton",
+          "note": "View of Mount Moran's flat-topped summit.",
+          "kind": "view"
+        },
+        {
+          "name": "Jackson Point Overlook",
+          "q": "Grand Teton National Park Teton Range panorama",
+          "note": "Named for photographer W.H. Jackson.",
+          "kind": "view"
+        }
+      ],
+      "expect": {
+        "arrive": "Teton Park Road turnouts are all direct pull-offs, most with room for 5-15 cars; the Teton Range comes into full view starting at Windy Point and stays in frame the rest of the drive.",
+        "parking": "Small paved turnouts at each named stop; none have ever been reported full, they're too brief a stop for that.",
+        "need": "2-2.5 hours",
+        "paths": [
+          {
+            "opt": "Drive it, stop for photos only",
+            "do": "Pull into 3-4 of the best turnouts (Windy Point, Mount Moran, Jackson Point) without getting out for long.",
+            "cost": "1h"
+          },
+          {
+            "opt": "Add the visitor center",
+            "do": "Same turnouts plus 30-40 minutes inside Craig Thomas Discovery and Visitor Center.",
+            "cost": "1h 45m"
+          },
+          {
+            "opt": "Every named stop",
+            "do": "All eight turnouts and the homestead, a few minutes at each.",
+            "cost": "2h 30m"
+          }
+        ]
+      },
+      "alt": [
+        "Teton Range from Teton Park Road",
+        "Grand Teton Climbers Ranch historic cabins",
+        "Mount Moran Grand Teton reflection",
+        "Craig Thomas Discovery and Visitor Center"
       ]
     },
     {
@@ -50,14 +181,69 @@
       "name": "Segment 3 — Signal Mountain and Jackson Lake",
       "blurb": "Jackson Lake shoreline turnouts and the dam overlook.",
       "time": "3:30–5:00pm",
-      "map": { "from": "Signal Mountain Lodge, Wyoming", "to": "Moran Entrance Station, Wyoming" },
+      "map": {
+        "from": "Signal Mountain Lodge, Wyoming",
+        "to": "Moran Entrance Station, Wyoming"
+      },
       "stops": [
-        { "name": "Emma Matilda Overlook", "q": "Jackson Lake Grand Teton", "note": "Named for an early park visitor." },
-        { "name": "Signal Mountain Summit Overlook", "q": "Signal Mountain Jackson Lake Wyoming", "note": "Short side road, highest overlook on the drive." },
-        { "name": "Catholic Bay Turnout", "q": "Jackson Lake Grand Teton", "note": "Jackson Lake shoreline viewpoint." },
-        { "name": "Jackson Lake Dam Overlook", "q": "Jackson Lake Dam Wyoming", "note": "Dam holding back Jackson Lake." },
-        { "name": "Oxbow Bend Turnout", "q": "Oxbow Bend Grand Teton", "note": "Snake River bend, Mount Moran reflection, wildlife." },
-        { "name": "Moran Entrance Station", "q": "Grand Teton National Park entrance sign", "note": "Park entrance near Moran junction." }
+        {
+          "name": "Emma Matilda Overlook",
+          "q": "Jackson Lake Grand Teton",
+          "note": "Named for an early park visitor.",
+          "kind": "view"
+        },
+        {
+          "name": "Signal Mountain Summit Overlook",
+          "q": "Signal Mountain Jackson Lake Wyoming",
+          "note": "Short side road, highest overlook on the drive.",
+          "kind": "view"
+        },
+        {
+          "name": "Catholic Bay Turnout",
+          "q": "Jackson Lake Grand Teton",
+          "note": "Jackson Lake shoreline viewpoint.",
+          "kind": "view"
+        },
+        {
+          "name": "Jackson Lake Dam Overlook",
+          "q": "Jackson Lake Dam Wyoming",
+          "note": "Dam holding back Jackson Lake.",
+          "kind": "view"
+        },
+        {
+          "name": "Oxbow Bend Turnout",
+          "q": "Oxbow Bend Grand Teton",
+          "note": "Snake River bend, Mount Moran reflection, wildlife.",
+          "kind": "view"
+        },
+        {
+          "name": "Moran Entrance Station",
+          "q": "Grand Teton National Park entrance sign",
+          "note": "Park entrance near Moran junction.",
+          "kind": "sight"
+        }
+      ],
+      "expect": {
+        "arrive": "Jackson Lake turnouts line the shoreline; Signal Mountain Summit Overlook is a few minutes' detour up a paved side road, the rest are direct roadside pull-offs.",
+        "need": "1-1.5 hours",
+        "paths": [
+          {
+            "opt": "Shoreline turnouts only",
+            "do": "Skip the Signal Mountain side road, stop at the lakeside overlooks and the dam.",
+            "cost": "40 min"
+          },
+          {
+            "opt": "Add the summit road",
+            "do": "Detour up Signal Mountain Summit Road for the highest view on the drive.",
+            "cost": "+30-40 min"
+          }
+        ]
+      },
+      "alt": [
+        "Jackson Lake Grand Teton shoreline",
+        "Signal Mountain summit view Wyoming",
+        "Jackson Lake Dam Wyoming",
+        "Oxbow Bend Grand Teton reflection"
       ]
     },
     {
@@ -65,14 +251,75 @@
       "name": "Segment 4 — Highway 89, Snake River overlooks to Mormon Row",
       "blurb": "Sunset run down the valley to the historic Mormon Row barns.",
       "time": "5:00–7:30pm",
-      "map": { "from": "Moran Entrance Station, Wyoming", "to": "Mormon Row, Wyoming" },
+      "map": {
+        "from": "Moran Entrance Station, Wyoming",
+        "to": "Mormon Row, Wyoming"
+      },
       "stops": [
-        { "name": "Snake River Overlook", "q": "Snake River Overlook Grand Teton", "note": "Ansel Adams' famous vantage over the Snake River." },
-        { "name": "Teton Point Turnout", "q": "Snake River Overlook Grand Teton", "note": "Wide valley and range view." },
-        { "name": "Schwabacher Landing", "q": "Schwabacher Landing Grand Teton", "note": "Beaver pond reflections of the Teton Range." },
-        { "name": "Glacier View Turnout", "q": "Teton Range from Teton Park Road", "note": "Range view on Highway 89." },
-        { "name": "Blacktail Ponds Overlook", "q": "Grand Teton National Park wetlands", "note": "Wetland ponds below the Tetons." },
-        { "name": "Mormon Row, T.A. Moulton Barn", "q": "Mormon Row Grand Teton barn", "note": "Iconic homestead barn at sunset." }
+        {
+          "name": "Snake River Overlook",
+          "q": "Snake River Overlook Grand Teton",
+          "note": "Ansel Adams' famous vantage over the Snake River.",
+          "kind": "view"
+        },
+        {
+          "name": "Teton Point Turnout",
+          "q": "Snake River Overlook Grand Teton",
+          "note": "Wide valley and range view.",
+          "kind": "view"
+        },
+        {
+          "name": "Schwabacher Landing",
+          "q": "Schwabacher Landing Grand Teton",
+          "note": "Beaver pond reflections of the Teton Range.",
+          "kind": "walk"
+        },
+        {
+          "name": "Glacier View Turnout",
+          "q": "Teton Range from Teton Park Road",
+          "note": "Range view on Highway 89.",
+          "kind": "view"
+        },
+        {
+          "name": "Blacktail Ponds Overlook",
+          "q": "Grand Teton National Park wetlands",
+          "note": "Wetland ponds below the Tetons.",
+          "kind": "view"
+        },
+        {
+          "name": "Mormon Row, T.A. Moulton Barn",
+          "q": "Mormon Row Grand Teton barn",
+          "note": "Iconic homestead barn at sunset.",
+          "kind": "sight"
+        }
+      ],
+      "expect": {
+        "arrive": "This is the golden-hour run down the valley; Snake River Overlook and Schwabacher Landing are both short walks from small gravel lots that get busy right at sunset, Mormon Row's barns are visible from the parking areas.",
+        "parking": "Snake River Overlook has about 16 spaces, Schwabacher Landing about 20 — both fill in the last hour before sunset in good weather.",
+        "need": "2-2.5 hours",
+        "paths": [
+          {
+            "opt": "Hit the two icons",
+            "do": "Snake River Overlook and the Moulton Barn at Mormon Row only.",
+            "cost": "1h"
+          },
+          {
+            "opt": "Add Schwabacher",
+            "do": "Same two plus the short walk in to Schwabacher Landing's beaver ponds.",
+            "cost": "1h 40m"
+          },
+          {
+            "opt": "Every turnout",
+            "do": "All named stops including Teton Point, Glacier View, and Blacktail Ponds.",
+            "cost": "2h 30m"
+          }
+        ]
+      },
+      "alt": [
+        "Snake River Overlook Grand Teton",
+        "Schwabacher Landing beaver pond reflection",
+        "Mormon Row T.A. Moulton Barn sunset",
+        "Blacktail Ponds Grand Teton wetlands"
       ]
     }
   ]

@@ -18,11 +18,50 @@
       "name": "Segment 1 — Sandpoint to Spokane",
       "blurb": "US-95 south past Lake Pend Oreille and Lake Coeur d'Alene into Washington.",
       "time": "9:00–10:45am",
-      "map": { "from": "Sandpoint, Idaho", "to": "Spokane, Washington" },
+      "map": {
+        "from": "Sandpoint, Idaho",
+        "to": "Spokane, Washington"
+      },
       "stops": [
-        { "name": "Farragut State Park", "q": "Farragut State Park Idaho", "note": "Former naval training station on the south shore of Lake Pend Oreille." },
-        { "name": "Silverwood Theme Park", "q": "Silverwood Theme Park Idaho", "note": "Roadside landmark on US-95 between Coeur d'Alene and Sandpoint." },
-        { "name": "Lake Coeur d'Alene", "q": "Lake Coeur d'Alene", "note": "Quick lake view as the highway skirts Coeur d'Alene." }
+        {
+          "name": "Farragut State Park",
+          "q": "Farragut State Park Idaho",
+          "note": "Former naval training station on the south shore of Lake Pend Oreille.",
+          "kind": "sight"
+        },
+        {
+          "name": "Silverwood Theme Park",
+          "q": "Silverwood Theme Park Idaho",
+          "note": "Roadside landmark on US-95 between Coeur d'Alene and Sandpoint.",
+          "kind": "sight"
+        },
+        {
+          "name": "Lake Coeur d'Alene",
+          "q": "Lake Coeur d'Alene",
+          "note": "Quick lake view as the highway skirts Coeur d'Alene.",
+          "kind": "view"
+        }
+      ],
+      "expect": {
+        "arrive": "Highway drive past two lakes; Farragut and Silverwood are both roadside stops, not required detours.",
+        "need": "2-3 hours",
+        "paths": [
+          {
+            "opt": "Drive straight through",
+            "do": "US-95 to I-90, no stops.",
+            "cost": "1h 45m"
+          },
+          {
+            "opt": "Farragut State Park stop",
+            "do": "Walk the shoreline near the old naval training station.",
+            "cost": "2h 30m"
+          }
+        ]
+      },
+      "alt": [
+        "Farragut State Park Idaho",
+        "Lake Coeur d'Alene",
+        "Silverwood Theme Park"
       ]
     },
     {
@@ -30,12 +69,63 @@
       "name": "Segment 2 — Spokane, Riverfront Park and the Falls",
       "blurb": "A few hours downtown around the falls before continuing west.",
       "time": "11:00am–1:30pm",
-      "map": { "center": "Spokane, Washington", "zoom": 15 },
+      "map": {
+        "center": "Spokane, Washington",
+        "zoom": 15
+      },
       "stops": [
-        { "name": "Riverfront Park", "q": "Riverfront Park Spokane", "note": "1974 World's Fair site; paths along both falls channels." },
-        { "name": "Spokane Falls", "q": "Spokane Falls", "note": "Viewed from the park or the SkyRide gondola." },
-        { "name": "Davenport Hotel", "q": "Davenport Hotel Spokane", "note": "1914 landmark hotel lobby, open to walk through." },
-        { "name": "Manito Park", "q": "Manito Park Spokane", "note": "Duncan Garden and Japanese Garden, 2.5 miles south of downtown; free entry." }
+        {
+          "name": "Riverfront Park",
+          "q": "Riverfront Park Spokane",
+          "note": "1974 World's Fair site; paths along both falls channels.",
+          "kind": "walk"
+        },
+        {
+          "name": "Spokane Falls",
+          "q": "Spokane Falls",
+          "note": "Viewed from the park or the SkyRide gondola.",
+          "kind": "view"
+        },
+        {
+          "name": "Davenport Hotel",
+          "q": "Davenport Hotel Spokane",
+          "note": "1914 landmark hotel lobby, open to walk through.",
+          "kind": "sight"
+        },
+        {
+          "name": "Manito Park",
+          "q": "Manito Park Spokane",
+          "note": "Duncan Garden and Japanese Garden, 2.5 miles south of downtown; free entry.",
+          "kind": "walk"
+        }
+      ],
+      "expect": {
+        "arrive": "Riverfront Park sits right downtown; the falls are visible from the pedestrian bridges within minutes of any garage.",
+        "parking": "Several downtown parking garages border the park; none are free, none are huge.",
+        "need": "2 hours",
+        "paths": [
+          {
+            "opt": "Falls viewpoints only",
+            "do": "Walk the pedestrian bridges over both falls channels.",
+            "cost": "30 min"
+          },
+          {
+            "opt": "Full park loop",
+            "do": "Loop the paths on both riverbanks past the Pavilion and Clocktower.",
+            "cost": "1h 15m"
+          },
+          {
+            "opt": "Add Davenport Hotel",
+            "do": "Walk a few blocks over to see the historic lobby.",
+            "cost": "2h"
+          }
+        ]
+      },
+      "alt": [
+        "Spokane Falls",
+        "Riverfront Park Spokane",
+        "Davenport Hotel Spokane",
+        "Spokane Falls SkyRide gondola"
       ]
     },
     {
@@ -43,11 +133,56 @@
       "name": "Segment 3 — Spokane to Leavenworth via Cashmere",
       "blurb": "I-90 to Wenatchee, then US-2 up Tumwater Canyon into the mountains.",
       "time": "2:00–5:30pm",
-      "map": { "from": "Spokane, Washington", "to": "Leavenworth, Washington" },
+      "map": {
+        "from": "Spokane, Washington",
+        "to": "Leavenworth, Washington"
+      },
       "stops": [
-        { "name": "Cashmere", "q": "Cashmere Washington", "note": "Historic apple-country town, home of Aplets & Cotlets candy." },
-        { "name": "Ohme Gardens", "q": "Ohme Gardens Wenatchee", "note": "Alpine garden overlooking the Wenatchee Valley, if time allows." },
-        { "name": "Tumwater Canyon", "q": "Tumwater Canyon Washington", "note": "Wenatchee River canyon on US-2, the final approach into Leavenworth." }
+        {
+          "name": "Cashmere",
+          "q": "Cashmere Washington",
+          "note": "Historic apple-country town, home of Aplets & Cotlets candy.",
+          "kind": "sight"
+        },
+        {
+          "name": "Ohme Gardens",
+          "q": "Ohme Gardens Wenatchee",
+          "note": "Alpine garden overlooking the Wenatchee Valley, if time allows.",
+          "kind": "walk"
+        },
+        {
+          "name": "Tumwater Canyon",
+          "q": "Tumwater Canyon Washington",
+          "note": "Wenatchee River canyon on US-2, the final approach into Leavenworth.",
+          "kind": "drive"
+        }
+      ],
+      "expect": {
+        "arrive": "Long highway push from I-90 to US-2; Cashmere and Ohme Gardens are the only reasons to leave the car before Tumwater Canyon.",
+        "need": "3-4 hours driving, plus stops",
+        "paths": [
+          {
+            "opt": "Drive straight through",
+            "do": "I-90 to US-2, no stops.",
+            "cost": "3h"
+          },
+          {
+            "opt": "Cashmere candy stop",
+            "do": "Quick walk through downtown Cashmere.",
+            "cost": "3h 30m"
+          },
+          {
+            "opt": "Add Ohme Gardens",
+            "do": "Walk the alpine garden paths overlooking the valley.",
+            "cost": "4h 15m"
+          }
+        ]
+      },
+      "alt": [
+        "Cashmere Washington",
+        "Ohme Gardens Wenatchee",
+        "Tumwater Canyon autumn",
+        "Wenatchee River canyon"
       ]
     },
     {
@@ -55,11 +190,51 @@
       "name": "Segment 4 — Leavenworth, Bavarian village evening",
       "blurb": "Front Street on Oktoberfest opening weekend; expect crowds and full parking.",
       "time": "6:00–9:00pm",
-      "map": { "center": "Leavenworth, Washington", "zoom": 16 },
+      "map": {
+        "center": "Leavenworth, Washington",
+        "zoom": 16
+      },
       "stops": [
-        { "name": "Front Street", "q": "Front Street Leavenworth Washington", "note": "Pedestrianized main street, Bavarian-themed storefronts." },
-        { "name": "9th Street / Alpen Strasse", "q": "Leavenworth Washington Bavarian", "note": "Core of the village's Bavarian architecture." },
-        { "name": "Front Street Park", "q": "Front Street Leavenworth Washington", "note": "One of the two Oktoberfest beer-garden venues this weekend." }
+        {
+          "name": "Front Street",
+          "q": "Front Street Leavenworth Washington",
+          "note": "Pedestrianized main street, Bavarian-themed storefronts.",
+          "kind": "sight"
+        },
+        {
+          "name": "9th Street / Alpen Strasse",
+          "q": "Leavenworth Washington Bavarian",
+          "note": "Core of the village's Bavarian architecture.",
+          "kind": "sight"
+        },
+        {
+          "name": "Front Street Park",
+          "q": "Front Street Leavenworth Washington",
+          "note": "One of the two Oktoberfest beer-garden venues this weekend.",
+          "kind": "sight"
+        }
+      ],
+      "expect": {
+        "arrive": "Front Street is pedestrian-only and packed for Oktoberfest opening weekend; expect a slow walk-in from wherever you park.",
+        "parking": "Downtown lots fill early on Oktoberfest weekend; expect to park several blocks out.",
+        "need": "2-3 hours",
+        "paths": [
+          {
+            "opt": "Front Street stroll",
+            "do": "Walk the main street and browse storefronts.",
+            "cost": "1h"
+          },
+          {
+            "opt": "Add a beer garden",
+            "do": "Stop into Front Street Park for the Oktoberfest tent.",
+            "cost": "2h 30m"
+          }
+        ]
+      },
+      "alt": [
+        "Leavenworth Washington Bavarian village",
+        "Front Street Leavenworth",
+        "Leavenworth Oktoberfest"
       ]
     }
   ]

@@ -18,23 +18,123 @@
       "name": "Segment 1 — Rainier sunrise, Reflection Lakes",
       "blurb": "Early light on the mountain before the long drive out.",
       "time": "6:00–7:30am",
-      "map": { "center": "Reflection Lakes, Mount Rainier National Park", "zoom": 15 },
+      "map": {
+        "center": "Reflection Lakes, Mount Rainier National Park",
+        "zoom": 15
+      },
       "stops": [
-        { "name": "Reflection Lakes", "q": "Reflection Lakes Mount Rainier", "note": "Same pull-off as last night, best light at dawn." },
-        { "name": "Henry M. Jackson Visitor Center", "q": "Henry M Jackson Visitor Center Paradise", "note": "Coffee and restrooms before the drive down." },
-        { "name": "Narada Falls", "q": "Stevens Canyon Road Mount Rainier", "note": "Quick stop on the way down toward Longmire." }
-      ]
+        {
+          "name": "Reflection Lakes",
+          "q": "Reflection Lakes Mount Rainier",
+          "note": "Same pull-off as last night, best light at dawn.",
+          "kind": "walk",
+          "trail": {
+            "dist": "0.5 mile round trip",
+            "time": "30 min",
+            "gain": "negligible",
+            "from": "Reflection Lakes pull-off",
+            "grade": "easy"
+          }
+        },
+        {
+          "name": "Henry M. Jackson Visitor Center",
+          "q": "Henry M Jackson Visitor Center Paradise",
+          "note": "Coffee and restrooms before the drive down.",
+          "kind": "sight"
+        },
+        {
+          "name": "Narada Falls",
+          "q": "Stevens Canyon Road Mount Rainier",
+          "note": "Quick stop on the way down toward Longmire.",
+          "kind": "walk",
+          "trail": {
+            "dist": "0.4 mile round trip",
+            "time": "20 min",
+            "gain": "200 ft, steep",
+            "from": "Narada Falls parking area",
+            "grade": "moderate"
+          }
+        }
+      ],
+      "expect": {
+        "arrive": "Same pull-offs before dawn, often near freezing in early October; the payoff is sunrise light on the summit if skies are clear.",
+        "parking": "Wide open before sunrise; just watch for ice on the pavement and boardwalk edges.",
+        "need": "1-1.5h",
+        "paths": [
+          {
+            "opt": "Sunrise and back",
+            "do": "Stand at the lakeside pull-off for first light, then leave.",
+            "cost": "45 min"
+          },
+          {
+            "opt": "Add a coffee stop",
+            "do": "Drive up to Jackson Visitor Center once it opens.",
+            "cost": "1h 15m"
+          }
+        ]
+      },
+      "alt": [
+        "Mount Rainier sunrise Reflection Lakes",
+        "Mount Rainier alpenglow"
+      ],
+      "seasonal": "Jackson Visitor Center doesn't open until 9:30am, well after sunrise — no coffee or indoor restrooms until then; dress for cold, especially for her, since Paradise at dawn in early October regularly sits near or below freezing."
     },
     {
       "id": "d10s2",
       "name": "Segment 2 — Drive to Seattle via Longmire",
       "blurb": "Down through the park's original headquarters and the small gateway towns.",
       "time": "8:00–10:30am",
-      "map": { "from": "Paradise, Mount Rainier National Park", "to": "Seattle, Washington" },
+      "map": {
+        "from": "Paradise, Mount Rainier National Park",
+        "to": "Seattle, Washington"
+      },
       "stops": [
-        { "name": "Longmire", "q": "Longmire Mount Rainier", "note": "Historic park headquarters and the National Park Inn." },
-        { "name": "Ashford", "q": "Ashford Washington", "note": "Small gateway town just outside the Nisqually entrance." },
-        { "name": "Eatonville", "q": "Eatonville Washington", "note": "Town along SR-7 on the way north to I-5." }
+        {
+          "name": "Longmire",
+          "q": "Longmire Mount Rainier",
+          "note": "Historic park headquarters and the National Park Inn.",
+          "kind": "walk",
+          "trail": {
+            "dist": "0.7 mile loop",
+            "time": "30 min",
+            "from": "Longmire Museum",
+            "grade": "easy"
+          }
+        },
+        {
+          "name": "Ashford",
+          "q": "Ashford Washington",
+          "note": "Small gateway town just outside the Nisqually entrance.",
+          "kind": "sight"
+        },
+        {
+          "name": "Eatonville",
+          "q": "Eatonville Washington",
+          "note": "Town along SR-7 on the way north to I-5.",
+          "kind": "sight"
+        }
+      ],
+      "expect": {
+        "arrive": "Historic log buildings and the National Park Inn at the park's original headquarters; a good last easy-walk stop.",
+        "parking": "Small lot fills with day visitors by mid-morning; easy if you're through early.",
+        "need": "45 min-1h",
+        "paths": [
+          {
+            "opt": "Museum and porch only",
+            "do": "Look at the historic buildings, skip the trail.",
+            "cost": "15 min"
+          },
+          {
+            "opt": "Trail of the Shadows loop",
+            "do": "Flat loop around Longmire Meadow past the old mineral springs.",
+            "cost": "30 min"
+          }
+        ]
+      },
+      "alt": [
+        "Longmire National Park Inn Mount Rainier",
+        "Trail of the Shadows Longmire",
+        "Eatonville Washington downtown"
       ]
     },
     {
@@ -42,11 +142,49 @@
       "name": "Segment 3 — SEA airport, car return and goodbye",
       "blurb": "Rental car back at Sea-Tac; Kuek and Kim fly home at 7:50pm.",
       "time": "3:00–5:00pm",
-      "map": { "center": "Seattle-Tacoma International Airport, Washington", "zoom": 14 },
+      "map": {
+        "center": "Seattle-Tacoma International Airport, Washington",
+        "zoom": 14
+      },
       "stops": [
-        { "name": "Seattle-Tacoma International Airport", "q": "Seattle-Tacoma International Airport", "note": "Rental car return, then Kuek and Kim head to their 7:50pm flight." },
-        { "name": "SEA Rental Car Facility", "q": "Seattle-Tacoma International Airport", "note": "Consolidated rental car return center, connected by shuttle." },
-        { "name": "Link Light Rail, Airport Station", "q": "Sea-Tac Airport Link light rail station", "note": "Train option into downtown Seattle after the return." }
+        {
+          "name": "Seattle-Tacoma International Airport",
+          "q": "Seattle-Tacoma International Airport",
+          "note": "Rental car return, then Kuek and Kim head to their 7:50pm flight.",
+          "kind": "sight"
+        },
+        {
+          "name": "SEA Rental Car Facility",
+          "q": "Seattle-Tacoma International Airport",
+          "note": "Consolidated rental car return center, connected by shuttle.",
+          "kind": "sight"
+        },
+        {
+          "name": "Link Light Rail, Airport Station",
+          "q": "Sea-Tac Airport Link light rail station",
+          "note": "Train option into downtown Seattle after the return.",
+          "kind": "sight"
+        }
+      ],
+      "expect": {
+        "arrive": "Consolidated rental car return is a short drive off the terminal loop, then a shuttle to check-in.",
+        "need": "1-1.5h for return and check-in",
+        "paths": [
+          {
+            "opt": "Straight to check-in",
+            "do": "Return the car, shuttle to the terminal, head to security.",
+            "cost": "1h"
+          },
+          {
+            "opt": "Light rail into the city",
+            "do": "Link light rail runs from the airport station straight into downtown.",
+            "cost": "40 min to downtown"
+          }
+        ]
+      },
+      "alt": [
+        "Seattle-Tacoma International Airport",
+        "SEA airport rental car return"
       ]
     },
     {
@@ -54,11 +192,55 @@
       "name": "Segment 4 — First evening in Belltown",
       "blurb": "Just Jason and Alicia now; Pike Place is an 8–10 minute walk.",
       "time": "6:00–9:00pm",
-      "map": { "center": "Belltown, Seattle, Washington", "zoom": 16 },
+      "map": {
+        "center": "Belltown, Seattle, Washington",
+        "zoom": 16
+      },
       "stops": [
-        { "name": "Belltown", "q": "Belltown Seattle", "note": "Dense residential neighborhood just north of downtown." },
-        { "name": "Pike Place Market", "q": "Pike Place Market Seattle", "note": "8–10 minute walk south along 1st or Western Ave." },
-        { "name": "Olympic Sculpture Park", "q": "Olympic Sculpture Park Seattle", "note": "Waterfront park a short walk west, open until dusk." }
+        {
+          "name": "Belltown",
+          "q": "Belltown Seattle",
+          "note": "Dense residential neighborhood just north of downtown.",
+          "kind": "sight"
+        },
+        {
+          "name": "Pike Place Market",
+          "q": "Pike Place Market Seattle",
+          "note": "8–10 minute walk south along 1st or Western Ave.",
+          "kind": "sight"
+        },
+        {
+          "name": "Olympic Sculpture Park",
+          "q": "Olympic Sculpture Park Seattle",
+          "note": "Waterfront park a short walk west, open until dusk.",
+          "kind": "walk"
+        }
+      ],
+      "expect": {
+        "arrive": "Dense residential blocks a few minutes north of downtown; restaurants and bars at street level, easy flat walking everywhere.",
+        "need": "3h",
+        "paths": [
+          {
+            "opt": "Stay in Belltown",
+            "do": "Dinner within a few blocks, no real walking required.",
+            "cost": "2h"
+          },
+          {
+            "opt": "Walk to Pike Place",
+            "do": "8-10 minute walk south on 1st or Western Ave before it closes for the night.",
+            "cost": "1h"
+          },
+          {
+            "opt": "Add the sculpture park",
+            "do": "Continue west to the waterfront park, open until dusk.",
+            "cost": "1h 30m"
+          }
+        ]
+      },
+      "alt": [
+        "Belltown Seattle street",
+        "Pike Place Market Seattle",
+        "Olympic Sculpture Park Seattle"
       ]
     }
   ]

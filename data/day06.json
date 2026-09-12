@@ -18,29 +18,185 @@
       "name": "Segment 1 — Logan Pass at Sunrise and the East Side",
       "blurb": "Sunrise from the road's high point; it can close for snow after mid-September.",
       "time": "5:00–9:30am",
-      "map": { "from": "Logan Pass, Glacier National Park", "to": "Saint Mary, Montana" },
+      "map": {
+        "from": "Logan Pass, Glacier National Park",
+        "to": "Saint Mary, Montana"
+      },
       "stops": [
-        { "name": "Logan Pass", "q": "Logan Pass Glacier National Park", "note": "Highest point on Going-to-the-Sun Road, 6,646 ft." },
-        { "name": "Hidden Lake Overlook", "q": "Hidden Lake Overlook Glacier National Park", "note": "Short boardwalk hike from the Logan Pass visitor center." },
-        { "name": "Saint Mary Falls", "q": "Saint Mary Falls Glacier National Park", "note": "Trailhead waterfall on the east side." },
-        { "name": "Sunrift Gorge", "q": "Sunrift Gorge Glacier National Park", "note": "Narrow rock gorge cut by Baring Creek." },
-        { "name": "Sun Point Nature Trail", "q": "Saint Mary Lake Glacier National Park", "note": "Short trail with views across Saint Mary Lake." },
-        { "name": "Wild Goose Island Lookout", "q": "Wild Goose Island Glacier National Park", "note": "Classic overlook of the small island in the lake." },
-        { "name": "Explore Saint Mary", "q": "Saint Mary Montana Glacier", "note": "Small gateway town at the east entrance." }
-      ]
+        {
+          "name": "Logan Pass",
+          "q": "Logan Pass Glacier National Park",
+          "note": "Highest point on Going-to-the-Sun Road, 6,646 ft.",
+          "kind": "view"
+        },
+        {
+          "name": "Hidden Lake Overlook",
+          "q": "Hidden Lake Overlook Glacier National Park",
+          "note": "Short boardwalk hike from the Logan Pass visitor center.",
+          "kind": "hike",
+          "trail": {
+            "dist": "4.2 km round trip",
+            "time": "1h-1h 30m",
+            "gain": "185 m",
+            "from": "Logan Pass Visitor Center",
+            "grade": "moderate"
+          }
+        },
+        {
+          "name": "Saint Mary Falls",
+          "q": "Saint Mary Falls Glacier National Park",
+          "note": "Trailhead waterfall on the east side.",
+          "kind": "hike",
+          "trail": {
+            "dist": "3.8 km round trip",
+            "time": "1h-1h 15m",
+            "gain": "79 m",
+            "from": "St. Mary Falls Trailhead",
+            "grade": "moderate"
+          }
+        },
+        {
+          "name": "Sunrift Gorge",
+          "q": "Sunrift Gorge Glacier National Park",
+          "note": "Narrow rock gorge cut by Baring Creek.",
+          "kind": "view"
+        },
+        {
+          "name": "Sun Point Nature Trail",
+          "q": "Saint Mary Lake Glacier National Park",
+          "note": "Short trail with views across Saint Mary Lake.",
+          "kind": "walk",
+          "trail": {
+            "dist": "2.8 km round trip",
+            "time": "45 min-1h",
+            "gain": "87 m",
+            "from": "Sun Point Picnic Area",
+            "grade": "easy"
+          }
+        },
+        {
+          "name": "Wild Goose Island Lookout",
+          "q": "Wild Goose Island Glacier National Park",
+          "note": "Classic overlook of the small island in the lake.",
+          "kind": "view"
+        },
+        {
+          "name": "Explore Saint Mary",
+          "q": "Saint Mary Montana Glacier",
+          "note": "Small gateway town at the east entrance.",
+          "kind": "sight"
+        }
+      ],
+      "expect": {
+        "arrive": "Sunrise at 6,646 ft is windy and often near freezing in late September; the visitor center doesn't open until 9am.",
+        "parking": "By Sept 30 the 235-space lot is first-come, first-served, no time limit or shuttle needed.",
+        "need": "3-4 hours",
+        "paths": [
+          {
+            "opt": "Sunrise view only",
+            "do": "Watch sunrise from the Logan Pass lot and boardwalk edge, no hike.",
+            "cost": "30 min"
+          },
+          {
+            "opt": "Hidden Lake Overlook boardwalk",
+            "do": "Walk the boardwalk to the overlook and back.",
+            "cost": "1h 30m"
+          },
+          {
+            "opt": "Full loop plus St Mary stops",
+            "do": "Hidden Lake Overlook, then drive down to Sun Point and St. Mary Falls.",
+            "cost": "4h"
+          }
+        ]
+      },
+      "alt": [
+        "Logan Pass Glacier National Park",
+        "Hidden Lake Glacier National Park",
+        "Wild Goose Island Saint Mary Lake",
+        "Sunrift Gorge"
+      ],
+      "seasonal": "GTSR's alpine section through Logan Pass can close for snow anytime from early September; NPS says it's typically open through the third Monday of October (Oct 19, 2026), but closures as early as Sept 3 have occurred — check nps.gov/glac road status the week before."
     },
     {
       "id": "d06s2",
       "name": "Segment 2 — West Side to Kalispell",
       "blurb": "Cedar boardwalk and the park's largest lake, then dinner off the mountain.",
       "time": "9:30am–8:30pm",
-      "map": { "from": "Avalanche Creek, Glacier National Park", "to": "Kalispell, Montana" },
+      "map": {
+        "from": "Avalanche Creek, Glacier National Park",
+        "to": "Kalispell, Montana"
+      },
       "stops": [
-        { "name": "Trail of the Cedars", "q": "Trail of the Cedars Glacier National Park", "note": "Boardwalk loop through old-growth cedar and hemlock." },
-        { "name": "Avalanche Lake", "q": "Avalanche Lake Glacier National Park", "note": "Optional add-on hike above Avalanche Gorge." },
-        { "name": "Lake McDonald", "q": "Lake McDonald Glacier National Park", "note": "Largest lake in the park, historic lodge on its shore." },
-        { "name": "The Desoto Grill", "q": "Conrad Mansion Kalispell", "note": "Dinner stop in downtown Kalispell." },
-        { "name": "Sykes Diner & Market", "q": "Conrad Mansion Kalispell", "note": "Alternate option, local diner since 1948." }
+        {
+          "name": "Trail of the Cedars",
+          "q": "Trail of the Cedars Glacier National Park",
+          "note": "Boardwalk loop through old-growth cedar and hemlock.",
+          "kind": "walk",
+          "trail": {
+            "dist": "1 km loop",
+            "from": "Avalanche Creek / Trail of the Cedars trailhead",
+            "grade": "easy"
+          }
+        },
+        {
+          "name": "Avalanche Lake",
+          "q": "Avalanche Lake Glacier National Park",
+          "note": "Optional add-on hike above Avalanche Gorge.",
+          "kind": "hike",
+          "trail": {
+            "dist": "7.4 km round trip",
+            "time": "2h-2h 30m",
+            "gain": "226 m",
+            "from": "Avalanche Picnic Area",
+            "grade": "moderate"
+          }
+        },
+        {
+          "name": "Lake McDonald",
+          "q": "Lake McDonald Glacier National Park",
+          "note": "Largest lake in the park, historic lodge on its shore.",
+          "kind": "view"
+        },
+        {
+          "name": "The Desoto Grill",
+          "q": "Conrad Mansion Kalispell",
+          "note": "Dinner stop in downtown Kalispell.",
+          "kind": "food"
+        },
+        {
+          "name": "Sykes Diner & Market",
+          "q": "Conrad Mansion Kalispell",
+          "note": "Alternate option, local diner since 1948.",
+          "kind": "food"
+        }
+      ],
+      "expect": {
+        "arrive": "Trail of the Cedars boardwalk is right off the road; the Avalanche Lake trailhead shares the same lot.",
+        "parking": "Avalanche Creek lot is small and is consistently the first in the park to fill.",
+        "need": "2-3 hours",
+        "paths": [
+          {
+            "opt": "Trail of the Cedars only",
+            "do": "Flat boardwalk loop through old-growth cedar, no elevation gain.",
+            "cost": "25 min"
+          },
+          {
+            "opt": "Add Avalanche Lake",
+            "do": "Continue past the cedars up to the lake and back.",
+            "cost": "2h 30m"
+          },
+          {
+            "opt": "Lake McDonald drive-by",
+            "do": "Skip the hike, stop at the lodge and lakeshore instead.",
+            "cost": "20 min"
+          }
+        ]
+      },
+      "alt": [
+        "Trail of the Cedars Glacier National Park",
+        "Avalanche Lake Montana",
+        "Lake McDonald Glacier National Park",
+        "Lake McDonald Lodge"
       ]
     }
   ]

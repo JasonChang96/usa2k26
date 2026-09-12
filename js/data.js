@@ -32,6 +32,13 @@ const TRIP = [
       "name": "Ensign Peak",
       "q": "Ensign Peak Salt Lake City",
       "note": "Short hike, skyline and valley overlook.",
+      "kind": "hike",
+      "trail": {
+       "dist": "1 mi (1.6 km) round trip",
+       "time": "30-45 min",
+       "from": "Ensign Peak Nature Park trailhead, 1002 N Ensign Vista Dr",
+       "grade": "easy"
+      },
       "ll": [
        40.79437,
        -111.89066
@@ -41,6 +48,7 @@ const TRIP = [
       "name": "Utah State Capitol Building",
       "q": "Utah State Capitol",
       "note": "Hilltop capitol above downtown.",
+      "kind": "sight",
       "ll": [
        40.7774,
        -111.88822
@@ -50,11 +58,40 @@ const TRIP = [
       "name": "Temple Square",
       "q": "Salt Lake City Temple Square",
       "note": "Historic LDS temple complex, city center.",
+      "kind": "sight",
       "ll": [
        40.77036,
        -111.89253
       ]
      }
+    ],
+    "expect": {
+     "arrive": "Downtown Salt Lake City is flat and walkable; Temple Square and the Capitol both have their own free lots, Ensign Peak's trailhead lot is a small gravel pull-in in a residential street.",
+     "parking": "Temple Square and Capitol lots are large and rarely full midday; Ensign Peak's lot holds maybe 15 cars and street parking fills on weekends.",
+     "need": "2-4 hours",
+     "paths": [
+      {
+       "opt": "Temple Square only",
+       "do": "Walk the plaza, Assembly Hall exterior, and grounds.",
+       "cost": "45 min"
+      },
+      {
+       "opt": "Add the Capitol",
+       "do": "Temple Square, then drive up to the Capitol steps and rotunda.",
+       "cost": "1h 30m"
+      },
+      {
+       "opt": "Full afternoon with Ensign Peak",
+       "do": "Capitol, Temple Square, plus the short climb up Ensign Peak for the skyline view.",
+       "cost": "3h"
+      }
+     ]
+    },
+    "alt": [
+     "Ensign Peak Salt Lake City overlook",
+     "Utah State Capitol building exterior",
+     "Salt Lake Temple Square Assembly Hall",
+     "Salt Lake City skyline from Capitol Hill"
     ]
    },
    {
@@ -93,11 +130,33 @@ const TRIP = [
       "name": "Logan Canyon",
       "q": "Logan Canyon Utah",
       "note": "Canyon drive into Logan, evening arrival.",
+      "kind": "drive",
       "ll": [
        41.74367,
        -111.76968
       ]
      }
+    ],
+    "expect": {
+     "arrive": "Both food stops are quick roadside/downtown stops; Logan Canyon is a two-lane mountain highway with occasional pull-outs, driven at dusk on this itinerary.",
+     "need": "1-2 hours plus the drive",
+     "paths": [
+      {
+       "opt": "Snack and go",
+       "do": "In-N-Out only, eat in the car on the way north.",
+       "cost": "20 min"
+      },
+      {
+       "opt": "Sit-down dinner",
+       "do": "In-N-Out snack, then a proper dinner at Osteria Amore before the drive.",
+       "cost": "1h 30m"
+      }
+     ]
+    },
+    "alt": [
+     "Logan Canyon Utah autumn foliage",
+     "In-N-Out Burger sign California",
+     "Downtown Salt Lake City restaurant row evening"
     ]
    }
   ]
@@ -139,6 +198,7 @@ const TRIP = [
       "name": "Garden City",
       "q": "Bear Lake Utah",
       "note": "Lakefront town on US-89.",
+      "kind": "sight",
       "ll": [
        42.49658,
        -108.72557
@@ -148,6 +208,7 @@ const TRIP = [
       "name": "Bear Lake State Park",
       "q": "Bear Lake Utah",
       "note": "Turquoise glacial lake, Utah-Idaho line.",
+      "kind": "view",
       "ll": [
        44.94057,
        -109.52467
@@ -157,6 +218,7 @@ const TRIP = [
       "name": "Montpelier, Idaho (Butch Cassidy Museum)",
       "q": "Montpelier Idaho",
       "note": "Bank robbed by Butch Cassidy in 1896.",
+      "kind": "sight",
       "ll": [
        42.31729,
        -111.30785
@@ -166,6 +228,7 @@ const TRIP = [
       "name": "Alpine Junction / Snake River",
       "q": "Alpine Junction Wyoming Snake River",
       "note": "Snake River canyon, Idaho-Wyoming border.",
+      "kind": "view",
       "ll": [
        43.1593,
        -111.03228
@@ -175,6 +238,7 @@ const TRIP = [
       "name": "Persephone Bakery (Jackson)",
       "q": "Jackson Wyoming Town Square",
       "note": "Bakery stop in Jackson before the park.",
+      "kind": "food",
       "ll": [
        43.47971,
        -110.76005
@@ -184,11 +248,39 @@ const TRIP = [
       "name": "Cowboy Coffee Co.",
       "q": "Jackson Wyoming Town Square",
       "note": "Coffee stop in Jackson.",
+      "kind": "food",
       "ll": [
        43.48046,
        -110.76255
       ]
      }
+    ],
+    "expect": {
+     "arrive": "A 5am start on US-89 through farm country, then Bear Lake's turquoise water comes into view at Garden City; Montpelier is a small Idaho town, Jackson is a proper mountain town with metered downtown parking.",
+     "need": "8 hours including the drive",
+     "paths": [
+      {
+       "opt": "Drive straight through",
+       "do": "Photo stops at overlooks only, no museum or beach time.",
+       "cost": "4h 30m (drive time only)"
+      },
+      {
+       "opt": "Bear Lake beach break",
+       "do": "Pull off at Bear Lake State Park for 20-30 minutes on the sand.",
+       "cost": "+30 min"
+      },
+      {
+       "opt": "Full stop tour",
+       "do": "Bear Lake beach, Butch Cassidy Museum in Montpelier, and a proper coffee/bakery stop in Jackson.",
+       "cost": "+2h"
+      }
+     ]
+    },
+    "alt": [
+     "Bear Lake Utah turquoise water",
+     "Garden City Utah Bear Lake shoreline",
+     "Montpelier Idaho Oregon Trail",
+     "Jackson Wyoming Town Square antler arch"
     ]
    },
    {
@@ -213,6 +305,7 @@ const TRIP = [
       "name": "Craig Thomas Discovery and Visitor Center",
       "q": "Craig Thomas Discovery and Visitor Center Grand Teton",
       "note": "Park visitor center at Moose entrance.",
+      "kind": "sight",
       "ll": [
        43.6533,
        -110.7187
@@ -222,6 +315,7 @@ const TRIP = [
       "name": "Windy Point Turnout",
       "q": "Teton Range from Teton Park Road",
       "note": "First full Teton Range panorama.",
+      "kind": "view",
       "ll": [
        43.67715,
        -110.72468
@@ -231,6 +325,7 @@ const TRIP = [
       "name": "Grand Teton Climbers Ranch",
       "q": "Grand Teton Climbers Ranch",
       "note": "Historic AAC climbers' lodging.",
+      "kind": "sight",
       "ll": [
        43.70486,
        -110.73533
@@ -240,6 +335,7 @@ const TRIP = [
       "name": "Teton Glacier Turnout",
       "q": "Teton Glacier Wyoming",
       "note": "View of the range's largest glacier.",
+      "kind": "view",
       "ll": [
        43.69086,
        -110.67261
@@ -248,12 +344,14 @@ const TRIP = [
      {
       "name": "Geraldine Lucas Homestead",
       "q": "Grand Teton National Park historic homestead",
-      "note": "Early homesteader's cabin near the road."
+      "note": "Early homesteader's cabin near the road.",
+      "kind": "sight"
      },
      {
       "name": "Mountain View Turnout",
       "q": "Teton Range from Teton Park Road",
       "note": "Roadside range overlook.",
+      "kind": "view",
       "ll": [
        43.79422,
        -110.69597
@@ -263,6 +361,7 @@ const TRIP = [
       "name": "Mount Moran Turnout",
       "q": "Mount Moran Grand Teton",
       "note": "View of Mount Moran's flat-topped summit.",
+      "kind": "view",
       "ll": [
        43.80343,
        -110.64157
@@ -272,11 +371,40 @@ const TRIP = [
       "name": "Jackson Point Overlook",
       "q": "Grand Teton National Park Teton Range panorama",
       "note": "Named for photographer W.H. Jackson.",
+      "kind": "view",
       "ll": [
        43.84589,
        -110.57561
       ]
      }
+    ],
+    "expect": {
+     "arrive": "Teton Park Road turnouts are all direct pull-offs, most with room for 5-15 cars; the Teton Range comes into full view starting at Windy Point and stays in frame the rest of the drive.",
+     "parking": "Small paved turnouts at each named stop; none have ever been reported full, they're too brief a stop for that.",
+     "need": "2-2.5 hours",
+     "paths": [
+      {
+       "opt": "Drive it, stop for photos only",
+       "do": "Pull into 3-4 of the best turnouts (Windy Point, Mount Moran, Jackson Point) without getting out for long.",
+       "cost": "1h"
+      },
+      {
+       "opt": "Add the visitor center",
+       "do": "Same turnouts plus 30-40 minutes inside Craig Thomas Discovery and Visitor Center.",
+       "cost": "1h 45m"
+      },
+      {
+       "opt": "Every named stop",
+       "do": "All eight turnouts and the homestead, a few minutes at each.",
+       "cost": "2h 30m"
+      }
+     ]
+    },
+    "alt": [
+     "Teton Range from Teton Park Road",
+     "Grand Teton Climbers Ranch historic cabins",
+     "Mount Moran Grand Teton reflection",
+     "Craig Thomas Discovery and Visitor Center"
     ]
    },
    {
@@ -301,6 +429,7 @@ const TRIP = [
       "name": "Emma Matilda Overlook",
       "q": "Jackson Lake Grand Teton",
       "note": "Named for an early park visitor.",
+      "kind": "view",
       "ll": [
        43.84893,
        -110.56717
@@ -310,6 +439,7 @@ const TRIP = [
       "name": "Signal Mountain Summit Overlook",
       "q": "Signal Mountain Jackson Lake Wyoming",
       "note": "Short side road, highest overlook on the drive.",
+      "kind": "view",
       "ll": [
        43.84589,
        -110.57561
@@ -319,6 +449,7 @@ const TRIP = [
       "name": "Catholic Bay Turnout",
       "q": "Jackson Lake Grand Teton",
       "note": "Jackson Lake shoreline viewpoint.",
+      "kind": "view",
       "ll": [
        43.84879,
        -110.59401
@@ -328,6 +459,7 @@ const TRIP = [
       "name": "Jackson Lake Dam Overlook",
       "q": "Jackson Lake Dam Wyoming",
       "note": "Dam holding back Jackson Lake.",
+      "kind": "view",
       "ll": [
        43.98144,
        -110.66186
@@ -337,6 +469,7 @@ const TRIP = [
       "name": "Oxbow Bend Turnout",
       "q": "Oxbow Bend Grand Teton",
       "note": "Snake River bend, Mount Moran reflection, wildlife.",
+      "kind": "view",
       "ll": [
        43.86615,
        -110.54754
@@ -346,11 +479,34 @@ const TRIP = [
       "name": "Moran Entrance Station",
       "q": "Grand Teton National Park entrance sign",
       "note": "Park entrance near Moran junction.",
+      "kind": "sight",
       "ll": [
        43.8718,
        -110.5716
       ]
      }
+    ],
+    "expect": {
+     "arrive": "Jackson Lake turnouts line the shoreline; Signal Mountain Summit Overlook is a few minutes' detour up a paved side road, the rest are direct roadside pull-offs.",
+     "need": "1-1.5 hours",
+     "paths": [
+      {
+       "opt": "Shoreline turnouts only",
+       "do": "Skip the Signal Mountain side road, stop at the lakeside overlooks and the dam.",
+       "cost": "40 min"
+      },
+      {
+       "opt": "Add the summit road",
+       "do": "Detour up Signal Mountain Summit Road for the highest view on the drive.",
+       "cost": "+30-40 min"
+      }
+     ]
+    },
+    "alt": [
+     "Jackson Lake Grand Teton shoreline",
+     "Signal Mountain summit view Wyoming",
+     "Jackson Lake Dam Wyoming",
+     "Oxbow Bend Grand Teton reflection"
     ]
    },
    {
@@ -375,6 +531,7 @@ const TRIP = [
       "name": "Snake River Overlook",
       "q": "Snake River Overlook Grand Teton",
       "note": "Ansel Adams' famous vantage over the Snake River.",
+      "kind": "view",
       "ll": [
        43.7539,
        -110.62409
@@ -384,6 +541,7 @@ const TRIP = [
       "name": "Teton Point Turnout",
       "q": "Snake River Overlook Grand Teton",
       "note": "Wide valley and range view.",
+      "kind": "view",
       "ll": [
        43.71796,
        -110.66008
@@ -393,6 +551,7 @@ const TRIP = [
       "name": "Schwabacher Landing",
       "q": "Schwabacher Landing Grand Teton",
       "note": "Beaver pond reflections of the Teton Range.",
+      "kind": "walk",
       "ll": [
        43.70915,
        -110.67113
@@ -402,6 +561,7 @@ const TRIP = [
       "name": "Glacier View Turnout",
       "q": "Teton Range from Teton Park Road",
       "note": "Range view on Highway 89.",
+      "kind": "view",
       "ll": [
        43.69086,
        -110.67261
@@ -411,6 +571,7 @@ const TRIP = [
       "name": "Blacktail Ponds Overlook",
       "q": "Grand Teton National Park wetlands",
       "note": "Wetland ponds below the Tetons.",
+      "kind": "view",
       "ll": [
        43.66732,
        -110.69555
@@ -420,11 +581,40 @@ const TRIP = [
       "name": "Mormon Row, T.A. Moulton Barn",
       "q": "Mormon Row Grand Teton barn",
       "note": "Iconic homestead barn at sunset.",
+      "kind": "sight",
       "ll": [
        43.66069,
        -110.665
       ]
      }
+    ],
+    "expect": {
+     "arrive": "This is the golden-hour run down the valley; Snake River Overlook and Schwabacher Landing are both short walks from small gravel lots that get busy right at sunset, Mormon Row's barns are visible from the parking areas.",
+     "parking": "Snake River Overlook has about 16 spaces, Schwabacher Landing about 20 — both fill in the last hour before sunset in good weather.",
+     "need": "2-2.5 hours",
+     "paths": [
+      {
+       "opt": "Hit the two icons",
+       "do": "Snake River Overlook and the Moulton Barn at Mormon Row only.",
+       "cost": "1h"
+      },
+      {
+       "opt": "Add Schwabacher",
+       "do": "Same two plus the short walk in to Schwabacher Landing's beaver ponds.",
+       "cost": "1h 40m"
+      },
+      {
+       "opt": "Every turnout",
+       "do": "All named stops including Teton Point, Glacier View, and Blacktail Ponds.",
+       "cost": "2h 30m"
+      }
+     ]
+    },
+    "alt": [
+     "Snake River Overlook Grand Teton",
+     "Schwabacher Landing beaver pond reflection",
+     "Mormon Row T.A. Moulton Barn sunset",
+     "Blacktail Ponds Grand Teton wetlands"
     ]
    }
   ]
@@ -465,6 +655,7 @@ const TRIP = [
       "name": "Persephone Westbank (breakfast)",
       "q": "Teton Village Wyoming",
       "note": "Breakfast stop before the park.",
+      "kind": "food",
       "ll": [
        43.52983,
        -110.84281
@@ -474,6 +665,7 @@ const TRIP = [
       "name": "Teton Village",
       "q": "Teton Village Wyoming",
       "note": "Base of the Jackson Hole ski resort.",
+      "kind": "sight",
       "ll": [
        43.58798,
        -110.82799
@@ -482,12 +674,14 @@ const TRIP = [
      {
       "name": "Granite Canyon Entrance Station",
       "q": "Grand Teton National Park entrance sign",
-      "note": "South entrance into the park."
+      "note": "South entrance into the park.",
+      "kind": "sight"
      },
      {
       "name": "Death Canyon Trailhead",
       "q": "Death Canyon Grand Teton",
       "note": "Trailhead for the Phelps Lake hike.",
+      "kind": "sight",
       "ll": [
        43.65586,
        -110.7811
@@ -497,6 +691,14 @@ const TRIP = [
       "name": "Phelps Lake Overlook",
       "q": "Phelps Lake Grand Teton",
       "note": "Overlook above the lake from the trail.",
+      "kind": "hike",
+      "trail": {
+       "dist": "2 mi (3.2 km) round trip",
+       "time": "1h-1h 15m",
+       "gain": "470 ft (140 m)",
+       "from": "Death Canyon Trailhead",
+       "grade": "easy"
+      },
       "ll": [
        43.65713,
        -110.79916
@@ -506,12 +708,42 @@ const TRIP = [
       "name": "Laurance S. Rockefeller Preserve Center",
       "q": "Laurance S Rockefeller Preserve Grand Teton",
       "note": "Visitor center at the trailhead.",
+      "kind": "sight",
       "ll": [
        43.62634,
        -110.77521
       ]
      }
-    ]
+    ],
+    "expect": {
+     "arrive": "Teton Village is a small alpine-style base area with cafes right off the parking; Death Canyon Trailhead is a dirt/gravel lot at the end of a bumpy unpaved road past the Rockefeller Preserve.",
+     "parking": "Death Canyon Trailhead lot is small (room for roughly 20-25 cars) and can fill by mid-morning on weekends in good weather; the Preserve Center has a larger paved lot a short drive before it.",
+     "need": "3.5-4.5 hours including the hike",
+     "paths": [
+      {
+       "opt": "Breakfast and village only",
+       "do": "Persephone Westbank and a walk around Teton Village, skip the hike.",
+       "cost": "1h"
+      },
+      {
+       "opt": "Preserve Center and overlook peek",
+       "do": "Village, then drive to the Preserve Center and walk a few minutes onto the trail without going to the full overlook.",
+       "cost": "1h 45m"
+      },
+      {
+       "opt": "Full Phelps Lake Overlook hike",
+       "do": "Village, then the out-and-back to Phelps Lake Overlook from Death Canyon Trailhead.",
+       "cost": "2h"
+      }
+     ]
+    },
+    "alt": [
+     "Teton Village Jackson Hole base area",
+     "Death Canyon Grand Teton trailhead",
+     "Phelps Lake Grand Teton aerial",
+     "Laurance S Rockefeller Preserve Center"
+    ],
+    "seasonal": "The Jackson Hole Aerial Tram at Teton Village runs through October 4, 2026, so it is still operating on this date if they want a ride up the mountain instead of the hike."
    },
    {
     "id": "d03s2",
@@ -531,6 +763,7 @@ const TRIP = [
       "name": "Jenny Lake Visitor Center",
       "q": "Jenny Lake Visitor Center Wyoming",
       "note": "Visitor center on the east shore.",
+      "kind": "sight",
       "ll": [
        43.75149,
        -110.72233
@@ -540,6 +773,14 @@ const TRIP = [
       "name": "Jenny Lake Boat House",
       "q": "Jenny Lake Grand Teton",
       "note": "Dock for the shuttle boat across the lake.",
+      "kind": "sight",
+      "trail": {
+       "dist": "5.7 mi (9.2 km) round trip",
+       "time": "3-4h",
+       "gain": "870 ft (270 m)",
+       "from": "Jenny Lake Visitor Center, hiking the shoreline without the boat",
+       "grade": "moderate"
+      },
       "ll": [
        43.74846,
        -110.72769
@@ -549,6 +790,7 @@ const TRIP = [
       "name": "Boat shuttle across Jenny Lake",
       "q": "Jenny Lake Grand Teton",
       "note": "Short crossing to the west shore trailhead.",
+      "kind": "drive",
       "ll": [
        43.75284,
        -110.72408
@@ -558,6 +800,14 @@ const TRIP = [
       "name": "Inspiration Point",
       "q": "Inspiration Point Grand Teton",
       "note": "Overlook above Jenny Lake after a short climb.",
+      "kind": "hike",
+      "trail": {
+       "dist": "1.8 mi (2.9 km) round trip",
+       "time": "1-1.5h",
+       "gain": "550 ft (170 m)",
+       "from": "Jenny Lake Boat Dock, west shore",
+       "grade": "moderate"
+      },
       "ll": [
        43.7671,
        -110.74804
@@ -567,12 +817,42 @@ const TRIP = [
       "name": "Cascade Canyon Turnout",
       "q": "Cascade Canyon Grand Teton",
       "note": "Canyon trail continuing past Inspiration Point.",
+      "kind": "view",
       "ll": [
        43.77317,
        -110.71194
       ]
      }
-    ]
+    ],
+    "expect": {
+     "arrive": "Jenny Lake Visitor Center sits above a large paved lot that fills by mid-morning in September; the shuttle boat leaves from a dock a short walk below the visitor center and runs continuously, no reservation.",
+     "parking": "Jenny Lake's main lot is one of the busiest in the park; if it is full there is overflow parking a short walk further from the dock.",
+     "need": "2-2.5 hours with the boat",
+     "paths": [
+      {
+       "opt": "Boat there and back, no hike",
+       "do": "Round-trip boat ride across and back without leaving the west dock.",
+       "cost": "30-40 min"
+      },
+      {
+       "opt": "Boat to Inspiration Point",
+       "do": "One-way or round-trip boat, then the climb to Inspiration Point and back to the dock.",
+       "cost": "1h 30m-2h"
+      },
+      {
+       "opt": "Skip the boat, walk the shoreline",
+       "do": "Hike the South Jenny Lake Trail around to Inspiration Point and back without the boat.",
+       "cost": "3-4h"
+      }
+     ]
+    },
+    "alt": [
+     "Jenny Lake Grand Teton autumn",
+     "Jenny Lake shuttle boat dock",
+     "Inspiration Point Grand Teton view",
+     "Cascade Canyon Grand Teton"
+    ],
+    "seasonal": "The Jenny Lake shuttle boat's 2026 season ends September 30 and narrows to 9am-5pm from September 8 onward, so it is running but on shortened hours on this date (jennylakeboating.com)."
    },
    {
     "id": "d03s3",
@@ -596,6 +876,7 @@ const TRIP = [
       "name": "Jenny Lake Overlook",
       "q": "Jenny Lake Grand Teton",
       "note": "Roadside viewpoint on Jenny Lake Road.",
+      "kind": "view",
       "ll": [
        43.76783,
        -110.71742
@@ -604,12 +885,14 @@ const TRIP = [
      {
       "name": "Alder Fire Overlook",
       "q": "Grand Teton National Park forest fire regrowth",
-      "note": "View over an old burn area's regrowth."
+      "note": "View over an old burn area's regrowth.",
+      "kind": "view"
      },
      {
       "name": "String Lake Picnic Area",
       "q": "String Lake Grand Teton",
       "note": "Picnic spot at the shallow lake's south end.",
+      "kind": "sight",
       "ll": [
        43.85976,
        -110.5886
@@ -619,6 +902,7 @@ const TRIP = [
       "name": "Cathedral Group Turnout",
       "q": "Cathedral Group Grand Teton",
       "note": "Classic view of the range's three main peaks.",
+      "kind": "view",
       "ll": [
        43.78961,
        -110.71397
@@ -628,11 +912,47 @@ const TRIP = [
       "name": "String Lake Loop Hike (optional)",
       "q": "String Lake Grand Teton",
       "note": "Flat loop trail around the lake.",
+      "kind": "hike",
+      "trail": {
+       "dist": "3.7 mi (5.6 km) loop",
+       "time": "1.5-2h",
+       "gain": "540 ft (160 m)",
+       "from": "String Lake Picnic Area",
+       "grade": "easy"
+      },
       "ll": [
        43.78954,
        -110.73237
       ]
      }
+    ],
+    "expect": {
+     "arrive": "Jenny Lake Road is a one-way scenic loop with pull-outs; String Lake Picnic Area has a gravel/paved lot right at the shallow, warm south end of the lake, popular with families.",
+     "parking": "String Lake's lot is moderate-sized and fills on warm weekend afternoons; arriving mid-afternoon on a Sunday should be fine.",
+     "need": "1.5-2.5 hours",
+     "paths": [
+      {
+       "opt": "Picnic and viewpoints only",
+       "do": "String Lake Picnic Area, Cathedral Group Turnout, and the roadside overlooks, no lake walk.",
+       "cost": "45 min"
+      },
+      {
+       "opt": "Partial shoreline walk",
+       "do": "Walk part of the String Lake shoreline out and back instead of the full loop.",
+       "cost": "1h"
+      },
+      {
+       "opt": "Full String Lake Loop",
+       "do": "The complete flat loop trail around the lake.",
+       "cost": "1.5-2h"
+      }
+     ]
+    },
+    "alt": [
+     "Jenny Lake Road one-way loop",
+     "String Lake Grand Teton shoreline",
+     "Cathedral Group Grand Teton peaks",
+     "Grand Teton forest fire regrowth"
     ]
    },
    {
@@ -653,6 +973,7 @@ const TRIP = [
       "name": "Jackson Town Square",
       "q": "Jackson Town Square Wyoming",
       "note": "Antler arches, center of downtown Jackson.",
+      "kind": "sight",
       "ll": [
        43.47996,
        -110.7618
@@ -662,6 +983,7 @@ const TRIP = [
       "name": "Million Dollar Cowboy Bar",
       "q": "Million Dollar Cowboy Bar Jackson Wyoming",
       "note": "Historic saloon on the square.",
+      "kind": "sight",
       "ll": [
        43.47988,
        -110.76253
@@ -671,11 +993,39 @@ const TRIP = [
       "name": "National Museum of Wildlife Art",
       "q": "National Museum of Wildlife Art Jackson",
       "note": "Art museum overlooking the National Elk Refuge.",
+      "kind": "sight",
       "ll": [
        43.5189,
        -110.74904
       ]
      }
+    ],
+    "expect": {
+     "arrive": "Jackson Town Square is compact and entirely on foot, with the four antler arches at the corners; the wildlife art museum is a short drive north of downtown.",
+     "parking": "Downtown Jackson has metered street parking plus a few public lots; it's tightest right around dinner time.",
+     "need": "2-3 hours",
+     "paths": [
+      {
+       "opt": "Dinner and the square",
+       "do": "Walk the square, dinner nearby.",
+       "cost": "1h 30m"
+      },
+      {
+       "opt": "Add the Cowboy Bar",
+       "do": "Square, dinner, then a drink at the Million Dollar Cowboy Bar.",
+       "cost": "2h 30m"
+      },
+      {
+       "opt": "Add the museum",
+       "do": "Squeeze in the wildlife art museum before it closes, then dinner and the square.",
+       "cost": "3h"
+      }
+     ]
+    },
+    "alt": [
+     "Jackson Wyoming Town Square antler arches",
+     "Million Dollar Cowboy Bar saloon",
+     "National Museum of Wildlife Art Jackson"
     ]
    }
   ]
@@ -1203,6 +1553,7 @@ const TRIP = [
       "name": "Logan Pass",
       "q": "Logan Pass Glacier National Park",
       "note": "Highest point on Going-to-the-Sun Road, 6,646 ft.",
+      "kind": "view",
       "ll": [
        48.69667,
        -113.7179
@@ -1212,6 +1563,14 @@ const TRIP = [
       "name": "Hidden Lake Overlook",
       "q": "Hidden Lake Overlook Glacier National Park",
       "note": "Short boardwalk hike from the Logan Pass visitor center.",
+      "kind": "hike",
+      "trail": {
+       "dist": "4.2 km round trip",
+       "time": "1h-1h 30m",
+       "gain": "185 m",
+       "from": "Logan Pass Visitor Center",
+       "grade": "moderate"
+      },
       "ll": [
        48.68721,
        -113.74164
@@ -1221,6 +1580,14 @@ const TRIP = [
       "name": "Saint Mary Falls",
       "q": "Saint Mary Falls Glacier National Park",
       "note": "Trailhead waterfall on the east side.",
+      "kind": "hike",
+      "trail": {
+       "dist": "3.8 km round trip",
+       "time": "1h-1h 15m",
+       "gain": "79 m",
+       "from": "St. Mary Falls Trailhead",
+       "grade": "moderate"
+      },
       "ll": [
        48.66797,
        -113.61511
@@ -1230,6 +1597,7 @@ const TRIP = [
       "name": "Sunrift Gorge",
       "q": "Sunrift Gorge Glacier National Park",
       "note": "Narrow rock gorge cut by Baring Creek.",
+      "kind": "view",
       "ll": [
        48.67795,
        -113.59614
@@ -1239,6 +1607,14 @@ const TRIP = [
       "name": "Sun Point Nature Trail",
       "q": "Saint Mary Lake Glacier National Park",
       "note": "Short trail with views across Saint Mary Lake.",
+      "kind": "walk",
+      "trail": {
+       "dist": "2.8 km round trip",
+       "time": "45 min-1h",
+       "gain": "87 m",
+       "from": "Sun Point Picnic Area",
+       "grade": "easy"
+      },
       "ll": [
        48.67553,
        -113.57967
@@ -1248,6 +1624,7 @@ const TRIP = [
       "name": "Wild Goose Island Lookout",
       "q": "Wild Goose Island Glacier National Park",
       "note": "Classic overlook of the small island in the lake.",
+      "kind": "view",
       "ll": [
        48.68886,
        -113.54023
@@ -1257,12 +1634,42 @@ const TRIP = [
       "name": "Explore Saint Mary",
       "q": "Saint Mary Montana Glacier",
       "note": "Small gateway town at the east entrance.",
+      "kind": "sight",
       "ll": [
        48.74733,
        -113.43902
       ]
      }
-    ]
+    ],
+    "expect": {
+     "arrive": "Sunrise at 6,646 ft is windy and often near freezing in late September; the visitor center doesn't open until 9am.",
+     "parking": "By Sept 30 the 235-space lot is first-come, first-served, no time limit or shuttle needed.",
+     "need": "3-4 hours",
+     "paths": [
+      {
+       "opt": "Sunrise view only",
+       "do": "Watch sunrise from the Logan Pass lot and boardwalk edge, no hike.",
+       "cost": "30 min"
+      },
+      {
+       "opt": "Hidden Lake Overlook boardwalk",
+       "do": "Walk the boardwalk to the overlook and back.",
+       "cost": "1h 30m"
+      },
+      {
+       "opt": "Full loop plus St Mary stops",
+       "do": "Hidden Lake Overlook, then drive down to Sun Point and St. Mary Falls.",
+       "cost": "4h"
+      }
+     ]
+    },
+    "alt": [
+     "Logan Pass Glacier National Park",
+     "Hidden Lake Glacier National Park",
+     "Wild Goose Island Saint Mary Lake",
+     "Sunrift Gorge"
+    ],
+    "seasonal": "GTSR's alpine section through Logan Pass can close for snow anytime from early September; NPS says it's typically open through the third Monday of October (Oct 19, 2026), but closures as early as Sept 3 have occurred — check nps.gov/glac road status the week before."
    },
    {
     "id": "d06s2",
@@ -1286,6 +1693,12 @@ const TRIP = [
       "name": "Trail of the Cedars",
       "q": "Trail of the Cedars Glacier National Park",
       "note": "Boardwalk loop through old-growth cedar and hemlock.",
+      "kind": "walk",
+      "trail": {
+       "dist": "1 km loop",
+       "from": "Avalanche Creek / Trail of the Cedars trailhead",
+       "grade": "easy"
+      },
       "ll": [
        48.67662,
        -113.8138
@@ -1295,6 +1708,14 @@ const TRIP = [
       "name": "Avalanche Lake",
       "q": "Avalanche Lake Glacier National Park",
       "note": "Optional add-on hike above Avalanche Gorge.",
+      "kind": "hike",
+      "trail": {
+       "dist": "7.4 km round trip",
+       "time": "2h-2h 30m",
+       "gain": "226 m",
+       "from": "Avalanche Picnic Area",
+       "grade": "moderate"
+      },
       "ll": [
        48.65613,
        -113.78687
@@ -1304,6 +1725,7 @@ const TRIP = [
       "name": "Lake McDonald",
       "q": "Lake McDonald Glacier National Park",
       "note": "Largest lake in the park, historic lodge on its shore.",
+      "kind": "view",
       "ll": [
        48.58397,
        -113.91906
@@ -1313,6 +1735,7 @@ const TRIP = [
       "name": "The Desoto Grill",
       "q": "Conrad Mansion Kalispell",
       "note": "Dinner stop in downtown Kalispell.",
+      "kind": "food",
       "ll": [
        48.19734,
        -114.3174
@@ -1322,11 +1745,40 @@ const TRIP = [
       "name": "Sykes Diner & Market",
       "q": "Conrad Mansion Kalispell",
       "note": "Alternate option, local diner since 1948.",
+      "kind": "food",
       "ll": [
        48.19595,
        -114.31633
       ]
      }
+    ],
+    "expect": {
+     "arrive": "Trail of the Cedars boardwalk is right off the road; the Avalanche Lake trailhead shares the same lot.",
+     "parking": "Avalanche Creek lot is small and is consistently the first in the park to fill.",
+     "need": "2-3 hours",
+     "paths": [
+      {
+       "opt": "Trail of the Cedars only",
+       "do": "Flat boardwalk loop through old-growth cedar, no elevation gain.",
+       "cost": "25 min"
+      },
+      {
+       "opt": "Add Avalanche Lake",
+       "do": "Continue past the cedars up to the lake and back.",
+       "cost": "2h 30m"
+      },
+      {
+       "opt": "Lake McDonald drive-by",
+       "do": "Skip the hike, stop at the lodge and lakeshore instead.",
+       "cost": "20 min"
+      }
+     ]
+    },
+    "alt": [
+     "Trail of the Cedars Glacier National Park",
+     "Avalanche Lake Montana",
+     "Lake McDonald Glacier National Park",
+     "Lake McDonald Lodge"
     ]
    }
   ]
@@ -1368,6 +1820,7 @@ const TRIP = [
       "name": "Kootenai Falls",
       "q": "Kootenai Falls Montana",
       "note": "Roadside stop on US-2, largest undammed falls in Montana.",
+      "kind": "walk",
       "ll": [
        47.72185,
        -116.82641
@@ -1377,6 +1830,7 @@ const TRIP = [
       "name": "Troy, Montana",
       "q": "Kootenai River Montana",
       "note": "Small riverside town near the Idaho line.",
+      "kind": "sight",
       "ll": [
        48.46152,
        -115.89499
@@ -1386,6 +1840,7 @@ const TRIP = [
       "name": "Kootenai National Forest",
       "q": "Kootenai National Forest",
       "note": "Forest corridor for most of the morning drive.",
+      "kind": "drive",
       "ll": [
        47.25295,
        -115.91958
@@ -1395,11 +1850,34 @@ const TRIP = [
       "name": "Bonners Ferry",
       "q": "Bonners Ferry Idaho",
       "note": "Kootenai River crossing, gateway to the Idaho Panhandle.",
+      "kind": "sight",
       "ll": [
        48.68817,
        -116.31564
       ]
      }
+    ],
+    "expect": {
+     "arrive": "Two-lane US-2 through forest; Kootenai Falls is a short walk down from a large roadside pullout.",
+     "parking": "Kootenai Falls pullout is large and rarely full outside summer weekends.",
+     "need": "3-4 hours",
+     "paths": [
+      {
+       "opt": "Drive straight through",
+       "do": "Stay on US-2, stop only for photos from the car.",
+       "cost": "3h"
+      },
+      {
+       "opt": "Kootenai Falls stop",
+       "do": "Walk down to the falls viewpoint and swinging bridge.",
+       "cost": "3h 40m"
+      }
+     ]
+    },
+    "alt": [
+     "Kootenai Falls Montana",
+     "Kootenai River Montana",
+     "Yaak River Valley"
     ]
    },
    {
@@ -1424,6 +1902,7 @@ const TRIP = [
       "name": "Kaniksu National Forest",
       "q": "Kaniksu National Forest",
       "note": "Forest boundary the highway runs through south of Bonners Ferry.",
+      "kind": "drive",
       "ll": [
        47.25295,
        -115.91958
@@ -1433,6 +1912,7 @@ const TRIP = [
       "name": "Selkirk Mountains",
       "q": "Selkirk Mountains Idaho",
       "note": "Range visible to the west for most of the drive.",
+      "kind": "view",
       "ll": [
        49.09215,
        -116.82006
@@ -1442,6 +1922,7 @@ const TRIP = [
       "name": "Upper Pack River Road",
       "q": "Kaniksu National Forest",
       "note": "Gravel side road off US-95 near Samuels; western larch turn gold in early October.",
+      "kind": "drive",
       "ll": [
        48.6397,
        -116.6193
@@ -1451,11 +1932,33 @@ const TRIP = [
       "name": "Sandpoint Long Bridge",
       "q": "Sandpoint Bridge Lake Pend Oreille",
       "note": "Two-mile wooden-piling bridge crossing the lake into town.",
+      "kind": "view",
       "ll": [
        48.27325,
        -116.54395
       ]
      }
+    ],
+    "expect": {
+     "arrive": "Highway drive with the Selkirks to the west; the Pack River detour is unpaved and only worth it if the larch are turning.",
+     "need": "2-3 hours",
+     "paths": [
+      {
+       "opt": "Straight to Sandpoint",
+       "do": "Stay on US-95, no detour.",
+       "cost": "1h 15m"
+      },
+      {
+       "opt": "Pack River larch detour",
+       "do": "Turn up gravel Upper Pack River Road for golden tamarack views.",
+       "cost": "2h"
+      }
+     ]
+    },
+    "alt": [
+     "Selkirk Mountains Idaho",
+     "Western larch autumn Idaho",
+     "Kaniksu National Forest"
     ]
    },
    {
@@ -1476,6 +1979,7 @@ const TRIP = [
       "name": "City Beach",
       "q": "City Beach Sandpoint Idaho",
       "note": "In-town lake beach and park, easy first stop.",
+      "kind": "walk",
       "ll": [
        48.27338,
        -116.54019
@@ -1485,6 +1989,7 @@ const TRIP = [
       "name": "Pend d'Oreille Bay Trail",
       "q": "Lake Pend Oreille Sandpoint",
       "note": "3.2-mile flat lakeside trail from Ponderay to Sandpoint.",
+      "kind": "walk",
       "ll": [
        48.29197,
        -116.54242
@@ -1493,12 +1998,14 @@ const TRIP = [
      {
       "name": "Sand Creek Trail",
       "q": "Sandpoint Bridge Lake Pend Oreille",
-      "note": "Paved path along Sand Creek from downtown Sandpoint."
+      "note": "Paved path along Sand Creek from downtown Sandpoint.",
+      "kind": "walk"
      },
      {
       "name": "Schweitzer Mountain Resort",
       "q": "Schweitzer Mountain Resort",
       "note": "Viewpoint above town, weather and time permitting.",
+      "kind": "view",
       "ll": [
        48.3787,
        -116.61308
@@ -1508,11 +2015,40 @@ const TRIP = [
       "name": "Pend Oreille Scenic Byway",
       "q": "Pend Oreille Scenic Byway",
       "note": "SR-200 lakeshore drive east of town for evening light.",
+      "kind": "drive",
       "ll": [
        48.76688,
        -117.06094
       ]
      }
+    ],
+    "expect": {
+     "arrive": "City Beach is a short walk from downtown parking; the Long Bridge and open lake are right behind it.",
+     "parking": "Downtown Sandpoint street parking and the City Beach lot fill on nice afternoons.",
+     "need": "2-3 hours",
+     "paths": [
+      {
+       "opt": "City Beach only",
+       "do": "Walk the beach and watch boats on the lake.",
+       "cost": "30 min"
+      },
+      {
+       "opt": "Sand Creek Trail stroll",
+       "do": "Paved path along the creek from downtown, flat and short.",
+       "cost": "1h"
+      },
+      {
+       "opt": "Add Pend d'Oreille Bay Trail",
+       "do": "Continue along the lakeshore trail toward Ponderay.",
+       "cost": "2h"
+      }
+     ]
+    },
+    "alt": [
+     "Lake Pend Oreille",
+     "Sandpoint Long Bridge Idaho",
+     "City Beach Sandpoint",
+     "Schweitzer Mountain Resort"
     ]
    }
   ]
@@ -1554,6 +2090,7 @@ const TRIP = [
       "name": "Farragut State Park",
       "q": "Farragut State Park Idaho",
       "note": "Former naval training station on the south shore of Lake Pend Oreille.",
+      "kind": "sight",
       "ll": [
        47.79013,
        -117.36492
@@ -1563,6 +2100,7 @@ const TRIP = [
       "name": "Silverwood Theme Park",
       "q": "Silverwood Theme Park Idaho",
       "note": "Roadside landmark on US-95 between Coeur d'Alene and Sandpoint.",
+      "kind": "sight",
       "ll": [
        47.90678,
        -116.70751
@@ -1572,11 +2110,33 @@ const TRIP = [
       "name": "Lake Coeur d'Alene",
       "q": "Lake Coeur d'Alene",
       "note": "Quick lake view as the highway skirts Coeur d'Alene.",
+      "kind": "view",
       "ll": [
        48.2956,
        -118.36703
       ]
      }
+    ],
+    "expect": {
+     "arrive": "Highway drive past two lakes; Farragut and Silverwood are both roadside stops, not required detours.",
+     "need": "2-3 hours",
+     "paths": [
+      {
+       "opt": "Drive straight through",
+       "do": "US-95 to I-90, no stops.",
+       "cost": "1h 45m"
+      },
+      {
+       "opt": "Farragut State Park stop",
+       "do": "Walk the shoreline near the old naval training station.",
+       "cost": "2h 30m"
+      }
+     ]
+    },
+    "alt": [
+     "Farragut State Park Idaho",
+     "Lake Coeur d'Alene",
+     "Silverwood Theme Park"
     ]
    },
    {
@@ -1597,6 +2157,7 @@ const TRIP = [
       "name": "Riverfront Park",
       "q": "Riverfront Park Spokane",
       "note": "1974 World's Fair site; paths along both falls channels.",
+      "kind": "walk",
       "ll": [
        47.6617,
        -117.41991
@@ -1606,6 +2167,7 @@ const TRIP = [
       "name": "Spokane Falls",
       "q": "Spokane Falls",
       "note": "Viewed from the park or the SkyRide gondola.",
+      "kind": "view",
       "ll": [
        47.65719,
        -117.42351
@@ -1615,6 +2177,7 @@ const TRIP = [
       "name": "Davenport Hotel",
       "q": "Davenport Hotel Spokane",
       "note": "1914 landmark hotel lobby, open to walk through.",
+      "kind": "sight",
       "ll": [
        47.65735,
        -117.42398
@@ -1624,11 +2187,40 @@ const TRIP = [
       "name": "Manito Park",
       "q": "Manito Park Spokane",
       "note": "Duncan Garden and Japanese Garden, 2.5 miles south of downtown; free entry.",
+      "kind": "walk",
       "ll": [
        47.63587,
        -117.41355
       ]
      }
+    ],
+    "expect": {
+     "arrive": "Riverfront Park sits right downtown; the falls are visible from the pedestrian bridges within minutes of any garage.",
+     "parking": "Several downtown parking garages border the park; none are free, none are huge.",
+     "need": "2 hours",
+     "paths": [
+      {
+       "opt": "Falls viewpoints only",
+       "do": "Walk the pedestrian bridges over both falls channels.",
+       "cost": "30 min"
+      },
+      {
+       "opt": "Full park loop",
+       "do": "Loop the paths on both riverbanks past the Pavilion and Clocktower.",
+       "cost": "1h 15m"
+      },
+      {
+       "opt": "Add Davenport Hotel",
+       "do": "Walk a few blocks over to see the historic lobby.",
+       "cost": "2h"
+      }
+     ]
+    },
+    "alt": [
+     "Spokane Falls",
+     "Riverfront Park Spokane",
+     "Davenport Hotel Spokane",
+     "Spokane Falls SkyRide gondola"
     ]
    },
    {
@@ -1653,6 +2245,7 @@ const TRIP = [
       "name": "Cashmere",
       "q": "Cashmere Washington",
       "note": "Historic apple-country town, home of Aplets & Cotlets candy.",
+      "kind": "sight",
       "ll": [
        47.52238,
        -120.46904
@@ -1662,6 +2255,7 @@ const TRIP = [
       "name": "Ohme Gardens",
       "q": "Ohme Gardens Wenatchee",
       "note": "Alpine garden overlooking the Wenatchee Valley, if time allows.",
+      "kind": "walk",
       "ll": [
        47.47795,
        -120.32651
@@ -1671,11 +2265,39 @@ const TRIP = [
       "name": "Tumwater Canyon",
       "q": "Tumwater Canyon Washington",
       "note": "Wenatchee River canyon on US-2, the final approach into Leavenworth.",
+      "kind": "drive",
       "ll": [
        47.61655,
        -120.72301
       ]
      }
+    ],
+    "expect": {
+     "arrive": "Long highway push from I-90 to US-2; Cashmere and Ohme Gardens are the only reasons to leave the car before Tumwater Canyon.",
+     "need": "3-4 hours driving, plus stops",
+     "paths": [
+      {
+       "opt": "Drive straight through",
+       "do": "I-90 to US-2, no stops.",
+       "cost": "3h"
+      },
+      {
+       "opt": "Cashmere candy stop",
+       "do": "Quick walk through downtown Cashmere.",
+       "cost": "3h 30m"
+      },
+      {
+       "opt": "Add Ohme Gardens",
+       "do": "Walk the alpine garden paths overlooking the valley.",
+       "cost": "4h 15m"
+      }
+     ]
+    },
+    "alt": [
+     "Cashmere Washington",
+     "Ohme Gardens Wenatchee",
+     "Tumwater Canyon autumn",
+     "Wenatchee River canyon"
     ]
    },
    {
@@ -1696,6 +2318,7 @@ const TRIP = [
       "name": "Front Street",
       "q": "Front Street Leavenworth Washington",
       "note": "Pedestrianized main street, Bavarian-themed storefronts.",
+      "kind": "sight",
       "ll": [
        47.5961,
        -120.66037
@@ -1705,6 +2328,7 @@ const TRIP = [
       "name": "9th Street / Alpen Strasse",
       "q": "Leavenworth Washington Bavarian",
       "note": "Core of the village's Bavarian architecture.",
+      "kind": "sight",
       "ll": [
        47.59544,
        -120.66068
@@ -1714,11 +2338,34 @@ const TRIP = [
       "name": "Front Street Park",
       "q": "Front Street Leavenworth Washington",
       "note": "One of the two Oktoberfest beer-garden venues this weekend.",
+      "kind": "sight",
       "ll": [
        47.5956,
        -120.66195
       ]
      }
+    ],
+    "expect": {
+     "arrive": "Front Street is pedestrian-only and packed for Oktoberfest opening weekend; expect a slow walk-in from wherever you park.",
+     "parking": "Downtown lots fill early on Oktoberfest weekend; expect to park several blocks out.",
+     "need": "2-3 hours",
+     "paths": [
+      {
+       "opt": "Front Street stroll",
+       "do": "Walk the main street and browse storefronts.",
+       "cost": "1h"
+      },
+      {
+       "opt": "Add a beer garden",
+       "do": "Stop into Front Street Park for the Oktoberfest tent.",
+       "cost": "2h 30m"
+      }
+     ]
+    },
+    "alt": [
+     "Leavenworth Washington Bavarian village",
+     "Front Street Leavenworth",
+     "Leavenworth Oktoberfest"
     ]
    }
   ]
@@ -1760,6 +2407,7 @@ const TRIP = [
       "name": "Blewett Pass",
       "q": "Blewett Pass Washington",
       "note": "US-97 summit between the Wenatchee and Yakima valleys.",
+      "kind": "sight",
       "ll": [
        47.33492,
        -120.57826
@@ -1769,6 +2417,7 @@ const TRIP = [
       "name": "Naches",
       "q": "Naches Washington",
       "note": "Small town where SR-410 branches off toward Chinook Pass.",
+      "kind": "sight",
       "ll": [
        46.73096,
        -120.69952
@@ -1778,11 +2427,34 @@ const TRIP = [
       "name": "Chinook Pass Entrance Arch",
       "q": "Chinook Pass Washington",
       "note": "Log entrance arch marking the park boundary at the summit.",
+      "kind": "sight",
       "ll": [
        46.87214,
        -121.51569
       ]
      }
+    ],
+    "expect": {
+     "arrive": "Two mountain passes back to back, about two and a half hours of driving with only brief roadside stops before the park.",
+     "parking": "Small gravel pull-offs at Blewett Pass and the entrance arch; no real lots.",
+     "need": "2h 30m",
+     "paths": [
+      {
+       "opt": "Straight through",
+       "do": "Photo stop at the entrance arch only, no detours.",
+       "cost": "2h 30m"
+      },
+      {
+       "opt": "Add a Naches break",
+       "do": "Coffee or gas stop in Naches before the climb to the pass.",
+       "cost": "2h 50m"
+      }
+     ]
+    },
+    "alt": [
+     "Blewett Pass Washington summit",
+     "Chinook Pass entrance arch Mount Rainier",
+     "Naches Washington downtown"
     ]
    },
    {
@@ -1803,6 +2475,13 @@ const TRIP = [
       "name": "Tipsoo Lake",
       "q": "Tipsoo Lake Mount Rainier",
       "note": "Short loop trail; Rainier reflected in the lake when calm.",
+      "kind": "walk",
+      "trail": {
+       "dist": "0.5 mile / 0.8 km loop",
+       "time": "20 min",
+       "from": "Tipsoo Lake parking area",
+       "grade": "easy"
+      },
       "ll": [
        46.86894,
        -121.51713
@@ -1812,6 +2491,14 @@ const TRIP = [
       "name": "Naches Peak Loop Trail",
       "q": "Naches Peak Loop Trail",
       "note": "3.2-mile loop from the pass, optional if time allows.",
+      "kind": "hike",
+      "trail": {
+       "dist": "3.5 miles round trip",
+       "time": "2h",
+       "gain": "500 ft",
+       "from": "Chinook Pass / Tipsoo Lake trailhead",
+       "grade": "moderate"
+      },
       "ll": [
        46.87128,
        -121.5181
@@ -1821,12 +2508,41 @@ const TRIP = [
       "name": "Cayuse Pass",
       "q": "Cayuse Pass Washington",
       "note": "Junction where SR-410 meets SR-123 heading south into the park.",
+      "kind": "sight",
       "ll": [
        46.86762,
        -121.54056
       ]
      }
-    ]
+    ],
+    "expect": {
+     "arrive": "Alpine lake right off SR-410; Rainier reflects in it on calm mornings, but the mountain often clouds over within minutes.",
+     "parking": "Small paved lot at Tipsoo Lake fills by mid-morning in fall; roadside shoulders nearby.",
+     "need": "1h",
+     "paths": [
+      {
+       "opt": "Lake loop only",
+       "do": "Walk the short loop around Tipsoo Lake itself.",
+       "cost": "20 min"
+      },
+      {
+       "opt": "Add Cayuse Pass",
+       "do": "Short drive to the Cayuse Pass junction for a photo.",
+       "cost": "40 min"
+      },
+      {
+       "opt": "Naches Peak Loop",
+       "do": "Full loop trail from the pass, real elevation gain but no scrambling — only if the weather is holding.",
+       "cost": "2h"
+      }
+     ]
+    },
+    "alt": [
+     "Tipsoo Lake Mount Rainier reflection",
+     "Naches Peak Loop trail",
+     "Cayuse Pass Washington"
+    ],
+    "seasonal": "SR 410/Chinook Pass and SR 123/Cayuse Pass usually close for winter in late October (Oct 24, 2025; Oct 31, 2024; Nov 10, 2023) and reopen around late May — Oct 3 is well before the typical window, but an early storm can still force a temporary closure, so check WSDOT before leaving Leavenworth."
    },
    {
     "id": "d09s3",
@@ -1845,12 +2561,21 @@ const TRIP = [
      {
       "name": "Henry M. Jackson Visitor Center",
       "q": "Henry M Jackson Visitor Center Paradise",
-      "note": "Starting point for the Paradise trails."
+      "note": "Starting point for the Paradise trails.",
+      "kind": "sight"
      },
      {
       "name": "Myrtle Falls",
       "q": "Myrtle Falls Mount Rainier",
       "note": "0.8-mile round trip on the Skyline Trail; the park's most photographed falls.",
+      "kind": "walk",
+      "trail": {
+       "dist": "1 mile round trip",
+       "time": "35 min",
+       "gain": "100 ft",
+       "from": "Paradise upper parking lot / Jackson Visitor Center",
+       "grade": "easy"
+      },
       "ll": [
        46.79137,
        -121.73249
@@ -1860,6 +2585,14 @@ const TRIP = [
       "name": "Nisqually Vista Trail",
       "q": "Nisqually Vista Trail Mount Rainier",
       "note": "1.2-mile loop over Nisqually Glacier and valley views.",
+      "kind": "walk",
+      "trail": {
+       "dist": "1.2 miles round trip",
+       "time": "45 min",
+       "gain": "200 ft",
+       "from": "Paradise lower parking lot",
+       "grade": "easy"
+      },
       "ll": [
        46.78739,
        -121.7454
@@ -1869,12 +2602,49 @@ const TRIP = [
       "name": "Skyline Trail",
       "q": "Skyline Trail Mount Rainier",
       "note": "Longer option climbing above Myrtle Falls toward Panorama Point.",
+      "kind": "hike",
+      "trail": {
+       "dist": "5.5 miles round trip for the full loop; 4 miles round trip to Panorama Point via the Golden Gate Trail for a shorter turnaround",
+       "time": "4h 30m full loop; roughly 2h 30m-3h to Panorama Point and back",
+       "gain": "1,700 ft full loop",
+       "from": "Paradise upper parking lot",
+       "grade": "strenuous"
+      },
       "ll": [
        46.8016,
        -121.72225
       ]
      }
-    ]
+    ],
+    "expect": {
+     "arrive": "Wide subalpine meadow below the summit; Rainier makes its own weather and is often partly or fully clouded over.",
+     "parking": "Two large lots fill by late morning on clear fall weekends; arrive before 11am to be safe.",
+     "need": "3-4h",
+     "paths": [
+      {
+       "opt": "Myrtle Falls only",
+       "do": "Paved path from the visitor center up to the falls overlook and back.",
+       "cost": "35 min"
+      },
+      {
+       "opt": "Myrtle Falls + Nisqually Vista",
+       "do": "Both easy, mostly flat trails, no real climbing.",
+       "cost": "1h 20m"
+      },
+      {
+       "opt": "Push to Panorama Point",
+       "do": "Skyline and Golden Gate trails up to the viewpoint; a real climb with no scrambling, skip if cold or wet underfoot.",
+       "cost": "2h 30m-3h"
+      }
+     ]
+    },
+    "alt": [
+     "Myrtle Falls Mount Rainier",
+     "Nisqually Vista Trail Paradise",
+     "Paradise meadows Mount Rainier",
+     "Henry M Jackson Visitor Center Paradise"
+    ],
+    "seasonal": "Jackson Visitor Center is open 9:30am-4pm daily Sept 28-Oct 12 (down from summer's 9:30am-6:30pm); no timed-entry vehicle reservation is required anywhere in the park in 2026 — the pilot program was cancelled for the year."
    },
    {
     "id": "d09s4",
@@ -1891,6 +2661,14 @@ const TRIP = [
       "name": "Reflection Lakes",
       "q": "Reflection Lakes Mount Rainier",
       "note": "Pull-off on Stevens Canyon Road, a few minutes from Paradise.",
+      "kind": "walk",
+      "trail": {
+       "dist": "0.5 mile round trip",
+       "time": "30 min",
+       "gain": "negligible",
+       "from": "Reflection Lakes pull-off",
+       "grade": "easy"
+      },
       "ll": [
        46.76958,
        -121.73021
@@ -1900,6 +2678,7 @@ const TRIP = [
       "name": "Louise Lake",
       "q": "Louise Lake Mount Rainier",
       "note": "Smaller lake just past Reflection Lakes, fewer crowds.",
+      "kind": "view",
       "ll": [
        46.77079,
        -121.7176
@@ -1909,11 +2688,41 @@ const TRIP = [
       "name": "Narada Falls",
       "q": "Stevens Canyon Road Mount Rainier",
       "note": "168-foot falls on the way back toward Paradise.",
+      "kind": "walk",
+      "trail": {
+       "dist": "0.4 mile round trip",
+       "time": "20 min",
+       "gain": "200 ft, steep",
+       "from": "Narada Falls parking area",
+       "grade": "moderate"
+      },
       "ll": [
        46.77502,
        -121.74615
       ]
      }
+    ],
+    "expect": {
+     "arrive": "Small roadside pull-offs on Stevens Canyon Road; a still evening doubles the mountain in the water, but cloud or wind can erase it.",
+     "parking": "A handful of small pull-offs, not a real lot; fills fast right at sunset.",
+     "need": "1-1.5h",
+     "paths": [
+      {
+       "opt": "Photo and back",
+       "do": "Walk the short lakeside loop for the classic shot.",
+       "cost": "30 min"
+      },
+      {
+       "opt": "Add Louise Lake",
+       "do": "Continue a few minutes down the road to the quieter second lake.",
+       "cost": "50 min"
+      }
+     ]
+    },
+    "alt": [
+     "Reflection Lakes Mount Rainier sunset",
+     "Louise Lake Mount Rainier",
+     "Narada Falls Mount Rainier"
     ]
    }
   ]
@@ -1948,6 +2757,14 @@ const TRIP = [
       "name": "Reflection Lakes",
       "q": "Reflection Lakes Mount Rainier",
       "note": "Same pull-off as last night, best light at dawn.",
+      "kind": "walk",
+      "trail": {
+       "dist": "0.5 mile round trip",
+       "time": "30 min",
+       "gain": "negligible",
+       "from": "Reflection Lakes pull-off",
+       "grade": "easy"
+      },
       "ll": [
        46.76958,
        -121.73021
@@ -1956,18 +2773,49 @@ const TRIP = [
      {
       "name": "Henry M. Jackson Visitor Center",
       "q": "Henry M Jackson Visitor Center Paradise",
-      "note": "Coffee and restrooms before the drive down."
+      "note": "Coffee and restrooms before the drive down.",
+      "kind": "sight"
      },
      {
       "name": "Narada Falls",
       "q": "Stevens Canyon Road Mount Rainier",
       "note": "Quick stop on the way down toward Longmire.",
+      "kind": "walk",
+      "trail": {
+       "dist": "0.4 mile round trip",
+       "time": "20 min",
+       "gain": "200 ft, steep",
+       "from": "Narada Falls parking area",
+       "grade": "moderate"
+      },
       "ll": [
        46.77502,
        -121.74615
       ]
      }
-    ]
+    ],
+    "expect": {
+     "arrive": "Same pull-offs before dawn, often near freezing in early October; the payoff is sunrise light on the summit if skies are clear.",
+     "parking": "Wide open before sunrise; just watch for ice on the pavement and boardwalk edges.",
+     "need": "1-1.5h",
+     "paths": [
+      {
+       "opt": "Sunrise and back",
+       "do": "Stand at the lakeside pull-off for first light, then leave.",
+       "cost": "45 min"
+      },
+      {
+       "opt": "Add a coffee stop",
+       "do": "Drive up to Jackson Visitor Center once it opens.",
+       "cost": "1h 15m"
+      }
+     ]
+    },
+    "alt": [
+     "Mount Rainier sunrise Reflection Lakes",
+     "Mount Rainier alpenglow"
+    ],
+    "seasonal": "Jackson Visitor Center doesn't open until 9:30am, well after sunrise — no coffee or indoor restrooms until then; dress for cold, especially for her, since Paradise at dawn in early October regularly sits near or below freezing."
    },
    {
     "id": "d10s2",
@@ -1991,6 +2839,13 @@ const TRIP = [
       "name": "Longmire",
       "q": "Longmire Mount Rainier",
       "note": "Historic park headquarters and the National Park Inn.",
+      "kind": "walk",
+      "trail": {
+       "dist": "0.7 mile loop",
+       "time": "30 min",
+       "from": "Longmire Museum",
+       "grade": "easy"
+      },
       "ll": [
        46.74954,
        -121.81254
@@ -2000,6 +2855,7 @@ const TRIP = [
       "name": "Ashford",
       "q": "Ashford Washington",
       "note": "Small gateway town just outside the Nisqually entrance.",
+      "kind": "sight",
       "ll": [
        46.75441,
        -122.01093
@@ -2009,11 +2865,34 @@ const TRIP = [
       "name": "Eatonville",
       "q": "Eatonville Washington",
       "note": "Town along SR-7 on the way north to I-5.",
+      "kind": "sight",
       "ll": [
        46.86825,
        -122.27007
       ]
      }
+    ],
+    "expect": {
+     "arrive": "Historic log buildings and the National Park Inn at the park's original headquarters; a good last easy-walk stop.",
+     "parking": "Small lot fills with day visitors by mid-morning; easy if you're through early.",
+     "need": "45 min-1h",
+     "paths": [
+      {
+       "opt": "Museum and porch only",
+       "do": "Look at the historic buildings, skip the trail.",
+       "cost": "15 min"
+      },
+      {
+       "opt": "Trail of the Shadows loop",
+       "do": "Flat loop around Longmire Meadow past the old mineral springs.",
+       "cost": "30 min"
+      }
+     ]
+    },
+    "alt": [
+     "Longmire National Park Inn Mount Rainier",
+     "Trail of the Shadows Longmire",
+     "Eatonville Washington downtown"
     ]
    },
    {
@@ -2034,6 +2913,7 @@ const TRIP = [
       "name": "Seattle-Tacoma International Airport",
       "q": "Seattle-Tacoma International Airport",
       "note": "Rental car return, then Kuek and Kim head to their 7:50pm flight.",
+      "kind": "sight",
       "ll": [
        47.44757,
        -122.30802
@@ -2043,6 +2923,7 @@ const TRIP = [
       "name": "SEA Rental Car Facility",
       "q": "Seattle-Tacoma International Airport",
       "note": "Consolidated rental car return center, connected by shuttle.",
+      "kind": "sight",
       "ll": [
        47.46138,
        -122.29309
@@ -2051,8 +2932,29 @@ const TRIP = [
      {
       "name": "Link Light Rail, Airport Station",
       "q": "Sea-Tac Airport Link light rail station",
-      "note": "Train option into downtown Seattle after the return."
+      "note": "Train option into downtown Seattle after the return.",
+      "kind": "sight"
      }
+    ],
+    "expect": {
+     "arrive": "Consolidated rental car return is a short drive off the terminal loop, then a shuttle to check-in.",
+     "need": "1-1.5h for return and check-in",
+     "paths": [
+      {
+       "opt": "Straight to check-in",
+       "do": "Return the car, shuttle to the terminal, head to security.",
+       "cost": "1h"
+      },
+      {
+       "opt": "Light rail into the city",
+       "do": "Link light rail runs from the airport station straight into downtown.",
+       "cost": "40 min to downtown"
+      }
+     ]
+    },
+    "alt": [
+     "Seattle-Tacoma International Airport",
+     "SEA airport rental car return"
     ]
    },
    {
@@ -2073,6 +2975,7 @@ const TRIP = [
       "name": "Belltown",
       "q": "Belltown Seattle",
       "note": "Dense residential neighborhood just north of downtown.",
+      "kind": "sight",
       "ll": [
        47.61323,
        -122.34536
@@ -2082,6 +2985,7 @@ const TRIP = [
       "name": "Pike Place Market",
       "q": "Pike Place Market Seattle",
       "note": "8–10 minute walk south along 1st or Western Ave.",
+      "kind": "sight",
       "ll": [
        47.6094,
        -122.34141
@@ -2091,11 +2995,38 @@ const TRIP = [
       "name": "Olympic Sculpture Park",
       "q": "Olympic Sculpture Park Seattle",
       "note": "Waterfront park a short walk west, open until dusk.",
+      "kind": "walk",
       "ll": [
        47.61624,
        -122.35431
       ]
      }
+    ],
+    "expect": {
+     "arrive": "Dense residential blocks a few minutes north of downtown; restaurants and bars at street level, easy flat walking everywhere.",
+     "need": "3h",
+     "paths": [
+      {
+       "opt": "Stay in Belltown",
+       "do": "Dinner within a few blocks, no real walking required.",
+       "cost": "2h"
+      },
+      {
+       "opt": "Walk to Pike Place",
+       "do": "8-10 minute walk south on 1st or Western Ave before it closes for the night.",
+       "cost": "1h"
+      },
+      {
+       "opt": "Add the sculpture park",
+       "do": "Continue west to the waterfront park, open until dusk.",
+       "cost": "1h 30m"
+      }
+     ]
+    },
+    "alt": [
+     "Belltown Seattle street",
+     "Pike Place Market Seattle",
+     "Olympic Sculpture Park Seattle"
     ]
    }
   ]
@@ -2173,6 +3104,28 @@ const TRIP = [
        -122.34038
       ]
      }
+    ],
+    "expect": {
+     "arrive": "8-10 min walk from Belltown; market opens early and is already busy with vendors by 8:30am, before tour groups arrive.",
+     "parking": "Walk from the Belltown Airbnb, no transit needed.",
+     "need": "2-2.5 hours",
+     "paths": [
+      {
+       "opt": "Rain plan",
+       "do": "Stay under the market's covered arcades (Main and North Arcade) the whole time; Post Alley and the Gum Wall are also covered.",
+       "cost": "1h 30m"
+      },
+      {
+       "opt": "Full wander",
+       "do": "Cover the main arcades, Post Alley, Gum Wall, and the waterfront side stalls below.",
+       "cost": "2h 30m"
+      }
+     ]
+    },
+    "alt": [
+     "Pike Place Market fish throwing",
+     "Post Alley Seattle",
+     "Pike Place Market flowers"
     ]
    },
    {
@@ -2216,6 +3169,27 @@ const TRIP = [
        -122.33267
       ]
      }
+    ],
+    "expect": {
+     "arrive": "About 25 min on foot from the market, downhill then flat; Pioneer Square is quiet mid-morning, mostly local foot traffic.",
+     "parking": "Walk from Pike Place, no transit needed.",
+     "need": "2 hours",
+     "paths": [
+      {
+       "opt": "Rain plan",
+       "do": "Klondike Gold Rush museum is free and indoors; linger there, then a quick look at the Pioneer Square buildings from under awnings.",
+       "cost": "1h"
+      },
+      {
+       "opt": "Full loop",
+       "do": "Museum, wander the square's ironwork storefronts, then Salumi for lunch (expect a short queue; cash only).",
+       "cost": "2h"
+      }
+     ]
+    },
+    "alt": [
+     "Pioneer Square Seattle pergola",
+     "Klondike Gold Rush National Historical Park Seattle interior"
     ]
    },
    {
@@ -2259,7 +3233,31 @@ const TRIP = [
        -122.34536
       ]
      }
-    ]
+    ],
+    "expect": {
+     "arrive": "Seattle Center is a 15-20 min walk or a short bus/monorail ride from Pioneer Square; Chihuly Garden and Glass is fully indoor/glasshouse so it's a good rainy-afternoon stop.",
+     "parking": "Monorail from Westlake Center (2 min ride) or walk from downtown.",
+     "need": "2.5 hours",
+     "paths": [
+      {
+       "opt": "Chihuly only, then walk back",
+       "do": "Chihuly Garden and Glass galleries and glasshouse, skip the Space Needle, walk back to Belltown to collect bags.",
+       "cost": "1h 30m"
+      },
+      {
+       "opt": "Chihuly plus Space Needle",
+       "do": "Chihuly first, then Space Needle observation deck (book a timed slot in advance), then walk back for bags.",
+       "cost": "3h"
+      }
+     ]
+    },
+    "alt": [
+     "Chihuly Garden and Glass glasshouse",
+     "Space Needle Seattle observation deck",
+     "Seattle Center International Fountain"
+    ],
+    "seasonal": "Monday hours: Chihuly Garden and Glass 10:30am-6:30pm; Space Needle 10:30am-8:00pm. Both open on Mondays, no weekday closure to plan around.",
+    "cost": "Chihuly Garden and Glass adult admission is about $40-45 USD (chihulygardenandglass.com, read 2026-09-12). Space Needle adult admission ranges $35-55 USD depending on time/season, with timed entry every 15 min (spaceneedle.com, read 2026-09-12) - book ahead, especially for a specific arrival window."
    },
    {
     "id": "d11s4",
@@ -2302,7 +3300,29 @@ const TRIP = [
       "q": "Pacific Central Station Vancouver",
       "note": "Arrive 10:00pm; Canadian border check on arrival."
      }
-    ]
+    ],
+    "expect": {
+     "arrive": "Bags in hand from Belltown; bus stop at Wall St & 5th Ave has frequent service, or a 10-15 min Uber/taxi in light traffic.",
+     "parking": "Bus from Wall St & 5th Ave (16 min, every 15 min) or rideshare direct to King Street Station.",
+     "need": "1 hour before departure",
+     "paths": [
+      {
+       "opt": "Bus with bags",
+       "do": "Wall St & 5th Ave bus to King Street Station; buses have limited luggage space at busy times.",
+       "cost": "20 min"
+      },
+      {
+       "opt": "Rideshare with bags",
+       "do": "Uber/Lyft direct to the station door, easiest with two bags in the rain.",
+       "cost": "15 min"
+      }
+     ]
+    },
+    "alt": [
+     "King Street Station Seattle interior",
+     "Amtrak Cascades train Seattle"
+    ],
+    "seasonal": "Arrive by 5:00pm for the 6:00pm departure (Amtrak recommends 45 min before departure to check bags, more time if queues are long). Canadian customs/border check happens on arrival at Pacific Central Station in Vancouver around 10:00pm, not before boarding in Seattle."
    }
   ]
  },
@@ -2379,6 +3399,28 @@ const TRIP = [
        -123.10057
       ]
      }
+    ],
+    "expect": {
+     "arrive": "26 min on the Expo Line from Renfrew-Collingwood to Waterfront Station, then a 5-10 min walk into Gastown; morning crowds are light before 10am.",
+     "parking": "Expo Line to Waterfront Station, then walk.",
+     "need": "3-4 hours",
+     "paths": [
+      {
+       "opt": "Rain plan",
+       "do": "Duck into Revolver Coffee, browse covered storefronts, then walk to Chinatown for a sit-down lunch at Phnom Penh or Bao Bei.",
+       "cost": "2h"
+      },
+      {
+       "opt": "Full wander",
+       "do": "Steam Clock, Gastown streets, walk to Chinatown via the Millennium Gate, browse, then lunch.",
+       "cost": "3h 30m"
+      }
+     ]
+    },
+    "alt": [
+     "Gastown Vancouver cobblestone street",
+     "Vancouver Chinatown Millennium Gate",
+     "Gastown steam clock whistle"
     ]
    },
    {
@@ -2408,6 +3450,13 @@ const TRIP = [
       "name": "Stanley Park Seawall",
       "q": "Stanley Park seawall",
       "note": "8.8km waterfront path around the park.",
+      "kind": "walk",
+      "trail": {
+       "dist": "9 km loop",
+       "time": "2h-3h",
+       "from": "Coal Harbour / Devonian Harbour Park entrance",
+       "grade": "easy"
+      },
       "ll": [
        49.30586,
        -123.13286
@@ -2422,7 +3471,30 @@ const TRIP = [
        -123.12117
       ]
      }
-    ]
+    ],
+    "expect": {
+     "arrive": "Walk from downtown along Coal Harbour into the park (about 20-25 min from Waterfront Station); the seawall is flat, paved, and exposed to wind/rain off the water with little shelter.",
+     "parking": "Walk from downtown via Coal Harbour, or take the #19 bus to the Stanley Park entrance to shorten the approach.",
+     "need": "2-3 hours",
+     "paths": [
+      {
+       "opt": "Coal Harbour to Brockton Point and back",
+       "do": "Marina walk, totem poles, turn around before Second Beach if it's pouring or windy.",
+       "cost": "1h 30m"
+      },
+      {
+       "opt": "Full seawall loop",
+       "do": "The complete 9km loop around Stanley Park back to the start; longer than most visitors expect and offers little rain cover.",
+       "cost": "2h 30m-3h"
+      }
+     ]
+    },
+    "alt": [
+     "Stanley Park seawall Vancouver",
+     "Coal Harbour Vancouver marina",
+     "Brockton Point totem poles"
+    ],
+    "seasonal": "Vancouver Park Board states the Stanley Park seawall loop is about 9 km and takes 2-3 hours to walk (vancouver.ca, read 2026-09-12). Given rain and luggage-free legs that day, the shorter Coal Harbour-to-Brockton Point turnaround is the realistic default; the full loop is a fair-weather option only."
    },
    {
     "id": "d12s3",
@@ -2465,6 +3537,28 @@ const TRIP = [
        -123.12461
       ]
      }
+    ],
+    "expect": {
+     "arrive": "10-15 min walk from Stanley Park's south side or the seawall; English Bay gets breezy at sunset, no shelter on the beach itself.",
+     "parking": "Walk along the seawall from Stanley Park, or bus down Denman/Davie if legs are tired.",
+     "need": "2-3 hours",
+     "paths": [
+      {
+       "opt": "Rain plan",
+       "do": "Skip the beach sit, walk Denman Street for dinner options, duck in early at Joe Fortes.",
+       "cost": "1h 30m"
+      },
+      {
+       "opt": "Sunset on the beach",
+       "do": "Watch sunset at English Bay Beach near the A-maze-ing Laughter sculptures, then dinner nearby.",
+       "cost": "2h 30m"
+      }
+     ]
+    },
+    "alt": [
+     "English Bay Beach sunset Vancouver",
+     "A-maze-ing Laughter Yue Minjun sculptures",
+     "Denman Street Vancouver"
     ]
    }
   ]
@@ -2864,6 +3958,13 @@ const TRIP = [
        -123.10044
       ]
      }
+    ],
+    "expect": {
+     "arrive": "Walk from the Mount Pleasant Airbnb, no transit needed; Main Street cafes are quiet before 9am on a weekday.",
+     "need": "1-1.5 hours"
+    },
+    "alt": [
+     "Main Street Mount Pleasant Vancouver"
     ]
    },
    {
@@ -2916,7 +4017,30 @@ const TRIP = [
        -123.13556
       ]
      }
-    ]
+    ],
+    "expect": {
+     "arrive": "Walk or short bus to the False Creek dock, then the Aquabus mini-ferry across to Granville Island (about 5 min crossing, runs every few minutes); the market itself is indoors under one roof.",
+     "parking": "Aquabus or False Creek Ferries mini-ferry from downtown/Yaletown docks, or the #50 bus direct to Granville Island.",
+     "need": "2-2.5 hours",
+     "paths": [
+      {
+       "opt": "Market only",
+       "do": "Public Market food stalls, Lee's Donuts, Oyama Sausage counter; fully indoors, good if raining.",
+       "cost": "1h 15m"
+      },
+      {
+       "opt": "Market plus brewery",
+       "do": "Market first, then a short tasting flight at Granville Island Brewing next door.",
+       "cost": "2h"
+      }
+     ]
+    },
+    "alt": [
+     "Granville Island Public Market interior",
+     "Aquabus False Creek Vancouver",
+     "Granville Island Brewing"
+    ],
+    "cost": "Granville Island Public Market has no admission fee. Individual vendor prices apply; the market is reported open daily 9am-7pm in the April-October season (granvilleisland.com and secondary listings, read 2026-09-12) - not independently confirmed from the official page directly, worth a quick check closer to the date."
    },
    {
     "id": "d15s3",
@@ -2950,7 +4074,29 @@ const TRIP = [
        -123.12062
       ]
      }
-    ]
+    ],
+    "expect": {
+     "arrive": "Yaletown is a 15-20 min walk from Granville Island via the Cambie or Granville bridges, or a short Aquabus/ferry hop plus walk; the Vancouver Art Gallery is downtown, a further 10-15 min walk or a couple SkyTrain/bus stops.",
+     "need": "1.5 hours",
+     "paths": [
+      {
+       "opt": "Rain plan: Art Gallery",
+       "do": "Vancouver Art Gallery, fully indoors, an easy way to burn the time before heading to bags and the station.",
+       "cost": "1h 30m"
+      },
+      {
+       "opt": "Sun plan: Yaletown waterfront",
+       "do": "Walk the Yaletown waterfront path, browse converted-warehouse shops and cafes.",
+       "cost": "1h"
+      }
+     ]
+    },
+    "alt": [
+     "Yaletown Vancouver waterfront",
+     "Vancouver Art Gallery building"
+    ],
+    "seasonal": "Vancouver Art Gallery is closed on Tuesdays - not a conflict for day 15 (Friday), but relevant if plans shift; day 12 (Tuesday) does not currently include the gallery, which is correct given the closure.",
+    "cost": "Vancouver Art Gallery adult admission is $29 CAD (BC resident rate) to $35 CAD (non-resident); Friday hours 10am-8pm (vanartgallery.bc.ca, read 2026-09-12)."
    },
    {
     "id": "d15s4",
@@ -2997,7 +4143,29 @@ const TRIP = [
        -123.11524
       ]
      }
-    ]
+    ],
+    "expect": {
+     "arrive": "About 24 min by transit from Mount Pleasant to Pacific Central Station with bags; US immigration preclearance happens here, before boarding, not on arrival in Seattle.",
+     "parking": "SkyTrain (Main St-Science World or Broadway-City Hall) or bus/rideshare with luggage.",
+     "need": "1h 15m before departure",
+     "paths": [
+      {
+       "opt": "Transit with bags",
+       "do": "SkyTrain to Main St-Science World, short walk to Pacific Central Station.",
+       "cost": "30-40 min"
+      },
+      {
+       "opt": "Rideshare with bags",
+       "do": "Uber/Lyft direct to the station door, simplest with luggage in the rain.",
+       "cost": "20 min"
+      }
+     ]
+    },
+    "alt": [
+     "Pacific Central Station Vancouver exterior",
+     "Amtrak Cascades train Vancouver"
+    ],
+    "seasonal": "US Customs and Border Protection preclearance for southbound trains is done at Pacific Central Station before boarding (Amtrak/WSDOT, read 2026-09-12); arrive at least 60 minutes before departure, and be seated at least 15 minutes before the train leaves. Checked baggage generally needs to be presented about 45 minutes before departure - the day file's 3:40pm arrival for a 4:55pm departure gives 75 minutes, which comfortably covers both. No stop in Blaine, WA is needed anymore under the new preclearance arrangement (as of June 2026)."
    }
   ]
  },

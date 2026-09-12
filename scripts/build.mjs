@@ -46,6 +46,13 @@ for (const f of files) {
 
     for (const st of s.stops || []) {
       if (!st.q) problems.push(`${f}/${s.id}: stop "${st.name}" has no q`);
+      /* The trail badge is one line on a phone. Two options crammed into one
+         field renders as a paragraph, so the second one belongs in `note`. */
+      for (const k of ['dist', 'time', 'gain'])
+        if ((st.trail?.[k] || '').length > 34)
+          problems.push(`${f}/${s.id}: "${st.name}" trail.${k} too long for the badge — split it`);
+      if (st.trail && !st.trail.dist)
+        problems.push(`${f}/${s.id}: "${st.name}" has a trail with no distance`);
       const names = [`${st.name}, ${d.region}`, st.name, `${st.q}, ${d.region}`];
       const ll = [...names.map(q => biased(q, anchor)), ...names].map(k => geo[k]).find(Boolean);
       if (ll) { st.ll = ll; located++; }

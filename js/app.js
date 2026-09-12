@@ -148,6 +148,7 @@ function renderDay(n) {
           ${s.time ? `<div class="meta">${s.time}</div>` : ''}
           <h4>${s.name.replace(/^Segment\s*\d+\s*[—-]\s*/, '')}</h4>
           ${s.blurb ? `<p>${s.blurb}</p>` : ''}
+          ${segTags(s)}
           <div class="strip">${shots}</div>
         </div>
       </button>`));
@@ -159,6 +160,103 @@ function renderDay(n) {
     { line: true });
   Photos.watch(v);
   window.scrollTo(0, 0);
+}
+
+
+/* ---------------- what to expect ---------------- */
+/* A card should say, before you tap it, whether this is a get-out-and-walk stop. */
+function segTags(s) {
+  const opts = s.expect?.paths?.length || 0;
+  const walks = (s.stops || []).filter(st => st.trail).length;
+  const t = [];
+  if (opts) t.push(`${opts} ways to do it`);
+  if (walks) t.push(`${walks} walk${walks > 1 ? 's' : ''} timed`);
+  if (s.expect?.need) t.push(s.expect.need);
+  return t.length ? `<div class="segtags">${t.map(x => `<span>${x}</span>`).join('')}</div>` : '';
+}
+
+const KIND = { view: '◉', walk: '✦', hike: '▲', food: '●', sight: '◆', drive: '▬' };
+
+/* Round trip, car park to car park — the number you actually want standing at the car. */
+function trailBadge(st) {
+  const t = st.trail;
+  if (!t) return '';
+  const bits = [t.dist, t.time, t.gain ? t.gain + ' up' : ''].filter(Boolean);
+  return `<span class="trail${t.grade ? ' g-' + t.grade : ''}">
+    <b>${bits.join(' · ')}</b>
+    ${t.from ? `<i>round trip from ${t.from}</i>` : ''}
+    ${t.grade ? `<em>${t.grade}</em>` : ''}
+  </span>`;
+}
+
+function expectPanel(s) {
+  const e = s.expect;
+  if (!e && !s.seasonal && !s.cost) return '';
+  const picked = pickedPath(s.id);
+  const paths = (e?.paths || []).map((p, i) => `
+    <button class="path${picked === i ? ' on' : ''}" data-path="${i}" aria-pressed="${picked === i}">
+      <span class="pn">${i + 1}</span>
+      <span class="pb">
+        <b>${p.opt}</b>
+        ${p.cost ? `<u>${p.cost}</u>` : ''}
+        <span>${p.do}</span>
+      </span>
+    </button>`).join('');
+  return `
+    <section class="expect">
+      <div class="h-sec">What to expect</div>
+      ${e?.arrive ? `<p class="earr">${e.arrive}</p>` : ''}
+      <dl class="efacts">
+        ${e?.need ? `<div><dt>Time here</dt><dd>${e.need}</dd></div>` : ''}
+        ${e?.parking ? `<div><dt>Getting in</dt><dd>${e.parking}</dd></div>` : ''}
+      </dl>
+      ${s.cost ? `<p class="enote money">${s.cost}</p>` : ''}
+      ${s.seasonal ? `<p class="enote warn">${s.seasonal}</p>` : ''}
+      ${paths ? `<div class="h-sec">Pick your version</div><div class="paths">${paths}</div>` : ''}
+    </section>`;
+}
+
+/* Which version they settled on, so the choice survives the drive to the car park. */
+const pickedPath = id => {
+  const v = localStorage.getItem('usa2k26.path.' + id);
+  return v === null ? null : +v;
+};
+
+function wirePaths(root, id) {
+  root.querySelectorAll('.path').forEach(b => b.onclick = () => {
+    const i = +b.dataset.path;
+    const now = pickedPath(id) === i;
+    if (now) localStorage.removeItem('usa2k26.path.' + id);
+    else localStorage.setItem('usa2k26.path.' + id, String(i));
+    root.querySelectorAll('.path').forEach(o => {
+      const on = !now && +o.dataset.path === i;
+      o.classList.toggle('on', on);
+      o.setAttribute('aria-pressed', on);
+    });
+  });
+}
+
+/* Extra frames per stop, plus any research-supplied phrases. Closed by default —
+   the point of the page is the plan, not a contact sheet. */
+function moreShots(s) {
+  const seen = {};
+  const stopShots = (s.stops || []).flatMap(st => {
+    const base = seen[st.q] = (seen[st.q] ?? -1) + 1;
+    return [1, 2].map(k => ({ q: st.q, nth: base * 3 + k, cap: st.name }));
+  });
+  const altShots = (s.alt || []).flatMap(q => [0, 1].map(n => ({ q, nth: n, cap: q })));
+  const all = [...altShots, ...stopShots];
+  if (!all.length) return '';
+  return `
+    <details class="more">
+      <summary><span>More photos</span><small>up to ${all.length}</small></summary>
+      <div class="gallery grid">
+        ${all.map(x => `<figure class="pola" data-strict="1">
+          <div class="frame"><img data-q="${x.q}" data-nth="${x.nth}" data-strict="1" alt=""></div>
+          <figcaption>${x.cap}</figcaption>
+        </figure>`).join('')}
+      </div>
+    </details>`;
 }
 
 /* ---------------- sections ---------------- */
@@ -185,6 +283,7 @@ function renderSections() {
           <div class="meta">Day ${s.day.n} · ${fmtDate(s.day.date)}${s.time ? ' · ' + s.time : ''}</div>
           <h4>${s.name.replace(/^Segment\s*\d+\s*[—-]\s*/, '')}</h4>
           ${s.blurb ? `<p>${s.blurb}</p>` : ''}
+          ${segTags(s)}
           <div class="strip">${shots}</div>
         </div>
       </button>`));
@@ -209,6 +308,7 @@ function renderSection(id) {
       ${s.name.replace(/^Segment\s*\d+\s*[—-]\s*/, '')}
     </h2>
     ${s.blurb ? `<p class="lede">${s.blurb}</p>` : ''}
+    ${expectPanel(s)}
     <div class="gallery">
       ${(() => {
         const seen = {};
@@ -221,6 +321,7 @@ function renderSection(id) {
         }).join('');
       })()}
     </div>
+    ${moreShots(s)}
     <p class="credit">Photos from Wikimedia Commons — indicative, not ours.</p>
     <div class="h-sec">How close it all is</div>
     <div class="mapbox" id="segmap"></div>
@@ -229,16 +330,18 @@ function renderSection(id) {
     <ul class="stops">
       ${(s.stops || []).map(st => `
         <li>
-          <div class="pin">◆</div>
+          <div class="pin">${KIND[st.kind] || '◆'}</div>
           <div>
             <b>${st.name}</b>
             ${st.note ? `<span>${st.note}</span>` : ''}
+            ${trailBadge(st)}
             <a href="https://www.google.com/maps/search/?api=1&query=${enc(st.name + ' ' + (s.day.region || ''))}" target="_blank" rel="noopener">Map ↗</a>
           </div>
         </li>`).join('')}
     </ul>
     <button class="back" data-go="#/day/${s.day.n}">← Back to Day ${s.day.n}</button>`;
 
+  wirePaths(v, s.id);
   mountMap('segmap', segPoints(s), { line: !!s.map?.from });
   Photos.watch(v);
   window.scrollTo(0, 0);

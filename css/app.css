@@ -705,3 +705,88 @@ li.on .ptext small{opacity:.4}
   padding:11px 13px;border:1px solid var(--line);border-radius:10px;
   background:var(--card);font-family:inherit;font-size:13.5px;color:var(--ink);
 }
+
+/* ---- what to expect ---- */
+.expect{
+  background:var(--card);border:1px solid var(--line);border-radius:16px;
+  padding:4px 18px 18px;margin:0 0 26px;position:relative;
+}
+.expect:before{
+  content:'';position:absolute;left:50%;top:-9px;width:74px;height:18px;
+  transform:translateX(-50%) rotate(-1.6deg);background:var(--tape);
+  border-radius:2px;
+}
+.expect .h-sec{margin:18px 0 10px}
+.earr{font-family:var(--serif);font-size:17px;line-height:1.45;margin:0;color:var(--ink)}
+.efacts{margin:14px 0 0;display:grid;gap:10px}
+.efacts div{display:grid;grid-template-columns:82px 1fr;gap:12px;align-items:baseline}
+.efacts dt{
+  font-size:9.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-faint);
+}
+.efacts dd{margin:0;font-size:13.5px;line-height:1.45;color:var(--ink-soft)}
+.enote{
+  margin:14px 0 0;padding:10px 13px;border-radius:10px;
+  font-size:13px;line-height:1.45;background:var(--paper-2);color:var(--ink-soft);
+}
+.enote.warn{background:#F6E3D6;color:#8A3F1C}
+.enote.money{background:#E8EAD9;color:#5C6437}
+
+/* pick your version */
+.paths{display:grid;gap:9px}
+.path{
+  display:grid;grid-template-columns:26px 1fr;gap:12px;align-items:start;text-align:left;
+  background:var(--paper-2);border:0;border-radius:13px;padding:14px 15px;
+  font-family:inherit;color:var(--ink);cursor:pointer;
+}
+.path:hover{background:#E4D3B6}
+.pn{
+  width:26px;height:26px;border-radius:50%;display:grid;place-items:center;
+  background:var(--sage);color:var(--card);font-size:12px;font-weight:600;
+}
+.pb b{display:block;font-size:14.5px;font-weight:600}
+.pb u{
+  display:inline-block;margin:3px 0 0;text-decoration:none;
+  font-size:9.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--rust);
+}
+.pb span{display:block;margin-top:5px;font-size:13px;line-height:1.45;color:var(--ink-soft)}
+
+/* trail badge on a stop */
+.trail{display:block;margin:6px 0 2px}
+.trail b{
+  display:inline-block;font-size:11.5px;font-weight:600;letter-spacing:.02em;
+  background:var(--paper-2);border-radius:7px;padding:3px 8px;color:var(--ink);
+}
+.trail i{display:block;margin-top:4px;font-size:11.5px;font-style:normal;color:var(--ink-faint)}
+.trail em{
+  display:inline-block;margin-top:5px;font-style:normal;
+  font-size:9px;letter-spacing:.18em;text-transform:uppercase;
+  padding:2px 7px;border-radius:20px;background:var(--sage);color:var(--card);
+}
+.trail.g-moderate em{background:var(--amber)}
+.trail.g-strenuous em{background:var(--rust)}
+
+/* hidden extra photos */
+.more{margin:0 0 22px}
+.more summary{
+  list-style:none;cursor:pointer;display:flex;align-items:center;justify-content:space-between;
+  gap:12px;padding:12px 15px;border:1px dashed var(--line);border-radius:12px;
+  font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--rust);
+}
+.more summary::-webkit-details-marker{display:none}
+.more summary:after{content:'+';font-size:15px;letter-spacing:0;color:var(--ink-faint)}
+.more[open] summary:after{content:'–'}
+.more summary small{letter-spacing:.1em;color:var(--ink-faint);margin-left:auto}
+.more summary small + *{margin:0}
+.more .gallery{margin-top:16px}
+.gallery.grid{grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:14px}
+.gallery.grid .pola{padding:7px 7px 34px}
+.gallery.grid figcaption{font-size:10px}
+.segtags{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0 0}
+.segtags span{
+  font-size:9px;letter-spacing:.14em;text-transform:uppercase;
+  padding:3px 8px;border-radius:20px;background:var(--paper-2);color:var(--ink-soft);
+}
+.path.on{background:var(--sage);color:var(--card)}
+.path.on .pn{background:var(--card);color:var(--sage)}
+.path.on .pb u{color:#EBD9A8}
+.path.on .pb span{color:#E9ECDB}

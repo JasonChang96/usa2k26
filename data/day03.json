@@ -17,42 +17,245 @@
       "name": "Segment 1 — Teton Village and Death Canyon",
       "blurb": "Breakfast, Teton Village, then Death Canyon hike to Phelps Lake.",
       "time": "7:30am–12:00pm",
-      "map": { "from": "Teton Village, Wyoming", "to": "Death Canyon Trailhead, Wyoming" },
+      "map": {
+        "from": "Teton Village, Wyoming",
+        "to": "Death Canyon Trailhead, Wyoming"
+      },
       "stops": [
-        { "name": "Persephone Westbank (breakfast)", "q": "Teton Village Wyoming", "note": "Breakfast stop before the park." },
-        { "name": "Teton Village", "q": "Teton Village Wyoming", "note": "Base of the Jackson Hole ski resort." },
-        { "name": "Granite Canyon Entrance Station", "q": "Grand Teton National Park entrance sign", "note": "South entrance into the park." },
-        { "name": "Death Canyon Trailhead", "q": "Death Canyon Grand Teton", "note": "Trailhead for the Phelps Lake hike." },
-        { "name": "Phelps Lake Overlook", "q": "Phelps Lake Grand Teton", "note": "Overlook above the lake from the trail." },
-        { "name": "Laurance S. Rockefeller Preserve Center", "q": "Laurance S Rockefeller Preserve Grand Teton", "note": "Visitor center at the trailhead." }
-      ]
+        {
+          "name": "Persephone Westbank (breakfast)",
+          "q": "Teton Village Wyoming",
+          "note": "Breakfast stop before the park.",
+          "kind": "food"
+        },
+        {
+          "name": "Teton Village",
+          "q": "Teton Village Wyoming",
+          "note": "Base of the Jackson Hole ski resort.",
+          "kind": "sight"
+        },
+        {
+          "name": "Granite Canyon Entrance Station",
+          "q": "Grand Teton National Park entrance sign",
+          "note": "South entrance into the park.",
+          "kind": "sight"
+        },
+        {
+          "name": "Death Canyon Trailhead",
+          "q": "Death Canyon Grand Teton",
+          "note": "Trailhead for the Phelps Lake hike.",
+          "kind": "sight"
+        },
+        {
+          "name": "Phelps Lake Overlook",
+          "q": "Phelps Lake Grand Teton",
+          "note": "Overlook above the lake from the trail.",
+          "kind": "hike",
+          "trail": {
+            "dist": "2 mi (3.2 km) round trip",
+            "time": "1h-1h 15m",
+            "gain": "470 ft (140 m)",
+            "from": "Death Canyon Trailhead",
+            "grade": "easy"
+          }
+        },
+        {
+          "name": "Laurance S. Rockefeller Preserve Center",
+          "q": "Laurance S Rockefeller Preserve Grand Teton",
+          "note": "Visitor center at the trailhead.",
+          "kind": "sight"
+        }
+      ],
+      "expect": {
+        "arrive": "Teton Village is a small alpine-style base area with cafes right off the parking; Death Canyon Trailhead is a dirt/gravel lot at the end of a bumpy unpaved road past the Rockefeller Preserve.",
+        "parking": "Death Canyon Trailhead lot is small (room for roughly 20-25 cars) and can fill by mid-morning on weekends in good weather; the Preserve Center has a larger paved lot a short drive before it.",
+        "need": "3.5-4.5 hours including the hike",
+        "paths": [
+          {
+            "opt": "Breakfast and village only",
+            "do": "Persephone Westbank and a walk around Teton Village, skip the hike.",
+            "cost": "1h"
+          },
+          {
+            "opt": "Preserve Center and overlook peek",
+            "do": "Village, then drive to the Preserve Center and walk a few minutes onto the trail without going to the full overlook.",
+            "cost": "1h 45m"
+          },
+          {
+            "opt": "Full Phelps Lake Overlook hike",
+            "do": "Village, then the out-and-back to Phelps Lake Overlook from Death Canyon Trailhead.",
+            "cost": "2h"
+          }
+        ]
+      },
+      "alt": [
+        "Teton Village Jackson Hole base area",
+        "Death Canyon Grand Teton trailhead",
+        "Phelps Lake Grand Teton aerial",
+        "Laurance S Rockefeller Preserve Center"
+      ],
+      "seasonal": "The Jackson Hole Aerial Tram at Teton Village runs through October 4, 2026, so it is still operating on this date if they want a ride up the mountain instead of the hike."
     },
     {
       "id": "d03s2",
       "name": "Segment 2 — Jenny Lake and Inspiration Point",
       "blurb": "Boat shuttle across Jenny Lake and the hike up to Inspiration Point.",
       "time": "12:30–3:00pm",
-      "map": { "center": "Jenny Lake, Wyoming", "zoom": 14 },
+      "map": {
+        "center": "Jenny Lake, Wyoming",
+        "zoom": 14
+      },
       "stops": [
-        { "name": "Jenny Lake Visitor Center", "q": "Jenny Lake Visitor Center Wyoming", "note": "Visitor center on the east shore." },
-        { "name": "Jenny Lake Boat House", "q": "Jenny Lake Grand Teton", "note": "Dock for the shuttle boat across the lake." },
-        { "name": "Boat shuttle across Jenny Lake", "q": "Jenny Lake Grand Teton", "note": "Short crossing to the west shore trailhead." },
-        { "name": "Inspiration Point", "q": "Inspiration Point Grand Teton", "note": "Overlook above Jenny Lake after a short climb." },
-        { "name": "Cascade Canyon Turnout", "q": "Cascade Canyon Grand Teton", "note": "Canyon trail continuing past Inspiration Point." }
-      ]
+        {
+          "name": "Jenny Lake Visitor Center",
+          "q": "Jenny Lake Visitor Center Wyoming",
+          "note": "Visitor center on the east shore.",
+          "kind": "sight"
+        },
+        {
+          "name": "Jenny Lake Boat House",
+          "q": "Jenny Lake Grand Teton",
+          "note": "Dock for the shuttle boat across the lake.",
+          "kind": "sight",
+          "trail": {
+            "dist": "5.7 mi (9.2 km) round trip",
+            "time": "3-4h",
+            "gain": "870 ft (270 m)",
+            "from": "Jenny Lake Visitor Center, hiking the shoreline without the boat",
+            "grade": "moderate"
+          }
+        },
+        {
+          "name": "Boat shuttle across Jenny Lake",
+          "q": "Jenny Lake Grand Teton",
+          "note": "Short crossing to the west shore trailhead.",
+          "kind": "drive"
+        },
+        {
+          "name": "Inspiration Point",
+          "q": "Inspiration Point Grand Teton",
+          "note": "Overlook above Jenny Lake after a short climb.",
+          "kind": "hike",
+          "trail": {
+            "dist": "1.8 mi (2.9 km) round trip",
+            "time": "1-1.5h",
+            "gain": "550 ft (170 m)",
+            "from": "Jenny Lake Boat Dock, west shore",
+            "grade": "moderate"
+          }
+        },
+        {
+          "name": "Cascade Canyon Turnout",
+          "q": "Cascade Canyon Grand Teton",
+          "note": "Canyon trail continuing past Inspiration Point.",
+          "kind": "view"
+        }
+      ],
+      "expect": {
+        "arrive": "Jenny Lake Visitor Center sits above a large paved lot that fills by mid-morning in September; the shuttle boat leaves from a dock a short walk below the visitor center and runs continuously, no reservation.",
+        "parking": "Jenny Lake's main lot is one of the busiest in the park; if it is full there is overflow parking a short walk further from the dock.",
+        "need": "2-2.5 hours with the boat",
+        "paths": [
+          {
+            "opt": "Boat there and back, no hike",
+            "do": "Round-trip boat ride across and back without leaving the west dock.",
+            "cost": "30-40 min"
+          },
+          {
+            "opt": "Boat to Inspiration Point",
+            "do": "One-way or round-trip boat, then the climb to Inspiration Point and back to the dock.",
+            "cost": "1h 30m-2h"
+          },
+          {
+            "opt": "Skip the boat, walk the shoreline",
+            "do": "Hike the South Jenny Lake Trail around to Inspiration Point and back without the boat.",
+            "cost": "3-4h"
+          }
+        ]
+      },
+      "alt": [
+        "Jenny Lake Grand Teton autumn",
+        "Jenny Lake shuttle boat dock",
+        "Inspiration Point Grand Teton view",
+        "Cascade Canyon Grand Teton"
+      ],
+      "seasonal": "The Jenny Lake shuttle boat's 2026 season ends September 30 and narrows to 9am-5pm from September 8 onward, so it is running but on shortened hours on this date (jennylakeboating.com)."
     },
     {
       "id": "d03s3",
       "name": "Segment 3 — Jenny Lake Road and String Lake",
       "blurb": "Scenic one-way loop road and the String Lake picnic area.",
       "time": "3:00–5:30pm",
-      "map": { "from": "Jenny Lake Road, Wyoming", "to": "String Lake, Wyoming" },
+      "map": {
+        "from": "Jenny Lake Road, Wyoming",
+        "to": "String Lake, Wyoming"
+      },
       "stops": [
-        { "name": "Jenny Lake Overlook", "q": "Jenny Lake Grand Teton", "note": "Roadside viewpoint on Jenny Lake Road." },
-        { "name": "Alder Fire Overlook", "q": "Grand Teton National Park forest fire regrowth", "note": "View over an old burn area's regrowth." },
-        { "name": "String Lake Picnic Area", "q": "String Lake Grand Teton", "note": "Picnic spot at the shallow lake's south end." },
-        { "name": "Cathedral Group Turnout", "q": "Cathedral Group Grand Teton", "note": "Classic view of the range's three main peaks." },
-        { "name": "String Lake Loop Hike (optional)", "q": "String Lake Grand Teton", "note": "Flat loop trail around the lake." }
+        {
+          "name": "Jenny Lake Overlook",
+          "q": "Jenny Lake Grand Teton",
+          "note": "Roadside viewpoint on Jenny Lake Road.",
+          "kind": "view"
+        },
+        {
+          "name": "Alder Fire Overlook",
+          "q": "Grand Teton National Park forest fire regrowth",
+          "note": "View over an old burn area's regrowth.",
+          "kind": "view"
+        },
+        {
+          "name": "String Lake Picnic Area",
+          "q": "String Lake Grand Teton",
+          "note": "Picnic spot at the shallow lake's south end.",
+          "kind": "sight"
+        },
+        {
+          "name": "Cathedral Group Turnout",
+          "q": "Cathedral Group Grand Teton",
+          "note": "Classic view of the range's three main peaks.",
+          "kind": "view"
+        },
+        {
+          "name": "String Lake Loop Hike (optional)",
+          "q": "String Lake Grand Teton",
+          "note": "Flat loop trail around the lake.",
+          "kind": "hike",
+          "trail": {
+            "dist": "3.7 mi (5.6 km) loop",
+            "time": "1.5-2h",
+            "gain": "540 ft (160 m)",
+            "from": "String Lake Picnic Area",
+            "grade": "easy"
+          }
+        }
+      ],
+      "expect": {
+        "arrive": "Jenny Lake Road is a one-way scenic loop with pull-outs; String Lake Picnic Area has a gravel/paved lot right at the shallow, warm south end of the lake, popular with families.",
+        "parking": "String Lake's lot is moderate-sized and fills on warm weekend afternoons; arriving mid-afternoon on a Sunday should be fine.",
+        "need": "1.5-2.5 hours",
+        "paths": [
+          {
+            "opt": "Picnic and viewpoints only",
+            "do": "String Lake Picnic Area, Cathedral Group Turnout, and the roadside overlooks, no lake walk.",
+            "cost": "45 min"
+          },
+          {
+            "opt": "Partial shoreline walk",
+            "do": "Walk part of the String Lake shoreline out and back instead of the full loop.",
+            "cost": "1h"
+          },
+          {
+            "opt": "Full String Lake Loop",
+            "do": "The complete flat loop trail around the lake.",
+            "cost": "1.5-2h"
+          }
+        ]
+      },
+      "alt": [
+        "Jenny Lake Road one-way loop",
+        "String Lake Grand Teton shoreline",
+        "Cathedral Group Grand Teton peaks",
+        "Grand Teton forest fire regrowth"
       ]
     },
     {
@@ -60,11 +263,56 @@
       "name": "Segment 4 — Evening in Jackson",
       "blurb": "Back to town for dinner after a full day in the park.",
       "time": "6:00–9:00pm",
-      "map": { "center": "Jackson, Wyoming", "zoom": 15 },
+      "map": {
+        "center": "Jackson, Wyoming",
+        "zoom": 15
+      },
       "stops": [
-        { "name": "Jackson Town Square", "q": "Jackson Town Square Wyoming", "note": "Antler arches, center of downtown Jackson." },
-        { "name": "Million Dollar Cowboy Bar", "q": "Million Dollar Cowboy Bar Jackson Wyoming", "note": "Historic saloon on the square." },
-        { "name": "National Museum of Wildlife Art", "q": "National Museum of Wildlife Art Jackson", "note": "Art museum overlooking the National Elk Refuge." }
+        {
+          "name": "Jackson Town Square",
+          "q": "Jackson Town Square Wyoming",
+          "note": "Antler arches, center of downtown Jackson.",
+          "kind": "sight"
+        },
+        {
+          "name": "Million Dollar Cowboy Bar",
+          "q": "Million Dollar Cowboy Bar Jackson Wyoming",
+          "note": "Historic saloon on the square.",
+          "kind": "sight"
+        },
+        {
+          "name": "National Museum of Wildlife Art",
+          "q": "National Museum of Wildlife Art Jackson",
+          "note": "Art museum overlooking the National Elk Refuge.",
+          "kind": "sight"
+        }
+      ],
+      "expect": {
+        "arrive": "Jackson Town Square is compact and entirely on foot, with the four antler arches at the corners; the wildlife art museum is a short drive north of downtown.",
+        "parking": "Downtown Jackson has metered street parking plus a few public lots; it's tightest right around dinner time.",
+        "need": "2-3 hours",
+        "paths": [
+          {
+            "opt": "Dinner and the square",
+            "do": "Walk the square, dinner nearby.",
+            "cost": "1h 30m"
+          },
+          {
+            "opt": "Add the Cowboy Bar",
+            "do": "Square, dinner, then a drink at the Million Dollar Cowboy Bar.",
+            "cost": "2h 30m"
+          },
+          {
+            "opt": "Add the museum",
+            "do": "Squeeze in the wildlife art museum before it closes, then dinner and the square.",
+            "cost": "3h"
+          }
+        ]
+      },
+      "alt": [
+        "Jackson Wyoming Town Square antler arches",
+        "Million Dollar Cowboy Bar saloon",
+        "National Museum of Wildlife Art Jackson"
       ]
     }
   ]
