@@ -50,7 +50,7 @@
       "expect": {
         "arrive": "Landside is simple here: baggage claim, one skywalk, and the rental counters sit in the garage directly opposite with the cars parked behind them, so nobody waits for a bus.",
         "parking": "Whoever lands first can have the car and the luggage loaded before your flight is even on the ground.",
-        "need": "1-2 hours from your landing to leaving lunch",
+        "need": "1-2 hours",
         "paths": [
           {
             "opt": "They wait at arrivals",
@@ -169,7 +169,7 @@
       "expect": {
         "arrive": "Trader Joe's sits on the east side of downtown with its own small lot, about ten minutes back to I-15; Logan Canyon beyond Sardine Summit is a dark two-lane highway at that hour.",
         "parking": "The Trader Joe's lot is tight and awkward at teatime; there is street parking on 400 South.",
-        "need": "2 hours in town, then 1h 20m of driving",
+        "need": "2 hours, then a 1h 20m drive",
         "paths": [
           {
             "opt": "Shop and drive",
