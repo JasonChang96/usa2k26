@@ -5,7 +5,7 @@
   "title": "Fly into Salt Lake City",
   "region": "Utah",
   "hero": "Salt Lake City Temple Square",
-  "summary": "Land in Salt Lake City, walk the city center, then drive north to Logan for the night.",
+  "summary": "Meet the others at the airport, In-N-Out, downtown on foot, then north to Logan for the night.",
   "drive": "Salt Lake City to Logan · 1h 20m · 130 km",
   "stay": {
     "name": "Airbnb #1 — Logan",
@@ -15,9 +15,70 @@
   "segments": [
     {
       "id": "d01s1",
-      "name": "Segment 1 — Salt Lake City sightseeing",
-      "blurb": "Arrival afternoon on foot around downtown Salt Lake City.",
-      "time": "12:00–4:00pm",
+      "name": "Segment 1 — Landing, the car, and In-N-Out",
+      "blurb": "The early group collects the car and waits; first meal together once you land.",
+      "map": {
+        "from": "Salt Lake City International Airport, Utah",
+        "to": "In-N-Out Burger, 28 E 2100 S, South Salt Lake, Utah"
+      },
+      "stops": [
+        {
+          "name": "Salt Lake City International Airport",
+          "q": "Salt Lake City International Airport terminal",
+          "note": "Arrivals and baggage claim.",
+          "kind": "sight"
+        },
+        {
+          "name": "Rental car counters, Gateway Center",
+          "q": "Salt Lake City International Airport terminal",
+          "note": "Counters and cars are in the garage, no shuttle.",
+          "kind": "sight",
+          "trail": {
+            "dist": "about 350 yd each way",
+            "time": "6-8 min",
+            "from": "baggage claim, via the skywalk",
+            "grade": "easy"
+          }
+        },
+        {
+          "name": "In-N-Out Burger, South Salt Lake",
+          "q": "In-N-Out Burger sign",
+          "note": "28 E 2100 S — the closest branch to downtown.",
+          "kind": "food"
+        }
+      ],
+      "expect": {
+        "arrive": "Landside is simple here: baggage claim, one skywalk, and the rental counters sit in the garage directly opposite with the cars parked behind them, so nobody waits for a bus.",
+        "parking": "Whoever lands first can have the car and the luggage loaded before your flight is even on the ground.",
+        "need": "1-2 hours from your landing to leaving lunch",
+        "paths": [
+          {
+            "opt": "They wait at arrivals",
+            "do": "Car collected early, everyone meets at baggage claim, one drive out to In-N-Out together.",
+            "cost": "45 min after you land"
+          },
+          {
+            "opt": "They eat, you follow",
+            "do": "If your flight slips badly, the early group eats first and you meet them at the restaurant.",
+            "cost": "flexible"
+          },
+          {
+            "opt": "Skip the burger",
+            "do": "Straight downtown if the day is already gone — In-N-Out is open until 1:30am on a Friday if you want it later.",
+            "cost": "0"
+          }
+        ]
+      },
+      "alt": [
+        "Salt Lake City International Airport terminal interior",
+        "In-N-Out Burger restaurant exterior",
+        "Salt Lake City airport concourse"
+      ]
+    },
+    {
+      "id": "d01s2",
+      "name": "Segment 2 — Salt Lake City on foot",
+      "blurb": "Downtown and Capitol Hill, once everyone is together.",
       "map": {
         "center": "Temple Square, Salt Lake City, Utah",
         "zoom": 14
@@ -78,24 +139,25 @@
       ]
     },
     {
-      "id": "d01s2",
-      "name": "Segment 2 — Food and the drive to Logan",
-      "blurb": "Snack and dinner in Salt Lake City, then north to Logan.",
-      "time": "4:00–8:00pm",
+      "id": "d01s3",
+      "name": "Segment 3 — Dinner, Trader Joe's, and the drive to Logan",
+      "blurb": "Dinner downtown, a shop stop, then north up the canyon.",
       "map": {
         "from": "Salt Lake City, Utah",
         "to": "Logan, Utah"
       },
       "stops": [
         {
-          "name": "In-N-Out (afternoon snack)",
-          "q": "In-N-Out Burger sign",
-          "note": "Quick stop before the drive north."
-        },
-        {
           "name": "Osteria Amore (dinner)",
           "q": "Salt Lake City downtown restaurant street",
-          "note": "Dinner stop in Salt Lake City."
+          "note": "Dinner stop in Salt Lake City.",
+          "kind": "food"
+        },
+        {
+          "name": "Trader Joe's, 634 E 400 S",
+          "q": "Trader Joe's storefront",
+          "note": "Road snacks for the parks. Open until 9pm.",
+          "kind": "food"
         },
         {
           "name": "Logan Canyon",
@@ -105,26 +167,33 @@
         }
       ],
       "expect": {
-        "arrive": "Both food stops are quick roadside/downtown stops; Logan Canyon is a two-lane mountain highway with occasional pull-outs, driven at dusk on this itinerary.",
-        "need": "1-2 hours plus the drive",
+        "arrive": "Trader Joe's sits on the east side of downtown with its own small lot, about ten minutes back to I-15; Logan Canyon beyond Sardine Summit is a dark two-lane highway at that hour.",
+        "parking": "The Trader Joe's lot is tight and awkward at teatime; there is street parking on 400 South.",
+        "need": "2 hours in town, then 1h 20m of driving",
         "paths": [
           {
-            "opt": "Snack and go",
-            "do": "In-N-Out only, eat in the car on the way north.",
-            "cost": "20 min"
+            "opt": "Shop and drive",
+            "do": "Skip the sit-down, grab dinner and road food at Trader Joe's in one stop.",
+            "cost": "40 min"
           },
           {
-            "opt": "Sit-down dinner",
-            "do": "In-N-Out snack, then a proper dinner at Osteria Amore before the drive.",
-            "cost": "1h 30m"
+            "opt": "Dinner then the shop",
+            "do": "Osteria Amore, then Trader Joe's on the way out — it closes at 9pm, so order early.",
+            "cost": "2h"
+          },
+          {
+            "opt": "Eat in Logan instead",
+            "do": "Trader Joe's only, drive north on an empty stomach and eat when you arrive.",
+            "cost": "30 min"
           }
         ]
       },
       "alt": [
         "Logan Canyon Utah autumn foliage",
-        "In-N-Out Burger sign California",
+        "Trader Joe's store exterior",
         "Downtown Salt Lake City restaurant row evening"
-      ]
+      ],
+      "seasonal": "Trader Joe's at 634 E 400 S closes at 9pm daily (traderjoes.com, read 2026-09-17), and it is the last decent shop before the parks — Logan has supermarkets but nothing in Grand Teton does."
     }
   ]
 }
