@@ -185,6 +185,11 @@
         "need": "3h 45m",
         "paths": [
           {
+            "opt": "Rain plan",
+            "do": "Every book stop and Suzzallo are indoors; skip the Cut and the Arboretum, Link back downtown for the Central Library instead.",
+            "cost": "3h"
+          },
+          {
             "opt": "Libraries first, books if time",
             "do": "Skip Capitol Hill, Link straight to U District for Suzzallo, Magus, then Montlake Cut.",
             "cost": "2h 30m"
@@ -207,19 +212,25 @@
         "Montlake Bridge Seattle",
         "Washington Park Arboretum Seattle"
       ],
-      "seasonal": "The Seattle Japanese Garden is CLOSED Mondays (Tue-Sun 10am-5pm from 1 October, seattlejapanesegarden.org, read 2026-10-05) — the Arboretum next door is free and open daily, so that is the substitute. Suzzallo Reading Room is Monday 8am-8pm in autumn quarter, with seismic and facade work running through Fall 2026, so expect scaffolding outside. Elliott Bay opens 9am Monday, Magus 10am.",
+      "seasonal": "The Seattle Japanese Garden is CLOSED Mondays (Tue-Sun 10am-5pm from 1 October, seattlejapanesegarden.org, read 2026-10-05) — the Arboretum next door is free and open daily, so that is the substitute. Suzzallo Reading Room is Monday 8am-8pm in autumn quarter, with seismic and facade work running through Fall 2026, so expect scaffolding outside. Elliott Bay opens 9am Monday, Magus 10am. Both UW museums are shut on Mondays (Burke Tue-Sun, Henry Thu-Sun), so the wet-weather fallback is downtown, not on campus.",
       "cost": "Link light rail is about $2.25-3.00 USD per ride, or a $8 day pass if you ride more than three times. Suzzallo, Montlake Cut and the Arboretum are all free."
     },
     {
       "id": "d11s4",
-      "name": "Segment 4 — Bags back, King Street Station, the 6:00pm train",
-      "blurb": "Back to South Lake Union for 4pm, then south to the station.",
-      "time": "3:30-10:00pm",
+      "name": "Segment 4 — Central Library if it rains, bags, the 6:00pm train",
+      "blurb": "Indoor backup downtown, then bags by 4pm.",
+      "time": "3:00-10:00pm",
       "map": {
         "from": "Montlake Cut, Seattle, WA",
         "to": "King Street Station, Seattle, WA"
       },
       "stops": [
+        {
+          "name": "Seattle Central Library",
+          "q": "Seattle Central Library",
+          "note": "Koolhaas glass ziggurat. Books Spiral, 10th-floor reading room.",
+          "kind": "sight"
+        },
         {
           "name": "South Lake Union luggage storage",
           "q": "South Lake Union Seattle",
@@ -240,9 +251,14 @@
         }
       ],
       "expect": {
-        "arrive": "Montlake back to South Lake Union is 15 minutes by rideshare in light traffic, longer once the 4pm build-up starts.",
+        "arrive": "Montlake back to South Lake Union is 15 minutes by rideshare in light traffic; the library is three blocks from Symphony station.",
         "need": "30 min to collect bags and reach the station",
         "paths": [
+          {
+            "opt": "Rain plan",
+            "do": "Link from U District to Symphony station, 30 min inside the Central Library, then rideshare to the bags.",
+            "cost": "1h 15m"
+          },
           {
             "opt": "Rideshare both legs",
             "do": "Uber Montlake to the storage spot, collect bags, second Uber straight to King Street Station.",
@@ -259,7 +275,8 @@
         "King Street Station Seattle interior",
         "Amtrak Cascades train Seattle"
       ],
-      "seasonal": "Leave Montlake by 3:30pm — the 4:00pm bag pickup is the hard pin of the day, and afternoon traffic between Montlake and South Lake Union only gets worse after 4. Amtrak asks for 45 minutes before departure to check bags, so 4:30pm at the station is right. Canadian customs happens on arrival at Pacific Central around 10:00pm, not before boarding."
+      "seasonal": "Seattle Central Library is open Monday 10am-6pm and free (spl.org, read 2026-10-05) - the best wet-weather hour in the city and a fair match for Suzzallo. Leave Montlake by 3:30pm — the 4:00pm bag pickup is the hard pin of the day, and afternoon traffic between Montlake and South Lake Union only gets worse after 4. Amtrak asks for 45 minutes before departure to check bags, so 4:30pm at the station is right. Canadian customs happens on arrival at Pacific Central around 10:00pm, not before boarding.",
+      "cost": "Central Library is free, no ticket or booking."
     }
   ]
 }
