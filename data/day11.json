@@ -14,25 +14,25 @@
   "segments": [
     {
       "id": "d11s1",
-      "name": "Segment 1 — Bags into storage, breakfast with Victor",
-      "blurb": "Check out early, drop the bags, walk down to Ludi's.",
+      "name": "Segment 1 — Bags to the Hyatt House, breakfast with Victor",
+      "blurb": "Check out, bags up to 5th Ave N, walk down to Ludi's.",
       "time": "8:00-9:45am",
       "map": {
-        "center": "South Lake Union, Seattle, WA",
+        "center": "Belltown, Seattle, WA",
         "zoom": 15
       },
       "stops": [
         {
-          "name": "South Lake Union luggage storage",
-          "q": "South Lake Union Seattle",
-          "note": "8:00am drop-off; bags stay here until 4pm.",
+          "name": "Airbnb, 425 Vine St",
+          "q": "Belltown Seattle",
+          "note": "Belltown. Check out and carry the bags north.",
           "kind": "sight"
         },
         {
-          "name": "South Lake Union Streetcar",
-          "q": "South Lake Union Streetcar Seattle",
-          "note": "Westlake Ave to downtown, 10 min, every 15 min.",
-          "kind": "drive"
+          "name": "Hyatt House Seattle Downtown",
+          "q": "Seattle Center",
+          "note": "201 5th Ave N. Luggage drop, 8:00am.",
+          "kind": "sight"
         },
         {
           "name": "Ludi's Restaurant",
@@ -42,26 +42,26 @@
         }
       ],
       "expect": {
-        "arrive": "Storage spot opens early and takes two minutes; Ludi's is a small Filipino-American diner, busy with locals.",
+        "arrive": "Hyatt House is a short walk up from Vine St; the drop takes two minutes, then it is downhill all the way to Ludi's.",
         "need": "1h 45m",
         "paths": [
           {
-            "opt": "Streetcar down",
-            "do": "Streetcar from Westlake Ave N to Westlake Center, then three blocks on foot to Stewart St.",
-            "cost": "20 min"
+            "opt": "Walk both legs",
+            "do": "Four blocks up 5th Ave with the bags, then 1.4km back down through Belltown to Stewart St.",
+            "cost": "30 min"
           },
           {
-            "opt": "Walk the whole way",
-            "do": "Walk South Lake Union to Stewart St through Denny Triangle, downhill most of the way.",
-            "cost": "20 min"
+            "opt": "Rideshare the bags",
+            "do": "Short Uber from the Airbnb to the Hyatt House if the bags are heavy, then walk to Ludi's.",
+            "cost": "25 min"
           }
         ]
       },
       "alt": [
-        "South Lake Union Seattle skyline",
-        "South Lake Union Streetcar Seattle"
+        "Seattle Center",
+        "Belltown Seattle"
       ],
-      "seasonal": "Ludi's is open Monday 7:00am-2:30pm (Yelp listing, read 2026-10-05), so 8:30am is comfortably inside service. Confirm the storage spot's Monday opening time when you book it — some host-run spots don't open until 9am, which would wreck the 8:00 drop."
+      "seasonal": "Ludi's is open Monday 7:00am-2:30pm (Yelp listing, read 2026-10-05), so 8:30am is comfortably inside service. The Airbnb and the Hyatt House are both on 5th, four blocks apart — a five-minute walk even with the bags. The Hyatt House down to Stewart St is a longer 1.4km, about 18 minutes downhill, so leave by 8:10am."
     },
     {
       "id": "d11s2",
@@ -232,9 +232,9 @@
           "kind": "sight"
         },
         {
-          "name": "South Lake Union luggage storage",
-          "q": "South Lake Union Seattle",
-          "note": "4:00pm pickup. Don't cut this closer than that.",
+          "name": "Hyatt House Seattle Downtown",
+          "q": "Seattle Center",
+          "note": "4:00pm luggage pickup. Don't cut this closer.",
           "kind": "sight"
         },
         {
@@ -251,22 +251,22 @@
         }
       ],
       "expect": {
-        "arrive": "Montlake back to South Lake Union is 15 minutes by rideshare in light traffic; the library is three blocks from Symphony station.",
+        "arrive": "Montlake back to the Hyatt House is 15 minutes by rideshare in light traffic; the library is three blocks from Symphony station.",
         "need": "30 min to collect bags and reach the station",
         "paths": [
           {
             "opt": "Rain plan",
-            "do": "Link from U District to Symphony station, 30 min inside the Central Library, then rideshare to the bags.",
+            "do": "Link from U District to Symphony station, 30 min inside the Central Library, then rideshare up to the bags.",
             "cost": "1h 15m"
           },
           {
             "opt": "Rideshare both legs",
-            "do": "Uber Montlake to the storage spot, collect bags, second Uber straight to King Street Station.",
+            "do": "Uber Montlake to the Hyatt House, collect bags, second Uber straight to King Street Station.",
             "cost": "45 min"
           },
           {
             "opt": "Transit back, rideshare with bags",
-            "do": "Bus 48 then 70 to South Lake Union, collect bags, then Uber to the station door.",
+            "do": "Bus 48 then 8 across to Uptown, collect bags, then Uber to the station door.",
             "cost": "1h 10m"
           }
         ]
@@ -275,7 +275,7 @@
         "King Street Station Seattle interior",
         "Amtrak Cascades train Seattle"
       ],
-      "seasonal": "Seattle Central Library is open Monday 10am-6pm and free (spl.org, read 2026-10-05) - the best wet-weather hour in the city and a fair match for Suzzallo. Leave Montlake by 3:30pm — the 4:00pm bag pickup is the hard pin of the day, and afternoon traffic between Montlake and South Lake Union only gets worse after 4. Amtrak asks for 45 minutes before departure to check bags, so 4:30pm at the station is right. Canadian customs happens on arrival at Pacific Central around 10:00pm, not before boarding.",
+      "seasonal": "Seattle Central Library is open Monday 10am-6pm and free (spl.org, read 2026-10-05) - the best wet-weather hour in the city and a fair match for Suzzallo. Leave Montlake by 3:30pm — the 4:00pm bag pickup is the hard pin of the day, and afternoon traffic between Montlake and Uptown only gets worse after 4. Amtrak asks for 45 minutes before departure to check bags, so 4:30pm at the station is right. Canadian customs happens on arrival at Pacific Central around 10:00pm, not before boarding.",
       "cost": "Central Library is free, no ticket or booking."
     }
   ]
